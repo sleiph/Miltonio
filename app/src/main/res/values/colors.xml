@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="respostaCerta">#32b44b</color>
+    <color name="respostaErrada">#eb0500</color>
+    <color name="colorAdm">#fcc200</color>
+    <color name="colorAlg">#7760a9</color>
+    <color name="colorAoc">#4474e0</color>
+    <color name="colorEng">#ed254e</color>
+    <color name="colorLhw">#f95738</color>
+    <color name="colorMat">#17bebb</color>
+    <color name="colorPrg">#0d160b</color>
+    <color name="colorBnc">#fff</color>
+    <color name="colorPrt">#000</color>
+    <color name="colorCnz">#d3d3d3</color>
+    <color name="colorCnzClr">#ededed</color>
+    <color name="colorCnzEsc">#c6c6c6</color>
+</resources>
