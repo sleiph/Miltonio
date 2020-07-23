@@ -1,7 +1,7 @@
 # Milton.io
 Aplicativo de quiz criado no Android Studio
 
-![capa](/img/screen0.png)![screen2](/img/screen2.png)![screen3](/img/screen3.png)
+![capa](/img/capa.png)
 
 Eu criei esse aplicativo no [MIT App Inventor](https://appinventor.mit.edu/), agora estou recriando ele no Android Studio pra aprender a programar com Kotlin.
 
