@@ -13,8 +13,10 @@
     <string name="categ_prg">Programação de Computadores</string>
     <string name="txt_btn_conferir">conferir</string>
     <string name="resultado_comeco">Você acertou</string>
+    <string name="resultado_pontos">%d%%</string>
     <string name="resultado_meio">das perguntas de</string>
     <string name="resultado_msg_boa">Agora que tal compartilhar as respostas com o clã?</string>
+    <string name="resultado_msg_ruim">É… que tal pedir a ajuda do clã nessa matéria?</string>
     <string name="resultado_btn">voltar</string>
     <string name="adm_1_pergunta">A experiencia de Hawthorne foi realizada por:</string>
     <string name="adm_1_resposta_1">Elton Maio</string>

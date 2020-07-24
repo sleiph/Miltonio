@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/resultado_comeco"
-            android:textSize="34sp"
+            android:textSize="32sp"
             android:textAlignment="center"
             android:textColor="@color/colorPrt">
 
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/resultado_meio"
-            android:textSize="34sp"
+            android:textSize="32sp"
             android:textAlignment="center"
             android:textColor="@color/colorPrt">
 
@@ -63,8 +63,7 @@
             android:id="@+id/categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.3"
-            android:textSize="34sp"
+            android:textSize="32sp"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textColor="@color/colorPrt">
@@ -74,7 +73,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/img_msg"
+        android:id="@+id/layout_msg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/txt_principal"
@@ -84,11 +83,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/img_resultado"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginBottom="12dp"
-            android:background="@drawable/respostasnossas">
+            android:id="@+id/img_mensagem"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="12dp">
 
         </ImageView>
 
@@ -96,8 +94,7 @@
             android:id="@+id/mensagem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/resultado_msg_boa"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:textAlignment="center"
             android:textStyle="italic"
             android:textColor="@color/colorPrt">
@@ -109,13 +106,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/img_msg"
+        android:layout_below="@id/layout_msg"
         android:layout_marginTop="-92dp"
         android:layout_marginBottom="10dp"
         android:gravity="center">
 
         <Button
-            android:id="@+id/btn_conferir"
+            android:id="@+id/btn_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/botao_fundo"
