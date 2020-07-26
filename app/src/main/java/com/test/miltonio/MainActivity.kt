@@ -1,5 +1,6 @@
 package com.test.miltonio
 
+import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
@@ -11,30 +12,41 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
+class MyApplication: Application() {
+    companion object {
+        var globalPontuacao = listOf(
+            mutableListOf("Administracao", 0),
+            mutableListOf("Algoritmo", 0),
+            mutableListOf("Arquitetura", 0),
+            mutableListOf("Ingles", 0),
+            mutableListOf("Hardware", 0),
+            mutableListOf("Matematica", 0),
+            mutableListOf("Programacao", 0)
+        )
+    }
+}
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fun loadRespostas(catg:Int){
+        fun loadRespostas(resul:String){
             val intent = Intent(this, tela_respostas::class.java)
-            intent.putExtra("catg", catg)
+            intent.putExtra("resul", resul)
             startActivity(intent)
         }
 
-        val resulIntent = intent
-        val resultado = resulIntent.getIntegerArrayListExtra("resul")
-        val categoria = (resultado?.get(0) ?: 1)
-        val pontos = (resultado?.get(1) ?: 0)
-
-        val txt_progresso_adm = findViewById<TextView>(R.id.txt_progresso_adm) as TextView
-        val txt_progresso_alg = findViewById<TextView>(R.id.txt_progresso_alg) as TextView
-        val txt_progresso_aoc = findViewById<TextView>(R.id.txt_progresso_aoc) as TextView
-        val txt_progresso_eng = findViewById<TextView>(R.id.txt_progresso_eng) as TextView
-        val txt_progresso_lhw = findViewById<TextView>(R.id.txt_progresso_lhw) as TextView
-        val txt_progresso_mat = findViewById<TextView>(R.id.txt_progresso_mat) as TextView
-        val txt_progresso_prg = findViewById<TextView>(R.id.txt_progresso_prg) as TextView
+        val textos = arrayOf(
+            findViewById<TextView>(R.id.txt_progresso_adm) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_alg) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_aoc) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_eng) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_lhw) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_mat) as TextView,
+            findViewById<TextView>(R.id.txt_progresso_prg) as TextView
+        )
 
         val cardAdm = findViewById<CardView>(R.id.CardViewAdm)
         val cardAlg = findViewById<CardView>(R.id.CardViewAlg)
@@ -44,92 +56,33 @@ class MainActivity : AppCompatActivity() {
         val cardMat = findViewById<CardView>(R.id.CardViewMat)
         val cardPrg = findViewById<CardView>(R.id.CardViewPrg)
 
-        fun setPontosZero(textos:Array<TextView>) {
-            for (texto in textos)
-                texto.setText(getString(R.string.resultado_pontos, 0))
+        fun setPontos() {
+            for (i in 0..6)
+                textos[i].setText(getString(R.string.resultado_pontos, MyApplication.Companion.globalPontuacao[i][1]))
         }
 
-        fun setPontos(catg:Int, pnts:Int){
-            if (catg == 1) {
-                txt_progresso_adm.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_alg, txt_progresso_aoc, txt_progresso_eng, txt_progresso_lhw, txt_progresso_mat, txt_progresso_prg
-                    )
-                )
-            }
-            else if (catg == 2) {
-                txt_progresso_alg.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_aoc, txt_progresso_eng, txt_progresso_lhw, txt_progresso_mat, txt_progresso_prg
-                    )
-                )
-            }
-            else if (catg == 3) {
-                txt_progresso_aoc.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_alg, txt_progresso_eng, txt_progresso_lhw, txt_progresso_mat, txt_progresso_prg
-                    )
-                )
-            }
-            else if (catg == 4) {
-                txt_progresso_eng.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_alg, txt_progresso_aoc, txt_progresso_lhw, txt_progresso_mat, txt_progresso_prg
-                    )
-                )
-            }
-            else if (catg == 5) {
-                txt_progresso_lhw.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_alg, txt_progresso_aoc, txt_progresso_eng, txt_progresso_mat, txt_progresso_prg
-                    )
-                )
-            }
-            else if (catg == 6){
-                txt_progresso_mat.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_alg, txt_progresso_aoc, txt_progresso_eng, txt_progresso_lhw, txt_progresso_prg
-                    )
-                )
-            }
-            else{
-                txt_progresso_prg.setText(getString(R.string.resultado_pontos, pnts))
-                setPontosZero(
-                    arrayOf(
-                        txt_progresso_adm, txt_progresso_alg, txt_progresso_aoc, txt_progresso_eng, txt_progresso_lhw, txt_progresso_mat
-                    )
-                )
-            }
-        }
-
-        setPontos(categoria, pontos)
+        setPontos()
 
         cardAdm.setOnClickListener {
-            loadRespostas(1)
+            loadRespostas(MyApplication.Companion.globalPontuacao[0][0].toString())
         }
         cardAlg.setOnClickListener {
-            loadRespostas(2)
+            loadRespostas(MyApplication.Companion.globalPontuacao[1][0].toString())
         }
         cardAoc.setOnClickListener {
-            loadRespostas(3)
+            loadRespostas(MyApplication.Companion.globalPontuacao[2][0].toString())
         }
         cardEng.setOnClickListener {
-            loadRespostas(4)
+            loadRespostas(MyApplication.Companion.globalPontuacao[3][0].toString())
         }
         cardLhw.setOnClickListener {
-            loadRespostas(5)
+            loadRespostas(MyApplication.Companion.globalPontuacao[4][0].toString())
         }
         cardMat.setOnClickListener {
-            loadRespostas(6)
+            loadRespostas(MyApplication.Companion.globalPontuacao[5][0].toString())
         }
         cardPrg.setOnClickListener {
-            loadRespostas(7)
+            loadRespostas(MyApplication.Companion.globalPontuacao[6][0].toString())
         }
 
     }

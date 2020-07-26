@@ -23,18 +23,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="52dp"
         android:layout_marginBottom="16dp">
 
         <TextView
+            android:id="@+id/comeco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/resultado_comeco"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrt">
-
-        </TextView>
+            android:textColor="@color/colorPrt"
+            />
 
         <TextView
             android:id="@+id/resultado"
@@ -42,33 +42,31 @@
             android:layout_height="wrap_content"
             android:scaleX="1.25"
             android:scaleY="1.25"
-            android:textSize="92sp"
+            android:textSize="90sp"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:textColor="@color/colorPrt">
-
-        </TextView>
+            android:textColor="@color/colorPrt"
+            />
 
         <TextView
+            android:id="@+id/meio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/resultado_meio"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrt">
-
-        </TextView>
+            android:textColor="@color/colorPrt"
+            />
 
         <TextView
             android:id="@+id/categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:textColor="@color/colorPrt">
-
-        </TextView>
+            android:textColor="@color/colorPrt"
+            />
 
     </LinearLayout>
 
@@ -86,9 +84,9 @@
             android:id="@+id/img_mensagem"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="12dp">
-
-        </ImageView>
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/resultado_msg_descricao"
+            />
 
         <TextView
             android:id="@+id/mensagem"
@@ -97,9 +95,8 @@
             android:textSize="24sp"
             android:textAlignment="center"
             android:textStyle="italic"
-            android:textColor="@color/colorPrt">
-
-        </TextView>
+            android:textColor="@color/colorPrt"
+            />
 
     </LinearLayout>
 
@@ -117,9 +114,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/botao_fundo"
             android:paddingHorizontal="24dp"
-            android:text="@string/resultado_btn">
-
-        </Button>
+            android:text="@string/resultado_btn"
+            />
 
     </LinearLayout>
 

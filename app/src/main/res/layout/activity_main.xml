@@ -49,31 +49,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbadm">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_adm_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_adm"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_adm"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                 </LinearLayout>
 
@@ -96,31 +107,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbalg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_alg_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_alg"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_alg"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                 </LinearLayout>
 
@@ -143,31 +165,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbaoc">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_aoc_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_aoc"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_aoc"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                 </LinearLayout>
 
@@ -190,31 +223,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbeng">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_eng_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_eng"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_eng"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                 </LinearLayout>
 
@@ -237,31 +281,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simblhw">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_lhw_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_lhw"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_lhw"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorPrt"/>
+                        android:textColor="@color/colorPrt"
+                        />
 
                 </LinearLayout>
 
@@ -284,31 +339,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbmat">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_mat_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_mat"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_mat"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                 </LinearLayout>
 
@@ -332,31 +398,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
+                    android:paddingHorizontal="8dp"
                     android:orientation="vertical"
                     android:background="@drawable/simbprg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/categ_prg_prof"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:id="@+id/txt_progresso_prg"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="6.5"
+                        android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
-                        android:textAlignment="center"
                         android:textStyle="bold"
                         android:textSize="52sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="3.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_prg"
                         android:textAlignment="center"
                         android:textSize="14sp"
-                        android:textColor="@color/colorBnc"/>
+                        android:textColor="@color/colorBnc"
+                        />
 
                 </LinearLayout>
 
