@@ -58,32 +58,50 @@ class MainActivity : AppCompatActivity() {
 
         fun setPontos() {
             for (i in 0..6)
-                textos[i].setText(getString(R.string.resultado_pontos, MyApplication.Companion.globalPontuacao[i][1]))
+                textos[i].setText(getString(R.string.resultado_pontos, MyApplication.globalPontuacao[i][1]))
         }
 
         setPontos()
 
         cardAdm.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[0][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[0][0].toString())
         }
         cardAlg.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[1][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[1][0].toString())
         }
         cardAoc.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[2][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[2][0].toString())
         }
         cardEng.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[3][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[3][0].toString())
         }
         cardLhw.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[4][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[4][0].toString())
         }
         cardMat.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[5][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[5][0].toString())
         }
         cardPrg.setOnClickListener {
-            loadRespostas(MyApplication.Companion.globalPontuacao[6][0].toString())
+            loadRespostas(MyApplication.globalPontuacao[6][0].toString())
         }
 
     }
 }
+
+//Todo: Acessibilidade!!!
+//Todo: Usar um banco de dados
+//Todo: Usuários com senha
+//Todo: Layout responsivo
+//Todo: Centralizar o texto de % da tela inicial
+//Todo: Exibir na tela inicial a pontuação mais alta
+//Todo: Tilestyle background
+//Todo: Colocar acentos nos texto
+//Todo: Tamanho das caixas de resposta uniforme
+//Todo: Quantidade de perguntas adaptável
+//Todo: Quantidade de respostas adaptável
+//Todo: High Scores
+//Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
+//Todo: Animações
+//Todo: Mudar a fonte tipográfica do app
+//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
+//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)

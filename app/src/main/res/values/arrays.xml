@@ -10,30 +10,30 @@
     <string-array name="adm_2">
         <item>@string/adm_2_pergunta</item>
         <item>@string/adm_2_resposta_1</item>
-        <item>@string/adm_2_resposta_2</item>
-        <item>@string/adm_2_resposta_3</item>
-        <item>@string/adm_2_resposta_4</item>
+        <item>@string/adm_3_resposta_1</item>
+        <item>@string/adm_4_resposta_1</item>
+        <item>@string/adm_5_resposta_1</item>
     </string-array>
     <string-array name="adm_3">
         <item>@string/adm_3_pergunta</item>
         <item>@string/adm_3_resposta_1</item>
-        <item>@string/adm_3_resposta_2</item>
-        <item>@string/adm_3_resposta_3</item>
-        <item>@string/adm_3_resposta_4</item>
+        <item>@string/adm_2_resposta_1</item>
+        <item>@string/adm_4_resposta_1</item>
+        <item>@string/adm_5_resposta_1</item>
     </string-array>
     <string-array name="adm_4">
         <item>@string/adm_4_pergunta</item>
         <item>@string/adm_4_resposta_1</item>
-        <item>@string/adm_4_resposta_2</item>
-        <item>@string/adm_4_resposta_3</item>
-        <item>@string/adm_4_resposta_4</item>
+        <item>@string/adm_2_resposta_1</item>
+        <item>@string/adm_3_resposta_1</item>
+        <item>@string/adm_5_resposta_1</item>
     </string-array>
     <string-array name="adm_5">
         <item>@string/adm_5_pergunta</item>
         <item>@string/adm_5_resposta_1</item>
-        <item>@string/adm_5_resposta_2</item>
-        <item>@string/adm_5_resposta_3</item>
-        <item>@string/adm_5_resposta_4</item>
+        <item>@string/adm_2_resposta_1</item>
+        <item>@string/adm_3_resposta_1</item>
+        <item>@string/adm_4_resposta_1</item>
     </string-array>
     <string-array name="adm_6">
         <item>@string/adm_6_pergunta</item>
@@ -52,9 +52,9 @@
     <string-array name="adm_8">
         <item>@string/adm_8_pergunta</item>
         <item>@string/adm_8_resposta_1</item>
-        <item>@string/adm_8_resposta_2</item>
-        <item>@string/adm_8_resposta_3</item>
-        <item>@string/adm_8_resposta_4</item>
+        <item>@string/adm_1_resposta_2</item>
+        <item>@string/adm_1_resposta_3</item>
+        <item>@string/adm_1_resposta_4</item>
     </string-array>
     <string-array name="adm_9">
         <item>@string/adm_9_pergunta</item>
@@ -367,23 +367,23 @@
     <string-array name="mat_3">
         <item>@string/mat_3_pergunta</item>
         <item>@string/mat_3_resposta_1</item>
-        <item>@string/mat_3_resposta_2</item>
-        <item>@string/mat_3_resposta_3</item>
+        <item>@string/mat_4_resposta_1</item>
+        <item>@string/mat_5_resposta_1</item>
         <item>@string/mat_3_resposta_4</item>
     </string-array>
     <string-array name="mat_4">
         <item>@string/mat_4_pergunta</item>
         <item>@string/mat_4_resposta_1</item>
-        <item>@string/mat_4_resposta_2</item>
-        <item>@string/mat_4_resposta_3</item>
-        <item>@string/mat_4_resposta_4</item>
+        <item>@string/mat_3_resposta_1</item>
+        <item>@string/mat_5_resposta_1</item>
+        <item>@string/mat_3_resposta_4</item>
     </string-array>
     <string-array name="mat_5">
         <item>@string/mat_5_pergunta</item>
         <item>@string/mat_5_resposta_1</item>
-        <item>@string/mat_5_resposta_2</item>
-        <item>@string/mat_5_resposta_3</item>
-        <item>@string/mat_5_resposta_4</item>
+        <item>@string/mat_3_resposta_1</item>
+        <item>@string/mat_5_resposta_1</item>
+        <item>@string/mat_3_resposta_4</item>
     </string-array>
     <string-array name="mat_6">
         <item>@string/mat_6_pergunta</item>
@@ -415,8 +415,8 @@
     </string-array>
     <string-array name="mat_10">
         <item>@string/mat_10_pergunta</item>
-        <item>@string/mat_10_resposta_1</item>
-        <item>@string/mat_10_resposta_2</item>
+        <item>@string/mat_9_resposta_2</item>
+        <item>@string/mat_9_resposta_1</item>
         <item>@string/mat_10_resposta_3</item>
         <item>@string/mat_10_resposta_4</item>
     </string-array>
