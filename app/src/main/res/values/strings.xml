@@ -299,8 +299,6 @@
     <string name="mat_9_resposta_3">Lados</string>
     <string name="mat_9_resposta_4">Traços</string>
     <string name="mat_10_pergunta">Qual o nome dado aos nodos presentes em um grafo?</string>
-
-
     <string name="mat_10_resposta_3">Grafos</string>
     <string name="mat_10_resposta_4">Buracos</string>
     <string name="prg_1_pergunta" tools:ignore="Typos">Qual o comando utilizado para iniciar uma macro?</string>

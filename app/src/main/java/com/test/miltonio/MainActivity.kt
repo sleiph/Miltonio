@@ -4,13 +4,11 @@ import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import java.io.BufferedReader
+import java.io.FileNotFoundException
+import java.io.InputStreamReader
 
 class MyApplication: Application() {
     companion object {
@@ -32,11 +30,42 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fun loadRespostas(resul:String){
+        fun loadRespostas(resul:Int){
             val intent = Intent(this, tela_respostas::class.java)
             intent.putExtra("resul", resul)
             startActivity(intent)
         }
+
+        fun readFromFile(fileName: String): String {
+
+            var ret = ""
+
+            try {
+                val inputStream = assets.open(fileName)
+                val inputStreamReader = InputStreamReader(inputStream)
+                val bufferedReader = BufferedReader(inputStreamReader)
+                var receiveString: String? = ""
+                val stringBuilder = StringBuilder()
+
+                while (bufferedReader.readLine().also({ receiveString = it }) != null) {
+                    stringBuilder.append(receiveString)
+                }
+
+                inputStream.close()
+                ret = stringBuilder.toString()
+            }
+            catch (e: FileNotFoundException) {
+                e.printStackTrace()
+            }
+            catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            return ret
+
+        }
+
+        val dados = readFromFile( "dados.txt").split(",")
 
         val textos = arrayOf(
             findViewById<TextView>(R.id.txt_progresso_adm) as TextView,
@@ -56,52 +85,46 @@ class MainActivity : AppCompatActivity() {
         val cardMat = findViewById<CardView>(R.id.CardViewMat)
         val cardPrg = findViewById<CardView>(R.id.CardViewPrg)
 
-        fun setPontos() {
-            for (i in 0..6)
-                textos[i].setText(getString(R.string.resultado_pontos, MyApplication.globalPontuacao[i][1]))
-        }
-
-        setPontos()
+        for (i in 0..6)
+            textos[i].setText(getString(R.string.resultado_pontos, dados.get(i)))
 
         cardAdm.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[0][0].toString())
+            loadRespostas(0)
         }
         cardAlg.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[1][0].toString())
+            loadRespostas(1)
         }
         cardAoc.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[2][0].toString())
+            loadRespostas(2)
         }
         cardEng.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[3][0].toString())
+            loadRespostas(3)
         }
         cardLhw.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[4][0].toString())
+            loadRespostas(4)
         }
         cardMat.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[5][0].toString())
+            loadRespostas(5)
         }
         cardPrg.setOnClickListener {
-            loadRespostas(MyApplication.globalPontuacao[6][0].toString())
+            loadRespostas(6)
         }
 
     }
 }
 
 //Todo: Acessibilidade!!!
-//Todo: Usar um banco de dados
-//Todo: Usuários com senha
-//Todo: Layout responsivo
-//Todo: Centralizar o texto de % da tela inicial
-//Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Tilestyle background
-//Todo: Colocar acentos nos texto
-//Todo: Tamanho das caixas de resposta uniforme
 //Todo: Quantidade de perguntas adaptável
 //Todo: Quantidade de respostas adaptável
-//Todo: High Scores
 //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
 //Todo: Animações
-//Todo: Mudar a fonte tipográfica do app
+//Todo: Tilestyle background
+//Todo: Layout responsivo
+//Todo: Tamanho das caixas de resposta uniforme
 //Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
 //Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
+//Todo: High Scores
+//Todo: Usuários com senha
+//Todo: Exibir na tela inicial a pontuação mais alta
+//Todo: Usar um banco de dados
+//Todo: Mudar a fonte tipográfica do app
