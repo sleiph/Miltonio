@@ -10,14 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelaResultado" />
-        <activity android:name=".tela_respostas" />
+        <activity
+            android:name=".TelaResultado"
+            android:label="Resultado">
+        </activity>
+        <activity
+            android:name=".tela_respostas"
+            android:label="Perguntas">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
