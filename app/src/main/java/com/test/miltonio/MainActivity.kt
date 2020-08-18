@@ -1,22 +1,26 @@
 package com.test.miltonio
 
+import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.room.Room
 import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteDatabase
-import java.util.concurrent.Executors
+import kotlinx.android.synthetic.main.activity_tela_resultado.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
 
 //data class Categorias(val catg: String, var pnts: Int)
 @Entity(tableName = "tabela_categorias")
-class Categorias(
+data class Categorias(
     @PrimaryKey val cid: Int,
-    @ColumnInfo(name = "categoria") val categoria: String,
+    @ColumnInfo(name = "categoria") val categoria_db: String,
     @ColumnInfo(name = "pontos") val pontos: Int
 )
 
@@ -29,40 +33,73 @@ interface CategoriasDao {
     fun loadAllByIds(catgIds: IntArray): List<Categorias>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(categoria: List<Categorias>)
+    fun insert(categoria_inst: Categorias)
 
     @Update(entity = Categorias::class)
-    suspend fun updateCategory(categoria: Categorias)
+    suspend fun updateCategory(categoria_updt: Categorias)
 
     @Delete
     fun delete(user: Categorias)
+
+    @Query("DELETE FROM tabela_categorias")
+    suspend fun deleteAll()
 }
 
-@Database(entities = arrayOf(Categorias::class), version = 1, exportSchema = false)
+@Database(entities = arrayOf(Categorias::class), version = 1)
+//@Database(entities = arrayOf(Categorias::class), version = 1, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun CategoriasDao(): CategoriasDao
 
-    companion object {
-        @Volatile private var instance: AppDatabase? = null
+    private class CategoriasDatabaseCallback(
+        private val scope: CoroutineScope
+    ): RoomDatabase.Callback() {
+        override fun onOpen(db: SupportSQLiteDatabase) {
+            super.onOpen(db)
+            INSTANCE?.let { database ->
+                scope.launch {
+                    var categoriasDao = database.CategoriasDao()
 
-        fun getInstance(context: Context): AppDatabase {
-            return instance ?: synchronized(this) {
-                instance ?: buildDatabase(context).also { instance = it }
+                    categoriasDao.deleteAll()
+
+                    var categoria_entrada = Categorias(0, "Cálculo", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(1, "Algoritmo", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(2, "Arquitetura", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(3, "Inglês", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(4, "Hardware", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(5, "Matematica", 0)
+                    categoriasDao.insert(categoria_entrada)
+                    categoria_entrada = Categorias(6, "Programação", 0)
+                    categoriasDao.insert(categoria_entrada)
+                }
+
             }
         }
+    }
 
-        private fun buildDatabase(context: Context): AppDatabase {
-            return Room.databaseBuilder(context, AppDatabase::class.java, "tabela_categorias")
-                .addCallback(object : RoomDatabase.Callback() {
-                    override fun onCreate(db: SupportSQLiteDatabase) {
-                        super.onCreate(db)
-                        //pre-populate data
-                        Executors.newSingleThreadExecutor().execute {
-                            instance?.CategoriasDao()?.insert(DataGenerator.getCatgs())
-                        }
-                    }
-                })
-                .build()
+    companion object {
+        @Volatile
+        private var INSTANCE: AppDatabase? = null
+
+        fun getDatabase(
+            context: Context,
+            scope: CoroutineScope
+        ): AppDatabase {
+            return  INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "tabela_categorias"
+                )
+                    .addCallback(CategoriasDatabaseCallback(scope))
+                    .build()
+                INSTANCE = instance
+                instance
+            }
         }
     }
 }
@@ -138,7 +175,7 @@ class MainActivity : AppCompatActivity() {
 
         val dados = readFromFile( "dados.txt").split(",")*/
 
-        val db = Room.databaseBuilder(
+        /*val db = Room.databaseBuilder(
             applicationContext, AppDatabase::class.java,"tabela_categorias"
         )
             .fallbackToDestructiveMigration()
@@ -146,10 +183,13 @@ class MainActivity : AppCompatActivity() {
             .fallbackToDestructiveMigrationFrom(16, 17, 18, 19)
             .build()
 
-        db.query("SELECT * FROM tabela_categorias", null)
+        val reply_db = Intent()
+        setResult(Activity.RESULT_CANCELED, reply_db)
+        finish()*/
+
         println("db")
-        println(db.toString())
-        println(db.query("SELECT * FROM tabela_categorias", null))
+        //println(reply_db.toString())
+        println("db")
 
         val textos = arrayOf(
             findViewById<TextView>(R.id.txt_progresso_adm) as TextView,
@@ -196,6 +236,10 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    companion object {
+        const val EXTRA_REPLY = "com.example.android.wordlistsql.REPLY"
+    }
 }
 
 //Todo: Acessibilidade!!!
@@ -205,6 +249,7 @@ class MainActivity : AppCompatActivity() {
 //Todo: Animações
 //Todo: Tilestyle background
 //Todo: Layout responsivo
+//Todo: Mudar a fonte tipográfica do app
 //Todo: Tamanho das caixas de resposta uniforme
 //Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
 //Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
@@ -212,4 +257,5 @@ class MainActivity : AppCompatActivity() {
 //Todo: Usuários com senha
 //Todo: Exibir na tela inicial a pontuação mais alta
 //Todo: Usar um banco de dados
-//Todo: Mudar a fonte tipográfica do app
+//Todo: Tirar os prefixos das matérias (adm, algo, aoc...) pra facilitar reaproveitamento
+//Todo: Pra cada categoria no banco de dados adicionar automaticamente um card da matéria

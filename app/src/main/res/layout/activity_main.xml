@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,16 +15,17 @@
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/activity_dobro_margin">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="68dp"
-                android:layout_marginBottom="34dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginTop="@dimen/activity_topo"
+                android:layout_marginBottom="@dimen/activity_dobro_margin"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
@@ -35,21 +35,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewAdm"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorAdm">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbadm">
 
@@ -60,7 +60,7 @@
                         android:gravity="center"
                         android:text="@string/categ_adm_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -71,7 +71,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -82,7 +82,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_adm"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -93,21 +93,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewAlg"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorAlg">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbalg">
 
@@ -118,7 +118,7 @@
                         android:gravity="center"
                         android:text="@string/categ_alg_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -129,7 +129,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -140,7 +140,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_alg"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -151,21 +151,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewAoc"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorAoc">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbaoc">
 
@@ -176,7 +176,7 @@
                         android:gravity="center"
                         android:text="@string/categ_aoc_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -187,7 +187,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -198,7 +198,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_aoc"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -209,21 +209,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewEng"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorEng">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbeng">
 
@@ -234,7 +234,7 @@
                         android:gravity="center"
                         android:text="@string/categ_eng_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -245,7 +245,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -256,7 +256,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_eng"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -267,21 +267,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewLhw"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorLhw">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simblhw">
 
@@ -292,7 +292,7 @@
                         android:gravity="center"
                         android:text="@string/categ_lhw_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -303,7 +303,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -314,7 +314,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_lhw"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
@@ -325,21 +325,21 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewMat"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorMat">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbmat">
 
@@ -350,7 +350,7 @@
                         android:gravity="center"
                         android:text="@string/categ_mat_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -361,7 +361,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -372,7 +372,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_mat"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -383,22 +383,22 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/CardViewPrg"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="@dimen/tamanho_cards"
+                android:layout_marginStart="@dimen/activity_meia_margin"
+                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginBottom="@dimen/activity_dobro_margin"
                 android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/activity_interna_margin"
+                app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/colorPrg">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/activity_interna_margin"
                     android:orientation="vertical"
                     android:background="@drawable/simbprg">
 
@@ -409,7 +409,7 @@
                         android:gravity="center"
                         android:text="@string/categ_prg_prof"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -420,7 +420,7 @@
                         android:layout_weight="4"
                         android:gravity="bottom|center_horizontal"
                         android:textStyle="bold"
-                        android:textSize="52sp"
+                        android:textSize="@dimen/texto_pontuacao"
                         android:textColor="@color/colorBnc"
                         />
 
@@ -431,7 +431,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="@string/categ_prg"
                         android:textAlignment="center"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
