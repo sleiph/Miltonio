@@ -6,14 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAdm"
     tools:context=".TelaResultado">
 
     <RelativeLayout
         android:id="@+id/img_fnd"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/fndadm">
+        android:layout_height="fill_parent">
 
     </RelativeLayout>
 

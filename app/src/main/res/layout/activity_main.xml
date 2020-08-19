@@ -37,7 +37,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorAdm">
+                app:cardBackgroundColor="@color/colorSgd">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_adm_prof"
+                        android:text="@string/categ_sgd_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -74,7 +74,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_adm"
+                        android:text="@string/categ_sgd"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -93,7 +93,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorAlg">
+                app:cardBackgroundColor="@color/colorTru">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_alg_prof"
+                        android:text="@string/categ_tru_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -130,7 +130,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_alg"
+                        android:text="@string/categ_tru"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -149,7 +149,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorAoc">
+                app:cardBackgroundColor="@color/colorTrd">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -164,7 +164,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_aoc_prof"
+                        android:text="@string/categ_trd_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -186,7 +186,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_aoc"
+                        android:text="@string/categ_trd"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -205,7 +205,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorEng">
+                app:cardBackgroundColor="@color/colorQrt">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -220,7 +220,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_eng_prof"
+                        android:text="@string/categ_qrt_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -242,7 +242,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_eng"
+                        android:text="@string/categ_qrt"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -261,7 +261,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorLhw">
+                app:cardBackgroundColor="@color/colorQnu">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -276,7 +276,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_lhw_prof"
+                        android:text="@string/categ_qnu_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -298,7 +298,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_lhw"
+                        android:text="@string/categ_qnu"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -317,7 +317,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorMat">
+                app:cardBackgroundColor="@color/colorQnd">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -332,7 +332,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_mat_prof"
+                        android:text="@string/categ_qnd_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -354,7 +354,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_mat"
+                        android:text="@string/categ_qnd"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -377,7 +377,7 @@
                 android:layout_columnSpan="2"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorPrg">
+                app:cardBackgroundColor="@color/colorSxt">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -392,7 +392,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_prg_prof"
+                        android:text="@string/categ_sxt_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -414,7 +414,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_prg"
+                        android:text="@string/categ_sxt"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"

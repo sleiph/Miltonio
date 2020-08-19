@@ -51,7 +51,7 @@ class MyApplication: Application() {
             .allowMainThreadQueries()
             .build()
 
-        val categorias_init = arrayOf(
+        val catgInit = arrayOf(
             Categorias(0,"Calculo", 0),
             Categorias(1,"Programacao", 0),
             Categorias(2,"Ingles", 0),
@@ -60,7 +60,7 @@ class MyApplication: Application() {
             Categorias(5,"Comunicacao", 0),
             Categorias(6,"Software", 0)
         )
-        for (categ in categorias_init)
+        for (categ in catgInit)
             database?.categoriaDao()?.insert(categ)
     }
 }
@@ -72,19 +72,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         fun loadRespostas(resul: Int){
-            val intent = Intent(this, tela_respostas::class.java)
+            val intent = Intent(this, TelaRespostas::class.java)
             intent.putExtra("resul", resul)
             startActivity(intent)
         }
 
         val textos = arrayOf(
-            findViewById<TextView>(R.id.txt_progresso_adm) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_alg) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_aoc) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_eng) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_lhw) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_mat) as TextView,
-            findViewById<TextView>(R.id.txt_progresso_prg) as TextView
+            findViewById<TextView>(R.id.txt_progresso_adm),
+            findViewById<TextView>(R.id.txt_progresso_alg),
+            findViewById<TextView>(R.id.txt_progresso_aoc),
+            findViewById<TextView>(R.id.txt_progresso_eng),
+            findViewById<TextView>(R.id.txt_progresso_lhw),
+            findViewById<TextView>(R.id.txt_progresso_mat),
+            findViewById<TextView>(R.id.txt_progresso_prg)
         )
 
         val cardAdm = findViewById<CardView>(R.id.CardViewAdm)

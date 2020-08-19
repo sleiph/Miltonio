@@ -9,9 +9,6 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import java.io.BufferedReader
-import java.io.FileNotFoundException
-import java.io.InputStreamReader
 
 class TelaResultado : AppCompatActivity() {
 
@@ -28,18 +25,18 @@ class TelaResultado : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
-        val cor_fnd: RelativeLayout = findViewById(R.id.cor_fnd) as RelativeLayout
-        val img_fnd: RelativeLayout = findViewById(R.id.img_fnd) as RelativeLayout
+        val cor_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.cor_fnd)
+        val img_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.img_fnd)
 
-        val txt_comeco: TextView = findViewById(R.id.comeco) as TextView
-        val txt_resultado: TextView = findViewById(R.id.resultado) as TextView
-        val txt_meio: TextView = findViewById(R.id.meio) as TextView
-        val txt_categoria: TextView = findViewById(R.id.categoria) as TextView
+        val txt_comeco: TextView = findViewById<TextView>(R.id.comeco)
+        val txt_resultado: TextView = findViewById<TextView>(R.id.resultado)
+        val txt_meio: TextView = findViewById<TextView>(R.id.meio)
+        val txt_categoria: TextView = findViewById<TextView>(R.id.categoria)
 
-        val txt_mensagem: TextView = findViewById(R.id.mensagem) as TextView
-        val img_mensagem: ImageView = findViewById(R.id.img_mensagem) as ImageView
+        val txt_mensagem: TextView = findViewById<TextView>(R.id.mensagem)
+        val img_mensagem: ImageView = findViewById<ImageView>(R.id.img_mensagem)
 
-        val btn_main: Button = findViewById(R.id.btn_main) as Button
+        val btn_main: Button = findViewById<Button>(R.id.btn_main)
 
         val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
@@ -47,43 +44,43 @@ class TelaResultado : AppCompatActivity() {
             var escuro = false
             when (catg) {
                 1 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorAlg))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorTru))
                     img_fnd.setBackgroundResource(R.drawable.fndalg)
-                    txt_categoria.setText(getString(R.string.categ_alg))
+                    txt_categoria.text = getString(R.string.categ_tru)
                     escuro = true
                 }
                 2 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorAoc))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorTrd))
                     img_fnd.setBackgroundResource(R.drawable.fndaoc)
-                    txt_categoria.setText(getString(R.string.categ_aoc))
+                    txt_categoria.text = getString(R.string.categ_trd)
                     escuro = true
                 }
                 3 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorEng))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQrt))
                     img_fnd.setBackgroundResource(R.drawable.fndeng)
-                    txt_categoria.setText(getString(R.string.categ_eng))
+                    txt_categoria.text = getString(R.string.categ_qrt)
                 }
                 4 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorLhw))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQnu))
                     img_fnd.setBackgroundResource(R.drawable.fndlhw)
-                    txt_categoria.setText(getString(R.string.categ_lhw))
+                    txt_categoria.text = getString(R.string.categ_qnu)
                 }
                 5 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorMat))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQnd))
                     img_fnd.setBackgroundResource(R.drawable.fndmat)
-                    txt_categoria.setText(getString(R.string.categ_mat))
+                    txt_categoria.text = getString(R.string.categ_qnd)
                     escuro = true
                 }
                 6 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorPrg))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorSxt))
                     img_fnd.setBackgroundResource(R.drawable.fndprg)
-                    txt_categoria.setText(getString(R.string.categ_prg))
+                    txt_categoria.text = getString(R.string.categ_sxt)
                     escuro = true
                 }
                 else -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorAdm))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorSgd))
                     img_fnd.setBackgroundResource(R.drawable.fndadm)
-                    txt_categoria.setText(getString(R.string.categ_adm))
+                    txt_categoria.text = getString(R.string.categ_sgd)
                 }
             }
             if (escuro){
@@ -95,14 +92,14 @@ class TelaResultado : AppCompatActivity() {
             }
         }
         fun setPontuacao(pnts: Any){
-            txt_resultado.setText(getString(R.string.resultado_pontos, pnts))
+            txt_resultado.text = getString(R.string.resultado_pontos, pnts)
             if (pnts.toString().toInt() >= 60) {
                 img_mensagem.setBackgroundResource(R.drawable.respostasnossas)
-                txt_mensagem.setText(getString(R.string.resultado_msg_boa))
+                txt_mensagem.text = getString(R.string.resultado_msg_boa)
             }
             else{
                 img_mensagem.setBackgroundResource(R.drawable.respostassuas)
-                txt_mensagem.setText(getString(R.string.resultado_msg_ruim))
+                txt_mensagem.text = getString(R.string.resultado_msg_ruim)
             }
         }
 

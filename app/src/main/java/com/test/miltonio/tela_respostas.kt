@@ -13,7 +13,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
-class tela_respostas : AppCompatActivity() {
+class TelaRespostas : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,41 +57,41 @@ class tela_respostas : AppCompatActivity() {
         val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
         fun setCategoria(catg:Int){
-            var corCateg = R.color.colorAdm
+            var corCateg = R.color.colorSgd
             var imgFnd = R.drawable.fndadm
             var arrCateg = arrayOf(R.array.adm_1, R.array.adm_2, R.array.adm_3, R.array.adm_4, R.array.adm_5, R.array.adm_6, R.array.adm_7, R.array.adm_8, R.array.adm_9, R.array.adm_10)
             var escuro = false
             when (catg){
                 1 -> {
-                    corCateg = R.color.colorAlg
+                    corCateg = R.color.colorTru
                     imgFnd = R.drawable.fndalg
                     arrCateg = arrayOf(R.array.alg_1, R.array.alg_2, R.array.alg_3, R.array.alg_4, R.array.alg_5, R.array.alg_6, R.array.alg_7, R.array.alg_8, R.array.alg_9, R.array.alg_10)
                     escuro = true
                 }
                 2 -> {
-                    corCateg = R.color.colorAoc
+                    corCateg = R.color.colorTrd
                     imgFnd = R.drawable.fndaoc
                     arrCateg = arrayOf(R.array.aoc_1, R.array.aoc_2, R.array.aoc_3, R.array.aoc_4, R.array.aoc_5, R.array.aoc_6, R.array.aoc_7, R.array.aoc_8, R.array.aoc_9, R.array.aoc_10)
                     escuro = true
                 }
                 3 -> {
-                    corCateg = R.color.colorEng
+                    corCateg = R.color.colorQrt
                     imgFnd = R.drawable.fndeng
                     arrCateg = arrayOf(R.array.eng_1, R.array.eng_2, R.array.eng_3, R.array.eng_4, R.array.eng_5, R.array.eng_6, R.array.eng_7, R.array.eng_8, R.array.eng_9, R.array.eng_10)
                 }
                 4 -> {
-                    corCateg = R.color.colorLhw
+                    corCateg = R.color.colorQnu
                     imgFnd = R.drawable.fndlhw
                     arrCateg = arrayOf(R.array.lhw_1, R.array.lhw_2, R.array.lhw_3, R.array.lhw_4, R.array.lhw_5, R.array.lhw_6, R.array.lhw_7, R.array.lhw_8, R.array.lhw_9, R.array.lhw_10)
                 }
                 5 -> {
-                    corCateg = R.color.colorMat
+                    corCateg = R.color.colorQnd
                     imgFnd = R.drawable.fndmat
                     arrCateg = arrayOf(R.array.mat_1, R.array.mat_2, R.array.mat_3, R.array.mat_4, R.array.mat_5, R.array.mat_6, R.array.mat_7, R.array.mat_8, R.array.mat_9, R.array.mat_10)
                     escuro = true
                 }
                 6 -> {
-                    corCateg = R.color.colorPrg
+                    corCateg = R.color.colorSxt
                     imgFnd = R.drawable.fndprg
                     arrCateg = arrayOf(R.array.prg_1, R.array.prg_2, R.array.prg_3, R.array.prg_4, R.array.prg_5, R.array.prg_6, R.array.prg_7, R.array.prg_8, R.array.prg_9, R.array.prg_10)
                     escuro = true
@@ -155,10 +155,14 @@ class tela_respostas : AppCompatActivity() {
             setCardsInativos(arrayOf(card_resposta_1, card_resposta_2, card_resposta_3, card_resposta_4))
             if (resposta == 1) {
                 acertos ++
-                progresso_barra.setProgressTintList(ColorStateList.valueOf(Color.rgb(50,180,75)))
+                progresso_barra.setProgressTintList(
+                    ColorStateList.valueOf(Color.rgb(50,180,75))
+                )
             }
             else{
-                progresso_barra.setProgressTintList(ColorStateList.valueOf(Color.rgb(235,5,0)))
+                progresso_barra.setProgressTintList(
+                    ColorStateList.valueOf(Color.rgb(235,5,0))
+                )
             }
             progresso++
             progresso_barra.progress = progresso*10
