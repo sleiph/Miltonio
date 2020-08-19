@@ -25,37 +25,6 @@ class TelaResultado : AppCompatActivity() {
             startActivity(intent)
         }
 
-        fun readFromFile(fileName: String): String {
-
-            var ret = ""
-
-            try {
-                val inputStream = assets.open(fileName)
-                val inputStreamReader = InputStreamReader(inputStream)
-                val bufferedReader = BufferedReader(inputStreamReader)
-                var receiveString: String? = ""
-                val stringBuilder = StringBuilder()
-
-                while (bufferedReader.readLine().also({ receiveString = it }) != null) {
-                    stringBuilder.append(receiveString)
-                }
-
-                inputStream.close()
-                ret = stringBuilder.toString()
-            }
-            catch (e: FileNotFoundException) {
-                e.printStackTrace()
-            }
-            catch (e: Exception) {
-                e.printStackTrace()
-            }
-
-            return ret
-
-        }
-
-        val dados = readFromFile( "dados.txt").split(",")
-
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
@@ -71,6 +40,8 @@ class TelaResultado : AppCompatActivity() {
         val img_mensagem: ImageView = findViewById(R.id.img_mensagem) as ImageView
 
         val btn_main: Button = findViewById(R.id.btn_main) as Button
+
+        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
         fun setCategoria(catg:Int){
             var escuro = false
@@ -136,7 +107,10 @@ class TelaResultado : AppCompatActivity() {
         }
 
         setCategoria(categoria)
-        setPontuacao(dados.get(categoria))
+        if (db_val != null)
+            setPontuacao(db_val.pontos)
+        else
+            setPontuacao(0)
 
         btn_main.setOnClickListener {
             loadMain()

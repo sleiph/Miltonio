@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+    android:orientation="vertical"
+    android:fillViewport="true">
 
         <GridLayout
             android:columnCount="2"
@@ -36,9 +32,7 @@
                 android:id="@+id/CardViewAdm"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -94,9 +88,7 @@
                 android:id="@+id/CardViewAlg"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -152,9 +144,7 @@
                 android:id="@+id/CardViewAoc"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -210,9 +200,7 @@
                 android:id="@+id/CardViewEng"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -268,9 +256,7 @@
                 android:id="@+id/CardViewLhw"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -326,9 +312,7 @@
                 android:id="@+id/CardViewMat"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_real_margin"
+                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
@@ -386,6 +370,7 @@
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_marginStart="@dimen/activity_meia_margin"
                 android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginTop="@dimen/activity_meia_margin"
                 android:layout_marginBottom="@dimen/activity_dobro_margin"
                 android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
@@ -441,6 +426,4 @@
 
         </GridLayout>
 
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>

@@ -1,27 +1,18 @@
 package com.test.miltonio
 
-import android.app.Activity
 import android.app.Application
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.room.Room
 import androidx.room.*
-import androidx.sqlite.db.SupportSQLiteDatabase
-import kotlinx.android.synthetic.main.activity_tela_resultado.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.launch
 
-//data class Categorias(val catg: String, var pnts: Int)
 @Entity(tableName = "tabela_categorias")
 data class Categorias(
     @PrimaryKey val cid: Int,
-    @ColumnInfo(name = "categoria") val categoria_db: String,
-    @ColumnInfo(name = "pontos") val pontos: Int
+    @ColumnInfo(name = "categoria") var nome_categoria: String,
+    @ColumnInfo(name = "pontos") var pontos: Int
 )
 
 @Dao
@@ -29,106 +20,48 @@ interface CategoriasDao {
     @Query("SELECT * from tabela_categorias")
     fun getAll(): List<Categorias>
 
-    @Query("SELECT * FROM tabela_categorias WHERE cid IN (:catgIds)")
-    fun loadAllByIds(catgIds: IntArray): List<Categorias>
+    @Query("SELECT * FROM tabela_categorias WHERE cid = (:catgId)")
+    fun loadById(catgId: Int): Categorias
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(categoria_inst: Categorias)
+    fun insert(categoria_isrt: Categorias)
 
-    @Update(entity = Categorias::class)
-    suspend fun updateCategory(categoria_updt: Categorias)
+    @Update
+    fun updateCatg(categoria_updt: Categorias)
 
     @Delete
-    fun delete(user: Categorias)
-
-    @Query("DELETE FROM tabela_categorias")
-    suspend fun deleteAll()
+    fun delete(categoria_dlet: Categorias)
 }
 
-@Database(entities = arrayOf(Categorias::class), version = 1)
-//@Database(entities = arrayOf(Categorias::class), version = 1, exportSchema = false)
-abstract class AppDatabase: RoomDatabase() {
-    abstract fun CategoriasDao(): CategoriasDao
-
-    private class CategoriasDatabaseCallback(
-        private val scope: CoroutineScope
-    ): RoomDatabase.Callback() {
-        override fun onOpen(db: SupportSQLiteDatabase) {
-            super.onOpen(db)
-            INSTANCE?.let { database ->
-                scope.launch {
-                    var categoriasDao = database.CategoriasDao()
-
-                    categoriasDao.deleteAll()
-
-                    var categoria_entrada = Categorias(0, "Cálculo", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(1, "Algoritmo", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(2, "Arquitetura", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(3, "Inglês", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(4, "Hardware", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(5, "Matematica", 0)
-                    categoriasDao.insert(categoria_entrada)
-                    categoria_entrada = Categorias(6, "Programação", 0)
-                    categoriasDao.insert(categoria_entrada)
-                }
-
-            }
-        }
-    }
-
-    companion object {
-        @Volatile
-        private var INSTANCE: AppDatabase? = null
-
-        fun getDatabase(
-            context: Context,
-            scope: CoroutineScope
-        ): AppDatabase {
-            return  INSTANCE ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    AppDatabase::class.java,
-                    "tabela_categorias"
-                )
-                    .addCallback(CategoriasDatabaseCallback(scope))
-                    .build()
-                INSTANCE = instance
-                instance
-            }
-        }
-    }
-}
-
-class DataGenerator {
-
-    companion object {
-        fun getCatgs(): List<Categorias>{
-            return listOf(
-                Categorias(0, "Adm", 0),
-                Categorias(1, "Alg", 0),
-                Categorias(2, "Aoc", 0)
-            )
-        }
-    }
-
+@Database(version = 1, entities = arrayOf(Categorias::class))
+abstract class AppDataBase : RoomDatabase() {
+    abstract fun categoriaDao(): CategoriasDao
 }
 
 class MyApplication: Application() {
+
     companion object {
-        var globalPontuacao = listOf(
-            mutableListOf("Administracao", 0),
-            mutableListOf("Algoritmo", 0),
-            mutableListOf("Arquitetura", 0),
-            mutableListOf("Ingles", 0),
-            mutableListOf("Hardware", 0),
-            mutableListOf("Matematica", 0),
-            mutableListOf("Programacao", 0)
+        var database: AppDataBase? = null
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        //Room
+        database = Room.databaseBuilder(this, AppDataBase::class.java, "my-db")
+            .allowMainThreadQueries()
+            .build()
+
+        val categorias_init = arrayOf(
+            Categorias(0,"Calculo", 0),
+            Categorias(1,"Programacao", 0),
+            Categorias(2,"Ingles", 0),
+            Categorias(3,"Contabilidade", 0),
+            Categorias(4,"Sistemas", 0),
+            Categorias(5,"Comunicacao", 0),
+            Categorias(6,"Software", 0)
         )
+        for (categ in categorias_init)
+            database?.categoriaDao()?.insert(categ)
     }
 }
 
@@ -138,58 +71,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fun loadRespostas(resul:Int){
+        fun loadRespostas(resul: Int){
             val intent = Intent(this, tela_respostas::class.java)
             intent.putExtra("resul", resul)
             startActivity(intent)
         }
-
-        /*fun readFromFile(fileName: String): String {
-
-            var ret = ""
-
-            try {
-                val inputStream = assets.open(fileName)
-                val inputStreamReader = InputStreamReader(inputStream)
-                val bufferedReader = BufferedReader(inputStreamReader)
-                var receiveString: String? = ""
-                val stringBuilder = StringBuilder()
-
-                while (bufferedReader.readLine().also({ receiveString = it }) != null) {
-                    stringBuilder.append(receiveString)
-                }
-
-                inputStream.close()
-                ret = stringBuilder.toString()
-            }
-            catch (e: FileNotFoundException) {
-                e.printStackTrace()
-            }
-            catch (e: Exception) {
-                e.printStackTrace()
-            }
-
-            return ret
-
-        }
-
-        val dados = readFromFile( "dados.txt").split(",")*/
-
-        /*val db = Room.databaseBuilder(
-            applicationContext, AppDatabase::class.java,"tabela_categorias"
-        )
-            .fallbackToDestructiveMigration()
-            .fallbackToDestructiveMigrationOnDowngrade()
-            .fallbackToDestructiveMigrationFrom(16, 17, 18, 19)
-            .build()
-
-        val reply_db = Intent()
-        setResult(Activity.RESULT_CANCELED, reply_db)
-        finish()*/
-
-        println("db")
-        //println(reply_db.toString())
-        println("db")
 
         val textos = arrayOf(
             findViewById<TextView>(R.id.txt_progresso_adm) as TextView,
@@ -208,10 +94,6 @@ class MainActivity : AppCompatActivity() {
         val cardLhw = findViewById<CardView>(R.id.CardViewLhw)
         val cardMat = findViewById<CardView>(R.id.CardViewMat)
         val cardPrg = findViewById<CardView>(R.id.CardViewPrg)
-
-        for (i in 0..6)
-            //textos[i].setText(getString(R.string.resultado_pontos, dados.get(i)))
-            textos[i].setText(getString(R.string.resultado_pontos, "0"))
 
         cardAdm.setOnClickListener {
             loadRespostas(0)
@@ -235,10 +117,12 @@ class MainActivity : AppCompatActivity() {
             loadRespostas(6)
         }
 
-    }
+        val db_val = MyApplication.database?.categoriaDao()?.getAll()
 
-    companion object {
-        const val EXTRA_REPLY = "com.example.android.wordlistsql.REPLY"
+        if (db_val != null) {
+            for (i in 0..db_val.size-1)
+                textos[i].setText(getString(R.string.resultado_pontos, db_val.get(i).pontos.toString()))
+        }
     }
 }
 
@@ -256,6 +140,5 @@ class MainActivity : AppCompatActivity() {
 //Todo: High Scores
 //Todo: Usuários com senha
 //Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Usar um banco de dados
 //Todo: Tirar os prefixos das matérias (adm, algo, aoc...) pra facilitar reaproveitamento
 //Todo: Pra cada categoria no banco de dados adicionar automaticamente um card da matéria

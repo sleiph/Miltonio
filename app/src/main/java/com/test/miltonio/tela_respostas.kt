@@ -1,6 +1,5 @@
 package com.test.miltonio
 
-import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -13,13 +12,10 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import java.io.File
-import java.io.FileOutputStream
 
 class tela_respostas : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_respostas)
@@ -30,12 +26,12 @@ class tela_respostas : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val resulIntent = intent
+        val categoria = resulIntent.getIntExtra("resul", 0)
+
         var progresso = 0
         var acertos = 0
         var resposta = 0
-
-        val resulIntent = intent
-        val categoria = resulIntent.getIntExtra("resul", 0)
 
         var arr_perguntas:Array<Array<String>> = arrayOf()
         val ordemPerguntas:MutableList<Int> = (0..9).toMutableList()
@@ -57,6 +53,8 @@ class tela_respostas : AppCompatActivity() {
         val card_resposta_3 = findViewById<CardView>(R.id.btn_resposta3)
         val card_resposta_4 = findViewById<CardView>(R.id.btn_resposta4)
         val btn_conferir:Button = findViewById(R.id.btn_conferir) as Button
+
+        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
         fun setCategoria(catg:Int){
             var corCateg = R.color.colorAdm
@@ -107,7 +105,7 @@ class tela_respostas : AppCompatActivity() {
                 arr_perguntas += resources.getStringArray(array)
         }
 
-        fun setCardsInativos(cards:Array<CardView>){
+        fun setCardsInativos(cards: Array<CardView>){
             for(card in cards)
                 card.setCardBackgroundColor(applicationContext.getColor(R.color.card_respostas))
         }
@@ -166,7 +164,10 @@ class tela_respostas : AppCompatActivity() {
             progresso_barra.progress = progresso*10
             if (progresso < 10) getPerguntas(progresso)
             else{
-                //MyApplication.Companion.globalPontuacao[categoria][1] = acertos * 10
+                if (db_val != null) {
+                    db_val.pontos = acertos * 10
+                    MyApplication.database?.categoriaDao()?.updateCatg(db_val)
+                }
                 loadResultado(categoria)
             }
             btn_conferir.isEnabled = false
