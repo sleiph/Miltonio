@@ -44,43 +44,43 @@ class TelaResultado : AppCompatActivity() {
             var escuro = false
             when (catg) {
                 1 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorTru))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_tru))
                     img_fnd.setBackgroundResource(R.drawable.fndalg)
                     txt_categoria.text = getString(R.string.categ_tru)
                     escuro = true
                 }
                 2 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorTrd))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_trd))
                     img_fnd.setBackgroundResource(R.drawable.fndaoc)
                     txt_categoria.text = getString(R.string.categ_trd)
                     escuro = true
                 }
                 3 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQrt))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qru))
                     img_fnd.setBackgroundResource(R.drawable.fndeng)
-                    txt_categoria.text = getString(R.string.categ_qrt)
+                    txt_categoria.text = getString(R.string.categ_qru)
                 }
                 4 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQnu))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qrd))
                     img_fnd.setBackgroundResource(R.drawable.fndlhw)
-                    txt_categoria.text = getString(R.string.categ_qnu)
+                    txt_categoria.text = getString(R.string.categ_qrd)
                 }
                 5 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorQnd))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qnu))
                     img_fnd.setBackgroundResource(R.drawable.fndmat)
-                    txt_categoria.text = getString(R.string.categ_qnd)
+                    txt_categoria.text = getString(R.string.categ_qnu)
                     escuro = true
                 }
                 6 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorSxt))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_sxu))
                     img_fnd.setBackgroundResource(R.drawable.fndprg)
-                    txt_categoria.text = getString(R.string.categ_sxt)
+                    txt_categoria.text = getString(R.string.categ_sxu)
                     escuro = true
                 }
                 else -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.colorSgd))
+                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_sgu))
                     img_fnd.setBackgroundResource(R.drawable.fndadm)
-                    txt_categoria.text = getString(R.string.categ_sgd)
+                    txt_categoria.text = getString(R.string.categ_sgu)
                 }
             }
             if (escuro){

@@ -1,493 +1,577 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="adm_1">
-        <item>@string/adm_1_pergunta</item>
-        <item>@string/adm_1_resposta_1</item>
-        <item>@string/adm_1_resposta_2</item>
-        <item>@string/adm_1_resposta_3</item>
-        <item>@string/adm_1_resposta_4</item>
-    </string-array>
-    <string-array name="adm_2">
-        <item>@string/adm_2_pergunta</item>
-        <item>@string/adm_2_resposta_1</item>
-        <item>@string/adm_3_resposta_1</item>
-        <item>@string/adm_4_resposta_1</item>
-        <item>@string/adm_5_resposta_1</item>
-    </string-array>
-    <string-array name="adm_3">
-        <item>@string/adm_3_pergunta</item>
-        <item>@string/adm_3_resposta_1</item>
-        <item>@string/adm_2_resposta_1</item>
-        <item>@string/adm_4_resposta_1</item>
-        <item>@string/adm_5_resposta_1</item>
-    </string-array>
-    <string-array name="adm_4">
-        <item>@string/adm_4_pergunta</item>
-        <item>@string/adm_4_resposta_1</item>
-        <item>@string/adm_2_resposta_1</item>
-        <item>@string/adm_3_resposta_1</item>
-        <item>@string/adm_5_resposta_1</item>
-    </string-array>
-    <string-array name="adm_5">
-        <item>@string/adm_5_pergunta</item>
-        <item>@string/adm_5_resposta_1</item>
-        <item>@string/adm_2_resposta_1</item>
-        <item>@string/adm_3_resposta_1</item>
-        <item>@string/adm_4_resposta_1</item>
-    </string-array>
-    <string-array name="adm_6">
-        <item>@string/adm_6_pergunta</item>
-        <item>@string/adm_6_resposta_1</item>
-        <item>@string/adm_6_resposta_2</item>
-        <item>@string/adm_6_resposta_3</item>
-        <item>@string/adm_6_resposta_4</item>
-    </string-array>
-    <string-array name="adm_7">
-        <item>@string/adm_7_pergunta</item>
-        <item>@string/adm_7_resposta_1</item>
-        <item>@string/adm_7_resposta_2</item>
-        <item>@string/adm_7_resposta_3</item>
-        <item>@string/adm_7_resposta_4</item>
-    </string-array>
-    <string-array name="adm_8">
-        <item>@string/adm_8_pergunta</item>
-        <item>@string/adm_8_resposta_1</item>
-        <item>@string/adm_1_resposta_2</item>
-        <item>@string/adm_1_resposta_3</item>
-        <item>@string/adm_1_resposta_4</item>
-    </string-array>
-    <string-array name="adm_9">
-        <item>@string/adm_9_pergunta</item>
-        <item>@string/adm_9_resposta_1</item>
-        <item>@string/adm_9_resposta_2</item>
-        <item>@string/adm_9_resposta_3</item>
-        <item>@string/adm_9_resposta_4</item>
-    </string-array>
-    <string-array name="adm_10">
-        <item>@string/adm_10_pergunta</item>
-        <item>@string/adm_10_resposta_1</item>
-        <item>@string/adm_10_resposta_2</item>
-        <item>@string/adm_10_resposta_3</item>
-        <item>@string/adm_10_resposta_4</item>
-    </string-array>
-    <string-array name="alg_1">
-        <item>@string/alg_1_pergunta</item>
-        <item>@string/alg_1_resposta_1</item>
-        <item>@string/alg_1_resposta_2</item>
-        <item>@string/alg_1_resposta_3</item>
-        <item>@string/alg_1_resposta_4</item>
-    </string-array>
-    <string-array name="alg_2">
-        <item>@string/alg_2_pergunta</item>
-        <item>@string/alg_2_resposta_1</item>
-        <item>@string/alg_2_resposta_2</item>
-        <item>@string/alg_2_resposta_3</item>
-        <item>@string/alg_2_resposta_4</item>
-    </string-array>
-    <string-array name="alg_3">
-        <item>@string/alg_3_pergunta</item>
-        <item>@string/alg_3_resposta_1</item>
-        <item>@string/alg_3_resposta_2</item>
-        <item>@string/alg_3_resposta_3</item>
-        <item>@string/alg_3_resposta_4</item>
-    </string-array>
-    <string-array name="alg_4">
-        <item>@string/alg_4_pergunta</item>
-        <item>@string/alg_4_resposta_1</item>
-        <item>@string/alg_4_resposta_2</item>
-        <item>@string/alg_4_resposta_3</item>
-        <item>@string/alg_4_resposta_4</item>
-    </string-array>
-    <string-array name="alg_5">
-        <item>@string/alg_5_pergunta</item>
-        <item>@string/alg_5_resposta_1</item>
-        <item>@string/alg_5_resposta_2</item>
-        <item>@string/alg_5_resposta_3</item>
-        <item>@string/alg_5_resposta_4</item>
-    </string-array>
-    <string-array name="alg_6">
-        <item>@string/alg_6_pergunta</item>
-        <item>@string/alg_6_resposta_1</item>
-        <item>@string/alg_6_resposta_2</item>
-        <item>@string/alg_6_resposta_3</item>
-        <item>@string/alg_6_resposta_4</item>
-    </string-array>
-    <string-array name="alg_7">
-        <item>@string/alg_7_pergunta</item>
-        <item>@string/alg_7_resposta_1</item>
-        <item>@string/alg_7_resposta_2</item>
-        <item>@string/alg_7_resposta_3</item>
-        <item>@string/alg_7_resposta_4</item>
-    </string-array>
-    <string-array name="alg_8">
-        <item>@string/alg_8_pergunta</item>
-        <item>@string/alg_8_resposta_1</item>
-        <item>@string/alg_8_resposta_2</item>
-        <item>@string/alg_8_resposta_3</item>
-        <item>@string/alg_8_resposta_4</item>
-    </string-array>
-    <string-array name="alg_9">
-        <item>@string/alg_9_pergunta</item>
-        <item>@string/alg_9_resposta_1</item>
-        <item>@string/alg_9_resposta_2</item>
-        <item>@string/alg_9_resposta_3</item>
-        <item>@string/alg_9_resposta_4</item>
-    </string-array>
-    <string-array name="alg_10">
-        <item>@string/alg_10_pergunta</item>
-        <item>@string/alg_10_resposta_1</item>
-        <item>@string/alg_10_resposta_2</item>
-        <item>@string/alg_10_resposta_3</item>
-        <item>@string/alg_10_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_1">
-        <item>@string/aoc_1_pergunta</item>
-        <item>@string/aoc_1_resposta_1</item>
-        <item>@string/aoc_1_resposta_2</item>
-        <item>@string/aoc_1_resposta_3</item>
-        <item>@string/aoc_1_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_2">
-        <item>@string/aoc_2_pergunta</item>
-        <item>@string/aoc_2_resposta_1</item>
-        <item>@string/aoc_2_resposta_2</item>
-        <item>@string/aoc_2_resposta_3</item>
-        <item>@string/aoc_2_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_3">
-        <item>@string/aoc_3_pergunta</item>
-        <item>@string/aoc_3_resposta_1</item>
-        <item>@string/aoc_3_resposta_2</item>
-        <item>@string/aoc_3_resposta_3</item>
-        <item>@string/aoc_3_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_4">
-        <item>@string/aoc_4_pergunta</item>
-        <item>@string/aoc_4_resposta_1</item>
-        <item>@string/aoc_4_resposta_2</item>
-        <item>@string/aoc_4_resposta_3</item>
-        <item>@string/aoc_4_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_5">
-        <item>@string/aoc_5_pergunta</item>
-        <item>@string/aoc_5_resposta_1</item>
-        <item>@string/aoc_5_resposta_2</item>
-        <item>@string/aoc_5_resposta_3</item>
-        <item>@string/aoc_5_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_6">
-        <item>@string/aoc_6_pergunta</item>
-        <item>@string/aoc_6_resposta_1</item>
-        <item>@string/aoc_6_resposta_2</item>
-        <item>@string/aoc_6_resposta_3</item>
-        <item>@string/aoc_6_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_7">
-        <item>@string/aoc_7_pergunta</item>
-        <item>@string/aoc_7_resposta_1</item>
-        <item>@string/aoc_7_resposta_2</item>
-        <item>@string/aoc_7_resposta_3</item>
-        <item>@string/aoc_7_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_8">
-        <item>@string/aoc_8_pergunta</item>
-        <item>@string/aoc_8_resposta_1</item>
-        <item>@string/aoc_8_resposta_2</item>
-        <item>@string/aoc_8_resposta_3</item>
-        <item>@string/aoc_8_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_9">
-        <item>@string/aoc_9_pergunta</item>
-        <item>@string/aoc_9_resposta_1</item>
-        <item>@string/aoc_9_resposta_2</item>
-        <item>@string/aoc_9_resposta_3</item>
-        <item>@string/aoc_9_resposta_4</item>
-    </string-array>
-    <string-array name="aoc_10">
-        <item>@string/aoc_10_pergunta</item>
-        <item>@string/aoc_10_resposta_1</item>
-        <item>@string/aoc_10_resposta_2</item>
-        <item>@string/aoc_10_resposta_3</item>
-        <item>@string/aoc_10_resposta_4</item>
-    </string-array>
-    <string-array name="eng_1">
-        <item>@string/eng_1_pergunta</item>
-        <item>@string/eng_1_resposta_1</item>
-        <item>@string/eng_1_resposta_2</item>
-        <item>@string/eng_1_resposta_3</item>
-        <item>@string/eng_1_resposta_4</item>
-    </string-array>
-    <string-array name="eng_2">
-        <item>@string/eng_2_pergunta</item>
-        <item>@string/eng_2_resposta_1</item>
-        <item>@string/eng_2_resposta_2</item>
-        <item>@string/eng_2_resposta_3</item>
-        <item>@string/eng_2_resposta_4</item>
-    </string-array>
-    <string-array name="eng_3">
-        <item>@string/eng_3_pergunta</item>
-        <item>@string/eng_3_resposta_1</item>
-        <item>@string/eng_3_resposta_2</item>
-        <item>@string/eng_3_resposta_3</item>
-        <item>@string/eng_3_resposta_4</item>
-    </string-array>
-    <string-array name="eng_4">
-        <item>@string/eng_4_pergunta</item>
-        <item>@string/eng_4_resposta_1</item>
-        <item>@string/eng_4_resposta_2</item>
-        <item>@string/eng_4_resposta_3</item>
-        <item>@string/eng_4_resposta_4</item>
-    </string-array>
-    <string-array name="eng_5">
-        <item>@string/eng_5_pergunta</item>
-        <item>@string/eng_5_resposta_1</item>
-        <item>@string/eng_5_resposta_2</item>
-        <item>@string/eng_5_resposta_3</item>
-        <item>@string/eng_5_resposta_4</item>
-    </string-array>
-    <string-array name="eng_6">
-        <item>@string/eng_6_pergunta</item>
-        <item>@string/eng_6_resposta_1</item>
-        <item>@string/eng_6_resposta_2</item>
-        <item>@string/eng_6_resposta_3</item>
-        <item>@string/eng_6_resposta_4</item>
-    </string-array>
-    <string-array name="eng_7">
-        <item>@string/eng_7_pergunta</item>
-        <item>@string/eng_7_resposta_1</item>
-        <item>@string/eng_7_resposta_2</item>
-        <item>@string/eng_7_resposta_3</item>
-        <item>@string/eng_7_resposta_4</item>
-    </string-array>
-    <string-array name="eng_8">
-        <item>@string/eng_8_pergunta</item>
-        <item>@string/eng_8_resposta_1</item>
-        <item>@string/eng_8_resposta_2</item>
-        <item>@string/eng_8_resposta_3</item>
-        <item>@string/eng_8_resposta_4</item>
-    </string-array>
-    <string-array name="eng_9">
-        <item>@string/eng_9_pergunta</item>
-        <item>@string/eng_9_resposta_1</item>
-        <item>@string/eng_9_resposta_2</item>
-        <item>@string/eng_9_resposta_3</item>
-        <item>@string/eng_9_resposta_4</item>
-    </string-array>
-    <string-array name="eng_10">
-        <item>@string/eng_10_pergunta</item>
-        <item>@string/eng_10_resposta_1</item>
-        <item>@string/eng_10_resposta_2</item>
-        <item>@string/eng_10_resposta_3</item>
-        <item>@string/eng_10_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_1">
-        <item>@string/lhw_1_pergunta</item>
-        <item>@string/lhw_1_resposta_1</item>
-        <item>@string/lhw_1_resposta_2</item>
-        <item>@string/lhw_1_resposta_3</item>
-        <item>@string/lhw_1_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_2">
-        <item>@string/lhw_2_pergunta</item>
-        <item>@string/lhw_2_resposta_1</item>
-        <item>@string/lhw_2_resposta_2</item>
-        <item>@string/lhw_2_resposta_3</item>
-        <item>@string/lhw_2_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_3">
-        <item>@string/lhw_3_pergunta</item>
-        <item>@string/lhw_3_resposta_1</item>
-        <item>@string/lhw_3_resposta_2</item>
-        <item>@string/lhw_3_resposta_3</item>
-        <item>@string/lhw_3_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_4">
-        <item>@string/lhw_4_pergunta</item>
-        <item>@string/lhw_4_resposta_1</item>
-        <item>@string/lhw_4_resposta_2</item>
-        <item>@string/lhw_4_resposta_3</item>
-        <item>@string/lhw_4_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_5">
-        <item>@string/lhw_5_pergunta</item>
-        <item>@string/lhw_5_resposta_1</item>
-        <item>@string/lhw_5_resposta_2</item>
-        <item>@string/lhw_5_resposta_3</item>
-        <item>@string/lhw_5_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_6">
-        <item>@string/lhw_6_pergunta</item>
-        <item>@string/lhw_6_resposta_1</item>
-        <item>@string/lhw_6_resposta_2</item>
-        <item>@string/lhw_6_resposta_3</item>
-        <item>@string/lhw_6_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_7">
-        <item>@string/lhw_7_pergunta</item>
-        <item>@string/lhw_7_resposta_1</item>
-        <item>@string/lhw_7_resposta_2</item>
-        <item>@string/lhw_7_resposta_3</item>
-        <item>@string/lhw_7_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_8">
-        <item>@string/lhw_8_pergunta</item>
-        <item>@string/lhw_8_resposta_1</item>
-        <item>@string/lhw_8_resposta_2</item>
-        <item>@string/lhw_8_resposta_3</item>
-        <item>@string/lhw_8_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_9">
-        <item>@string/lhw_9_pergunta</item>
-        <item>@string/lhw_9_resposta_1</item>
-        <item>@string/lhw_9_resposta_2</item>
-        <item>@string/lhw_9_resposta_3</item>
-        <item>@string/lhw_9_resposta_4</item>
-    </string-array>
-    <string-array name="lhw_10">
-        <item>@string/lhw_10_pergunta</item>
-        <item>@string/lhw_10_resposta_1</item>
-        <item>@string/lhw_10_resposta_2</item>
-        <item>@string/lhw_10_resposta_3</item>
-        <item>@string/lhw_10_resposta_4</item>
-    </string-array>
-    <string-array name="mat_1">
-        <item>@string/mat_1_pergunta</item>
-        <item>@string/mat_1_resposta_1</item>
-        <item>@string/mat_1_resposta_2</item>
-        <item>@string/mat_1_resposta_3</item>
-        <item>@string/mat_1_resposta_4</item>
-    </string-array>
-    <string-array name="mat_2">
-        <item>@string/mat_2_pergunta</item>
-        <item>@string/mat_2_resposta_1</item>
-        <item>@string/mat_2_resposta_2</item>
-        <item>@string/mat_2_resposta_3</item>
-        <item>@string/mat_2_resposta_4</item>
-    </string-array>
-    <string-array name="mat_3">
-        <item>@string/mat_3_pergunta</item>
-        <item>@string/mat_3_resposta_1</item>
-        <item>@string/mat_4_resposta_1</item>
-        <item>@string/mat_5_resposta_1</item>
-        <item>@string/mat_3_resposta_4</item>
-    </string-array>
-    <string-array name="mat_4">
-        <item>@string/mat_4_pergunta</item>
-        <item>@string/mat_4_resposta_1</item>
-        <item>@string/mat_3_resposta_1</item>
-        <item>@string/mat_5_resposta_1</item>
-        <item>@string/mat_3_resposta_4</item>
-    </string-array>
-    <string-array name="mat_5">
-        <item>@string/mat_5_pergunta</item>
-        <item>@string/mat_5_resposta_1</item>
-        <item>@string/mat_3_resposta_1</item>
-        <item>@string/mat_5_resposta_1</item>
-        <item>@string/mat_3_resposta_4</item>
-    </string-array>
-    <string-array name="mat_6">
-        <item>@string/mat_6_pergunta</item>
-        <item>@string/mat_6_resposta_1</item>
-        <item>@string/mat_6_resposta_2</item>
-        <item>@string/mat_6_resposta_3</item>
-        <item>@string/mat_6_resposta_4</item>
-    </string-array>
-    <string-array name="mat_7">
-        <item>@string/mat_7_pergunta</item>
-        <item>@string/mat_7_resposta_1</item>
-        <item>@string/mat_7_resposta_2</item>
-        <item>@string/mat_7_resposta_3</item>
-        <item>@string/mat_7_resposta_4</item>
-    </string-array>
-    <string-array name="mat_8">
-        <item>@string/mat_8_pergunta</item>
-        <item>@string/mat_8_resposta_1</item>
-        <item>@string/mat_8_resposta_2</item>
-        <item>@string/mat_8_resposta_3</item>
-        <item>@string/mat_8_resposta_4</item>
-    </string-array>
-    <string-array name="mat_9">
-        <item>@string/mat_9_pergunta</item>
-        <item>@string/mat_9_resposta_1</item>
-        <item>@string/mat_9_resposta_2</item>
-        <item>@string/mat_9_resposta_3</item>
-        <item>@string/mat_9_resposta_4</item>
-    </string-array>
-    <string-array name="mat_10">
-        <item>@string/mat_10_pergunta</item>
-        <item>@string/mat_9_resposta_2</item>
-        <item>@string/mat_9_resposta_1</item>
-        <item>@string/mat_10_resposta_3</item>
-        <item>@string/mat_10_resposta_4</item>
-    </string-array>
-    <string-array name="prg_1">
-        <item>@string/prg_1_pergunta</item>
-        <item>@string/prg_1_resposta_1</item>
-        <item>@string/prg_1_resposta_2</item>
-        <item>@string/prg_1_resposta_3</item>
-        <item>@string/prg_1_resposta_4</item>
-    </string-array>
-    <string-array name="prg_2">
-        <item>@string/prg_2_pergunta</item>
-        <item>@string/prg_2_resposta_1</item>
-        <item>@string/prg_2_resposta_2</item>
-        <item>@string/prg_2_resposta_3</item>
-        <item>@string/prg_2_resposta_4</item>
-    </string-array>
-    <string-array name="prg_3">
-        <item>@string/prg_3_pergunta</item>
-        <item>@string/prg_3_resposta_1</item>
-        <item>@string/prg_3_resposta_2</item>
-        <item>@string/prg_3_resposta_3</item>
-        <item>@string/prg_3_resposta_4</item>
-    </string-array>
-    <string-array name="prg_4">
-        <item>@string/prg_4_pergunta</item>
-        <item>@string/prg_4_resposta_1</item>
-        <item>@string/prg_4_resposta_2</item>
-        <item>@string/prg_4_resposta_3</item>
-        <item>@string/prg_4_resposta_4</item>
-    </string-array>
-    <string-array name="prg_5">
-        <item>@string/prg_5_pergunta</item>
-        <item>@string/prg_5_resposta_1</item>
-        <item>@string/prg_5_resposta_2</item>
-        <item>@string/prg_5_resposta_3</item>
-        <item>@string/prg_5_resposta_4</item>
-    </string-array>
-    <string-array name="prg_6">
-        <item>@string/prg_6_pergunta</item>
-        <item>@string/prg_6_resposta_1</item>
-        <item>@string/prg_6_resposta_2</item>
-        <item>@string/prg_6_resposta_3</item>
-        <item>@string/prg_6_resposta_4</item>
-    </string-array>
-    <string-array name="prg_7">
-        <item>@string/prg_7_pergunta</item>
-        <item>@string/prg_7_resposta_1</item>
-        <item>@string/prg_7_resposta_2</item>
-        <item>@string/prg_7_resposta_3</item>
-        <item>@string/prg_7_resposta_4</item>
-    </string-array>
-    <string-array name="prg_8">
-        <item>@string/prg_8_pergunta</item>
-        <item>@string/prg_8_resposta_1</item>
-        <item>@string/prg_8_resposta_2</item>
-        <item>@string/prg_8_resposta_3</item>
-        <item>@string/prg_8_resposta_4</item>
-    </string-array>
-    <string-array name="prg_9">
-        <item>@string/prg_9_pergunta</item>
-        <item>@string/prg_9_resposta_1</item>
-        <item>@string/prg_9_resposta_2</item>
-        <item>@string/prg_9_resposta_3</item>
-        <item>@string/prg_9_resposta_4</item>
-    </string-array>
-    <string-array name="prg_10">
-        <item>@string/prg_10_pergunta</item>
-        <item>@string/prg_10_resposta_1</item>
-        <item>@string/prg_10_resposta_2</item>
-        <item>@string/prg_10_resposta_3</item>
-        <item>@string/prg_10_resposta_4</item>
-    </string-array>
+    <string-array name="sgu_1">
+        <item>@string/sgu_1_pergunta</item>
+        <item>@string/sgu_1_resposta1</item>
+        <item>@string/sgu_1_resposta2</item>
+        <item>@string/sgu_1_resposta3</item>
+        <item>@string/sgu_1_resposta4</item>
+    </string-array>
+    <string-array name="sgu_2">
+        <item>@string/sgu_2_pergunta</item>
+        <item>@string/sgu_2_resposta1</item>
+        <item>@string/sgu_3_resposta1</item>
+        <item>@string/sgu_4_resposta1</item>
+        <item>@string/sgu_5_resposta1</item>
+    </string-array>
+    <string-array name="sgu_3">
+        <item>@string/sgu_3_pergunta</item>
+        <item>@string/sgu_3_resposta1</item>
+        <item>@string/sgu_2_resposta1</item>
+        <item>@string/sgu_4_resposta1</item>
+        <item>@string/sgu_5_resposta1</item>
+    </string-array>
+    <string-array name="sgu_4">
+        <item>@string/sgu_4_pergunta</item>
+        <item>@string/sgu_4_resposta1</item>
+        <item>@string/sgu_2_resposta1</item>
+        <item>@string/sgu_3_resposta1</item>
+        <item>@string/sgu_5_resposta1</item>
+    </string-array>
+    <string-array name="sgu_5">
+        <item>@string/sgu_5_pergunta</item>
+        <item>@string/sgu_5_resposta1</item>
+        <item>@string/sgu_2_resposta1</item>
+        <item>@string/sgu_3_resposta1</item>
+        <item>@string/sgu_4_resposta1</item>
+    </string-array>
+    <string-array name="sgu_6">
+        <item>@string/sgu_6_pergunta</item>
+        <item>@string/sgu_6_resposta1</item>
+        <item>@string/sgu_6_resposta2</item>
+        <item>@string/sgu_6_resposta3</item>
+        <item>@string/sgu_6_resposta4</item>
+    </string-array>
+    <string-array name="sgu_7">
+        <item>@string/sgu_7_pergunta</item>
+        <item>@string/sgu_7_resposta1</item>
+        <item>@string/sgu_7_resposta2</item>
+        <item>@string/sgu_7_resposta3</item>
+        <item>@string/sgu_7_resposta4</item>
+    </string-array>
+    <string-array name="sgu_8">
+        <item>@string/sgu_8_pergunta</item>
+        <item>@string/sgu_8_resposta1</item>
+        <item>@string/sgu_1_resposta2</item>
+        <item>@string/sgu_1_resposta3</item>
+        <item>@string/sgu_1_resposta4</item>
+    </string-array>
+    <string-array name="sgu_9">
+        <item>@string/sgu_9_pergunta</item>
+        <item>@string/sgu_9_resposta1</item>
+        <item>@string/sgu_9_resposta2</item>
+        <item>@string/sgu_9_resposta3</item>
+        <item>@string/sgu_9_resposta4</item>
+    </string-array>
+    <string-array name="sgu_10">
+        <item>@string/sgu_10_pergunta</item>
+        <item>@string/sgu_10_resposta1</item>
+        <item>@string/sgu_10_resposta2</item>
+        <item>@string/sgu_10_resposta3</item>
+        <item>@string/sgu_10_resposta4</item>
+    </string-array>
+    <string-array name="tru_1">
+        <item>@string/tru_1_pergunta</item>
+        <item>@string/tru_1_resposta1</item>
+        <item>@string/tru_1_resposta2</item>
+        <item>@string/tru_1_resposta3</item>
+        <item>@string/tru_1_resposta4</item>
+    </string-array>
+    <string-array name="tru_2">
+        <item>@string/tru_2_pergunta</item>
+        <item>@string/tru_2_resposta1</item>
+        <item>@string/tru_2_resposta2</item>
+        <item>@string/tru_2_resposta3</item>
+        <item>@string/tru_2_resposta4</item>
+    </string-array>
+    <string-array name="tru_3">
+        <item>@string/tru_3_pergunta</item>
+        <item>@string/tru_3_resposta1</item>
+        <item>@string/tru_3_resposta2</item>
+        <item>@string/tru_3_resposta3</item>
+        <item>@string/tru_3_resposta4</item>
+    </string-array>
+    <string-array name="tru_4">
+        <item>@string/tru_4_pergunta</item>
+        <item>@string/tru_4_resposta1</item>
+        <item>@string/tru_4_resposta2</item>
+        <item>@string/tru_4_resposta3</item>
+        <item>@string/tru_4_resposta4</item>
+    </string-array>
+    <string-array name="tru_5">
+        <item>@string/tru_5_pergunta</item>
+        <item>@string/tru_5_resposta1</item>
+        <item>@string/tru_5_resposta2</item>
+        <item>@string/tru_5_resposta3</item>
+        <item>@string/tru_5_resposta4</item>
+    </string-array>
+    <string-array name="tru_6">
+        <item>@string/tru_6_pergunta</item>
+        <item>@string/tru_6_resposta1</item>
+        <item>@string/tru_6_resposta2</item>
+        <item>@string/tru_6_resposta3</item>
+        <item>@string/tru_6_resposta4</item>
+    </string-array>
+    <string-array name="tru_7">
+        <item>@string/tru_7_pergunta</item>
+        <item>@string/tru_7_resposta1</item>
+        <item>@string/tru_7_resposta2</item>
+        <item>@string/tru_7_resposta3</item>
+        <item>@string/tru_7_resposta4</item>
+    </string-array>
+    <string-array name="tru_8">
+        <item>@string/tru_8_pergunta</item>
+        <item>@string/tru_8_resposta1</item>
+        <item>@string/tru_8_resposta2</item>
+        <item>@string/tru_8_resposta3</item>
+        <item>@string/tru_8_resposta4</item>
+    </string-array>
+    <string-array name="tru_9">
+        <item>@string/tru_9_pergunta</item>
+        <item>@string/tru_9_resposta1</item>
+        <item>@string/tru_9_resposta2</item>
+        <item>@string/tru_9_resposta3</item>
+        <item>@string/tru_9_resposta4</item>
+    </string-array>
+    <string-array name="tru_10">
+        <item>@string/tru_10_pergunta</item>
+        <item>@string/tru_10_resposta1</item>
+        <item>@string/tru_10_resposta2</item>
+        <item>@string/tru_10_resposta3</item>
+        <item>@string/tru_10_resposta4</item>
+    </string-array>
+    <string-array name="trd_1">
+        <item>@string/trd_1_pergunta</item>
+        <item>@string/trd_1_resposta1</item>
+        <item>@string/trd_1_resposta2</item>
+        <item>@string/trd_1_resposta3</item>
+        <item>@string/trd_1_resposta4</item>
+    </string-array>
+    <string-array name="trd_2">
+        <item>@string/trd_2_pergunta</item>
+        <item>@string/trd_2_resposta1</item>
+        <item>@string/trd_2_resposta2</item>
+        <item>@string/trd_2_resposta3</item>
+        <item>@string/trd_2_resposta4</item>
+    </string-array>
+    <string-array name="trd_3">
+        <item>@string/trd_3_pergunta</item>
+        <item>@string/trd_3_resposta1</item>
+        <item>@string/trd_3_resposta2</item>
+        <item>@string/trd_3_resposta3</item>
+        <item>@string/trd_3_resposta4</item>
+    </string-array>
+    <string-array name="trd_4">
+        <item>@string/trd_4_pergunta</item>
+        <item>@string/trd_4_resposta1</item>
+        <item>@string/trd_4_resposta2</item>
+        <item>@string/trd_4_resposta3</item>
+        <item>@string/trd_4_resposta4</item>
+    </string-array>
+    <string-array name="trd_5">
+        <item>@string/trd_5_pergunta</item>
+        <item>@string/trd_5_resposta1</item>
+        <item>@string/trd_5_resposta2</item>
+        <item>@string/trd_5_resposta3</item>
+        <item>@string/trd_5_resposta4</item>
+    </string-array>
+    <string-array name="trd_6">
+        <item>@string/trd_6_pergunta</item>
+        <item>@string/trd_6_resposta1</item>
+        <item>@string/trd_6_resposta2</item>
+        <item>@string/trd_6_resposta3</item>
+        <item>@string/trd_6_resposta4</item>
+    </string-array>
+    <string-array name="trd_7">
+        <item>@string/trd_7_pergunta</item>
+        <item>@string/trd_7_resposta1</item>
+        <item>@string/trd_7_resposta2</item>
+        <item>@string/trd_7_resposta3</item>
+        <item>@string/trd_7_resposta4</item>
+    </string-array>
+    <string-array name="trd_8">
+        <item>@string/trd_8_pergunta</item>
+        <item>@string/trd_8_resposta1</item>
+        <item>@string/trd_8_resposta2</item>
+        <item>@string/trd_8_resposta3</item>
+        <item>@string/trd_8_resposta4</item>
+    </string-array>
+    <string-array name="trd_9">
+        <item>@string/trd_9_pergunta</item>
+        <item>@string/trd_9_resposta1</item>
+        <item>@string/trd_9_resposta2</item>
+        <item>@string/trd_9_resposta3</item>
+        <item>@string/trd_9_resposta4</item>
+    </string-array>
+    <string-array name="trd_10">
+        <item>@string/trd_10_pergunta</item>
+        <item>@string/trd_10_resposta1</item>
+        <item>@string/trd_10_resposta2</item>
+        <item>@string/trd_10_resposta3</item>
+        <item>@string/trd_10_resposta4</item>
+    </string-array>
+    <string-array name="qru_1">
+        <item>@string/qru_1_pergunta</item>
+        <item>@string/qru_1_resposta1</item>
+        <item>@string/qru_1_resposta2</item>
+        <item>@string/qru_1_resposta3</item>
+        <item>@string/qru_1_resposta4</item>
+    </string-array>
+    <string-array name="qru_2">
+        <item>@string/qru_2_pergunta</item>
+        <item>@string/qru_2_resposta1</item>
+        <item>@string/qru_2_resposta2</item>
+        <item>@string/qru_2_resposta3</item>
+        <item>@string/qru_2_resposta4</item>
+    </string-array>
+    <string-array name="qru_3">
+        <item>@string/qru_3_pergunta</item>
+        <item>@string/qru_3_resposta1</item>
+        <item>@string/qru_3_resposta2</item>
+        <item>@string/qru_3_resposta3</item>
+        <item>@string/qru_3_resposta4</item>
+    </string-array>
+    <string-array name="qru_4">
+        <item>@string/qru_4_pergunta</item>
+        <item>@string/qru_4_resposta1</item>
+        <item>@string/qru_4_resposta2</item>
+        <item>@string/qru_4_resposta3</item>
+        <item>@string/qru_4_resposta4</item>
+    </string-array>
+    <string-array name="qru_5">
+        <item>@string/qru_5_pergunta</item>
+        <item>@string/qru_5_resposta1</item>
+        <item>@string/qru_5_resposta2</item>
+        <item>@string/qru_5_resposta3</item>
+        <item>@string/qru_5_resposta4</item>
+    </string-array>
+    <string-array name="qru_6">
+        <item>@string/qru_6_pergunta</item>
+        <item>@string/qru_6_resposta1</item>
+        <item>@string/qru_6_resposta2</item>
+        <item>@string/qru_6_resposta3</item>
+        <item>@string/qru_6_resposta4</item>
+    </string-array>
+    <string-array name="qru_7">
+        <item>@string/qru_7_pergunta</item>
+        <item>@string/qru_7_resposta1</item>
+        <item>@string/qru_7_resposta2</item>
+        <item>@string/qru_7_resposta3</item>
+        <item>@string/qru_7_resposta4</item>
+    </string-array>
+    <string-array name="qru_8">
+        <item>@string/qru_8_pergunta</item>
+        <item>@string/qru_8_resposta1</item>
+        <item>@string/qru_8_resposta2</item>
+        <item>@string/qru_8_resposta3</item>
+        <item>@string/qru_8_resposta4</item>
+    </string-array>
+    <string-array name="qru_9">
+        <item>@string/qru_9_pergunta</item>
+        <item>@string/qru_9_resposta1</item>
+        <item>@string/qru_9_resposta2</item>
+        <item>@string/qru_9_resposta3</item>
+        <item>@string/qru_9_resposta4</item>
+    </string-array>
+    <string-array name="qru_10">
+        <item>@string/qru_10_pergunta</item>
+        <item>@string/qru_10_resposta1</item>
+        <item>@string/qru_10_resposta2</item>
+        <item>@string/qru_10_resposta3</item>
+        <item>@string/qru_10_resposta4</item>
+    </string-array>
+    <string-array name="qrd_1">
+        <item>@string/qrd_1_pergunta</item>
+        <item>@string/qrd_1_resposta1</item>
+        <item>@string/qrd_1_resposta2</item>
+        <item>@string/qrd_1_resposta3</item>
+        <item>@string/qrd_1_resposta4</item>
+    </string-array>
+    <string-array name="qrd_2">
+        <item>@string/qrd_2_pergunta</item>
+        <item>@string/qrd_2_resposta1</item>
+        <item>@string/qrd_2_resposta2</item>
+        <item>@string/qrd_2_resposta3</item>
+        <item>@string/qrd_2_resposta4</item>
+    </string-array>
+    <string-array name="qrd_3">
+        <item>@string/qrd_3_pergunta</item>
+        <item>@string/qrd_3_resposta1</item>
+        <item>@string/qrd_3_resposta2</item>
+        <item>@string/qrd_3_resposta3</item>
+        <item>@string/qrd_3_resposta4</item>
+    </string-array>
+    <string-array name="qrd_4">
+        <item>@string/qrd_4_pergunta</item>
+        <item>@string/qrd_4_resposta1</item>
+        <item>@string/qrd_4_resposta2</item>
+        <item>@string/qrd_4_resposta3</item>
+        <item>@string/qrd_4_resposta4</item>
+    </string-array>
+    <string-array name="qrd_5">
+        <item>@string/qrd_5_pergunta</item>
+        <item>@string/qrd_5_resposta1</item>
+        <item>@string/qrd_5_resposta2</item>
+        <item>@string/qrd_5_resposta3</item>
+        <item>@string/qrd_5_resposta4</item>
+    </string-array>
+    <string-array name="qrd_6">
+        <item>@string/qrd_6_pergunta</item>
+        <item>@string/qrd_6_resposta1</item>
+        <item>@string/qrd_6_resposta2</item>
+        <item>@string/qrd_6_resposta3</item>
+        <item>@string/qrd_6_resposta4</item>
+    </string-array>
+    <string-array name="qrd_7">
+        <item>@string/qrd_7_pergunta</item>
+        <item>@string/qrd_7_resposta1</item>
+        <item>@string/qrd_7_resposta2</item>
+        <item>@string/qrd_7_resposta3</item>
+        <item>@string/qrd_7_resposta4</item>
+    </string-array>
+    <string-array name="qrd_8">
+        <item>@string/qrd_8_pergunta</item>
+        <item>@string/qrd_8_resposta1</item>
+        <item>@string/qrd_8_resposta2</item>
+        <item>@string/qrd_8_resposta3</item>
+        <item>@string/qrd_8_resposta4</item>
+    </string-array>
+    <string-array name="qrd_9">
+        <item>@string/qrd_9_pergunta</item>
+        <item>@string/qrd_9_resposta1</item>
+        <item>@string/qrd_9_resposta2</item>
+        <item>@string/qrd_9_resposta3</item>
+        <item>@string/qrd_9_resposta4</item>
+    </string-array>
+    <string-array name="qrd_10">
+        <item>@string/qrd_10_pergunta</item>
+        <item>@string/qrd_10_resposta1</item>
+        <item>@string/qrd_10_resposta2</item>
+        <item>@string/qrd_10_resposta3</item>
+        <item>@string/qrd_10_resposta4</item>
+    </string-array>
+    <string-array name="qnu_1">
+        <item>@string/qnu_1_pergunta</item>
+        <item>@string/qnu_1_resposta1</item>
+        <item>@string/qnu_1_resposta2</item>
+        <item>@string/qnu_1_resposta3</item>
+        <item>@string/qnu_1_resposta4</item>
+    </string-array>
+    <string-array name="qnu_2">
+        <item>@string/qnu_2_pergunta</item>
+        <item>@string/qnu_2_resposta1</item>
+        <item>@string/qnu_2_resposta2</item>
+        <item>@string/qnu_2_resposta3</item>
+        <item>@string/qnu_2_resposta4</item>
+    </string-array>
+    <string-array name="qnu_3">
+        <item>@string/qnu_3_pergunta</item>
+        <item>@string/qnu_3_resposta1</item>
+        <item>@string/qnu_4_resposta1</item>
+        <item>@string/qnu_5_resposta1</item>
+        <item>@string/qnu_3_resposta4</item>
+    </string-array>
+    <string-array name="qnu_4">
+        <item>@string/qnu_4_pergunta</item>
+        <item>@string/qnu_4_resposta1</item>
+        <item>@string/qnu_3_resposta1</item>
+        <item>@string/qnu_5_resposta1</item>
+        <item>@string/qnu_3_resposta4</item>
+    </string-array>
+    <string-array name="qnu_5">
+        <item>@string/qnu_5_pergunta</item>
+        <item>@string/qnu_5_resposta1</item>
+        <item>@string/qnu_3_resposta1</item>
+        <item>@string/qnu_4_resposta1</item>
+        <item>@string/qnu_3_resposta4</item>
+    </string-array>
+    <string-array name="qnu_6">
+        <item>@string/qnu_6_pergunta</item>
+        <item>@string/qnu_6_resposta1</item>
+        <item>@string/qnu_6_resposta2</item>
+        <item>@string/qnu_6_resposta3</item>
+        <item>@string/qnu_6_resposta4</item>
+    </string-array>
+    <string-array name="qnu_7">
+        <item>@string/qnu_7_pergunta</item>
+        <item>@string/qnu_7_resposta1</item>
+        <item>@string/qnu_7_resposta2</item>
+        <item>@string/qnu_7_resposta3</item>
+        <item>@string/qnu_7_resposta4</item>
+    </string-array>
+    <string-array name="qnu_8">
+        <item>@string/qnu_8_pergunta</item>
+        <item>@string/qnu_8_resposta1</item>
+        <item>@string/qnu_8_resposta2</item>
+        <item>@string/qnu_8_resposta3</item>
+        <item>@string/qnu_8_resposta4</item>
+    </string-array>
+    <string-array name="qnu_9">
+        <item>@string/qnu_9_pergunta</item>
+        <item>@string/qnu_9_resposta1</item>
+        <item>@string/qnu_9_resposta2</item>
+        <item>@string/qnu_9_resposta3</item>
+        <item>@string/qnu_9_resposta4</item>
+    </string-array>
+    <string-array name="qnu_10">
+        <item>@string/qnu_10_pergunta</item>
+        <item>@string/qnu_9_resposta2</item>
+        <item>@string/qnu_9_resposta1</item>
+        <item>@string/qnu_10_resposta3</item>
+        <item>@string/qnu_10_resposta4</item>
+    </string-array>
+    <string-array name="sxu_1">
+        <item>@string/sxu_1_pergunta</item>
+        <item>@string/sxu_1_resposta1</item>
+        <item>@string/sxu_1_resposta2</item>
+        <item>@string/sxu_1_resposta3</item>
+        <item>@string/sxu_1_resposta4</item>
+    </string-array>
+    <string-array name="sxu_2">
+        <item>@string/sxu_2_pergunta</item>
+        <item>@string/sxu_2_resposta1</item>
+        <item>@string/sxu_2_resposta2</item>
+        <item>@string/sxu_2_resposta3</item>
+        <item>@string/sxu_2_resposta4</item>
+    </string-array>
+    <string-array name="sxu_3">
+        <item>@string/sxu_3_pergunta</item>
+        <item>@string/sxu_3_resposta1</item>
+        <item>@string/sxu_3_resposta2</item>
+        <item>@string/sxu_3_resposta3</item>
+        <item>@string/sxu_3_resposta4</item>
+    </string-array>
+    <string-array name="sxu_4">
+        <item>@string/sxu_4_pergunta</item>
+        <item>@string/sxu_4_resposta1</item>
+        <item>@string/sxu_4_resposta2</item>
+        <item>@string/sxu_4_resposta3</item>
+        <item>@string/sxu_4_resposta4</item>
+    </string-array>
+    <string-array name="sxu_5">
+        <item>@string/sxu_5_pergunta</item>
+        <item>@string/sxu_5_resposta1</item>
+        <item>@string/sxu_5_resposta2</item>
+        <item>@string/sxu_5_resposta3</item>
+        <item>@string/sxu_5_resposta4</item>
+    </string-array>
+    <string-array name="sxu_6">
+        <item>@string/sxu_6_pergunta</item>
+        <item>@string/sxu_6_resposta1</item>
+        <item>@string/sxu_6_resposta2</item>
+        <item>@string/sxu_6_resposta3</item>
+        <item>@string/sxu_6_resposta4</item>
+    </string-array>
+    <string-array name="sxu_7">
+        <item>@string/sxu_7_pergunta</item>
+        <item>@string/sxu_7_resposta1</item>
+        <item>@string/sxu_7_resposta2</item>
+        <item>@string/sxu_7_resposta3</item>
+        <item>@string/sxu_7_resposta4</item>
+    </string-array>
+    <string-array name="sxu_8">
+        <item>@string/sxu_8_pergunta</item>
+        <item>@string/sxu_8_resposta1</item>
+        <item>@string/sxu_8_resposta2</item>
+        <item>@string/sxu_8_resposta3</item>
+        <item>@string/sxu_8_resposta4</item>
+    </string-array>
+    <string-array name="sxu_9">
+        <item>@string/sxu_9_pergunta</item>
+        <item>@string/sxu_9_resposta1</item>
+        <item>@string/sxu_9_resposta2</item>
+        <item>@string/sxu_9_resposta3</item>
+        <item>@string/sxu_9_resposta4</item>
+    </string-array>
+    <string-array name="sxu_10">
+        <item>@string/sxu_10_pergunta</item>
+        <item>@string/sxu_10_resposta1</item>
+        <item>@string/sxu_10_resposta2</item>
+        <item>@string/sxu_10_resposta3</item>
+        <item>@string/sxu_10_resposta4</item>
+    </string-array>
+    <array name="sgu_perguntas">
+        <item>@array/sgu_1</item>
+        <item>@array/sgu_2</item>
+        <item>@array/sgu_3</item>
+        <item>@array/sgu_4</item>
+        <item>@array/sgu_5</item>
+        <item>@array/sgu_6</item>
+        <item>@array/sgu_7</item>
+        <item>@array/sgu_8</item>
+        <item>@array/sgu_9</item>
+        <item>@array/sgu_10</item>
+    </array>
+    <array name="tru_perguntas">
+        <item>@array/tru_1</item>
+        <item>@array/tru_2</item>
+        <item>@array/tru_3</item>
+        <item>@array/tru_4</item>
+        <item>@array/tru_5</item>
+        <item>@array/tru_6</item>
+        <item>@array/tru_7</item>
+        <item>@array/tru_8</item>
+        <item>@array/tru_9</item>
+        <item>@array/tru_10</item>
+    </array>
+    <array name="trd_perguntas">
+        <item>@array/trd_1</item>
+        <item>@array/trd_2</item>
+        <item>@array/trd_3</item>
+        <item>@array/trd_4</item>
+        <item>@array/trd_5</item>
+        <item>@array/trd_6</item>
+        <item>@array/trd_7</item>
+        <item>@array/trd_8</item>
+        <item>@array/trd_9</item>
+        <item>@array/trd_10</item>
+    </array>
+    <array name="qru_perguntas">
+        <item>@array/qru_1</item>
+        <item>@array/qru_2</item>
+        <item>@array/qru_3</item>
+        <item>@array/qru_4</item>
+        <item>@array/qru_5</item>
+        <item>@array/qru_6</item>
+        <item>@array/qru_7</item>
+        <item>@array/qru_8</item>
+        <item>@array/qru_9</item>
+        <item>@array/qru_10</item>
+    </array>
+    <array name="qrd_perguntas">
+        <item>@array/qru_1</item>
+        <item>@array/qru_2</item>
+        <item>@array/qru_3</item>
+        <item>@array/qru_4</item>
+        <item>@array/qru_5</item>
+        <item>@array/qru_6</item>
+        <item>@array/qru_7</item>
+        <item>@array/qru_8</item>
+        <item>@array/qru_9</item>
+        <item>@array/qru_10</item>
+    </array>
+    <array name="qnu_perguntas">
+        <item>@array/qnu_1</item>
+        <item>@array/qnu_2</item>
+        <item>@array/qnu_3</item>
+        <item>@array/qnu_4</item>
+        <item>@array/qnu_5</item>
+        <item>@array/qnu_6</item>
+        <item>@array/qnu_7</item>
+        <item>@array/qnu_8</item>
+        <item>@array/qnu_9</item>
+        <item>@array/qnu_10</item>
+    </array>
+    <array name="sxu_perguntas">
+        <item>@array/sxu_1</item>
+        <item>@array/sxu_2</item>
+        <item>@array/sxu_3</item>
+        <item>@array/sxu_4</item>
+        <item>@array/sxu_5</item>
+        <item>@array/sxu_6</item>
+        <item>@array/sxu_7</item>
+        <item>@array/sxu_8</item>
+        <item>@array/sxu_9</item>
+        <item>@array/sxu_10</item>
+    </array>
 </resources>

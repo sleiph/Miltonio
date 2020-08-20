@@ -2,11 +2,13 @@ package com.test.miltonio
 
 import android.app.Application
 import android.content.Intent
+import android.content.res.TypedArray
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.room.*
+
 
 @Entity(tableName = "tabela_categorias")
 data class Categorias(
@@ -52,13 +54,13 @@ class MyApplication: Application() {
             .build()
 
         val catgInit = arrayOf(
-            Categorias(0,"Calculo", 0),
-            Categorias(1,"Programacao", 0),
-            Categorias(2,"Ingles", 0),
-            Categorias(3,"Contabilidade", 0),
-            Categorias(4,"Sistemas", 0),
-            Categorias(5,"Comunicacao", 0),
-            Categorias(6,"Software", 0)
+            Categorias(0, "Calculo", 0),
+            Categorias(1, "Programacao", 0),
+            Categorias(2, "Ingles", 0),
+            Categorias(3, "Contabilidade", 0),
+            Categorias(4, "Sistemas", 0),
+            Categorias(5, "Comunicacao", 0),
+            Categorias(6, "Software", 0)
         )
         for (categ in catgInit)
             database?.categoriaDao()?.insert(categ)
@@ -78,22 +80,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         val textos = arrayOf(
-            findViewById<TextView>(R.id.txt_progresso_adm),
-            findViewById<TextView>(R.id.txt_progresso_alg),
-            findViewById<TextView>(R.id.txt_progresso_aoc),
-            findViewById<TextView>(R.id.txt_progresso_eng),
-            findViewById<TextView>(R.id.txt_progresso_lhw),
-            findViewById<TextView>(R.id.txt_progresso_mat),
-            findViewById<TextView>(R.id.txt_progresso_prg)
+            findViewById<TextView>(R.id.txt_progresso_sgu),
+            findViewById<TextView>(R.id.txt_progresso_tru),
+            findViewById<TextView>(R.id.txt_progresso_trd),
+            findViewById<TextView>(R.id.txt_progresso_qru),
+            findViewById<TextView>(R.id.txt_progresso_qrd),
+            findViewById<TextView>(R.id.txt_progresso_qnu),
+            findViewById<TextView>(R.id.txt_progresso_sxu)
         )
 
-        val cardAdm = findViewById<CardView>(R.id.CardViewAdm)
-        val cardAlg = findViewById<CardView>(R.id.CardViewAlg)
-        val cardAoc = findViewById<CardView>(R.id.CardViewAoc)
-        val cardEng = findViewById<CardView>(R.id.CardViewEng)
-        val cardLhw = findViewById<CardView>(R.id.CardViewLhw)
-        val cardMat = findViewById<CardView>(R.id.CardViewMat)
-        val cardPrg = findViewById<CardView>(R.id.CardViewPrg)
+        val cardAdm = findViewById<CardView>(R.id.card_sgu)
+        val cardAlg = findViewById<CardView>(R.id.card_tru)
+        val cardAoc = findViewById<CardView>(R.id.card_trd)
+        val cardEng = findViewById<CardView>(R.id.card_qru)
+        val cardLhw = findViewById<CardView>(R.id.card_qrd)
+        val cardMat = findViewById<CardView>(R.id.card_qnu)
+        val cardPrg = findViewById<CardView>(R.id.card_sxu)
 
         cardAdm.setOnClickListener {
             loadRespostas(0)
@@ -121,7 +123,12 @@ class MainActivity : AppCompatActivity() {
 
         if (db_val != null) {
             for (i in 0..db_val.size-1)
-                textos[i].setText(getString(R.string.resultado_pontos, db_val.get(i).pontos.toString()))
+                textos[i].setText(
+                    getString(
+                        R.string.resultado_pontos,
+                        db_val.get(i).pontos.toString()
+                    )
+                )
         }
     }
 }

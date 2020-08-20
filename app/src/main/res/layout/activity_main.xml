@@ -29,7 +29,7 @@
                 android:src="@drawable/appmilton"/>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewAdm"
+                android:id="@+id/card_sgu"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -37,7 +37,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorSgd">
+                app:cardBackgroundColor="@color/color_sgu">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,14 +52,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_sgd_prof"
+                        android:text="@string/categ_sgu_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_adm"
+                        android:id="@+id/txt_progresso_sgu"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -74,7 +74,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_sgd"
+                        android:text="@string/categ_sgu"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -85,7 +85,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewAlg"
+                android:id="@+id/card_tru"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -93,7 +93,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorTru">
+                app:cardBackgroundColor="@color/color_tru">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_alg"
+                        android:id="@+id/txt_progresso_tru"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -141,7 +141,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewAoc"
+                android:id="@+id/card_trd"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -149,7 +149,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorTrd">
+                app:cardBackgroundColor="@color/color_trd">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,7 +171,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_aoc"
+                        android:id="@+id/txt_progresso_trd"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -197,7 +197,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewEng"
+                android:id="@+id/card_qru"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -205,7 +205,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorQrt">
+                app:cardBackgroundColor="@color/color_qru">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -220,14 +220,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_qrt_prof"
+                        android:text="@string/categ_qru_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_eng"
+                        android:id="@+id/txt_progresso_qru"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -242,7 +242,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qrt"
+                        android:text="@string/categ_qru"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -253,7 +253,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewLhw"
+                android:id="@+id/card_qrd"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -261,7 +261,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorQnu">
+                app:cardBackgroundColor="@color/color_qrd">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -276,14 +276,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_qnu_prof"
+                        android:text="@string/categ_qrd_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_lhw"
+                        android:id="@+id/txt_progresso_qrd"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -298,7 +298,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qnu"
+                        android:text="@string/categ_qrd"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorPrt"
@@ -309,7 +309,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewMat"
+                android:id="@+id/card_qnu"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_margin="@dimen/activity_meia_margin"
@@ -317,7 +317,7 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorQnd">
+                app:cardBackgroundColor="@color/color_qnu">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -332,14 +332,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_qnd_prof"
+                        android:text="@string/categ_qnu_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_mat"
+                        android:id="@+id/txt_progresso_qnu"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -354,7 +354,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qnd"
+                        android:text="@string/categ_qnu"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
@@ -365,7 +365,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/CardViewPrg"
+                android:id="@+id/card_sxu"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
                 android:layout_marginStart="@dimen/activity_meia_margin"
@@ -377,7 +377,7 @@
                 android:layout_columnSpan="2"
                 app:cardElevation="@dimen/activity_interna_margin"
                 app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/colorSxt">
+                app:cardBackgroundColor="@color/color_sxu">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -392,14 +392,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="@string/categ_sxt_prof"
+                        android:text="@string/categ_sxu_prof"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
                         />
 
                     <TextView
-                        android:id="@+id/txt_progresso_prg"
+                        android:id="@+id/txt_progresso_sxu"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
@@ -414,7 +414,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="3"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_sxt"
+                        android:text="@string/categ_sxu"
                         android:textAlignment="center"
                         android:textSize="@dimen/texto_normal"
                         android:textColor="@color/colorBnc"
