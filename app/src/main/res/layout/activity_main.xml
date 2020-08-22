@@ -7,6 +7,7 @@
     android:fillViewport="true">
 
         <GridLayout
+            android:id="@+id/cardParent"
             android:columnCount="2"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
@@ -39,48 +40,12 @@
                 app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/color_sgu">
 
-                <LinearLayout
+                <com.test.miltonio.ui.CartaTexto
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbadm">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_sgu_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_sgu"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_sgu"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                </LinearLayout>
+                    app:professorTexto="@string/categ_sgu_prof"
+                    app:pontuacaoTexto="@string/resultado_pontos"
+                    app:materiaTexto="@string/categ_sgu"/>
 
             </androidx.cardview.widget.CardView>
 
