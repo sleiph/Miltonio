@@ -1,14 +1,18 @@
 package com.test.miltonio
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.widget.GridLayout
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.test.miltonio.ui.CardMateria
 
 class MainActivity : AppCompatActivity() {
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,9 +23,26 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val cardPapa = findViewById<GridLayout>(R.id.cardParent)
+
+        val cardSgu = findViewById<CardView>(R.id.card_sgu)
+        val cardTru = findViewById<CardView>(R.id.card_tru)
+        val cardTrd = findViewById<CardView>(R.id.card_trd)
+        val cardQru = findViewById<CardView>(R.id.card_qru)
+        val cardQrd = findViewById<CardView>(R.id.card_qrd)
+        val cardQnu = findViewById<CardView>(R.id.card_qnu)
+        val cardSxu = findViewById<CardView>(R.id.card_sxu)
+
+        val cardLayout = CardMateria(this)
+        cardLayout.setProfessorText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
+        cardLayout.setProgressoText(getString(R.string.resultado_pontos), getColor(R.color.colorPrt))
+        cardLayout.setMateriaText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
+        cardLayout.setMateriaDrawable(getDrawable(R.drawable.simbadm))
+        cardSgu.addView(cardLayout)
+
         val textos = arrayOf(
-            findViewById<TextView>(R.id.txt_progresso),
-            findViewById<TextView>(R.id.txt_progresso_tru),
+            findViewById<TextView>(R.id.txt_progresso_trd),
+            findViewById<TextView>(R.id.txt_progresso_trd),
             findViewById<TextView>(R.id.txt_progresso_trd),
             findViewById<TextView>(R.id.txt_progresso_qru),
             findViewById<TextView>(R.id.txt_progresso_qrd),
@@ -29,35 +50,25 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.txt_progresso_sxu)
         )
 
-        val cardPapa = findViewById<GridLayout>(R.id.cardParent)
-
-        val cardAdm = findViewById<CardView>(R.id.card_sgu)
-        val cardAlg = findViewById<CardView>(R.id.card_tru)
-        val cardAoc = findViewById<CardView>(R.id.card_trd)
-        val cardEng = findViewById<CardView>(R.id.card_qru)
-        val cardLhw = findViewById<CardView>(R.id.card_qrd)
-        val cardMat = findViewById<CardView>(R.id.card_qnu)
-        val cardPrg = findViewById<CardView>(R.id.card_sxu)
-
-        cardAdm.setOnClickListener {
+        cardSgu.setOnClickListener {
             loadRespostas(0)
         }
-        cardAlg.setOnClickListener {
+        cardTru.setOnClickListener {
             loadRespostas(1)
         }
-        cardAoc.setOnClickListener {
+        cardTrd.setOnClickListener {
             loadRespostas(2)
         }
-        cardEng.setOnClickListener {
+        cardQru.setOnClickListener {
             loadRespostas(3)
         }
-        cardLhw.setOnClickListener {
+        cardQrd.setOnClickListener {
             loadRespostas(4)
         }
-        cardMat.setOnClickListener {
+        cardQnu.setOnClickListener {
             loadRespostas(5)
         }
-        cardPrg.setOnClickListener {
+        cardSxu.setOnClickListener {
             loadRespostas(6)
         }
 

@@ -40,13 +40,6 @@
                 app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/color_sgu">
 
-                <com.test.miltonio.ui.CartaTexto
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:professorTexto="@string/categ_sgu_prof"
-                    app:pontuacaoTexto="@string/resultado_pontos"
-                    app:materiaTexto="@string/categ_sgu"/>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -60,48 +53,14 @@
                 app:cardCornerRadius="@dimen/activity_interna_margin"
                 app:cardBackgroundColor="@color/color_tru">
 
-                <LinearLayout
+                <com.test.miltonio.ui.CardMateria
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbalg">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_tru_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_tru"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_tru"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                </LinearLayout>
+                    app:professorString="@string/categ_tru_prof"
+                    app:progressoString="@string/resultado_pontos"
+                    app:materiaString="@string/categ_tru"
+                    app:cardTextColor="@color/colorBnc"
+                    app:cardDrawable="@drawable/simbalg" />
 
             </androidx.cardview.widget.CardView>
 

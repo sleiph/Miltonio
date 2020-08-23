@@ -1,7 +1,0 @@
-<resources>
-    <declare-styleable name="CartaTexto">
-        <attr name="professorTexto" format="string" />
-        <attr name="pontuacaoTexto" format="string" />
-        <attr name="materiaTexto" format="string" />
-    </declare-styleable>
-</resources>
