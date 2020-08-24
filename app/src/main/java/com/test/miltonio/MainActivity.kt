@@ -7,7 +7,6 @@ import android.widget.GridLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import com.test.miltonio.ui.CardMateria
 
 class MainActivity : AppCompatActivity() {
@@ -25,63 +24,38 @@ class MainActivity : AppCompatActivity() {
 
         val cardPapa = findViewById<GridLayout>(R.id.cardParent)
 
-        val cardSgu = findViewById<CardView>(R.id.card_sgu)
-        val cardTru = findViewById<CardView>(R.id.card_tru)
-        val cardTrd = findViewById<CardView>(R.id.card_trd)
-        val cardQru = findViewById<CardView>(R.id.card_qru)
-        val cardQrd = findViewById<CardView>(R.id.card_qrd)
-        val cardQnu = findViewById<CardView>(R.id.card_qnu)
-        val cardSxu = findViewById<CardView>(R.id.card_sxu)
-
-        val cardLayout = CardMateria(this)
-        cardLayout.setProfessorText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
-        cardLayout.setProgressoText(getString(R.string.resultado_pontos), getColor(R.color.colorPrt))
-        cardLayout.setMateriaText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
-        cardLayout.setMateriaDrawable(getDrawable(R.drawable.simbadm))
-        cardSgu.addView(cardLayout)
-
-        val textos = arrayOf(
-            findViewById<TextView>(R.id.txt_progresso_trd),
-            findViewById<TextView>(R.id.txt_progresso_trd),
-            findViewById<TextView>(R.id.txt_progresso_trd),
-            findViewById<TextView>(R.id.txt_progresso_qru),
-            findViewById<TextView>(R.id.txt_progresso_qrd),
-            findViewById<TextView>(R.id.txt_progresso_qnu),
-            findViewById<TextView>(R.id.txt_progresso_sxu)
-        )
-
-        cardSgu.setOnClickListener {
-            loadRespostas(0)
-        }
-        cardTru.setOnClickListener {
-            loadRespostas(1)
-        }
-        cardTrd.setOnClickListener {
-            loadRespostas(2)
-        }
-        cardQru.setOnClickListener {
-            loadRespostas(3)
-        }
-        cardQrd.setOnClickListener {
-            loadRespostas(4)
-        }
-        cardQnu.setOnClickListener {
-            loadRespostas(5)
-        }
-        cardSxu.setOnClickListener {
-            loadRespostas(6)
-        }
-
         val db_val = MyApplication.database?.categoriaDao()?.getAll()
 
         if (db_val != null) {
-            for (i in 0..db_val.size-1)
-                textos[i].setText(
+            for (i in 0..db_val.size-1) {
+                val cardLayout = CardMateria(this)
+                val param = GridLayout.LayoutParams(
+                    GridLayout.spec(
+                        GridLayout.UNDEFINED, GridLayout.FILL, 1f
+                    ),
+                    GridLayout.spec(
+                        GridLayout.UNDEFINED, GridLayout.FILL, 1f
+                    )
+                )
+                param.height = 420
+                param.width = 0
+                cardLayout.setLayoutParams(param)
+                cardLayout.setCardBack(getColor(R.color.color_sgu))
+                cardLayout.setMateriaDrawable(getDrawable(R.drawable.simbadm))
+                cardLayout.setProfessorText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
+                cardLayout.setProgressoText(
                     getString(
                         R.string.resultado_pontos,
                         db_val.get(i).pontos.toString()
-                    )
+                    ),
+                    getColor(R.color.colorPrt)
                 )
+                cardLayout.setMateriaText(getString(R.string.categ_sgu), getColor(R.color.colorPrt))
+                cardPapa.addView(cardLayout)
+                cardLayout.setOnClickListener {
+                    loadRespostas(i)
+                }
+            }
         }
     }
 }

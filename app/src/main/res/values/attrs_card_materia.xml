@@ -4,6 +4,7 @@
         <attr name="progressoString" format="string" />
         <attr name="materiaString" format="string" />
         <attr name="cardTextColor" format="color" />
+        <attr name="cardBackColor" format="color" />
         <attr name="cardDrawable" format="color|reference" />
     </declare-styleable>
 </resources>

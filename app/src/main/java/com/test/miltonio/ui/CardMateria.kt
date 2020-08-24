@@ -8,23 +8,20 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.test.miltonio.R
 
-
-/**
- * TODO: document your custom view class.
- */
 class CardMateria : LinearLayout {
 
-    private val layoutMae = this
     private var _professorString: String? = null // TODO: use a default from R.string...
     private var _progressoString: String? = null
     private var _materiaString: String? = null
     private var _cardTextColor: Int? = null
+    private var _cardBackColor: Int? = null
+    private var cardDrawable: Drawable? = null
 
+    private val cardMae = this
+    private var layoutMae: LinearLayout? = null
     private var professorTextView: TextView? = null
     private var progressoTextView: TextView? = null
     private var materiaTextView: TextView? = null
-
-    private var cardDrawable: Drawable? = null
 
     constructor(context: Context) : super(context) {
         init(null, 0)
@@ -62,6 +59,10 @@ class CardMateria : LinearLayout {
             R.styleable.CardMateria_cardTextColor,
             0
         )
+        _cardBackColor = a.getColor(
+            R.styleable.CardMateria_cardBackColor,
+            0
+        )
 
         if (a.hasValue(R.styleable.CardMateria_cardDrawable)) {
             cardDrawable = a.getDrawable(
@@ -74,6 +75,7 @@ class CardMateria : LinearLayout {
 
         initComponents()
 
+        setCardBack(_cardBackColor!!)
         setMateriaDrawable(cardDrawable)
         setProfessorText(_professorString, _cardTextColor!!)
         setProgressoText(_progressoString, _cardTextColor!!)
@@ -81,6 +83,7 @@ class CardMateria : LinearLayout {
     }
 
     private fun initComponents() {
+        layoutMae = findViewById<View>(R.id.layout_mae) as LinearLayout
         professorTextView = findViewById<View>(R.id.txt_professor) as TextView
         progressoTextView = findViewById<View>(R.id.txt_progresso) as TextView
         materiaTextView = findViewById<View>(R.id.txt_materia) as TextView
@@ -114,6 +117,10 @@ class CardMateria : LinearLayout {
     }
 
     fun setMateriaDrawable(value: Drawable?) {
-        layoutMae.setBackgroundDrawable(value)
+        layoutMae?.setBackgroundDrawable(value)
+    }
+
+    fun setCardBack(value: Int) {
+        cardMae.setBackgroundColor(value)
     }
 }

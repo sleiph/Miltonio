@@ -8,345 +8,112 @@
 
         <GridLayout
             android:id="@+id/cardParent"
-            android:columnCount="2"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:paddingHorizontal="@dimen/activity_dobro_margin">
+            android:columnCount="2"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:padding="@dimen/activity_dobro_margin"
+            android:useDefaultMargins="true">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_topo"
+                android:layout_marginTop="@dimen/activity_dobro_margin"
                 android:layout_marginBottom="@dimen/activity_dobro_margin"
                 android:layout_marginStart="@dimen/activity_meia_margin"
                 android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_columnWeight="1"
+                android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
                 android:contentDescription="@string/app_img_desc"
                 android:src="@drawable/appmilton"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sgu"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_sgu">
+                app:professorString="@string/categ_sgu_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_sgu"
+                app:cardTextColor="@color/colorPrt"
+                app:cardBackColor="@color/color_sgu"
+                app:cardDrawable="@drawable/simbmat" />
 
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_tru"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_tru">
+                app:professorString="@string/categ_tru_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_tru"
+                app:cardTextColor="@color/colorBnc"
+                app:cardBackColor="@color/color_tru"
+                app:cardDrawable="@drawable/simbalg" />
 
-                <com.test.miltonio.ui.CardMateria
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:professorString="@string/categ_tru_prof"
-                    app:progressoString="@string/resultado_pontos"
-                    app:materiaString="@string/categ_tru"
-                    app:cardTextColor="@color/colorBnc"
-                    app:cardDrawable="@drawable/simbalg" />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_trd"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_trd">
+                app:professorString="@string/categ_trd_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_trd"
+                app:cardTextColor="@color/colorBnc"
+                app:cardBackColor="@color/color_trd"
+                app:cardDrawable="@drawable/simbeng" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbaoc">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_trd_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_trd"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_trd"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_qru"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_qru">
+                app:professorString="@string/categ_qru_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_qru"
+                app:cardTextColor="@color/colorPrt"
+                app:cardBackColor="@color/color_qru"
+                app:cardDrawable="@drawable/simbadm" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbeng">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_qru_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_qru"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qru"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_qrd"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_qrd">
+                app:professorString="@string/categ_qrd_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_qrd"
+                app:cardTextColor="@color/colorPrt"
+                app:cardBackColor="@color/color_qrd"
+                app:cardDrawable="@drawable/simblhw" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simblhw">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_qrd_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_qrd"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qrd"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorPrt"
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_qnu"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_margin="@dimen/activity_meia_margin"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_qnu">
+                app:professorString="@string/categ_qnu_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_qnu"
+                app:cardTextColor="@color/colorBnc"
+                app:cardBackColor="@color/color_qnu"
+                app:cardDrawable="@drawable/simbaoc" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbmat">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_qnu_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_qnu"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_qnu"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_sxu"
+            <com.test.miltonio.ui.CardMateria
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_cards"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginTop="@dimen/activity_meia_margin"
-                android:layout_marginBottom="@dimen/activity_dobro_margin"
                 android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
-                app:cardElevation="@dimen/activity_interna_margin"
-                app:cardCornerRadius="@dimen/activity_interna_margin"
-                app:cardBackgroundColor="@color/color_sxu">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:paddingHorizontal="@dimen/activity_interna_margin"
-                    android:orientation="vertical"
-                    android:background="@drawable/simbprg">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center"
-                        android:text="@string/categ_sxu_prof"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:id="@+id/txt_progresso_sxu"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="4"
-                        android:gravity="bottom|center_horizontal"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/texto_pontuacao"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="@string/categ_sxu"
-                        android:textAlignment="center"
-                        android:textSize="@dimen/texto_normal"
-                        android:textColor="@color/colorBnc"
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:professorString="@string/categ_sxu_prof"
+                app:progressoString="@string/resultado_pontos"
+                app:materiaString="@string/categ_sxu"
+                app:cardTextColor="@color/colorBnc"
+                app:cardBackColor="@color/color_sxu"
+                app:cardDrawable="@drawable/simbprg" />
 
         </GridLayout>
 
