@@ -4,9 +4,10 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.widget.GridLayout
-import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardMateria
 
 class MainActivity : AppCompatActivity() {
@@ -30,27 +31,34 @@ class MainActivity : AppCompatActivity() {
             for (i in 0..db_val.size-1) {
                 val cardLayout = CardMateria(this)
                 val param = GridLayout.LayoutParams(
-                    GridLayout.spec(
-                        GridLayout.UNDEFINED, GridLayout.FILL, 1f
-                    ),
-                    GridLayout.spec(
-                        GridLayout.UNDEFINED, GridLayout.FILL, 1f
-                    )
+                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+                    if (i == db_val.size-1 && db_val.size%2!=0) GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
+                    else GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
                 )
                 param.height = 420
                 param.width = 0
+                param.setMargins(25)
                 cardLayout.setLayoutParams(param)
-                cardLayout.setCardBack(getColor(R.color.color_sgu))
-                cardLayout.setMateriaDrawable(getDrawable(R.drawable.simbadm))
-                cardLayout.setProfessorText(getString(R.string.categ_sgu_prof), getColor(R.color.colorPrt))
+                cardLayout.setCardBack(getColor(db_val.get(i).cor_db))
+                cardLayout.setMateriaDrawable(ContextCompat.getDrawable(this, db_val.get(i).simb_db))
+                cardLayout.setProfessorText(
+                    getString(db_val.get(i).professor_db),
+                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
                 cardLayout.setProgressoText(
                     getString(
                         R.string.resultado_pontos,
-                        db_val.get(i).pontos.toString()
+                        db_val.get(i).pontos_db.toString()
                     ),
-                    getColor(R.color.colorPrt)
+                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
                 )
-                cardLayout.setMateriaText(getString(R.string.categ_sgu), getColor(R.color.colorPrt))
+                cardLayout.setMateriaText(
+                    getString(db_val.get(i).materia_db),
+                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
                 cardPapa.addView(cardLayout)
                 cardLayout.setOnClickListener {
                     loadRespostas(i)
@@ -61,18 +69,17 @@ class MainActivity : AppCompatActivity() {
 }
 
 //Todo: Acessibilidade!!!
-//Todo: Quantidade de perguntas adaptável
-//Todo: Quantidade de respostas adaptável
-//Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
 //Todo: Animações
-//Todo: Tilestyle background
 //Todo: Layout responsivo
-//Todo: Mudar a fonte tipográfica do app
-//Todo: Tamanho das caixas de resposta uniforme
-//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
-//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: High Scores
 //Todo: Usuários com senha
+//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
+//Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
+//Todo: Tilestyle background
+//Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Tirar os prefixos das matérias (adm, algo, aoc...) pra facilitar reaproveitamento
-//Todo: Pra cada categoria no banco de dados adicionar automaticamente um card da matéria
+//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
+//Todo: Sons
+//Todo: Tamanho das caixas de resposta uniforme
+//Todo: Quantidade de perguntas adaptável
+//Todo: Quantidade de respostas adaptável

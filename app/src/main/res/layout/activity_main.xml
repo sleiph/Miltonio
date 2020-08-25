@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,8 +12,7 @@
             android:columnCount="2"
             android:alignmentMode="alignBounds"
             android:columnOrderPreserved="false"
-            android:padding="@dimen/activity_dobro_margin"
-            android:useDefaultMargins="true">
+            android:padding="@dimen/activity_dobro_margin">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -29,91 +27,6 @@
                 android:layout_columnSpan="2"
                 android:contentDescription="@string/app_img_desc"
                 android:src="@drawable/appmilton"/>
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_sgu_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_sgu"
-                app:cardTextColor="@color/colorPrt"
-                app:cardBackColor="@color/color_sgu"
-                app:cardDrawable="@drawable/simbmat" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_tru_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_tru"
-                app:cardTextColor="@color/colorBnc"
-                app:cardBackColor="@color/color_tru"
-                app:cardDrawable="@drawable/simbalg" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_trd_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_trd"
-                app:cardTextColor="@color/colorBnc"
-                app:cardBackColor="@color/color_trd"
-                app:cardDrawable="@drawable/simbeng" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_qru_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_qru"
-                app:cardTextColor="@color/colorPrt"
-                app:cardBackColor="@color/color_qru"
-                app:cardDrawable="@drawable/simbadm" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_qrd_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_qrd"
-                app:cardTextColor="@color/colorPrt"
-                app:cardBackColor="@color/color_qrd"
-                app:cardDrawable="@drawable/simblhw" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:professorString="@string/categ_qnu_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_qnu"
-                app:cardTextColor="@color/colorBnc"
-                app:cardBackColor="@color/color_qnu"
-                app:cardDrawable="@drawable/simbaoc" />
-
-            <com.test.miltonio.ui.CardMateria
-                android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_cards"
-                android:layout_columnWeight="2"
-                android:layout_rowWeight="1"
-                android:layout_columnSpan="2"
-                app:professorString="@string/categ_sxu_prof"
-                app:progressoString="@string/resultado_pontos"
-                app:materiaString="@string/categ_sxu"
-                app:cardTextColor="@color/colorBnc"
-                app:cardBackColor="@color/color_sxu"
-                app:cardDrawable="@drawable/simbprg" />
 
         </GridLayout>
 

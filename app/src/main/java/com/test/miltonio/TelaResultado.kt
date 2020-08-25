@@ -25,6 +25,8 @@ class TelaResultado : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
+        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
+
         val cor_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.cor_fnd)
         val img_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.img_fnd)
 
@@ -38,59 +40,6 @@ class TelaResultado : AppCompatActivity() {
 
         val btn_main: Button = findViewById<Button>(R.id.btn_main)
 
-        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
-
-        fun setCategoria(catg:Int){
-            var escuro = false
-            when (catg) {
-                1 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_tru))
-                    img_fnd.setBackgroundResource(R.drawable.fndalg)
-                    txt_categoria.text = getString(R.string.categ_tru)
-                    escuro = true
-                }
-                2 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_trd))
-                    img_fnd.setBackgroundResource(R.drawable.fndaoc)
-                    txt_categoria.text = getString(R.string.categ_trd)
-                    escuro = true
-                }
-                3 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qru))
-                    img_fnd.setBackgroundResource(R.drawable.fndeng)
-                    txt_categoria.text = getString(R.string.categ_qru)
-                }
-                4 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qrd))
-                    img_fnd.setBackgroundResource(R.drawable.fndlhw)
-                    txt_categoria.text = getString(R.string.categ_qrd)
-                }
-                5 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_qnu))
-                    img_fnd.setBackgroundResource(R.drawable.fndmat)
-                    txt_categoria.text = getString(R.string.categ_qnu)
-                    escuro = true
-                }
-                6 -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_sxu))
-                    img_fnd.setBackgroundResource(R.drawable.fndprg)
-                    txt_categoria.text = getString(R.string.categ_sxu)
-                    escuro = true
-                }
-                else -> {
-                    cor_fnd.setBackgroundColor(applicationContext.getColor(R.color.color_sgu))
-                    img_fnd.setBackgroundResource(R.drawable.fndadm)
-                    txt_categoria.text = getString(R.string.categ_sgu)
-                }
-            }
-            if (escuro){
-                txt_comeco.setTextColor(applicationContext.getColor(R.color.colorBnc))
-                txt_resultado.setTextColor(applicationContext.getColor(R.color.colorBnc))
-                txt_meio.setTextColor(applicationContext.getColor(R.color.colorBnc))
-                txt_categoria.setTextColor(applicationContext.getColor(R.color.colorBnc))
-                txt_mensagem.setTextColor(applicationContext.getColor(R.color.colorBnc))
-            }
-        }
         fun setPontuacao(pnts: Any){
             txt_resultado.text = getString(R.string.resultado_pontos, pnts)
             if (pnts.toString().toInt() >= 60) {
@@ -103,11 +52,25 @@ class TelaResultado : AppCompatActivity() {
             }
         }
 
-        setCategoria(categoria)
-        if (db_val != null)
-            setPontuacao(db_val.pontos)
-        else
+        if (db_val != null) {
+            setPontuacao(db_val.pontos_db)
+            cor_fnd.setBackgroundColor(getColor(db_val.cor_db))
+            img_fnd.setBackgroundResource(db_val.fundo_db)
+            txt_categoria.text = getString(db_val.materia_db)
+            if (db_val.isPreto_db) {
+                txt_comeco.setTextColor(getColor(R.color.colorBnc))
+                txt_resultado.setTextColor(getColor(R.color.colorBnc))
+                txt_meio.setTextColor(getColor(R.color.colorBnc))
+                txt_categoria.setTextColor(getColor(R.color.colorBnc))
+                txt_mensagem.setTextColor(getColor(R.color.colorBnc))
+            }
+        }
+        else {
             setPontuacao(0)
+            cor_fnd.setBackgroundColor(getColor(R.color.color_sgu))
+            img_fnd.setBackgroundResource(R.drawable.fndsgu)
+            txt_categoria.text = getString(R.string.categ_sgu)
+        }
 
         btn_main.setOnClickListener {
             loadMain()
