@@ -32,15 +32,19 @@ class MainActivity : AppCompatActivity() {
                 val cardLayout = CardMateria(this)
                 val param = GridLayout.LayoutParams(
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == db_val.size-1 && db_val.size%2!=0) GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
-                    else GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+                    if (i == db_val.size-1 && db_val.size%2!=0)
+                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
+                    else
+                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
                 )
                 param.height = 420
                 param.width = 0
                 param.setMargins(25)
                 cardLayout.setLayoutParams(param)
                 cardLayout.setCardBack(getColor(db_val.get(i).cor_db))
-                cardLayout.setMateriaDrawable(ContextCompat.getDrawable(this, db_val.get(i).simb_db))
+                cardLayout.setMateriaDrawable(
+                    ContextCompat.getDrawable(this, db_val.get(i).simb_db)
+                )
                 cardLayout.setProfessorText(
                     getString(db_val.get(i).professor_db),
                     if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
@@ -80,6 +84,7 @@ class MainActivity : AppCompatActivity() {
 //Todo: Exibir na tela inicial a pontuação mais alta
 //Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
 //Todo: Sons
+//Todo: Perguntas de múltipla escolha
 //Todo: Tamanho das caixas de resposta uniforme
 //Todo: Quantidade de perguntas adaptável
 //Todo: Quantidade de respostas adaptável

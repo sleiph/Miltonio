@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CardResposta">
+        <attr name="respostaTxt" format="string" />
+    </declare-styleable>
+</resources>

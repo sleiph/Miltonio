@@ -13,6 +13,6 @@
     <dimen name="texto_normal">14sp</dimen>
     <dimen name="texto_pontuacao">52sp</dimen>
     <dimen name="texto_pergunta">24sp</dimen>
-    <dimen name="texto_respostas">18sp</dimen>
+    <dimen name="texto_respostas">16sp</dimen>
     <dimen name="texto_resultado">88sp</dimen>
 </resources>
