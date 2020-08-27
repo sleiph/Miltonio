@@ -9,7 +9,8 @@ import android.os.Bundle
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
+import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardResposta
 
 class TelaRespostas : AppCompatActivity() {
@@ -28,22 +29,25 @@ class TelaRespostas : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
-        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
+        val dbVal = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
         var acertos = 0
         var resposta = 0
         var progresso = 0
+        val qntPerguntas: Int
 
         var arrPerguntas : TypedArray? = null
-        val qntPerguntas: Int
         var ordemPerguntas: MutableList<Int> = mutableListOf()
+        val respostaCards : MutableList<CardResposta> = mutableListOf()
 
-        val corFundo = findViewById(R.id.cor_fnd) as RelativeLayout
-        val imgFundo = findViewById(R.id.img_fnd) as RelativeLayout
-        val progressoBarra = findViewById(R.id.progressoBarra) as ProgressBar
+        val fundoRespostaDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_fundo)
+
+        val corFundo = findViewById<RelativeLayout>(R.id.cor_fnd)
+        val imgFundo = findViewById<RelativeLayout>(R.id.img_fnd)
+        val progressoBarra = findViewById<ProgressBar>(R.id.progressoBarra)
         val gridPergunta = findViewById<GridLayout>(R.id.grid_pergunta)
-        val txtPergunta = findViewById(R.id.pergunta) as TextView
-        val btnConferir = findViewById(R.id.btn_conferir) as Button
+        val txtPergunta = findViewById<TextView>(R.id.pergunta)
+        val btnConferir = findViewById<Button>(R.id.btn_conferir)
 
         fun getPergunta(indice: Int){
             txtPergunta.text = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(0)
@@ -54,40 +58,46 @@ class TelaRespostas : AppCompatActivity() {
             if (gridPergunta.childCount>1)
                 for (i in 1 until gridPergunta.childCount)
                     gridPergunta.removeViewAt(1)
+            respostaCards.clear()
 
             for (i in 0 until qntRespostas) {
                 val cardLayout = CardResposta(this)
                 val param = GridLayout.LayoutParams(
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == qntRespostas-1 && qntRespostas%2!=0)
-                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
-                    else
-                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
                 )
                 param.width = 0
+                param.setMargins(20)
                 cardLayout.layoutParams = param
-                cardLayout.setRespostaText(arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(ordemRespostas[i]))
+                cardLayout.setRespostaText(
+                    arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(ordemRespostas[i])
+                )
+                cardLayout.setRespostaDrawable(fundoRespostaDrawable)
+                respostaCards.add(cardLayout)
                 gridPergunta.addView(cardLayout)
                 cardLayout.setOnClickListener {
-                    if (!btnConferir.isEnabled) btnConferir.isEnabled = true
-                    //setCardsInativos(arrayOf(card_resposta_2,card_resposta_3,card_resposta_4))
-                    //card_resposta_1.setCardBackgroundColor(applicationContext.getColor(R.color.respostaCerta))
                     resposta = ordemRespostas[i]
+                    if (!btnConferir.isEnabled) btnConferir.isEnabled = true
+                    //fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc)) //Todo: Tentar usar Tints em vez de drawables diferentes
+                    for (card in respostaCards)
+                        card.setRespostaDrawable(fundoRespostaDrawable)
+                    //fundoRespostaDrawable?.setTint(getColor(R.color.respostaCerta))
+                    respostaCards.get(i).setRespostaDrawable(ContextCompat.getDrawable(this, R.drawable.card_respostas_selecionada))
                 }
             }
         }
 
-        if (db_val != null) {
-            corFundo.setBackgroundColor(getColor(db_val.cor_db))
-            imgFundo.setBackgroundResource(db_val.fundo_db)
-            if (db_val.isPreto_db)
+        if (dbVal != null) {
+            corFundo.setBackgroundColor(getColor(dbVal.cor_db))
+            imgFundo.setBackgroundResource(dbVal.fundo_db)
+            if (dbVal.isPreto_db)
                 txtPergunta.setTextColor(getColor(R.color.colorPrt))
             else
                 txtPergunta.setTextColor(getColor(R.color.colorBnc))
 
-            arrPerguntas = resources.obtainTypedArray(db_val.arrayPerguntas_db)
+            arrPerguntas = resources.obtainTypedArray(dbVal.arrayPerguntas_db)
             qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0..(qntPerguntas-1)).toMutableList()
+            ordemPerguntas = (0 until (qntPerguntas-1)).toMutableList()
             ordemPerguntas.shuffle()
             getPergunta(progresso)
         }
@@ -96,39 +106,27 @@ class TelaRespostas : AppCompatActivity() {
             imgFundo.setBackgroundResource(R.drawable.fndsgu)
             arrPerguntas = resources.obtainTypedArray(R.array.sgu_perguntas)
             qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0..(qntPerguntas-1)).toMutableList()
+            ordemPerguntas = (0 until (qntPerguntas-1)).toMutableList()
             ordemPerguntas.shuffle()
             getPergunta(progresso)
         }
 
-
-
-        fun setCardsInativos(cards: Array<CardView>){
-            for(card in cards)
-                card.setCardBackgroundColor(applicationContext.getColor(R.color.color_card_respostas))
-        }
-
         btnConferir.setOnClickListener {
-            //setCardsInativos(arrayOf(card_resposta_1, card_resposta_2, card_resposta_3, card_resposta_4))
             if (resposta == 1) {
-                acertos ++
-                progressoBarra.setProgressTintList(
-                    ColorStateList.valueOf(Color.rgb(50,180,75))
-                )
+                acertos += 1
+                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(50,180,75))
             }
             else
-                progressoBarra.setProgressTintList(
-                    ColorStateList.valueOf(Color.rgb(235,5,0))
-                )
-            progresso++
+                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(235,5,0))
+            progresso += 1
             progressoBarra.progress = ((progresso.toDouble()/qntPerguntas.toDouble())*100).toInt()
             if (progresso < 10)
                 getPergunta(progresso)
             else {
                 arrPerguntas.recycle()
-                if (db_val != null) {
-                    db_val.pontos_db = acertos * 10
-                    MyApplication.database?.categoriaDao()?.updateCatg(db_val)
+                if (dbVal != null) {
+                    dbVal.pontos_db = acertos * 10
+                    MyApplication.database?.categoriaDao()?.updateCatg(dbVal)
                 }
                 loadResultado(categoria)
             }

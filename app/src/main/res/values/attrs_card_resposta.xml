@@ -1,5 +1,7 @@
 <resources>
     <declare-styleable name="CardResposta">
         <attr name="respostaTxt" format="string" />
+        <attr name="respostaTextColor" format="color" />
+        <attr name="respostaTextDrawable" format="color|reference" />
     </declare-styleable>
 </resources>

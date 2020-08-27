@@ -88,3 +88,5 @@ class MainActivity : AppCompatActivity() {
 //Todo: Tamanho das caixas de resposta uniforme
 //Todo: Quantidade de perguntas adaptável
 //Todo: Quantidade de respostas adaptável
+//Todo: Fundos pro 2° semestre
+//Todo: diminuir o contraste do fundo de segunda

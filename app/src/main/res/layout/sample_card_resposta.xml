@@ -1,22 +1,14 @@
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="@dimen/activity_meia_margin"
-    app:cardElevation="@dimen/activity_interna_margin"
-    app:cardCornerRadius="@dimen/activity_interna_margin"
-    app:cardBackgroundColor="@color/color_card_respostas">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/txt_resposta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_meia_margin"
+        android:layout_margin="@dimen/activity_real_margin"
         android:layout_gravity="center"
         android:textSize="@dimen/texto_respostas"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrt">
+        android:textColor="@color/colorPrt"/>
 
-    </TextView>
-
-</androidx.cardview.widget.CardView>
+</LinearLayout>

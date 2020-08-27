@@ -1,15 +1,18 @@
 package com.test.miltonio.ui
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
+import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import com.test.miltonio.R
 
-class CardResposta : CardView {
+class CardResposta : LinearLayout {
 
     private var _respostaString: String? = null // TODO: use a default from R.string...
+    private var _respostaTextColor: Int? = null
+    private var respostaDrawable: Drawable? = null
 
     private var respostaTextView: TextView? = null
 
@@ -40,11 +43,25 @@ class CardResposta : CardView {
             R.styleable.CardResposta_respostaTxt
         )
 
+        _respostaTextColor = a.getColor(
+            R.styleable.CardResposta_respostaTextColor,
+            0
+        )
+
+        if (a.hasValue(R.styleable.CardMateria_cardDrawable)) {
+            respostaDrawable = a.getDrawable(
+                R.styleable.CardResposta_respostaTextDrawable
+            )
+            respostaDrawable?.callback = this
+        }
+
         a.recycle()
 
         respostaTextView = findViewById<View>(R.id.txt_resposta) as TextView
 
         setRespostaText(_respostaString)
+        setRespostaColor(_respostaTextColor!!)
+        setRespostaDrawable(respostaDrawable)
     }
 
     fun getRespostaText(): CharSequence? {
@@ -53,5 +70,13 @@ class CardResposta : CardView {
 
     fun setRespostaText(value: CharSequence?) {
         respostaTextView?.setText(value)
+    }
+
+    fun setRespostaColor(value: Int) {
+        this.setBackgroundColor(value)
+    }
+
+    fun setRespostaDrawable(value: Drawable?) {
+        this.background = value
     }
 }
