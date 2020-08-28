@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.content.res.TypedArray
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
 import android.widget.*
@@ -37,10 +38,13 @@ class TelaRespostas : AppCompatActivity() {
         val qntPerguntas: Int
 
         var arrPerguntas : TypedArray? = null
-        var ordemPerguntas: MutableList<Int> = mutableListOf()
-        val respostaCards : MutableList<CardResposta> = mutableListOf()
+        var ordemPerguntas = mutableListOf<Int>()
 
         val fundoRespostaDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_fundo)
+        val fundoSelecionadoDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_selecionada)
+
+        val somBom = MediaPlayer.create(this, R.raw.certo)
+        val somRuim = MediaPlayer.create(this, R.raw.errado)
 
         val corFundo = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFundo = findViewById<RelativeLayout>(R.id.img_fnd)
@@ -51,15 +55,14 @@ class TelaRespostas : AppCompatActivity() {
 
         fun getPergunta(indice: Int){
             txtPergunta.text = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(0)
+            val respostaCards = mutableListOf<CardResposta>()
             val qntRespostas = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.size?.minus(1)
-            val ordemRespostas: MutableList<Int> = (1..qntRespostas!!).toMutableList()
+            val ordemRespostas: MutableList<Int> = (1 .. qntRespostas!!).toMutableList()
             ordemRespostas.shuffle()
-
             if (gridPergunta.childCount>1)
                 for (i in 1 until gridPergunta.childCount)
                     gridPergunta.removeViewAt(1)
             respostaCards.clear()
-
             for (i in 0 until qntRespostas) {
                 val cardLayout = CardResposta(this)
                 val param = GridLayout.LayoutParams(
@@ -81,8 +84,7 @@ class TelaRespostas : AppCompatActivity() {
                     //fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc)) //Todo: Tentar usar Tints em vez de drawables diferentes
                     for (card in respostaCards)
                         card.setRespostaDrawable(fundoRespostaDrawable)
-                    //fundoRespostaDrawable?.setTint(getColor(R.color.respostaCerta))
-                    respostaCards.get(i).setRespostaDrawable(ContextCompat.getDrawable(this, R.drawable.card_respostas_selecionada))
+                    respostaCards[i].setRespostaDrawable(fundoSelecionadoDrawable)
                 }
             }
         }
@@ -94,10 +96,9 @@ class TelaRespostas : AppCompatActivity() {
                 txtPergunta.setTextColor(getColor(R.color.colorPrt))
             else
                 txtPergunta.setTextColor(getColor(R.color.colorBnc))
-
             arrPerguntas = resources.obtainTypedArray(dbVal.arrayPerguntas_db)
             qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0 until (qntPerguntas-1)).toMutableList()
+            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
             ordemPerguntas.shuffle()
             getPergunta(progresso)
         }
@@ -106,7 +107,7 @@ class TelaRespostas : AppCompatActivity() {
             imgFundo.setBackgroundResource(R.drawable.fndsgu)
             arrPerguntas = resources.obtainTypedArray(R.array.sgu_perguntas)
             qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0 until (qntPerguntas-1)).toMutableList()
+            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
             ordemPerguntas.shuffle()
             getPergunta(progresso)
         }
@@ -115,23 +116,33 @@ class TelaRespostas : AppCompatActivity() {
             if (resposta == 1) {
                 acertos += 1
                 progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(50,180,75))
+                somBom.start()
             }
-            else
-                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(235,5,0))
+            else {
+                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(235, 5, 0))
+                somRuim.start()
+            }
             progresso += 1
-            progressoBarra.progress = ((progresso.toDouble()/qntPerguntas.toDouble())*100).toInt()
-            if (progresso < 10)
+            progressoBarra.progress = (
+                    (progresso.toDouble()/qntPerguntas.toDouble())*100
+                    ).toInt()
+            if (progresso < qntPerguntas) {
                 getPergunta(progresso)
+            }
             else {
                 arrPerguntas.recycle()
                 if (dbVal != null) {
-                    dbVal.pontos_db = acertos * 10
+                    dbVal.pontos_db = ((acertos.toDouble()/qntPerguntas.toDouble())*100).toInt()
                     MyApplication.database?.categoriaDao()?.updateCatg(dbVal)
                 }
                 loadResultado(categoria)
             }
             btnConferir.isEnabled = false
         }
-
     }
 }
+
+//Todo: Adicionar imagens nas perguntas
+//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
+//Todo: Perguntas de múltipla escolha
+//Todo: Tamanho das caixas de resposta uniforme

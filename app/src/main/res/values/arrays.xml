@@ -420,6 +420,16 @@
         <item>@string/qnu_10_resposta3</item>
         <item>@string/qnu_10_resposta4</item>
     </string-array>
+    <string-array name="qnu_11">
+        <item>@string/qnu_11_pergunta</item>
+        <item>@string/qnu_11_resposta1</item>
+        <item>@string/qnu_11_resposta2</item>
+    </string-array>
+    <string-array name="qnu_12">
+        <item>@string/qnu_12_pergunta</item>
+        <item>@string/qnu_11_resposta2</item>
+        <item>@string/qnu_11_resposta1</item>
+    </string-array>
     <string-array name="sxu_1">
         <item>@string/sxu_1_pergunta</item>
         <item>@string/sxu_1_resposta1</item>
@@ -561,6 +571,8 @@
         <item>@array/qnu_8</item>
         <item>@array/qnu_9</item>
         <item>@array/qnu_10</item>
+        <item>@array/qnu_11</item>
+        <item>@array/qnu_12</item>
     </array>
     <array name="sxu_perguntas">
         <item>@array/sxu_1</item>

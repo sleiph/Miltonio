@@ -16,5 +16,5 @@
     <dimen name="texto_pontuacao">52sp</dimen>
     <dimen name="texto_pergunta">22sp</dimen>
     <dimen name="texto_respostas">16sp</dimen>
-    <dimen name="texto_resultado">88sp</dimen>
+    <dimen name="texto_resultado">86sp</dimen>
 </resources>

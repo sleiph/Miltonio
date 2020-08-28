@@ -299,6 +299,10 @@
     <string name="qnu_10_pergunta">Qual o nome dado aos nodos presentes em um grafo?</string>
     <string name="qnu_10_resposta3">Grafos</string>
     <string name="qnu_10_resposta4">Buracos</string>
+    <string name="qnu_11_pergunta">A <b><u>idéia</u></b> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</string>
+    <string name="qnu_11_resposta1">Errada</string>
+    <string name="qnu_11_resposta2">Certa</string>
+    <string name="qnu_12_pergunta">O <b><u>coautor</u></b> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</string>
     <string name="sxu_1_pergunta" tools:ignore="Typos">Qual o comando utilizado para iniciar uma macro?</string>
     <string name="sxu_1_resposta1">Sub nome()</string>
     <string name="sxu_1_resposta2">Macro nome()</string>

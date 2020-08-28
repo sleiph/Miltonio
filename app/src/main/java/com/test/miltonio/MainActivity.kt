@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
 
         val cardPapa = findViewById<GridLayout>(R.id.cardParent)
 
-        val db_val = MyApplication.database?.categoriaDao()?.getAll()
+        val dbVal = MyApplication.database?.categoriaDao()?.getAll()
 
-        if (db_val != null) {
-            for (i in 0..db_val.size-1) {
+        if (dbVal != null) {
+            for (i in dbVal.indices) {
                 val cardLayout = CardMateria(this)
                 val param = GridLayout.LayoutParams(
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == db_val.size-1 && db_val.size%2!=0)
+                    if (i == dbVal.size-1 && dbVal.size%2!=0)
                         GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
                     else
                         GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
@@ -40,27 +40,27 @@ class MainActivity : AppCompatActivity() {
                 param.height = 420
                 param.width = 0
                 param.setMargins(25)
-                cardLayout.setLayoutParams(param)
-                cardLayout.setCardBack(getColor(db_val.get(i).cor_db))
+                cardLayout.layoutParams = param
+                cardLayout.setCardBack(getColor(dbVal[i].cor_db))
                 cardLayout.setMateriaDrawable(
-                    ContextCompat.getDrawable(this, db_val.get(i).simb_db)
+                    ContextCompat.getDrawable(this, dbVal[i].simb_db)
                 )
                 cardLayout.setProfessorText(
-                    getString(db_val.get(i).professor_db),
-                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    getString(dbVal[i].professor_db),
+                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
                 cardLayout.setProgressoText(
                     getString(
                         R.string.resultado_pontos,
-                        db_val.get(i).pontos_db.toString()
+                        dbVal[i].pontos_db.toString()
                     ),
-                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
                 cardLayout.setMateriaText(
-                    getString(db_val.get(i).materia_db),
-                    if (db_val.get(i).isPreto_db) getColor(R.color.colorPrt)
+                    getString(dbVal[i].materia_db),
+                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
                 cardPapa.addView(cardLayout)
@@ -75,18 +75,10 @@ class MainActivity : AppCompatActivity() {
 //Todo: Acessibilidade!!!
 //Todo: Animações
 //Todo: Layout responsivo
-//Todo: High Scores
 //Todo: Usuários com senha
-//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
 //Todo: Tilestyle background
 //Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
-//Todo: Sons
-//Todo: Perguntas de múltipla escolha
-//Todo: Tamanho das caixas de resposta uniforme
-//Todo: Quantidade de perguntas adaptável
-//Todo: Quantidade de respostas adaptável
 //Todo: Fundos pro 2° semestre
 //Todo: diminuir o contraste do fundo de segunda

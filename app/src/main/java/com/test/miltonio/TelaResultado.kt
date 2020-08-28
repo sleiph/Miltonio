@@ -25,55 +25,58 @@ class TelaResultado : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
-        val db_val = MyApplication.database?.categoriaDao()?.loadById(categoria)
+        val dbVal = MyApplication.database?.categoriaDao()?.loadById(categoria)
 
-        val cor_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.cor_fnd)
-        val img_fnd: RelativeLayout = findViewById<RelativeLayout>(R.id.img_fnd)
+        val corFnd = findViewById<RelativeLayout>(R.id.cor_fnd)
+        val imgFnd = findViewById<RelativeLayout>(R.id.img_fnd)
 
-        val txt_comeco: TextView = findViewById<TextView>(R.id.comeco)
-        val txt_resultado: TextView = findViewById<TextView>(R.id.resultado)
-        val txt_meio: TextView = findViewById<TextView>(R.id.meio)
-        val txt_categoria: TextView = findViewById<TextView>(R.id.categoria)
+        val txtComeco = findViewById<TextView>(R.id.comeco)
+        val txtResultado = findViewById<TextView>(R.id.resultado)
+        val txtMeio = findViewById<TextView>(R.id.meio)
+        val txtCategoria = findViewById<TextView>(R.id.categoria)
 
-        val txt_mensagem: TextView = findViewById<TextView>(R.id.mensagem)
-        val img_mensagem: ImageView = findViewById<ImageView>(R.id.img_mensagem)
+        val txtMensagem = findViewById<TextView>(R.id.mensagem)
+        val imgMensagem = findViewById<ImageView>(R.id.img_mensagem)
 
-        val btn_main: Button = findViewById<Button>(R.id.btn_main)
+        val btnMain = findViewById<Button>(R.id.btn_main)
 
         fun setPontuacao(pnts: Any){
-            txt_resultado.text = getString(R.string.resultado_pontos, pnts)
+            txtResultado.text = getString(R.string.resultado_pontos, pnts)
             if (pnts.toString().toInt() >= 60) {
-                img_mensagem.setBackgroundResource(R.drawable.respostasnossas)
-                txt_mensagem.text = getString(R.string.resultado_msg_boa)
+                imgMensagem.setBackgroundResource(R.drawable.respostasnossas)
+                txtMensagem.text = getString(R.string.resultado_msg_boa)
             }
             else{
-                img_mensagem.setBackgroundResource(R.drawable.respostassuas)
-                txt_mensagem.text = getString(R.string.resultado_msg_ruim)
+                imgMensagem.setBackgroundResource(R.drawable.respostassuas)
+                txtMensagem.text = getString(R.string.resultado_msg_ruim)
             }
         }
 
-        if (db_val != null) {
-            setPontuacao(db_val.pontos_db)
-            cor_fnd.setBackgroundColor(getColor(db_val.cor_db))
-            img_fnd.setBackgroundResource(db_val.fundo_db)
-            txt_categoria.text = getString(db_val.materia_db)
-            if (db_val.isPreto_db) {
-                txt_comeco.setTextColor(getColor(R.color.colorBnc))
-                txt_resultado.setTextColor(getColor(R.color.colorBnc))
-                txt_meio.setTextColor(getColor(R.color.colorBnc))
-                txt_categoria.setTextColor(getColor(R.color.colorBnc))
-                txt_mensagem.setTextColor(getColor(R.color.colorBnc))
+        if (dbVal != null) {
+            setPontuacao(dbVal.pontos_db)
+            corFnd.setBackgroundColor(getColor(dbVal.cor_db))
+            imgFnd.setBackgroundResource(dbVal.fundo_db)
+            txtCategoria.text = getString(dbVal.materia_db)
+            if (!dbVal.isPreto_db) {
+                txtComeco.setTextColor(getColor(R.color.colorBnc))
+                txtResultado.setTextColor(getColor(R.color.colorBnc))
+                txtMeio.setTextColor(getColor(R.color.colorBnc))
+                txtCategoria.setTextColor(getColor(R.color.colorBnc))
+                txtMensagem.setTextColor(getColor(R.color.colorBnc))
             }
         }
         else {
             setPontuacao(0)
-            cor_fnd.setBackgroundColor(getColor(R.color.color_sgu))
-            img_fnd.setBackgroundResource(R.drawable.fndsgu)
-            txt_categoria.text = getString(R.string.categ_sgu)
+            corFnd.setBackgroundColor(getColor(R.color.color_sgu))
+            imgFnd.setBackgroundResource(R.drawable.fndsgu)
+            txtCategoria.text = getString(R.string.categ_sgu)
         }
 
-        btn_main.setOnClickListener {
+        btnMain.setOnClickListener {
             loadMain()
         }
     }
 }
+
+//Todo: High Scores
+//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
