@@ -20,12 +20,10 @@ Algumas mudanças que eu quero fazer são:
 - Tilestyle background
 - Fundos pro 2° semestre
 - diminuir o contraste do fundo de segunda
-
 - Adicionar imagens nas perguntas
 - Se você errar a pergunta, ela volta no final (igual o Duolingo)
 - Perguntas de múltipla escolha
 - Tamanho das caixas de resposta uniforme
-
 - High Scores
 - Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
 
