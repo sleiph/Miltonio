@@ -80,7 +80,8 @@ class TelaRespostas : AppCompatActivity() {
                 gridPergunta.addView(cardLayout)
                 cardLayout.setOnClickListener {
                     resposta = ordemRespostas[i]
-                    if (!btnConferir.isEnabled) btnConferir.isEnabled = true
+                    if (!btnConferir.isEnabled)
+                        btnConferir.isEnabled = true
                     //fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc)) //Todo: Tentar usar Tints em vez de drawables diferentes
                     for (card in respostaCards)
                         card.setRespostaDrawable(fundoRespostaDrawable)

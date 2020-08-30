@@ -74,11 +74,12 @@ class MainActivity : AppCompatActivity() {
 
 //Todo: Acessibilidade!!!
 //Todo: Animações
+//Todo: Título interativo
 //Todo: Layout responsivo
 //Todo: Usuários com senha
 //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
-//Todo: Tilestyle background
 //Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
+//Todo: Tilestyle background
 //Todo: Fundos pro 2° semestre
 //Todo: diminuir o contraste do fundo de segunda

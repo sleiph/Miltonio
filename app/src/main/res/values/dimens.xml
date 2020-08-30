@@ -8,10 +8,11 @@
     <dimen name="activity_pergunta_margin">24dp</dimen>
     <dimen name="botao_area_padding">24dp</dimen>
     <dimen name="botao_arredondamento">24dp</dimen>
-    <dimen name="scroll_area_pergunta">44dp</dimen>
+    <dimen name="tamanho_topo_pergunta">44dp</dimen>
+    <dimen name="tamanho_min_pergunta">120dp</dimen>
     <dimen name="tamanho_cards">160dp</dimen>
     <dimen name="tamanho_barra_progresso">12dp</dimen>
-    <dimen name="tamanho_area_botao">92dp</dimen>
+    <dimen name="tamanho_area_botao">88dp</dimen>
     <dimen name="texto_normal">14sp</dimen>
     <dimen name="texto_pontuacao">52sp</dimen>
     <dimen name="texto_pergunta">22sp</dimen>

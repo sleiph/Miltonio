@@ -40,13 +40,13 @@ class TelaResultado : AppCompatActivity() {
 
         val btnMain = findViewById<Button>(R.id.btn_main)
 
-        fun setPontuacao(pnts: Any){
+        fun setPontuacao(pnts: Any) {
             txtResultado.text = getString(R.string.resultado_pontos, pnts)
             if (pnts.toString().toInt() >= 60) {
                 imgMensagem.setBackgroundResource(R.drawable.respostasnossas)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
             }
-            else{
+            else {
                 imgMensagem.setBackgroundResource(R.drawable.respostassuas)
                 txtMensagem.text = getString(R.string.resultado_msg_ruim)
             }

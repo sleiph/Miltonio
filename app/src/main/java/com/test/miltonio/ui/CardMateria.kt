@@ -90,29 +90,29 @@ class CardMateria : LinearLayout {
     }
 
     fun getProfessorText(): CharSequence? {
-        return professorTextView?.getText()
+        return professorTextView?.text
     }
 
     fun setProfessorText(value: CharSequence?, color: Int) {
-        professorTextView?.setText(value)
+        professorTextView?.text = value
         professorTextView?.setTextColor(color)
     }
 
     fun getProgressoText(): CharSequence? {
-        return progressoTextView?.getText()
+        return progressoTextView?.text
     }
 
     fun setProgressoText(value: CharSequence?, color: Int) {
-        progressoTextView?.setText(value)
+        progressoTextView?.text = value
         progressoTextView?.setTextColor(color)
     }
 
     fun getMateriaText(): CharSequence? {
-        return materiaTextView?.getText()
+        return materiaTextView?.text
     }
 
     fun setMateriaText(value: CharSequence?, color: Int) {
-        materiaTextView?.setText(value)
+        materiaTextView?.text = value
         materiaTextView?.setTextColor(color)
     }
 

@@ -19,7 +19,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_dobro_margin"
-                android:layout_marginBottom="@dimen/activity_dobro_margin"
+                android:layout_marginBottom="@dimen/activity_real_margin"
                 android:layout_marginStart="@dimen/activity_meia_margin"
                 android:layout_marginEnd="@dimen/activity_meia_margin"
                 android:layout_columnWeight="2"

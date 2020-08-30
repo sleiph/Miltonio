@@ -13,6 +13,7 @@
     <color name="color_qnu">#4474e0</color>
     <color name="color_sxu">#0d160b</color>
     <color name="colorBnc">#fff</color>
+    <color name="colorBncT">#80ffffff</color>
     <color name="colorPrt">#000</color>
     <color name="colorCnz">#d3d3d3</color>
     <color name="colorCnzClr">#ededed</color>
