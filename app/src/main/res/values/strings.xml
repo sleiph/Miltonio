@@ -19,11 +19,16 @@
     <string name="txt_btn_conferir">conferir</string>
     <string name="resultado_comeco">Você acertou</string>
     <string name="resultado_pontos">%s%%</string>
-    <string name="resultado_meio">das perguntas de</string>
+    <string name="resultado_categoria">das perguntas de \n<b>%s</b></string>
     <string name="resultado_msg_boa">Agora que tal compartilhar as respostas com o clã?</string>
     <string name="resultado_msg_ruim">É… que tal pedir a ajuda do clã nessa matéria?</string>
     <string name="resultado_btn">voltar</string>
     <string name="resultado_msg_descricao">meme inspirador</string>
+    <string name="menu_sem">Semestre</string>
+    <string name="menu_sem_1">1° Semestre</string>
+    <string name="menu_sem_2">2° Semestre</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_config">Opções</string>
     <string name="sgu_1_pergunta">A experiência de Hawthorne foi realizada por:</string>
     <string name="sgu_1_resposta1">Elton Maio</string>
     <string name="sgu_1_resposta2">Max Weber</string>

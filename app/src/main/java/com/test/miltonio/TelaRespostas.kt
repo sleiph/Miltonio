@@ -147,3 +147,4 @@ class TelaRespostas : AppCompatActivity() {
 //Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Perguntas de múltipla escolha
 //Todo: Tamanho das caixas de resposta uniforme
+//Todo: Scroll mais bonito/intuitivo das respostas

@@ -3,6 +3,8 @@ package com.test.miltonio
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.GridLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -10,12 +12,14 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardMateria
 
+
 class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(findViewById(R.id.toolbarra_main))
 
         fun loadRespostas(resul: Int){
             val intent = Intent(this, TelaRespostas::class.java)
@@ -32,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 val cardLayout = CardMateria(this)
                 val param = GridLayout.LayoutParams(
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == dbVal.size-1 && dbVal.size%2!=0)
+                    if (i == dbVal.size - 1 && dbVal.size % 2 != 0)
                         GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
                     else
                         GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
@@ -70,6 +74,28 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    //Todo: Desenhar ícones do menu
+    //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
+    //Todo: Escolha de semestre no menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.menu_semestre -> {
+            true
+        }
+        R.id.menu_perfil -> {
+            true
+        }
+        R.id.menu_opcoes -> {
+            true
+        }
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
 }
 
 //Todo: Acessibilidade!!!
@@ -77,9 +103,10 @@ class MainActivity : AppCompatActivity() {
 //Todo: Título interativo
 //Todo: Layout responsivo
 //Todo: Usuários com senha
-//Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
 //Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Tilestyle background
+//Todo: Tirar a barra de status
+
+//Todo: Tilestyle backgrounds
 //Todo: Fundos pro 2° semestre
-//Todo: diminuir o contraste do fundo de segunda
+//Todo: Diminuir o contraste do fundo de segunda

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu_semestre"
+        android:title="@string/menu_sem"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/menu_perfil"
+        android:title="@string/menu_perfil"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/menu_opcoes"
+        android:title="@string/menu_config"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

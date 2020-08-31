@@ -117,7 +117,7 @@ class CardMateria : LinearLayout {
     }
 
     fun setMateriaDrawable(value: Drawable?) {
-        layoutMae?.setBackgroundDrawable(value)
+        layoutMae?.background = value
     }
 
     fun setCardBack(value: Int) {

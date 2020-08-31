@@ -4,7 +4,7 @@
     <dimen name="activity_dobro_margin">32dp</dimen>
     <dimen name="activity_real_margin">16dp</dimen>
     <dimen name="activity_meia_margin">8dp</dimen>
-    <dimen name="activity_interna_margin">8dp</dimen>
+    <dimen name="activity_interna_margin">6dp</dimen>
     <dimen name="activity_pergunta_margin">24dp</dimen>
     <dimen name="botao_area_padding">24dp</dimen>
     <dimen name="botao_arredondamento">24dp</dimen>

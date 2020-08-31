@@ -32,7 +32,6 @@ class TelaResultado : AppCompatActivity() {
 
         val txtComeco = findViewById<TextView>(R.id.comeco)
         val txtResultado = findViewById<TextView>(R.id.resultado)
-        val txtMeio = findViewById<TextView>(R.id.meio)
         val txtCategoria = findViewById<TextView>(R.id.categoria)
 
         val txtMensagem = findViewById<TextView>(R.id.mensagem)
@@ -56,11 +55,10 @@ class TelaResultado : AppCompatActivity() {
             setPontuacao(dbVal.pontos_db)
             corFnd.setBackgroundColor(getColor(dbVal.cor_db))
             imgFnd.setBackgroundResource(dbVal.fundo_db)
-            txtCategoria.text = getString(dbVal.materia_db)
+            txtCategoria.text = getString(R.string.resultado_categoria, getString(dbVal.materia_db))
             if (!dbVal.isPreto_db) {
                 txtComeco.setTextColor(getColor(R.color.colorBnc))
                 txtResultado.setTextColor(getColor(R.color.colorBnc))
-                txtMeio.setTextColor(getColor(R.color.colorBnc))
                 txtCategoria.setTextColor(getColor(R.color.colorBnc))
                 txtMensagem.setTextColor(getColor(R.color.colorBnc))
             }
@@ -69,7 +67,7 @@ class TelaResultado : AppCompatActivity() {
             setPontuacao(0)
             corFnd.setBackgroundColor(getColor(R.color.color_sgu))
             imgFnd.setBackgroundResource(R.drawable.fndsgu)
-            txtCategoria.text = getString(R.string.categ_sgu)
+            txtCategoria.text = getString(R.string.resultado_categoria, getString(R.string.categ_sgu))
         }
 
         btnMain.setOnClickListener {

@@ -10,7 +10,7 @@ import com.test.miltonio.R
 
 class CardResposta : LinearLayout {
 
-    private var _respostaString: String? = null // TODO: use a default from R.string...
+    private var _respostaString: String? = null
     private var _respostaTextColor: Int? = null
     private var respostaDrawable: Drawable? = null
 
@@ -65,11 +65,11 @@ class CardResposta : LinearLayout {
     }
 
     fun getRespostaText(): CharSequence? {
-        return respostaTextView?.getText()
+        return respostaTextView?.text
     }
 
     fun setRespostaText(value: CharSequence?) {
-        respostaTextView?.setText(value)
+        respostaTextView?.text = value
     }
 
     fun setRespostaColor(value: Int) {
