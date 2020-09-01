@@ -70,7 +70,7 @@ class TelaRespostas : AppCompatActivity() {
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
                 )
                 param.width = 0
-                param.setMargins(20)
+                param.setMargins(resources.getDimension(R.dimen.activity_meia_margin).toInt())
                 cardLayout.layoutParams = param
                 cardLayout.setRespostaText(
                     arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(ordemRespostas[i])
@@ -116,11 +116,15 @@ class TelaRespostas : AppCompatActivity() {
         btnConferir.setOnClickListener {
             if (resposta == 1) {
                 acertos += 1
-                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(50,180,75))
+                progressoBarra.progressTintList = ColorStateList.valueOf(
+                    Color.rgb(50,180,75)
+                )
                 somBom.start()
             }
             else {
-                progressoBarra.progressTintList = ColorStateList.valueOf(Color.rgb(235, 5, 0))
+                progressoBarra.progressTintList = ColorStateList.valueOf(
+                    Color.rgb(235, 5, 0)
+                )
                 somRuim.start()
             }
             progresso += 1

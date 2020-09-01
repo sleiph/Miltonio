@@ -7,16 +7,20 @@
     <item
         android:id="@+id/menu_semestre"
         android:title="@string/menu_sem"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_icone_semestre"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.Spinner"
         />
 
     <item android:id="@+id/menu_perfil"
         android:title="@string/menu_perfil"
+        android:icon="@drawable/ic_icone_perfil"
         app:showAsAction="ifRoom"
         />
 
     <item android:id="@+id/menu_opcoes"
         android:title="@string/menu_config"
+        android:icon="@drawable/ic_icone_config"
         app:showAsAction="ifRoom"
         />
 
