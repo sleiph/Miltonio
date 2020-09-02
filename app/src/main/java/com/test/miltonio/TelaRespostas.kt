@@ -70,7 +70,7 @@ class TelaRespostas : AppCompatActivity() {
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
                 )
                 param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.activity_meia_margin).toInt())
+                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
                 cardLayout.layoutParams = param
                 cardLayout.setRespostaText(
                     arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(ordemRespostas[i])
@@ -104,9 +104,9 @@ class TelaRespostas : AppCompatActivity() {
             getPergunta(progresso)
         }
         else {
-            corFundo.setBackgroundColor(getColor(R.color.color_sgu))
-            imgFundo.setBackgroundResource(R.drawable.fndsgu)
-            arrPerguntas = resources.obtainTypedArray(R.array.sgu_perguntas)
+            corFundo.setBackgroundColor(getColor(R.color.colorCyan))
+            imgFundo.setBackgroundResource(R.drawable.fndmat)
+            arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
             qntPerguntas = arrPerguntas.length()
             ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
             ordemPerguntas.shuffle()

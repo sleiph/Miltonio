@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/tamanho_cards"
+    android:height="1dp"
+    android:viewportWidth="1050"
+    android:viewportHeight="8">
+  <path
+      android:pathData="M4,4L1046,4"
+      android:strokeLineJoin="round"
+      android:strokeWidth="6"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+</vector>

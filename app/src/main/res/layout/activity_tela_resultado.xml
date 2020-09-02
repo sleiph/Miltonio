@@ -20,9 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/activity_dobro_margin"
-        android:layout_marginTop="@dimen/activity_topo"
-        android:layout_marginBottom="@dimen/activity_real_margin">
+        android:layout_marginHorizontal="@dimen/margem_dobro_margin"
+        android:layout_marginTop="@dimen/distancia_topo_main"
+        android:layout_marginBottom="@dimen/margem_real_margin">
 
         <TextView
             android:id="@+id/comeco"
@@ -31,8 +31,7 @@
             android:text="@string/resultado_comeco"
             android:textSize="@dimen/texto_pergunta"
             android:textAlignment="center"
-            android:textColor="@color/colorPrt"
-            />
+            android:textColor="@color/colorPrt" />
 
         <TextView
             android:id="@+id/resultado"
@@ -42,8 +41,7 @@
             android:textSize="@dimen/texto_resultado"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:textColor="@color/colorPrt"
-            />
+            android:textColor="@color/colorPrt" />
 
         <TextView
             android:id="@+id/categoria"
@@ -52,8 +50,7 @@
             android:text="@string/resultado_categoria"
             android:textSize="@dimen/texto_pergunta"
             android:textAlignment="center"
-            android:textColor="@color/colorPrt"
-            />
+            android:textColor="@color/colorPrt" />
 
     </LinearLayout>
 
@@ -62,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/txt_principal"
-        android:layout_marginHorizontal="@dimen/activity_dobro_margin"
+        android:layout_marginHorizontal="@dimen/margem_dobro_margin"
         android:layout_marginBottom="@dimen/tamanho_area_botao"
         android:gravity="center"
         android:orientation="vertical">
@@ -71,9 +68,8 @@
             android:id="@+id/img_mensagem"
             android:layout_width="@dimen/tamanho_cards"
             android:layout_height="@dimen/tamanho_cards"
-            android:layout_marginBottom="@dimen/activity_meia_margin"
-            android:contentDescription="@string/resultado_msg_descricao"
-            />
+            android:layout_marginBottom="@dimen/margem_meia_margin"
+            android:contentDescription="@string/resultado_msg_descricao" />
 
         <TextView
             android:id="@+id/mensagem"
@@ -82,10 +78,18 @@
             android:textSize="@dimen/texto_pergunta"
             android:textAlignment="center"
             android:textStyle="italic"
-            android:textColor="@color/colorPrt"
-            />
+            android:textColor="@color/colorPrt" />
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/distancia_separador"
+        android:layout_marginHorizontal="@dimen/margem_real_margin"
+        android:background="@drawable/ic_separador"
+        android:backgroundTint="@color/colorCnzEsc" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,9 +103,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/botao_fundo"
-            android:paddingHorizontal="@dimen/botao_area_padding"
-            android:text="@string/resultado_btn"
-            />
+            android:paddingHorizontal="@dimen/margem_botao_interna"
+            android:text="@string/resultado_btn" />
 
     </LinearLayout>
 

@@ -65,9 +65,9 @@ class TelaResultado : AppCompatActivity() {
         }
         else {
             setPontuacao(0)
-            corFnd.setBackgroundColor(getColor(R.color.color_sgu))
-            imgFnd.setBackgroundResource(R.drawable.fndsgu)
-            txtCategoria.text = getString(R.string.resultado_categoria, getString(R.string.categ_sgu))
+            corFnd.setBackgroundColor(getColor(R.color.colorCyan))
+            imgFnd.setBackgroundResource(R.drawable.fndmat)
+            txtCategoria.text = getString(R.string.resultado_categoria, getString(R.string.categ_sem2_cal))
         }
 
         btnMain.setOnClickListener {

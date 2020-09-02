@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/ToolBarra"
-        android:elevation="@dimen/activity_interna_margin"
+        android:elevation="@dimen/margem_card_interna"
         app:titleTextColor="@color/colorBnc"
         />
 
@@ -29,16 +29,16 @@
             android:columnCount="2"
             android:alignmentMode="alignBounds"
             android:columnOrderPreserved="false"
-            android:padding="@dimen/activity_dobro_margin">
+            android:padding="@dimen/margem_dobro_margin">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/tamanho_topo_main"
-                android:layout_marginBottom="@dimen/activity_real_margin"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
+                android:layout_marginTop="@dimen/distancia_topo_main"
+                android:layout_marginBottom="@dimen/margem_real_margin"
+                android:layout_marginStart="@dimen/margem_meia_margin"
+                android:layout_marginEnd="@dimen/margem_meia_margin"
                 android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"

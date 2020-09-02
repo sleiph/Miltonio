@@ -16,9 +16,9 @@
         android:id="@+id/progressoBarra"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tamanho_barra_progresso"
-        android:layout_marginTop="@dimen/activity_real_margin"
-        android:layout_marginStart="@dimen/activity_dobro_margin"
-        android:layout_marginEnd="@dimen/activity_dobro_margin"
+        android:layout_marginTop="@dimen/margem_real_margin"
+        android:layout_marginStart="@dimen/margem_dobro_margin"
+        android:layout_marginEnd="@dimen/margem_dobro_margin"
         android:progressBackgroundTint="@color/colorBnc"
         android:progressTint="@color/respostaCerta"
         android:progress="0"
@@ -28,7 +28,7 @@
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/tamanho_topo_pergunta"
+        android:layout_marginTop="@dimen/distancia_topo_pergunta"
         android:layout_marginBottom="@dimen/tamanho_area_botao"
         android:fillViewport="true">
 
@@ -37,17 +37,17 @@
             android:columnCount="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:paddingHorizontal="@dimen/activity_dobro_margin">
+            android:paddingHorizontal="@dimen/margem_dobro_margin">
 
             <TextView
                 android:id="@+id/pergunta"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:minHeight="@dimen/tamanho_min_pergunta"
-                android:layout_marginStart="@dimen/activity_meia_margin"
-                android:layout_marginEnd="@dimen/activity_meia_margin"
-                android:layout_marginTop="@dimen/activity_pergunta_margin"
-                android:layout_marginBottom="@dimen/activity_pergunta_margin"
+                android:layout_marginStart="@dimen/margem_meia_margin"
+                android:layout_marginEnd="@dimen/margem_meia_margin"
+                android:layout_marginTop="@dimen/margem_pergunta_interna"
+                android:layout_marginBottom="@dimen/margem_pergunta_interna"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="3"
                 android:gravity="center"
@@ -58,6 +58,15 @@
         </GridLayout>
 
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/distancia_separador"
+        android:layout_marginHorizontal="@dimen/margem_real_margin"
+        android:background="@drawable/ic_separador"
+        android:backgroundTint="@color/colorCnzEsc" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -71,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/botao_fundo"
-            android:paddingHorizontal="@dimen/botao_area_padding"
+            android:paddingHorizontal="@dimen/arredondamento_botao"
             android:text="@string/txt_btn_conferir"
             android:enabled="false"/>
 

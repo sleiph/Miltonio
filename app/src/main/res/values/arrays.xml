@@ -1,591 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="sgu_1">
-        <item>@string/sgu_1_pergunta</item>
-        <item>@string/sgu_1_resposta1</item>
-        <item>@string/sgu_1_resposta2</item>
-        <item>@string/sgu_1_resposta3</item>
-        <item>@string/sgu_1_resposta4</item>
-    </string-array>
-    <string-array name="sgu_2">
-        <item>@string/sgu_2_pergunta</item>
-        <item>@string/sgu_2_resposta1</item>
-        <item>@string/sgu_3_resposta1</item>
-        <item>@string/sgu_4_resposta1</item>
-        <item>@string/sgu_5_resposta1</item>
-    </string-array>
-    <string-array name="sgu_3">
-        <item>@string/sgu_3_pergunta</item>
-        <item>@string/sgu_3_resposta1</item>
-        <item>@string/sgu_2_resposta1</item>
-        <item>@string/sgu_4_resposta1</item>
-        <item>@string/sgu_5_resposta1</item>
-    </string-array>
-    <string-array name="sgu_4">
-        <item>@string/sgu_4_pergunta</item>
-        <item>@string/sgu_4_resposta1</item>
-        <item>@string/sgu_2_resposta1</item>
-        <item>@string/sgu_3_resposta1</item>
-        <item>@string/sgu_5_resposta1</item>
-    </string-array>
-    <string-array name="sgu_5">
-        <item>@string/sgu_5_pergunta</item>
-        <item>@string/sgu_5_resposta1</item>
-        <item>@string/sgu_2_resposta1</item>
-        <item>@string/sgu_3_resposta1</item>
-        <item>@string/sgu_4_resposta1</item>
-    </string-array>
-    <string-array name="sgu_6">
-        <item>@string/sgu_6_pergunta</item>
-        <item>@string/sgu_6_resposta1</item>
-        <item>@string/sgu_6_resposta2</item>
-        <item>@string/sgu_6_resposta3</item>
-        <item>@string/sgu_6_resposta4</item>
-    </string-array>
-    <string-array name="sgu_7">
-        <item>@string/sgu_7_pergunta</item>
-        <item>@string/sgu_7_resposta1</item>
-        <item>@string/sgu_7_resposta2</item>
-        <item>@string/sgu_7_resposta3</item>
-        <item>@string/sgu_7_resposta4</item>
-    </string-array>
-    <string-array name="sgu_8">
-        <item>@string/sgu_8_pergunta</item>
-        <item>@string/sgu_8_resposta1</item>
-        <item>@string/sgu_1_resposta2</item>
-        <item>@string/sgu_1_resposta3</item>
-        <item>@string/sgu_1_resposta4</item>
-    </string-array>
-    <string-array name="sgu_9">
-        <item>@string/sgu_9_pergunta</item>
-        <item>@string/sgu_9_resposta1</item>
-        <item>@string/sgu_9_resposta2</item>
-        <item>@string/sgu_9_resposta3</item>
-        <item>@string/sgu_9_resposta4</item>
-    </string-array>
-    <string-array name="sgu_10">
-        <item>@string/sgu_10_pergunta</item>
-        <item>@string/sgu_10_resposta1</item>
-        <item>@string/sgu_10_resposta2</item>
-        <item>@string/sgu_10_resposta3</item>
-        <item>@string/sgu_10_resposta4</item>
-    </string-array>
-    <string-array name="tru_1">
-        <item>@string/tru_1_pergunta</item>
-        <item>@string/tru_1_resposta1</item>
-        <item>@string/tru_1_resposta2</item>
-        <item>@string/tru_1_resposta3</item>
-        <item>@string/tru_1_resposta4</item>
-    </string-array>
-    <string-array name="tru_2">
-        <item>@string/tru_2_pergunta</item>
-        <item>@string/tru_2_resposta1</item>
-        <item>@string/tru_2_resposta2</item>
-        <item>@string/tru_2_resposta3</item>
-        <item>@string/tru_2_resposta4</item>
-    </string-array>
-    <string-array name="tru_3">
-        <item>@string/tru_3_pergunta</item>
-        <item>@string/tru_3_resposta1</item>
-        <item>@string/tru_3_resposta2</item>
-        <item>@string/tru_3_resposta3</item>
-        <item>@string/tru_3_resposta4</item>
-    </string-array>
-    <string-array name="tru_4">
-        <item>@string/tru_4_pergunta</item>
-        <item>@string/tru_4_resposta1</item>
-        <item>@string/tru_4_resposta2</item>
-        <item>@string/tru_4_resposta3</item>
-        <item>@string/tru_4_resposta4</item>
-    </string-array>
-    <string-array name="tru_5">
-        <item>@string/tru_5_pergunta</item>
-        <item>@string/tru_5_resposta1</item>
-        <item>@string/tru_5_resposta2</item>
-        <item>@string/tru_5_resposta3</item>
-        <item>@string/tru_5_resposta4</item>
-    </string-array>
-    <string-array name="tru_6">
-        <item>@string/tru_6_pergunta</item>
-        <item>@string/tru_6_resposta1</item>
-        <item>@string/tru_6_resposta2</item>
-        <item>@string/tru_6_resposta3</item>
-        <item>@string/tru_6_resposta4</item>
-    </string-array>
-    <string-array name="tru_7">
-        <item>@string/tru_7_pergunta</item>
-        <item>@string/tru_7_resposta1</item>
-        <item>@string/tru_7_resposta2</item>
-        <item>@string/tru_7_resposta3</item>
-        <item>@string/tru_7_resposta4</item>
-    </string-array>
-    <string-array name="tru_8">
-        <item>@string/tru_8_pergunta</item>
-        <item>@string/tru_8_resposta1</item>
-        <item>@string/tru_8_resposta2</item>
-        <item>@string/tru_8_resposta3</item>
-        <item>@string/tru_8_resposta4</item>
-    </string-array>
-    <string-array name="tru_9">
-        <item>@string/tru_9_pergunta</item>
-        <item>@string/tru_9_resposta1</item>
-        <item>@string/tru_9_resposta2</item>
-        <item>@string/tru_9_resposta3</item>
-        <item>@string/tru_9_resposta4</item>
-    </string-array>
-    <string-array name="tru_10">
-        <item>@string/tru_10_pergunta</item>
-        <item>@string/tru_10_resposta1</item>
-        <item>@string/tru_10_resposta2</item>
-        <item>@string/tru_10_resposta3</item>
-        <item>@string/tru_10_resposta4</item>
-    </string-array>
-    <string-array name="trd_1">
-        <item>@string/trd_1_pergunta</item>
-        <item>@string/trd_1_resposta1</item>
-        <item>@string/trd_1_resposta2</item>
-        <item>@string/trd_1_resposta3</item>
-        <item>@string/trd_1_resposta4</item>
-    </string-array>
-    <string-array name="trd_2">
-        <item>@string/trd_2_pergunta</item>
-        <item>@string/trd_2_resposta1</item>
-        <item>@string/trd_2_resposta2</item>
-        <item>@string/trd_2_resposta3</item>
-        <item>@string/trd_2_resposta4</item>
-    </string-array>
-    <string-array name="trd_3">
-        <item>@string/trd_3_pergunta</item>
-        <item>@string/trd_3_resposta1</item>
-        <item>@string/trd_3_resposta2</item>
-        <item>@string/trd_3_resposta3</item>
-        <item>@string/trd_3_resposta4</item>
-    </string-array>
-    <string-array name="trd_4">
-        <item>@string/trd_4_pergunta</item>
-        <item>@string/trd_4_resposta1</item>
-        <item>@string/trd_4_resposta2</item>
-        <item>@string/trd_4_resposta3</item>
-        <item>@string/trd_4_resposta4</item>
-    </string-array>
-    <string-array name="trd_5">
-        <item>@string/trd_5_pergunta</item>
-        <item>@string/trd_5_resposta1</item>
-        <item>@string/trd_5_resposta2</item>
-        <item>@string/trd_5_resposta3</item>
-        <item>@string/trd_5_resposta4</item>
-    </string-array>
-    <string-array name="trd_6">
-        <item>@string/trd_6_pergunta</item>
-        <item>@string/trd_6_resposta1</item>
-        <item>@string/trd_6_resposta2</item>
-        <item>@string/trd_6_resposta3</item>
-        <item>@string/trd_6_resposta4</item>
-    </string-array>
-    <string-array name="trd_7">
-        <item>@string/trd_7_pergunta</item>
-        <item>@string/trd_7_resposta1</item>
-        <item>@string/trd_7_resposta2</item>
-        <item>@string/trd_7_resposta3</item>
-        <item>@string/trd_7_resposta4</item>
-    </string-array>
-    <string-array name="trd_8">
-        <item>@string/trd_8_pergunta</item>
-        <item>@string/trd_8_resposta1</item>
-        <item>@string/trd_8_resposta2</item>
-        <item>@string/trd_8_resposta3</item>
-        <item>@string/trd_8_resposta4</item>
-    </string-array>
-    <string-array name="trd_9">
-        <item>@string/trd_9_pergunta</item>
-        <item>@string/trd_9_resposta1</item>
-        <item>@string/trd_9_resposta2</item>
-        <item>@string/trd_9_resposta3</item>
-        <item>@string/trd_9_resposta4</item>
-    </string-array>
-    <string-array name="trd_10">
-        <item>@string/trd_10_pergunta</item>
-        <item>@string/trd_10_resposta1</item>
-        <item>@string/trd_10_resposta2</item>
-        <item>@string/trd_10_resposta3</item>
-        <item>@string/trd_10_resposta4</item>
-    </string-array>
-    <string-array name="qru_1">
-        <item>@string/qru_1_pergunta</item>
-        <item>@string/qru_1_resposta1</item>
-        <item>@string/qru_1_resposta2</item>
-        <item>@string/qru_1_resposta3</item>
-        <item>@string/qru_1_resposta4</item>
-    </string-array>
-    <string-array name="qru_2">
-        <item>@string/qru_2_pergunta</item>
-        <item>@string/qru_2_resposta1</item>
-        <item>@string/qru_2_resposta2</item>
-        <item>@string/qru_2_resposta3</item>
-        <item>@string/qru_2_resposta4</item>
-    </string-array>
-    <string-array name="qru_3">
-        <item>@string/qru_3_pergunta</item>
-        <item>@string/qru_3_resposta1</item>
-        <item>@string/qru_3_resposta2</item>
-        <item>@string/qru_3_resposta3</item>
-        <item>@string/qru_3_resposta4</item>
-    </string-array>
-    <string-array name="qru_4">
-        <item>@string/qru_4_pergunta</item>
-        <item>@string/qru_4_resposta1</item>
-        <item>@string/qru_4_resposta2</item>
-        <item>@string/qru_4_resposta3</item>
-        <item>@string/qru_4_resposta4</item>
-    </string-array>
-    <string-array name="qru_5">
-        <item>@string/qru_5_pergunta</item>
-        <item>@string/qru_5_resposta1</item>
-        <item>@string/qru_5_resposta2</item>
-        <item>@string/qru_5_resposta3</item>
-        <item>@string/qru_5_resposta4</item>
-    </string-array>
-    <string-array name="qru_6">
-        <item>@string/qru_6_pergunta</item>
-        <item>@string/qru_6_resposta1</item>
-        <item>@string/qru_6_resposta2</item>
-        <item>@string/qru_6_resposta3</item>
-        <item>@string/qru_6_resposta4</item>
-    </string-array>
-    <string-array name="qru_7">
-        <item>@string/qru_7_pergunta</item>
-        <item>@string/qru_7_resposta1</item>
-        <item>@string/qru_7_resposta2</item>
-        <item>@string/qru_7_resposta3</item>
-        <item>@string/qru_7_resposta4</item>
-    </string-array>
-    <string-array name="qru_8">
-        <item>@string/qru_8_pergunta</item>
-        <item>@string/qru_8_resposta1</item>
-        <item>@string/qru_8_resposta2</item>
-        <item>@string/qru_8_resposta3</item>
-        <item>@string/qru_8_resposta4</item>
-    </string-array>
-    <string-array name="qru_9">
-        <item>@string/qru_9_pergunta</item>
-        <item>@string/qru_9_resposta1</item>
-        <item>@string/qru_9_resposta2</item>
-        <item>@string/qru_9_resposta3</item>
-        <item>@string/qru_9_resposta4</item>
-    </string-array>
-    <string-array name="qru_10">
-        <item>@string/qru_10_pergunta</item>
-        <item>@string/qru_10_resposta1</item>
-        <item>@string/qru_10_resposta2</item>
-        <item>@string/qru_10_resposta3</item>
-        <item>@string/qru_10_resposta4</item>
-    </string-array>
-    <string-array name="qrd_1">
-        <item>@string/qrd_1_pergunta</item>
-        <item>@string/qrd_1_resposta1</item>
-        <item>@string/qrd_1_resposta2</item>
-        <item>@string/qrd_1_resposta3</item>
-        <item>@string/qrd_1_resposta4</item>
-    </string-array>
-    <string-array name="qrd_2">
-        <item>@string/qrd_2_pergunta</item>
-        <item>@string/qrd_2_resposta1</item>
-        <item>@string/qrd_2_resposta2</item>
-        <item>@string/qrd_2_resposta3</item>
-        <item>@string/qrd_2_resposta4</item>
-    </string-array>
-    <string-array name="qrd_3">
-        <item>@string/qrd_3_pergunta</item>
-        <item>@string/qrd_3_resposta1</item>
-        <item>@string/qrd_3_resposta2</item>
-        <item>@string/qrd_3_resposta3</item>
-        <item>@string/qrd_3_resposta4</item>
-    </string-array>
-    <string-array name="qrd_4">
-        <item>@string/qrd_4_pergunta</item>
-        <item>@string/qrd_4_resposta1</item>
-        <item>@string/qrd_4_resposta2</item>
-        <item>@string/qrd_4_resposta3</item>
-        <item>@string/qrd_4_resposta4</item>
-    </string-array>
-    <string-array name="qrd_5">
-        <item>@string/qrd_5_pergunta</item>
-        <item>@string/qrd_5_resposta1</item>
-        <item>@string/qrd_5_resposta2</item>
-        <item>@string/qrd_5_resposta3</item>
-        <item>@string/qrd_5_resposta4</item>
-    </string-array>
-    <string-array name="qrd_6">
-        <item>@string/qrd_6_pergunta</item>
-        <item>@string/qrd_6_resposta1</item>
-        <item>@string/qrd_6_resposta2</item>
-        <item>@string/qrd_6_resposta3</item>
-        <item>@string/qrd_6_resposta4</item>
-    </string-array>
-    <string-array name="qrd_7">
-        <item>@string/qrd_7_pergunta</item>
-        <item>@string/qrd_7_resposta1</item>
-        <item>@string/qrd_7_resposta2</item>
-        <item>@string/qrd_7_resposta3</item>
-        <item>@string/qrd_7_resposta4</item>
-    </string-array>
-    <string-array name="qrd_8">
-        <item>@string/qrd_8_pergunta</item>
-        <item>@string/qrd_8_resposta1</item>
-        <item>@string/qrd_8_resposta2</item>
-        <item>@string/qrd_8_resposta3</item>
-        <item>@string/qrd_8_resposta4</item>
-    </string-array>
-    <string-array name="qrd_9">
-        <item>@string/qrd_9_pergunta</item>
-        <item>@string/qrd_9_resposta1</item>
-        <item>@string/qrd_9_resposta2</item>
-        <item>@string/qrd_9_resposta3</item>
-        <item>@string/qrd_9_resposta4</item>
-    </string-array>
-    <string-array name="qrd_10">
-        <item>@string/qrd_10_pergunta</item>
-        <item>@string/qrd_10_resposta1</item>
-        <item>@string/qrd_10_resposta2</item>
-        <item>@string/qrd_10_resposta3</item>
-        <item>@string/qrd_10_resposta4</item>
-    </string-array>
-    <string-array name="qnu_1">
-        <item>@string/qnu_1_pergunta</item>
-        <item>@string/qnu_1_resposta1</item>
-        <item>@string/qnu_1_resposta2</item>
-        <item>@string/qnu_1_resposta3</item>
-        <item>@string/qnu_1_resposta4</item>
-    </string-array>
-    <string-array name="qnu_2">
-        <item>@string/qnu_2_pergunta</item>
-        <item>@string/qnu_2_resposta1</item>
-        <item>@string/qnu_2_resposta2</item>
-        <item>@string/qnu_2_resposta3</item>
-        <item>@string/qnu_2_resposta4</item>
-    </string-array>
-    <string-array name="qnu_3">
-        <item>@string/qnu_3_pergunta</item>
-        <item>@string/qnu_3_resposta1</item>
-        <item>@string/qnu_4_resposta1</item>
-        <item>@string/qnu_5_resposta1</item>
-        <item>@string/qnu_3_resposta4</item>
-    </string-array>
-    <string-array name="qnu_4">
-        <item>@string/qnu_4_pergunta</item>
-        <item>@string/qnu_4_resposta1</item>
-        <item>@string/qnu_3_resposta1</item>
-        <item>@string/qnu_5_resposta1</item>
-        <item>@string/qnu_3_resposta4</item>
-    </string-array>
-    <string-array name="qnu_5">
-        <item>@string/qnu_5_pergunta</item>
-        <item>@string/qnu_5_resposta1</item>
-        <item>@string/qnu_3_resposta1</item>
-        <item>@string/qnu_4_resposta1</item>
-        <item>@string/qnu_3_resposta4</item>
-    </string-array>
-    <string-array name="qnu_6">
-        <item>@string/qnu_6_pergunta</item>
-        <item>@string/qnu_6_resposta1</item>
-        <item>@string/qnu_6_resposta2</item>
-        <item>@string/qnu_6_resposta3</item>
-        <item>@string/qnu_6_resposta4</item>
-    </string-array>
-    <string-array name="qnu_7">
-        <item>@string/qnu_7_pergunta</item>
-        <item>@string/qnu_7_resposta1</item>
-        <item>@string/qnu_7_resposta2</item>
-        <item>@string/qnu_7_resposta3</item>
-        <item>@string/qnu_7_resposta4</item>
-    </string-array>
-    <string-array name="qnu_8">
-        <item>@string/qnu_8_pergunta</item>
-        <item>@string/qnu_8_resposta1</item>
-        <item>@string/qnu_8_resposta2</item>
-        <item>@string/qnu_8_resposta3</item>
-        <item>@string/qnu_8_resposta4</item>
-    </string-array>
-    <string-array name="qnu_9">
-        <item>@string/qnu_9_pergunta</item>
-        <item>@string/qnu_9_resposta1</item>
-        <item>@string/qnu_9_resposta2</item>
-        <item>@string/qnu_9_resposta3</item>
-        <item>@string/qnu_9_resposta4</item>
-    </string-array>
-    <string-array name="qnu_10">
-        <item>@string/qnu_10_pergunta</item>
-        <item>@string/qnu_9_resposta2</item>
-        <item>@string/qnu_9_resposta1</item>
-        <item>@string/qnu_10_resposta3</item>
-        <item>@string/qnu_10_resposta4</item>
-    </string-array>
-    <string-array name="qnu_11">
-        <item>@string/qnu_11_pergunta</item>
-        <item>@string/qnu_11_resposta1</item>
-        <item>@string/qnu_11_resposta2</item>
-    </string-array>
-    <string-array name="qnu_12">
-        <item>@string/qnu_12_pergunta</item>
-        <item>@string/qnu_11_resposta2</item>
-        <item>@string/qnu_11_resposta1</item>
-    </string-array>
-    <string-array name="sxu_1">
-        <item>@string/sxu_1_pergunta</item>
-        <item>@string/sxu_1_resposta1</item>
-        <item>@string/sxu_1_resposta2</item>
-        <item>@string/sxu_1_resposta3</item>
-        <item>@string/sxu_1_resposta4</item>
-    </string-array>
-    <string-array name="sxu_2">
-        <item>@string/sxu_2_pergunta</item>
-        <item>@string/sxu_2_resposta1</item>
-        <item>@string/sxu_2_resposta2</item>
-        <item>@string/sxu_2_resposta3</item>
-        <item>@string/sxu_2_resposta4</item>
-    </string-array>
-    <string-array name="sxu_3">
-        <item>@string/sxu_3_pergunta</item>
-        <item>@string/sxu_3_resposta1</item>
-        <item>@string/sxu_3_resposta2</item>
-        <item>@string/sxu_3_resposta3</item>
-        <item>@string/sxu_3_resposta4</item>
-    </string-array>
-    <string-array name="sxu_4">
-        <item>@string/sxu_4_pergunta</item>
-        <item>@string/sxu_4_resposta1</item>
-        <item>@string/sxu_4_resposta2</item>
-        <item>@string/sxu_4_resposta3</item>
-        <item>@string/sxu_4_resposta4</item>
-    </string-array>
-    <string-array name="sxu_5">
-        <item>@string/sxu_5_pergunta</item>
-        <item>@string/sxu_5_resposta1</item>
-        <item>@string/sxu_5_resposta2</item>
-        <item>@string/sxu_5_resposta3</item>
-        <item>@string/sxu_5_resposta4</item>
-    </string-array>
-    <string-array name="sxu_6">
-        <item>@string/sxu_6_pergunta</item>
-        <item>@string/sxu_6_resposta1</item>
-        <item>@string/sxu_6_resposta2</item>
-        <item>@string/sxu_6_resposta3</item>
-        <item>@string/sxu_6_resposta4</item>
-    </string-array>
-    <string-array name="sxu_7">
-        <item>@string/sxu_7_pergunta</item>
-        <item>@string/sxu_7_resposta1</item>
-        <item>@string/sxu_7_resposta2</item>
-        <item>@string/sxu_7_resposta3</item>
-        <item>@string/sxu_7_resposta4</item>
-    </string-array>
-    <string-array name="sxu_8">
-        <item>@string/sxu_8_pergunta</item>
-        <item>@string/sxu_8_resposta1</item>
-        <item>@string/sxu_8_resposta2</item>
-        <item>@string/sxu_8_resposta3</item>
-        <item>@string/sxu_8_resposta4</item>
-    </string-array>
-    <string-array name="sxu_9">
-        <item>@string/sxu_9_pergunta</item>
-        <item>@string/sxu_9_resposta1</item>
-        <item>@string/sxu_9_resposta2</item>
-        <item>@string/sxu_9_resposta3</item>
-        <item>@string/sxu_9_resposta4</item>
-    </string-array>
-    <string-array name="sxu_10">
-        <item>@string/sxu_10_pergunta</item>
-        <item>@string/sxu_10_resposta1</item>
-        <item>@string/sxu_10_resposta2</item>
-        <item>@string/sxu_10_resposta3</item>
-        <item>@string/sxu_10_resposta4</item>
-    </string-array>
-    <array name="sgu_perguntas">
-        <item>@array/sgu_1</item>
-        <item>@array/sgu_2</item>
-        <item>@array/sgu_3</item>
-        <item>@array/sgu_4</item>
-        <item>@array/sgu_5</item>
-        <item>@array/sgu_6</item>
-        <item>@array/sgu_7</item>
-        <item>@array/sgu_8</item>
-        <item>@array/sgu_9</item>
-        <item>@array/sgu_10</item>
-    </array>
-    <array name="tru_perguntas">
-        <item>@array/tru_1</item>
-        <item>@array/tru_2</item>
-        <item>@array/tru_3</item>
-        <item>@array/tru_4</item>
-        <item>@array/tru_5</item>
-        <item>@array/tru_6</item>
-        <item>@array/tru_7</item>
-        <item>@array/tru_8</item>
-        <item>@array/tru_9</item>
-        <item>@array/tru_10</item>
-    </array>
-    <array name="trd_perguntas">
-        <item>@array/trd_1</item>
-        <item>@array/trd_2</item>
-        <item>@array/trd_3</item>
-        <item>@array/trd_4</item>
-        <item>@array/trd_5</item>
-        <item>@array/trd_6</item>
-        <item>@array/trd_7</item>
-        <item>@array/trd_8</item>
-        <item>@array/trd_9</item>
-        <item>@array/trd_10</item>
-    </array>
-    <array name="qru_perguntas">
-        <item>@array/qru_1</item>
-        <item>@array/qru_2</item>
-        <item>@array/qru_3</item>
-        <item>@array/qru_4</item>
-        <item>@array/qru_5</item>
-        <item>@array/qru_6</item>
-        <item>@array/qru_7</item>
-        <item>@array/qru_8</item>
-        <item>@array/qru_9</item>
-        <item>@array/qru_10</item>
-    </array>
-    <array name="qrd_perguntas">
-        <item>@array/qru_1</item>
-        <item>@array/qru_2</item>
-        <item>@array/qru_3</item>
-        <item>@array/qru_4</item>
-        <item>@array/qru_5</item>
-        <item>@array/qru_6</item>
-        <item>@array/qru_7</item>
-        <item>@array/qru_8</item>
-        <item>@array/qru_9</item>
-        <item>@array/qru_10</item>
-    </array>
-    <array name="qnu_perguntas">
-        <item>@array/qnu_1</item>
-        <item>@array/qnu_2</item>
-        <item>@array/qnu_3</item>
-        <item>@array/qnu_4</item>
-        <item>@array/qnu_5</item>
-        <item>@array/qnu_6</item>
-        <item>@array/qnu_7</item>
-        <item>@array/qnu_8</item>
-        <item>@array/qnu_9</item>
-        <item>@array/qnu_10</item>
-        <item>@array/qnu_11</item>
-        <item>@array/qnu_12</item>
-    </array>
-    <array name="sxu_perguntas">
-        <item>@array/sxu_1</item>
-        <item>@array/sxu_2</item>
-        <item>@array/sxu_3</item>
-        <item>@array/sxu_4</item>
-        <item>@array/sxu_5</item>
-        <item>@array/sxu_6</item>
-        <item>@array/sxu_7</item>
-        <item>@array/sxu_8</item>
-        <item>@array/sxu_9</item>
-        <item>@array/sxu_10</item>
-    </array>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string-array name="menu_semestres">
         <item>1° Semestre</item>
         <item>2° Semestre</item>
@@ -594,4 +8,631 @@
         <item>5° Semestre</item>
         <item>6° Semestre</item>
     </string-array>
+
+    <string-array name="sem1_mat_1">
+        <item>Numa função de segundo grau se (a > 0) a concavidade da função será:</item>
+        <item>Para cima</item>
+        <item>Para baixo</item>
+        <item>Negativa</item>
+        <item>Linear</item>
+    </string-array>
+    <string-array name="sem1_mat_2">
+        <item>No plano carteziano, qual nome do eixo de x?</item>
+        <item>eixo das abscissas</item>
+        <item>eixo das ordenadas</item>
+        <item>eixo linear</item>
+        <item>eixo das abtivas</item>
+    </string-array>
+    <string-array name="sem1_mat_3">
+        <item>Qual o segundo passo da verificação de indução finita?</item>
+        <item>Assumir que a propriedade é verdadeira para n = k</item>
+        <item>Verificar se a propriedade é válida pra um n qualquer</item>
+        <item>Demonstrar que a propriedade é verdadeira para n = k + 1</item>
+        <item>Verificar se n é verdadeiro</item>
+    </string-array>
+    <string-array name="sem1_mat_4">
+        <item>Qual o primeiro passo da verificação de indução finita?</item>
+        <item>Verificar se a propriedade é válida pra um n qualquer</item>
+        <item>Assumir que a propriedade é verdadeira para n = k</item>
+        <item>Demonstrar que a propriedade é verdadeira para n = k + 1</item>
+        <item>Verificar se n é verdadeiro</item>
+    </string-array>
+    <string-array name="sem1_mat_5">
+        <item>Qual o terceiro passo da verificação de indução finita?</item>
+        <item>Demonstrar que a propriedade é verdadeira para n = k + 1</item>
+        <item>Assumir que a propriedade é verdadeira para n = k</item>
+        <item>Verificar se a propriedade é válida pra um n qualquer</item>
+        <item>Verificar se n é verdadeiro</item>
+    </string-array>
+    <string-array name="sem1_mat_6">
+        <item>Como se define o raciocínio dedutivo?</item>
+        <item>Parte do geral pro particular</item>
+        <item>Parte do particular pro geral</item>
+        <item>Parte do verdadeiro para o falso</item>
+        <item>Parte do falso para o verdadeiro</item>
+    </string-array>
+    <string-array name="sem1_mat_7">
+        <item>Como se define o raciocínio indutivo?</item>
+        <item>Parte do particular pro geral</item>
+        <item>Parte do geral pro particular</item>
+        <item>Parte do verdadeiro para o falso</item>
+        <item>Parte do falso para o verdadeiro</item>
+    </string-array>
+    <string-array name="sem1_mat_8">
+        <item>Traduza o número decimal 0 para a base JAYME</item>
+        <item>JJ</item>
+        <item>ME</item>
+        <item>JA</item>
+        <item>EE</item>
+    </string-array>
+    <string-array name="sem1_mat_9">
+        <item>Qual o nome dado às linhas que compõe um grafo?</item>
+        <item>Arestas</item>
+        <item>Vértices</item>
+        <item>Lados</item>
+        <item>Traços</item>
+    </string-array>
+    <string-array name="sem1_mat_10">
+        <item>Qual o nome dado aos nodos presentes em um grafo?</item>
+        <item>Vértices</item>
+        <item>Arestas</item>
+        <item>Grafos</item>
+        <item>Buracos</item>
+    </string-array>
+    <array name="sem1_mat_perguntas">
+        <item>@array/sem1_mat_1</item>
+        <item>@array/sem1_mat_2</item>
+        <item>@array/sem1_mat_3</item>
+        <item>@array/sem1_mat_4</item>
+        <item>@array/sem1_mat_5</item>
+        <item>@array/sem1_mat_6</item>
+        <item>@array/sem1_mat_7</item>
+        <item>@array/sem1_mat_8</item>
+        <item>@array/sem1_mat_9</item>
+        <item>@array/sem1_mat_10</item>
+    </array>
+
+    <string-array name="sem1_alg_1">
+        <item>Qual instrução indica uma estrutura condicional?</item>
+        <item>SE…ENTAO…SENAO</item>
+        <item>REPITA…ATE</item>
+        <item>PARA…</item>
+        <item>ENQUANTO…</item>
+    </string-array>
+    <string-array name="sem1_alg_2">
+        <item>São tipos de dados primitivos em um algoritmo:</item>
+        <item>Numérico, Lógico e Caractere</item>
+        <item>Vetores, Numérico e Lógico</item>
+        <item>Caracteres, Numérico e Matrizes</item>
+        <item>Vetores, Matrizes e Registros</item>
+    </string-array>
+    <string-array name="sem1_alg_3">
+        <item>Que tipo de variável está sendo declarada? \nDECLARE xpto[10,20] NUMERICO</item>
+        <item>Matriz numérico</item>
+        <item>Tipo primitivo caractere</item>
+        <item>Vetor numérico</item>
+        <item>Tipo primitivo numérico</item>
+    </string-array>
+    <string-array name="sem1_alg_4">
+        <item>São exemplos de estrutura de dados homogêneas:</item>
+        <item>Vetores e Matrizes</item>
+        <item>Registro e Arquivos</item>
+        <item>Caractere e Numérico</item>
+        <item>Numérico e Lógico</item>
+    </string-array>
+    <string-array name="sem1_alg_5">
+        <item>Qual a definição de lógica difusa</item>
+        <item>Tenta solucionar os problemas simulando o pensamento humano</item>
+        <item>Soluciona os problemas da melhor forma</item>
+        <item>Soluciona os problemas da forma mais lógica</item>
+        <item>Tenta solucionar os problemas de forma mais rápida</item>
+    </string-array>
+    <string-array name="sem1_alg_6">
+        <item>Qual a definição de ponteiros na programação?</item>
+        <item>É uma variável que aponta para o primeiro endereço de uma memória reservada</item>
+        <item>É uma variável que armazena uma estrutura homogênea</item>
+        <item>É uma variável que armazena os dados de forma contígua</item>
+        <item>É uma variável que armazena o conteúdo de uma lista</item>
+    </string-array>
+    <string-array name="sem1_alg_7">
+        <item>Uma função é dita recursiva quando:</item>
+        <item>Chama ela própria</item>
+        <item>Não se repete</item>
+        <item>Resolve problemas complexos</item>
+        <item>Chama outra função</item>
+    </string-array>
+    <string-array name="sem1_alg_8">
+        <item tools:ignore="Typos">Qual o comando em Python utilizado para chamar a próxima linha de um arquivo de texto?</item>
+        <item>read()</item>
+        <item>input()</item>
+        <item>open()</item>
+        <item>write()</item>
+    </string-array>
+    <string-array name="sem1_alg_9">
+        <item tools:ignore="Typos">Em C++ qual o comando utilizado para calcular a raiz quadrada?</item>
+        <item>sqrt()</item>
+        <item>pow()</item>
+        <item>Square()</item>
+        <item>squareRoot()</item>
+    </string-array>
+    <string-array name="sem1_alg_10">
+        <item>Qual o símbolo lógico utilizado na expressão \n(p -> q)?</item>
+        <item>Condicional</item>
+        <item>Conjunção</item>
+        <item>Negação</item>
+        <item>Disjunção</item>
+    </string-array>
+    <array name="sem1_alg_perguntas">
+        <item>@array/sem1_alg_1</item>
+        <item>@array/sem1_alg_2</item>
+        <item>@array/sem1_alg_3</item>
+        <item>@array/sem1_alg_4</item>
+        <item>@array/sem1_alg_5</item>
+        <item>@array/sem1_alg_6</item>
+        <item>@array/sem1_alg_7</item>
+        <item>@array/sem1_alg_8</item>
+        <item>@array/sem1_alg_9</item>
+        <item>@array/sem1_alg_10</item>
+    </array>
+
+    <string-array name="sem1_eng_1">
+        <item>No ensino do inglês, o elemento cultural dessa linguagem serve para:</item>
+        <item>Entender que cada linguagem representa uma visao diferente</item>
+        <item>Mostrar a falta de cultura do Brasil</item>
+        <item>Enfatizar que a cultura britânica é superior às outras</item>
+        <item>Ensinar inglês com o sotaque de um falante nativo</item>
+    </string-array>
+    <string-array name="sem1_eng_2">
+        <item>Qual das alternativas apresenta apenas adverbios de tempo?</item>
+        <item>lately, still, next, finally</item>
+        <item>first, here, rarely, yet</item>
+        <item>already, always, then, above</item>
+        <item>first, already, usually, yet</item>
+    </string-array>
+    <string-array name="sem1_eng_3">
+        <item>Chamar a atenção ao gênero de um texto no ensino da leitura serve para:</item>
+        <item>Focalizar o texto como organização significativa</item>
+        <item>Facilitar a leitura oral do texto</item>
+        <item>Deve ser evitado uma vez que textos não tem gênero</item>
+        <item>Induz o aluno a ler o texto de forma errada</item>
+    </string-array>
+    <string-array name="sem1_eng_4">
+        <item>Em qual das alternativas a seguir o advérbio esta INCORRETO?</item>
+        <item>Jamie is waiting for us always</item>
+        <item>They work very hardly on Fridays</item>
+        <item>We were rather hot yesterday</item>
+        <item>She hasn\'t met them yet</item>
+    </string-array>
+    <string-array name="sem1_eng_5">
+        <item>Assinale a alternativa que expressa uma comparação de igualdade.</item>
+        <item>Brazilians are as technology-hungry as anywhere in the world</item>
+        <item>You used to wait years to have a telephone installed</item>
+        <item>We are the worlds leading producer</item>
+        <item>We are the worlds largest producer of sugar</item>
+    </string-array>
+    <string-array name="sem1_eng_6">
+        <item>Qual frase traz exemplos de graus de comparação?</item>
+        <item>Making computers cheaper and faster and more powerful</item>
+        <item>Within a decade we will likely see chips with 100 cores</item>
+        <item>And now we are changing to a different model</item>
+        <item>Neither, in fact, are the programmers themselves</item>
+    </string-array>
+    <string-array name="sem1_eng_7">
+        <item>In my opinion, Goiania is \n_________________\ncity in Brazil.</item>
+        <item>the most beautiful</item>
+        <item>beautifuller</item>
+        <item>more beautiful</item>
+        <item>the beautifulest</item>
+    </string-array>
+    <string-array name="sem1_eng_8">
+        <item>Chose the alternative with the same meaning as:\nHe will talk to his brother after school.</item>
+        <item>He is going to talk to his brother after school</item>
+        <item>He going to talk to his brother after school</item>
+        <item>He is going talk to his brother after school</item>
+        <item>He going to talk his brother after school</item>
+    </string-array>
+    <string-array name="sem1_eng_9">
+        <item>Qual o melhor jeito de responder a: \nWhat are you going to do?</item>
+        <item>I am going to call the police</item>
+        <item>I travel to Los Angeles</item>
+        <item>I do my homework</item>
+        <item>We will think about it last week</item>
+    </string-array>
+    <string-array name="sem1_eng_10">
+        <item>A: Would you like some more whisky?\nB: Yes, you ___________ it.</item>
+        <item>have already drunk</item>
+        <item>have already drink</item>
+        <item>have already drinking</item>
+        <item>already drink</item>
+    </string-array>
+    <array name="sem1_eng_perguntas">
+        <item>@array/sem1_eng_1</item>
+        <item>@array/sem1_eng_2</item>
+        <item>@array/sem1_eng_3</item>
+        <item>@array/sem1_eng_4</item>
+        <item>@array/sem1_eng_5</item>
+        <item>@array/sem1_eng_6</item>
+        <item>@array/sem1_eng_7</item>
+        <item>@array/sem1_eng_8</item>
+        <item>@array/sem1_eng_9</item>
+        <item>@array/sem1_eng_10</item>
+    </array>
+
+    <string-array name="sem1_aoc_1">
+        <item>Qual a principal função da unidade de controle?</item>
+        <item>Buscar a próxima instrução do programa na memória</item>
+        <item>Controlar a placa-mãe</item>
+        <item>Registrar os acessos à memória</item>
+        <item>Buscar a próxima instrução da memória no programa</item>
+    </string-array>
+    <string-array name="sem1_aoc_2">
+        <item>Técnica que permite que a CPU execute diferentes instruções paralelamente:</item>
+        <item>Pipeline</item>
+        <item>Hardwiring</item>
+        <item>Multithreading</item>
+        <item>Modulação</item>
+    </string-array>
+    <string-array name="sem1_aoc_3">
+        <item>Aponte uma característica da arquitetura RISC:</item>
+        <item>Tem um conjunto reduzido e simples de instruções</item>
+        <item>Qualquer instrução pode referenciar a memória</item>
+        <item>Possui um conjunto de registradores</item>
+        <item>Suas instruções são executadas pelo microprograma</item>
+    </string-array>
+    <string-array name="sem1_aoc_4">
+        <item>Qual o melhor resumo das características de um processador CISC?</item>
+        <item>Instruções de tamanho variado; Maior número de transistores</item>
+        <item>Instruções de tamanho variado; Menor número de transistores</item>
+        <item>Instruções de tamanho único; Maior número de transistores</item>
+        <item>Instruções de tamanho único; Menor número de transistores</item>
+    </string-array>
+    <string-array name="sem1_aoc_5">
+        <item>São consideradas características típicas da organização RISC:</item>
+        <item>Otimizar o pipeline de instrução</item>
+        <item>Dispor grande conjunto de instruções</item>
+        <item>Prover o computador com um conjunto complexo de instruções</item>
+        <item>Oferecer suporte para linguagens de alto nível</item>
+    </string-array>
+    <string-array name="sem1_aoc_6">
+        <item>Arquitetura de memória que permite o controle do escalonamento de instruções:</item>
+        <item>CC-NUMA</item>
+        <item>NUMA</item>
+        <item>COMA</item>
+        <item>MIMD</item>
+    </string-array>
+    <string-array name="sem1_aoc_7">
+        <item>Qual classificação de Flynn para uma unidade de controle única, diversas unidades funcionais?</item>
+        <item>SIMD (Single Instruction Multiple Data)</item>
+        <item>MISD (Multiple Instruction Single Data)</item>
+        <item>MIMD (Multiple Instruction Multiple Data)</item>
+        <item>SISD (Single Instruction Single Data)</item>
+    </string-array>
+    <string-array name="sem1_aoc_8">
+        <item>Qual característica NÃO se refere à memória cache de processadores?</item>
+        <item>É implementada pelo sistema operacional com suporte do hardware</item>
+        <item>Tem o objetivo de reduzir o tempo de acesso à memória principal</item>
+        <item>Pode ser inserida diretamente no chip do processador</item>
+        <item>É comumente encontrada em processadores RISC</item>
+    </string-array>
+    <string-array name="sem1_aoc_9">
+        <item>Qual a tradução decimal para o número 10100111?</item>
+        <item>167</item>
+        <item>166</item>
+        <item>175</item>
+        <item>174</item>
+    </string-array>
+    <string-array name="sem1_aoc_10">
+        <item>Qual a tradução hexadecimal para o número 209?</item>
+        <item>D1</item>
+        <item>131</item>
+        <item>132</item>
+        <item>D2</item>
+    </string-array>
+    <array name="sem1_aoc_perguntas">
+        <item>@array/sem1_aoc_1</item>
+        <item>@array/sem1_aoc_2</item>
+        <item>@array/sem1_aoc_3</item>
+        <item>@array/sem1_aoc_4</item>
+        <item>@array/sem1_aoc_5</item>
+        <item>@array/sem1_aoc_6</item>
+        <item>@array/sem1_aoc_7</item>
+        <item>@array/sem1_aoc_8</item>
+        <item>@array/sem1_aoc_9</item>
+        <item>@array/sem1_aoc_10</item>
+    </array>
+
+    <string-array name="sem1_lhw_1">
+        <item>Se a placa-mãe fosse uma cidade e os componentes prédios, então os barramentos seriam:</item>
+        <item>As ruas e avenidas</item>
+        <item>As represas</item>
+        <item>Os semáforos</item>
+        <item>Os estacionamentos</item>
+    </string-array>
+    <string-array name="sem1_lhw_2">
+        <item>O que podemos considerar como cérebro do computador?</item>
+        <item>Processador</item>
+        <item>Memória</item>
+        <item>Chipset</item>
+        <item>BIOS</item>
+    </string-array>
+    <string-array name="sem1_lhw_3">
+        <item>Dentre os formatos de placa-mãe qual definição abaixo NÃO existe?</item>
+        <item>DTX</item>
+        <item>ATX</item>
+        <item>ITX</item>
+        <item>Micro ATX</item>
+    </string-array>
+    <string-array name="sem1_lhw_4">
+        <item>Dentre os tipos de memória qual tem a característica de ser volátil?</item>
+        <item>RAM</item>
+        <item>EEPROM</item>
+        <item>PROM</item>
+        <item>EPROM</item>
+    </string-array>
+    <string-array name="sem1_lhw_5">
+        <item>Qual módulo de memória comporta chips SDRAM, DDR SDRAM, DDR2 SDRAM E DDR3 SDRAM?</item>
+        <item>DIMM</item>
+        <item>SODIMM</item>
+        <item>SIMM</item>
+        <item>DIP</item>
+    </string-array>
+    <string-array name="sem1_lhw_6">
+        <item>Unidade de armazenamento que usa chips de memória flash não volátil para armazenar dados:</item>
+        <item>Unidade de estado sólido SSD</item>
+        <item>Unidade Híbrida</item>
+        <item>Unidade de disco Rígido HDD</item>
+        <item>Unidade de Fita</item>
+</string-array>
+    <string-array name="sem1_lhw_7">
+        <item>Ao substituir um disco rígido qual deve ser a maior preocupação do técnico?</item>
+        <item>Perda do dados</item>
+        <item>Reutilização indevida do periférico</item>
+        <item>Lixo ambiental\n;-;</item>
+        <item>Realizar o descarte corretamente</item>
+    </string-array>
+    <string-array name="sem1_lhw_8">
+        <item>Uma tática para resolução de problemas complexos é:</item>
+        <item>Dividir um grande problema em problemas menores</item>
+        <item>Encerrar o chamado por dificuldade de resolução</item>
+        <item>Repassar o chamado para um técnico mais experiente</item>
+        <item>Contratar uma empresa para resolver o problema</item>
+    </string-array>
+    <string-array name="sem1_lhw_9">
+        <item>Permanece acesa ou pisca quando lê ou grava dados:</item>
+        <item>Led de atividade da Unidade</item>
+        <item>Botão de energia</item>
+        <item>Led principal</item>
+        <item>Botão Reset</item>
+    </string-array>
+    <string-array name="sem1_lhw_10">
+        <item>Qual componente realiza uma verificação de hardware quando o computador é iniciado?</item>
+        <item>BIOS</item>
+        <item>Boot</item>
+        <item>RAM</item>
+        <item>DIP</item>
+    </string-array>
+    <array name="sem1_lhw_perguntas">
+        <item>@array/sem1_lhw_1</item>
+        <item>@array/sem1_lhw_2</item>
+        <item>@array/sem1_lhw_3</item>
+        <item>@array/sem1_lhw_4</item>
+        <item>@array/sem1_lhw_5</item>
+        <item>@array/sem1_lhw_6</item>
+        <item>@array/sem1_lhw_7</item>
+        <item>@array/sem1_lhw_8</item>
+        <item>@array/sem1_lhw_9</item>
+        <item>@array/sem1_lhw_10</item>
+    </array>
+
+    <string-array name="sem1_adm_1">
+        <item>A experiência de Hawthorne foi realizada por:</item>
+        <item>Elton Maio</item>
+        <item>Max Weber</item>
+        <item>Frederick Taylor</item>
+        <item>Henry Ford</item>
+    </string-array>
+    <string-array name="sem1_adm_2">
+        <item>Descreva um medidor de capacidade:</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_3">
+        <item>Descreva um medidor de produtividade:</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_4">
+        <item>Descreva um medidor de qualidade:</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_5">
+        <item>Descreva um medidor de rentabilidade:</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+    </string-array>
+    <string-array name="sem1_adm_6">
+        <item>Qual estrutura contemporânea combina as estruturas funcional e de produtos?</item>
+        <item>Estrutura Matricial</item>
+        <item>Estrutura Linear</item>
+        <item>Estrutura Funcional</item>
+        <item>Estrutura Linha-Staff</item>
+    </string-array>
+    <string-array name="sem1_adm_7">
+        <item>A fabricação dos produtos e serviços da empresa é função de qual setor?</item>
+        <item>Produção</item>
+        <item>Marketing</item>
+        <item>Desenvolvimento de produto</item>
+        <item>Contábil</item>
+    </string-array>
+    <string-array name="sem1_adm_8">
+        <item>Quem desenvolveu a Teoria Clássica da Administração?</item>
+        <item>Henry Fayol</item>
+        <item>Max Weber</item>
+        <item>Frederick Taylor</item>
+        <item>Henry Ford</item>
+    </string-array>
+    <string-array name="sem1_adm_9">
+        <item>Empresas que passam por mudanças quase que diariamente são exemplo de que tipo de organização?</item>
+        <item>Organização Organismo Vivo</item>
+        <item>Organização Cultura</item>
+        <item>Organização Cerebro</item>
+        <item>Organizacao Sistema em Fluxo e Transformação</item>
+    </string-array>
+    <string-array name="sem1_adm_10">
+        <item>Preocupado com as relações de autoridade, Max Weber desenvolveu:</item>
+        <item>Teoria da Burocracia</item>
+        <item>Teoria das Relações Humanas</item>
+        <item>Administração Científica</item>
+        <item>Teoria Clássica</item>
+    </string-array>
+    <array name="sem1_adm_perguntas">
+        <item>@array/sem1_adm_1</item>
+        <item>@array/sem1_adm_2</item>
+        <item>@array/sem1_adm_3</item>
+        <item>@array/sem1_adm_4</item>
+        <item>@array/sem1_adm_5</item>
+        <item>@array/sem1_adm_6</item>
+        <item>@array/sem1_adm_7</item>
+        <item>@array/sem1_adm_8</item>
+        <item>@array/sem1_adm_9</item>
+        <item>@array/sem1_adm_10</item>
+    </array>
+
+    <string-array name="sem1_prg_1">
+        <item tools:ignore="Typos">Qual o comando utilizado para iniciar uma macro?</item>
+        <item>Sub nome()</item>
+        <item>Macro nome()</item>
+        <item>Macro()</item>
+        <item>Sub()</item>
+    </string-array>
+    <string-array name="sem1_prg_2">
+        <item tools:ignore="Typos">Qual o comando utilizado para terminar uma macro?</item>
+        <item>End Sub</item>
+        <item>End Macro</item>
+        <item>/sub</item>
+        <item>/macro</item>
+    </string-array>
+    <string-array name="sem1_prg_3">
+        <item tools:ignore="Typos">Qual será a célula selecionada com o comando \nCell(3, 4).Select?</item>
+        <item>C4</item>
+        <item>D3</item>
+        <item>A34</item>
+        <item>A4</item>
+    </string-array>
+    <string-array name="sem1_prg_4">
+        <item tools:ignore="Typos">Qual o comando utilizado para fechar uma função While?</item>
+        <item>Loop</item>
+        <item>While End</item>
+        <item>End While</item>
+        <item>End Loop</item>
+    </string-array>
+    <string-array name="sem1_prg_5">
+        <item tools:ignore="Typos">Qual o comando utilizado para chamar uma caixa de entrada?</item>
+        <item>InputBox()</item>
+        <item>ImputBox()</item>
+        <item>callBox()</item>
+        <item>Input()</item>
+    </string-array>
+    <string-array name="sem1_prg_6">
+        <item>Qual a forma certa de iniciar uma variável inteira?</item>
+        <item>Dim x As Integer</item>
+        <item>Dim x = 10</item>
+        <item>Dim 10 As Integer</item>
+        <item>x = 10</item>
+    </string-array>
+    <string-array name="sem1_prg_7">
+        <item>Qual o tipo padrão de uma MsgBox()?</item>
+        <item>OKOnly</item>
+        <item>OKCancel</item>
+        <item>Critical</item>
+        <item>Question</item>
+    </string-array>
+    <string-array name="sem1_prg_8">
+        <item>Como selecionar um grupo de celulas?</item>
+        <item>Range(\"B5:D6\")</item>
+        <item>Range(B5,D6)</item>
+        <item>Range(25:46)</item>
+        <item>Range(B5)</item>
+    </string-array>
+    <string-array name="sem1_prg_9">
+        <item>Qual o atalho utilizado para abrir o editor do Visual Basic?</item>
+        <item>Alt-F11</item>
+        <item>F11</item>
+        <item>Ctrl-F11</item>
+        <item>Shift-F11</item>
+    </string-array>
+    <string-array name="sem1_prg_10">
+        <item>Qual a sintaxe correta de uma condicional IF?</item>
+        <item>If (condição) Then</item>
+        <item>If (condição):</item>
+        <item>If (condição) DO</item>
+        <item>If (condição) {}</item>
+    </string-array>
+    <array name="sem1_prg_perguntas">
+        <item>@array/sem1_prg_1</item>
+        <item>@array/sem1_prg_2</item>
+        <item>@array/sem1_prg_3</item>
+        <item>@array/sem1_prg_4</item>
+        <item>@array/sem1_prg_5</item>
+        <item>@array/sem1_prg_6</item>
+        <item>@array/sem1_prg_7</item>
+        <item>@array/sem1_prg_8</item>
+        <item>@array/sem1_prg_9</item>
+        <item>@array/sem1_prg_10</item>
+    </array>
+
+    <array name="sem2_cal_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <array name="sem2_lnp_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <array name="sem2_eng_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <array name="sem2_cnt_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <array name="sem2_sis_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <string-array name="sem2_com_1">
+        <item>A <b><u>idéia</u></b> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Errada</item>
+        <item>Certa</item>
+    </string-array>
+    <string-array name="sem2_com_2">
+        <item>O <b><u>coautor</u></b> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Errada</item>
+        <item>Certa</item>
+    </string-array>
+    <array name="sem2_com_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
+    <array name="sem2_ens_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+    </array>
+
 </resources>

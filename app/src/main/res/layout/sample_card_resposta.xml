@@ -6,7 +6,7 @@
         android:id="@+id/txt_resposta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_real_margin"
+        android:layout_margin="@dimen/margem_real_margin"
         android:layout_gravity="center"
         android:textSize="@dimen/texto_respostas"
         android:textColor="@color/colorPrt"/>

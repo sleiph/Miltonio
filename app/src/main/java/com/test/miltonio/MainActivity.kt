@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         val cardPapa = findViewById<GridLayout>(R.id.cardParent)
 
         var dbVal = MyApplication.database?.categoriaDao()?.getAll()
+        //MyApplication.sem1database?.sem1Dao()?.getAll()
+        //MyApplication.database?.categoriaDao()?.getAll()
         when(semestre) {
             1 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
             2 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
@@ -34,6 +36,10 @@ class MainActivity : AppCompatActivity() {
             4 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
             5 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
         }
+
+        if (cardPapa.childCount>1)
+            for (i in 1 until cardPapa.childCount)
+                cardPapa.removeViewAt(1)
 
         if (dbVal != null) {
             for (i in dbVal.indices) {
@@ -47,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 )
                 param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
                 param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.activity_meia_margin).toInt())
+                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
                 cardLayout.layoutParams = param
                 cardLayout.setCardBack(getColor(dbVal[i].cor_db))
                 cardLayout.setMateriaDrawable(

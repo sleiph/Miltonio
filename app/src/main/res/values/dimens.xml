@@ -1,22 +1,23 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_topo">68dp</dimen>
-    <dimen name="activity_dobro_margin">32dp</dimen>
-    <dimen name="activity_real_margin">16dp</dimen>
-    <dimen name="activity_meia_margin">8dp</dimen>
-    <dimen name="activity_interna_margin">6dp</dimen>
-    <dimen name="activity_pergunta_margin">24dp</dimen>
-    <dimen name="botao_area_padding">24dp</dimen>
-    <dimen name="botao_arredondamento">24dp</dimen>
-    <dimen name="tamanho_topo_main">64dp</dimen>
-    <dimen name="tamanho_topo_pergunta">44dp</dimen>
+    <dimen name="margem_real_margin">16dp</dimen>
+    <dimen name="margem_meia_margin">8dp</dimen>
+    <dimen name="margem_dobro_margin">32dp</dimen>
+    <dimen name="margem_card_interna">6dp</dimen>
+    <dimen name="margem_botao_interna">24dp</dimen>
+    <dimen name="margem_pergunta_interna">24dp</dimen>
+    <dimen name="arredondamento_resposta">8dp</dimen>
+    <dimen name="arredondamento_botao">24dp</dimen>
     <dimen name="tamanho_min_pergunta">120dp</dimen>
     <dimen name="tamanho_cards">174dp</dimen>
     <dimen name="tamanho_barra_progresso">12dp</dimen>
     <dimen name="tamanho_area_botao">88dp</dimen>
+    <dimen name="distancia_topo_main">66dp</dimen>
+    <dimen name="distancia_topo_pergunta">44dp</dimen>
+    <dimen name="distancia_separador">86dp</dimen>
     <dimen name="texto_normal">14sp</dimen>
-    <dimen name="texto_pontuacao">52sp</dimen>
-    <dimen name="texto_pergunta">22sp</dimen>
     <dimen name="texto_respostas">16sp</dimen>
+    <dimen name="texto_pergunta">22sp</dimen>
+    <dimen name="texto_pontuacao">52sp</dimen>
     <dimen name="texto_resultado">86sp</dimen>
 </resources>
