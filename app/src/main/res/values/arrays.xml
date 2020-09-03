@@ -3,10 +3,6 @@
     <string-array name="menu_semestres">
         <item>1° Semestre</item>
         <item>2° Semestre</item>
-        <item>3° Semestre</item>
-        <item>4° Semestre</item>
-        <item>5° Semestre</item>
-        <item>6° Semestre</item>
     </string-array>
 
     <string-array name="sem1_mat_1">

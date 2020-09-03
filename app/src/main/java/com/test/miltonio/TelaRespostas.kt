@@ -30,12 +30,10 @@ class TelaRespostas : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
-        val dbVal = MyApplication.database?.categoriaDao()?.loadById(categoria)
-
         var acertos = 0
         var resposta = 0
         var progresso = 0
-        val qntPerguntas: Int
+        var qntPerguntas: Int
 
         var arrPerguntas : TypedArray? = null
         var ordemPerguntas = mutableListOf<Int>()
@@ -59,9 +57,9 @@ class TelaRespostas : AppCompatActivity() {
             val qntRespostas = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.size?.minus(1)
             val ordemRespostas: MutableList<Int> = (1 .. qntRespostas!!).toMutableList()
             ordemRespostas.shuffle()
-            if (gridPergunta.childCount>1)
-                for (i in 1 until gridPergunta.childCount)
-                    gridPergunta.removeViewAt(1)
+
+            MatarChildren(gridPergunta)
+
             respostaCards.clear()
             for (i in 0 until qntRespostas) {
                 val cardLayout = CardResposta(this)
@@ -90,60 +88,119 @@ class TelaRespostas : AppCompatActivity() {
             }
         }
 
-        if (dbVal != null) {
-            corFundo.setBackgroundColor(getColor(dbVal.cor_db))
-            imgFundo.setBackgroundResource(dbVal.fundo_db)
-            if (dbVal.isPreto_db)
-                txtPergunta.setTextColor(getColor(R.color.colorPrt))
-            else
-                txtPergunta.setTextColor(getColor(R.color.colorBnc))
-            arrPerguntas = resources.obtainTypedArray(dbVal.arrayPerguntas_db)
-            qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-            ordemPerguntas.shuffle()
-            getPergunta(progresso)
-        }
-        else {
-            corFundo.setBackgroundColor(getColor(R.color.colorCyan))
-            imgFundo.setBackgroundResource(R.drawable.fndmat)
-            arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
-            qntPerguntas = arrPerguntas.length()
-            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-            ordemPerguntas.shuffle()
-            getPergunta(progresso)
-        }
-
-        btnConferir.setOnClickListener {
-            if (resposta == 1) {
-                acertos += 1
-                progressoBarra.progressTintList = ColorStateList.valueOf(
-                    Color.rgb(50,180,75)
-                )
-                somBom.start()
-            }
-            else {
-                progressoBarra.progressTintList = ColorStateList.valueOf(
-                    Color.rgb(235, 5, 0)
-                )
-                somRuim.start()
-            }
-            progresso += 1
-            progressoBarra.progress = (
-                    (progresso.toDouble()/qntPerguntas.toDouble())*100
-                    ).toInt()
-            if (progresso < qntPerguntas) {
+        fun setSemestre1 (dados :Sem1DB?) {
+            if (dados != null) {
+                corFundo.setBackgroundColor(getColor(dados.cor_db))
+                imgFundo.setBackgroundResource(dados.fundo_db)
+                if (dados.isPreto_db)
+                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
+                else
+                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
+                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
+                qntPerguntas = arrPerguntas!!.length()
+                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+                ordemPerguntas.shuffle()
+                getPergunta(progresso)
+            } else {
+                corFundo.setBackgroundColor(getColor(R.color.colorCyan))
+                imgFundo.setBackgroundResource(R.drawable.fndmat)
+                arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
+                qntPerguntas = arrPerguntas!!.length()
+                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+                ordemPerguntas.shuffle()
                 getPergunta(progresso)
             }
-            else {
-                arrPerguntas.recycle()
-                if (dbVal != null) {
-                    dbVal.pontos_db = ((acertos.toDouble()/qntPerguntas.toDouble())*100).toInt()
-                    MyApplication.database?.categoriaDao()?.updateCatg(dbVal)
+
+            btnConferir.setOnClickListener {
+                if (resposta == 1) {
+                    acertos += 1
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(50, 180, 75)
+                    )
+                    somBom.start()
+                } else {
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(235, 5, 0)
+                    )
+                    somRuim.start()
                 }
-                loadResultado(categoria)
+                progresso += 1
+                progressoBarra.progress = (
+                        (progresso.toDouble() / qntPerguntas.toDouble()) * 100
+                        ).toInt()
+                if (progresso < qntPerguntas) {
+                    getPergunta(progresso)
+                } else {
+                    arrPerguntas!!.recycle()
+                    if (dados != null) {
+                        dados.pontos_db =
+                            ((acertos.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+                        MyApplication.sem1database?.sem1Dao()?.updateCatg(dados)
+                    }
+                    loadResultado(categoria)
+                }
+                btnConferir.isEnabled = false
             }
-            btnConferir.isEnabled = false
         }
+        fun setSemestre2 (dados :Categorias_DB?) {
+            if (dados != null) {
+                corFundo.setBackgroundColor(getColor(dados.cor_db))
+                imgFundo.setBackgroundResource(dados.fundo_db)
+                if (dados.isPreto_db)
+                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
+                else
+                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
+                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
+                qntPerguntas = arrPerguntas!!.length()
+                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+                ordemPerguntas.shuffle()
+                getPergunta(progresso)
+            } else {
+                corFundo.setBackgroundColor(getColor(R.color.colorCyan))
+                imgFundo.setBackgroundResource(R.drawable.fndmat)
+                arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
+                qntPerguntas = arrPerguntas!!.length()
+                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+                ordemPerguntas.shuffle()
+                getPergunta(progresso)
+            }
+
+            btnConferir.setOnClickListener {
+                if (resposta == 1) {
+                    acertos += 1
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(50, 180, 75)
+                    )
+                    somBom.start()
+                } else {
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(235, 5, 0)
+                    )
+                    somRuim.start()
+                }
+                progresso += 1
+                progressoBarra.progress = (
+                        (progresso.toDouble() / qntPerguntas.toDouble()) * 100
+                        ).toInt()
+                if (progresso < qntPerguntas) {
+                    getPergunta(progresso)
+                } else {
+                    arrPerguntas!!.recycle()
+                    if (dados != null) {
+                        dados.pontos_db =
+                            ((acertos.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+                        MyApplication.database?.categoriaDao()?.updateCatg(dados)
+                    }
+                    loadResultado(categoria)
+                }
+                btnConferir.isEnabled = false
+            }
+        }
+
+        if (categoria < 20)
+            setSemestre1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria-10))
+        else
+            setSemestre2 (MyApplication.database?.categoriaDao()?.loadById(categoria-20))
     }
 }
 

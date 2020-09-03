@@ -25,8 +25,6 @@ class TelaResultado : AppCompatActivity() {
         val resulIntent = intent
         val categoria = resulIntent.getIntExtra("resul", 0)
 
-        val dbVal = MyApplication.database?.categoriaDao()?.loadById(categoria)
-
         val corFnd = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFnd = findViewById<RelativeLayout>(R.id.img_fnd)
 
@@ -51,24 +49,41 @@ class TelaResultado : AppCompatActivity() {
             }
         }
 
-        if (dbVal != null) {
-            setPontuacao(dbVal.pontos_db)
-            corFnd.setBackgroundColor(getColor(dbVal.cor_db))
-            imgFnd.setBackgroundResource(dbVal.fundo_db)
-            txtCategoria.text = getString(R.string.resultado_categoria, getString(dbVal.materia_db))
-            if (!dbVal.isPreto_db) {
-                txtComeco.setTextColor(getColor(R.color.colorBnc))
-                txtResultado.setTextColor(getColor(R.color.colorBnc))
-                txtCategoria.setTextColor(getColor(R.color.colorBnc))
-                txtMensagem.setTextColor(getColor(R.color.colorBnc))
+        fun setMateria1(dados :Sem1DB?) {
+            if (dados != null) {
+                setPontuacao(dados.pontos_db)
+                corFnd.setBackgroundColor(getColor(dados.cor_db))
+                imgFnd.setBackgroundResource(dados.fundo_db)
+                txtCategoria.text =
+                    getString(R.string.resultado_categoria, getString(dados.materia_db))
+                if (!dados.isPreto_db) {
+                    txtComeco.setTextColor(getColor(R.color.colorBnc))
+                    txtResultado.setTextColor(getColor(R.color.colorBnc))
+                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
+                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
+                }
             }
         }
-        else {
-            setPontuacao(0)
-            corFnd.setBackgroundColor(getColor(R.color.colorCyan))
-            imgFnd.setBackgroundResource(R.drawable.fndmat)
-            txtCategoria.text = getString(R.string.resultado_categoria, getString(R.string.categ_sem2_cal))
+        fun setMateria2(dados :Categorias_DB?) {
+            if (dados != null) {
+                setPontuacao(dados.pontos_db)
+                corFnd.setBackgroundColor(getColor(dados.cor_db))
+                imgFnd.setBackgroundResource(dados.fundo_db)
+                txtCategoria.text =
+                    getString(R.string.resultado_categoria, getString(dados.materia_db))
+                if (!dados.isPreto_db) {
+                    txtComeco.setTextColor(getColor(R.color.colorBnc))
+                    txtResultado.setTextColor(getColor(R.color.colorBnc))
+                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
+                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
+                }
+            }
         }
+
+        if (categoria < 20)
+            setMateria1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria-10))
+        else
+            setMateria2 (MyApplication.database?.categoriaDao()?.loadById(categoria-20))
 
         btnMain.setOnClickListener {
             loadMain()

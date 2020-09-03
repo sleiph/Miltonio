@@ -14,6 +14,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardMateria
 
+fun MatarChildren(pai :GridLayout) {
+    if (pai.childCount > 1)
+        for (i in 1 until pai.childCount)
+            pai.removeViewAt(1)
+}
+
 class MainActivity : AppCompatActivity() {
 
     private fun loadRespostas(resul: Int){
@@ -23,30 +29,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
-    fun setDatabase(semestre :Int) {
-        val cardPapa = findViewById<GridLayout>(R.id.cardParent)
+    private fun DesenharCards(dados :List<Categorias_DB>?, pai :GridLayout) {
+        MatarChildren(pai)
 
-        var dbVal = MyApplication.database?.categoriaDao()?.getAll()
-        //MyApplication.sem1database?.sem1Dao()?.getAll()
-        //MyApplication.database?.categoriaDao()?.getAll()
-        when(semestre) {
-            1 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
-            2 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
-            3 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
-            4 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
-            5 -> dbVal = MyApplication.database?.categoriaDao()?.getAll()
-        }
-
-        if (cardPapa.childCount>1)
-            for (i in 1 until cardPapa.childCount)
-                cardPapa.removeViewAt(1)
-
-        if (dbVal != null) {
-            for (i in dbVal.indices) {
+        if (dados != null) {
+            for (i in dados.indices) {
                 val cardLayout = CardMateria(this)
                 val param = GridLayout.LayoutParams(
                     GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == dbVal.size - 1 && dbVal.size % 2 != 0)
+                    if (i == dados.size - 1 && dados.size % 2 != 0)
                         GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
                     else
                         GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
@@ -55,35 +46,83 @@ class MainActivity : AppCompatActivity() {
                 param.width = 0
                 param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
                 cardLayout.layoutParams = param
-                cardLayout.setCardBack(getColor(dbVal[i].cor_db))
+                cardLayout.setCardBack(getColor(dados[i].cor_db))
                 cardLayout.setMateriaDrawable(
-                    ContextCompat.getDrawable(this, dbVal[i].simb_db)
+                    ContextCompat.getDrawable(this, dados[i].simb_db)
                 )
                 cardLayout.setProfessorText(
-                    getString(dbVal[i].professor_db),
-                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
+                    getString(dados[i].professor_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
                 cardLayout.setProgressoText(
                     getString(
                         R.string.resultado_pontos,
-                        dbVal[i].pontos_db.toString()
+                        dados[i].pontos_db.toString()
                     ),
-                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
                 cardLayout.setMateriaText(
-                    getString(dbVal[i].materia_db),
-                    if (dbVal[i].isPreto_db) getColor(R.color.colorPrt)
+                    getString(dados[i].materia_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
                     else getColor(R.color.colorBnc)
                 )
-                cardPapa.addView(cardLayout)
+                pai.addView(cardLayout)
                 cardLayout.setOnClickListener {
-                    loadRespostas(i)
+                    loadRespostas(i+20)
                 }
             }
         }
     }
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun DesenharCardsSem1(dados :List<Sem1DB>?, pai :GridLayout) {
+        MatarChildren(pai)
+
+        if (dados != null) {
+            for (i in dados.indices) {
+                val cardLayout = CardMateria(this)
+                val param = GridLayout.LayoutParams(
+                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+                    if (i == dados.size - 1 && dados.size % 2 != 0)
+                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
+                    else
+                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+                )
+                param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
+                param.width = 0
+                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+                cardLayout.layoutParams = param
+                cardLayout.setCardBack(getColor(dados[i].cor_db))
+                cardLayout.setMateriaDrawable(
+                    ContextCompat.getDrawable(this, dados[i].simb_db)
+                )
+                cardLayout.setProfessorText(
+                    getString(dados[i].professor_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                cardLayout.setProgressoText(
+                    getString(
+                        R.string.resultado_pontos,
+                        dados[i].pontos_db.toString()
+                    ),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                cardLayout.setMateriaText(
+                    getString(dados[i].materia_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                pai.addView(cardLayout)
+                cardLayout.setOnClickListener {
+                    loadRespostas(i+10)
+                }
+            }
+        }
+    }
+
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -95,14 +134,16 @@ class MainActivity : AppCompatActivity() {
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
-        setDatabase(1)
+        val dbVal = MyApplication.database?.categoriaDao()?.getAll()
+        val gridCards = findViewById<GridLayout>(R.id.cardParent)
 
+        DesenharCards(dbVal, gridCards)
     }
+
     //Todo: Desenhar ícones do menu
     //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
     //Todo: Escolha de semestre no menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main_menu, menu)
         val itemSemestre = menu?.findItem(R.id.menu_semestre)
         val spinner : Spinner = itemSemestre?.actionView as Spinner
@@ -123,10 +164,13 @@ class MainActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                setDatabase(position)
+                when(position) {
+                    0 -> DesenharCardsSem1(MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(R.id.cardParent))
+                    1 -> DesenharCards(MyApplication.database?.categoriaDao()?.getAll(), findViewById(R.id.cardParent))
+                }
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                // sometimes you need nothing here
+                // sei la
             }
         }
         return true
@@ -156,7 +200,4 @@ class MainActivity : AppCompatActivity() {
 //Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
 //Todo: Tirar a barra de status
-
-//Todo: Tilestyle backgrounds
 //Todo: Fundos pro 2° semestre
-//Todo: Diminuir o contraste do fundo de segunda
