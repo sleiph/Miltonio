@@ -93,3 +93,4 @@ class TelaResultado : AppCompatActivity() {
 
 //Todo: High Scores
 //Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
+//Todo: Quando voltar pra tela inicial, voltar no semestre escolhido

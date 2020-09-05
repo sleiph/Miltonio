@@ -33,7 +33,7 @@ class TelaRespostas : AppCompatActivity() {
         var acertos = 0
         var resposta = 0
         var progresso = 0
-        var qntPerguntas: Int
+        var qntPerguntas = 0
 
         var arrPerguntas : TypedArray? = null
         var ordemPerguntas = mutableListOf<Int>()
@@ -58,7 +58,7 @@ class TelaRespostas : AppCompatActivity() {
             val ordemRespostas: MutableList<Int> = (1 .. qntRespostas!!).toMutableList()
             ordemRespostas.shuffle()
 
-            MatarChildren(gridPergunta)
+            matarChildren(gridPergunta)
 
             respostaCards.clear()
             for (i in 0 until qntRespostas) {
@@ -97,14 +97,6 @@ class TelaRespostas : AppCompatActivity() {
                 else
                     txtPergunta.setTextColor(getColor(R.color.colorBnc))
                 arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
-                qntPerguntas = arrPerguntas!!.length()
-                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-                ordemPerguntas.shuffle()
-                getPergunta(progresso)
-            } else {
-                corFundo.setBackgroundColor(getColor(R.color.colorCyan))
-                imgFundo.setBackgroundResource(R.drawable.fndmat)
-                arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
                 qntPerguntas = arrPerguntas!!.length()
                 ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
                 ordemPerguntas.shuffle()
@@ -151,14 +143,6 @@ class TelaRespostas : AppCompatActivity() {
                 else
                     txtPergunta.setTextColor(getColor(R.color.colorBnc))
                 arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
-                qntPerguntas = arrPerguntas!!.length()
-                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-                ordemPerguntas.shuffle()
-                getPergunta(progresso)
-            } else {
-                corFundo.setBackgroundColor(getColor(R.color.colorCyan))
-                imgFundo.setBackgroundResource(R.drawable.fndmat)
-                arrPerguntas = resources.obtainTypedArray(R.array.sem1_adm_perguntas)
                 qntPerguntas = arrPerguntas!!.length()
                 ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
                 ordemPerguntas.shuffle()

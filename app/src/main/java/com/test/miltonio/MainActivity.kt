@@ -1,20 +1,26 @@
 package com.test.miltonio
 
+import android.content.Context
 import android.content.Intent
+import android.media.AudioManager
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.*
+import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
+import android.widget.ArrayAdapter
+import android.widget.GridLayout
+import android.widget.Spinner
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardMateria
 
-fun MatarChildren(pai :GridLayout) {
+
+fun matarChildren(pai: GridLayout) {
     if (pai.childCount > 1)
         for (i in 1 until pai.childCount)
             pai.removeViewAt(1)
@@ -28,9 +34,197 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private var isSonando = true
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun DesenharCards(dados :List<Categorias_DB>?, pai :GridLayout) {
-        MatarChildren(pai)
+    private fun setSound(valor: Boolean) {
+        val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        if (valor) {
+            audiomanager.adjustStreamVolume(
+                AudioManager.STREAM_MUSIC,
+                AudioManager.ADJUST_MUTE,
+                0
+            )
+            isSonando = false
+        }
+        else {
+            audiomanager.adjustStreamVolume(
+                AudioManager.STREAM_MUSIC,
+                AudioManager.ADJUST_UNMUTE,
+                0
+            )
+            isSonando = true
+        }
+    }
+
+    private fun resetDatabases() {
+        val sem1Update = arrayOf(
+            Sem1DB(
+                0,
+                0,
+                R.color.colorCyan,
+                R.drawable.simb1mat,
+                R.drawable.fnd1mat,
+                true,
+                R.string.categ_sem1_mat_prof,
+                R.string.categ_sem1_mat,
+                R.array.sem1_mat_perguntas
+            ),
+            Sem1DB(
+                1,
+                0,
+                R.color.colorRoxo,
+                R.drawable.simb1alg,
+                R.drawable.fnd1alg,
+                false,
+                R.string.categ_sem1_alg_prof,
+                R.string.categ_sem1_alg,
+                R.array.sem1_alg_perguntas
+            ),
+            Sem1DB(
+                2,
+                0,
+                R.color.colorMagt,
+                R.drawable.simbeng,
+                R.drawable.fndeng,
+                false,
+                R.string.categ_sem1_eng_prof,
+                R.string.categ_sem1_eng,
+                R.array.sem1_eng_perguntas
+            ),
+            Sem1DB(
+                3,
+                0,
+                R.color.colorAzul,
+                R.drawable.simb1aoc,
+                R.drawable.fnd1aoc,
+                false,
+                R.string.categ_sem1_aoc_prof,
+                R.string.categ_sem1_aoc,
+                R.array.sem1_aoc_perguntas
+            ),
+            Sem1DB(
+                4,
+                0,
+                R.color.colorLrnj,
+                R.drawable.simb1lhw,
+                R.drawable.fnd1lhw,
+                true,
+                R.string.categ_sem1_lhw_prof,
+                R.string.categ_sem1_lhw,
+                R.array.sem1_lhw_perguntas
+            ),
+            Sem1DB(
+                5,
+                0,
+                R.color.colorAmrl,
+                R.drawable.simb1adm,
+                R.drawable.fnd1adm,
+                true,
+                R.string.categ_sem1_adm_prof,
+                R.string.categ_sem1_adm,
+                R.array.sem1_adm_perguntas
+            ),
+            Sem1DB(
+                6,
+                0,
+                R.color.colorVerdEsc,
+                R.drawable.simb1prg,
+                R.drawable.fnd1prg,
+                false,
+                R.string.categ_sem1_prg_prof,
+                R.string.categ_sem1_prg,
+                R.array.sem1_prg_perguntas
+            )
+        )
+        for (categ in sem1Update)
+            MyApplication.sem1database?.sem1Dao()?.updateCatg(categ)
+
+        val sem2Update = arrayOf(
+            Categorias_DB(
+                0,
+                0,
+                R.color.colorCyan,
+                R.drawable.simb1mat,
+                R.drawable.fnd1mat,
+                true,
+                R.string.categ_sem2_cal_prof,
+                R.string.categ_sem2_cal,
+                R.array.sem2_cal_perguntas
+            ),
+            Categorias_DB(
+                1,
+                0,
+                R.color.colorVerdEsc,
+                R.drawable.simb2lnp,
+                R.drawable.fnd2lnp,
+                false,
+                R.string.categ_sem2_lnp_prof,
+                R.string.categ_sem2_lnp,
+                R.array.sem2_lnp_perguntas
+            ),
+            Categorias_DB(
+                2,
+                0,
+                R.color.colorMagt,
+                R.drawable.simbeng,
+                R.drawable.fndeng,
+                false,
+                R.string.categ_sem2_eng_prof,
+                R.string.categ_sem2_eng,
+                R.array.sem2_eng_perguntas
+            ),
+            Categorias_DB(
+                3,
+                0,
+                R.color.colorAmrl,
+                R.drawable.simb2cnt,
+                R.drawable.fnd2cnt,
+                true,
+                R.string.categ_sem2_cnt_prof,
+                R.string.categ_sem2_cnt,
+                R.array.sem2_cnt_perguntas
+            ),
+            Categorias_DB(
+                4,
+                0,
+                R.color.colorAzul,
+                R.drawable.simb2sis,
+                R.drawable.fnd2sis,
+                false,
+                R.string.categ_sem2_sis_prof,
+                R.string.categ_sem2_sis,
+                R.array.sem2_sis_perguntas
+            ),
+            Categorias_DB(
+                5,
+                0,
+                R.color.colorLrnj,
+                R.drawable.simb2com,
+                R.drawable.fnd2com,
+                false,
+                R.string.categ_sem2_com_prof,
+                R.string.categ_sem2_com,
+                R.array.sem2_com_perguntas
+            ),
+            Categorias_DB(
+                6,
+                0,
+                R.color.colorRoxo,
+                R.drawable.simb2ens,
+                R.drawable.fnd2ens,
+                false,
+                R.string.categ_sem2_ens_prof,
+                R.string.categ_sem2_ens,
+                R.array.sem2_ens_perguntas
+            )
+        )
+        for (categ in sem2Update)
+            MyApplication.database?.categoriaDao()?.updateCatg(categ)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun desenharCards(dados: List<Categorias_DB>?, pai: GridLayout) {
+        matarChildren(pai)
 
         if (dados != null) {
             for (i in dados.indices) {
@@ -70,14 +264,14 @@ class MainActivity : AppCompatActivity() {
                 )
                 pai.addView(cardLayout)
                 cardLayout.setOnClickListener {
-                    loadRespostas(i+20)
+                    loadRespostas(i + 20)
                 }
             }
         }
     }
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun DesenharCardsSem1(dados :List<Sem1DB>?, pai :GridLayout) {
-        MatarChildren(pai)
+    private fun desenharCardsSem1(dados: List<Sem1DB>?, pai: GridLayout) {
+        matarChildren(pai)
 
         if (dados != null) {
             for (i in dados.indices) {
@@ -117,7 +311,7 @@ class MainActivity : AppCompatActivity() {
                 )
                 pai.addView(cardLayout)
                 cardLayout.setOnClickListener {
-                    loadRespostas(i+10)
+                    loadRespostas(i + 10)
                 }
             }
         }
@@ -134,15 +328,18 @@ class MainActivity : AppCompatActivity() {
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
+        //resetDatabases()
+
+        val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        isSonando = !audiomanager.isStreamMute(AudioManager.STREAM_MUSIC)
+
         val dbVal = MyApplication.database?.categoriaDao()?.getAll()
         val gridCards = findViewById<GridLayout>(R.id.cardParent)
 
-        DesenharCards(dbVal, gridCards)
+        desenharCards(dbVal, gridCards)
     }
 
     //Todo: Desenhar ícones do menu
-    //Todo: Menu onde o usuário pode apagar o progresso, desligar o som, etc...
-    //Todo: Escolha de semestre no menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         val itemSemestre = menu?.findItem(R.id.menu_semestre)
@@ -165,8 +362,16 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 when(position) {
-                    0 -> DesenharCardsSem1(MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(R.id.cardParent))
-                    1 -> DesenharCards(MyApplication.database?.categoriaDao()?.getAll(), findViewById(R.id.cardParent))
+                    0 -> desenharCardsSem1(
+                        MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
+                            R.id.cardParent
+                        )
+                    )
+                    1 -> desenharCards(
+                        MyApplication.database?.categoriaDao()?.getAll(), findViewById(
+                            R.id.cardParent
+                        )
+                    )
                 }
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -175,12 +380,26 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+    override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        val itemSom = menu.findItem(R.id.menu_sons)
+        val itemNSom = menu.findItem(R.id.menu_Nsons)
+        itemSom.isVisible = !isSonando
+        itemNSom.isVisible = isSonando
+        return true
+    }
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.menu_semestre -> {
             true
         }
-        R.id.menu_perfil -> {
-            println(true)
+        R.id.menu_sons -> {
+            setSound(false)
+            invalidateOptionsMenu() //Todo: achar um jeito melhor de fazer isso
+            true
+        }
+        R.id.menu_Nsons -> {
+            setSound(true)
+            invalidateOptionsMenu()
             true
         }
         R.id.menu_opcoes -> {
@@ -193,11 +412,11 @@ class MainActivity : AppCompatActivity() {
 }
 
 //Todo: Acessibilidade!!!
+//Todo: Darkmode
 //Todo: Animações
-//Todo: Título do app interativo
 //Todo: Layout responsivo
 //Todo: Usuários com senha
-//Todo: Mudar a fonte tipográfica do app
 //Todo: Exibir na tela inicial a pontuação mais alta
+//Todo: Mudar a fonte tipográfica do app
 //Todo: Tirar a barra de status
-//Todo: Fundos pro 2° semestre
+//Todo: Título do app interativo

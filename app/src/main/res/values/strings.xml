@@ -39,6 +39,7 @@
     <string name="resultado_btn">voltar</string>
     <string name="resultado_msg_descricao">meme inspirador</string>
     <string name="menu_sem">Semestre</string>
-    <string name="menu_perfil">Perfil</string>
-    <string name="menu_config">Opções</string>
+    <string name="menu_sons"><strike>Sons</strike></string>
+    <string name="menu_Nsons">Sons</string>
+    <string name="menu_config">Resetar progresso</string>
 </resources>

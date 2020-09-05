@@ -7,14 +7,17 @@
     <item
         android:id="@+id/menu_semestre"
         android:title="@string/menu_sem"
-        android:icon="@drawable/ic_icone_semestre"
         app:showAsAction="always"
         app:actionViewClass="android.widget.Spinner"
         />
 
-    <item android:id="@+id/menu_perfil"
-        android:title="@string/menu_perfil"
-        app:showAsAction="always"
+    <item android:id="@+id/menu_sons"
+        android:title="@string/menu_sons"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/menu_Nsons"
+        android:title="@string/menu_Nsons"
+        app:showAsAction="ifRoom"
         />
 
     <item android:id="@+id/menu_opcoes"
