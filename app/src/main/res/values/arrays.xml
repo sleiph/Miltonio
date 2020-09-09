@@ -586,24 +586,184 @@
         <item>@array/sem1_prg_10</item>
     </array>
 
+    <string-array name="sem2_cal_1">
+        <item>Considere o domínio = {0, 1, 2} e contradomínio = {1, 2, 3, 4}, escolha a opção que representa uma função válida com esses valores:</item>
+        <item>(0, 1)(1, 4)(2, 2)</item>
+        <item>(1, 1)(2, 2)(3, 3)</item>
+        <item>(0, 1)(2, 2)(2, 4)</item>
+    </string-array>
+    <string-array name="sem2_cal_2">
+        <item>Qual o nome comumente dado ao domínio de uma função?</item>
+        <item>X</item>
+        <item>Y</item>
+    </string-array>
+    <string-array name="sem2_cal_3">
+        <item>Qual o nome comumente dado ao contradomínio de uma função?</item>
+        <item>Y</item>
+        <item>X</item>
+    </string-array>
+    <string-array name="sem2_cal_4">
+        <item>A função f é definida por \nf(x) = ax + b\nSabe-se que \nf(-1) = 3 e f(1) = 1\nDetermine o valor de f(3):</item>
+        <item>-3</item>
+        <item>-1</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="sem2_cal_5">
+        <item>Considerando a função quadrática\nf(x)=ax²+bx+c\nse a > 0, para onde estará voltada a concavidade da parábola?</item>
+        <item>Para cima</item>
+        <item>Para baixo</item>
+    </string-array>
+    <string-array name="sem2_cal_6">
+        <item>Considerando a função quadrática\nf(x)=x²-6x+9\nqual o vértice da parábola?</item>
+        <item>(3, 0)</item>
+        <item>(3, 3)</item>
+        <item>3</item>
+        <item>(0, 3)</item>
+    </string-array>
     <array name="sem2_cal_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem2_cal_1</item>
+        <item>@array/sem2_cal_2</item>
+        <item>@array/sem2_cal_3</item>
+        <item>@array/sem2_cal_4</item>
+        <item>@array/sem2_cal_5</item>
+        <item>@array/sem2_cal_6</item>
     </array>
 
+    <string-array name="sem2_lnp_1">
+        <item>No C#, o que acontecerá quando a linha a seguir for executada?\nx++;</item>
+        <item>O valor da variável x será incrementado em 1</item>
+        <item>O valor da variável x será dobrado</item>
+        <item>Iniciará a variável x</item>
+    </string-array>
+    <string-array name="sem2_lnp_2">
+        <item tools:ignore="Typos">No C#, qual comando pode ser utilizado para escrever valores no console?</item>
+        <item>Console.WriteLine();</item>
+        <item>Console.ReadLine();</item>
+        <item>WriteLine();</item>
+        <item>ReadLine();</item>
+        <item>Console();</item>
+    </string-array>
+    <string-array name="sem2_lnp_3">
+        <item>int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) continue;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</item>
+        <item>11</item>
+        <item>10</item>
+        <item>15</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="sem2_lnp_4">
+        <item>int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) break;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</item>
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="sem2_lnp_5">
+        <item>No C#, em uma estrutura de switch, qual condição será executada caso o comparativo não passe em nenhum dos testes?</item>
+        <item>default</item>
+        <item>else</item>
+        <item>case 0</item>
+        <item>nenhum</item>
+    </string-array>
+    <string-array name="sem2_lnp_6">
+        <item>Qual a principal vantagem de se usar o operador lógico &amp;&amp; e não o comparador &amp;?</item>
+        <item>velocidade de execução</item>
+        <item>legibilidade</item>
+        <item>coerência</item>
+    </string-array>
+    <string-array name="sem2_lnp_7">
+        <item>No C#, qual o significado do operador ^ ?</item>
+        <item>xOR</item>
+        <item>potência</item>
+        <item>raiz</item>
+    </string-array>
     <array name="sem2_lnp_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem2_lnp_1</item>
+        <item>@array/sem2_lnp_2</item>
+        <item>@array/sem2_lnp_3</item>
+        <item>@array/sem2_lnp_4</item>
+        <item>@array/sem2_lnp_5</item>
+        <item>@array/sem2_lnp_6</item>
+        <item>@array/sem2_lnp_7</item>
     </array>
 
     <array name="sem2_eng_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem1_eng_1</item>
+        <item>@array/sem1_eng_2</item>
+        <item>@array/sem1_eng_3</item>
+        <item>@array/sem1_eng_4</item>
+        <item>@array/sem1_eng_5</item>
+        <item>@array/sem1_eng_6</item>
+        <item>@array/sem1_eng_7</item>
+        <item>@array/sem1_eng_8</item>
+        <item>@array/sem1_eng_9</item>
+        <item>@array/sem1_eng_10</item>
     </array>
 
+    <string-array name="sem2_cnt_1">
+        <item>Quais as duas principais correntes do pensamento contábil?</item>
+        <item>Europeia e Estadunidense</item>
+        <item>Brasileira e Anglicana</item>
+        <item>Patrimonial e de Resultado</item>
+        <item>Débito e Crédito</item>
+    </string-array>
+    <string-array name="sem2_cnt_2">
+        <item>A contabilidade é uma ciência exata?</item>
+        <item>Não</item>
+        <item>Sim</item>
+    </string-array>
+    <string-array name="sem2_cnt_3">
+        <item>Quando os débitos de uma empresa excedem o seu patrimônio bruto, dizemos que a situação líquida é:</item>
+        <item>deficitária</item>
+        <item>favorável</item>
+        <item>superavitária</item>
+        <item>ativa</item>
+    </string-array>
+    <string-array name="sem2_cnt_4">
+        <item>Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO <u>Ativo</u> da empresa totaliza:</item>
+        <item>R$55.000</item>
+        <item>R$25.000</item>
+        <item>R$70.000</item>
+        <item>R$15.000</item>
+    </string-array>
+    <string-array name="sem2_cnt_5">
+        <item>Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO total <u>Passivo</u> da empresa totaliza:</item>
+        <item>R$40.000</item>
+        <item>R$25.000</item>
+        <item>R$15.000</item>
+        <item>R$30.000</item>
+    </string-array>
+    <string-array name="sem2_cnt_6">
+        <item>Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO <u>Patrimônio Líquido</u> da empresa totaliza:</item>
+        <item>R$15.000</item>
+        <item>R$55.000</item>
+        <item>R$95.000</item>
+        <item>R$40.000</item>
+    </string-array>
+    <string-array name="sem2_cnt_7">
+        <item>No patrimônio da empresa, qual dos exemplos abaixo é considerado um direito?</item>
+        <item>Contas a receber</item>
+        <item>Caixa</item>
+        <item>Estoque</item>
+        <item>Salários a pagar</item>
+        <item>Máquinas e equipamentos</item>
+    </string-array>
+    <string-array name="sem2_cnt_8">
+        <item>Quais os dois tipos de Regime de escrituração contábil?</item>
+        <item>Regime de Competência e Regime de Caixa</item>
+        <item>Regime Ativo e Regime Passivo</item>
+        <item>Débito e Crédito</item>
+        <item>Regime de Curto Prazo e Regime de Long Prazo</item>
+    </string-array>
     <array name="sem2_cnt_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem2_cnt_1</item>
+        <item>@array/sem2_cnt_2</item>
+        <item>@array/sem2_cnt_3</item>
+        <item>@array/sem2_cnt_4</item>
+        <item>@array/sem2_cnt_5</item>
+        <item>@array/sem2_cnt_6</item>
+        <item>@array/sem2_cnt_7</item>
+        <item>@array/sem2_cnt_8</item>
     </array>
 
     <array name="sem2_sis_perguntas">
@@ -612,23 +772,32 @@
     </array>
 
     <string-array name="sem2_com_1">
-        <item>A <b><u>idéia</u></b> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>A <u>idéia</u> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
         <item>Errada</item>
         <item>Certa</item>
     </string-array>
     <string-array name="sem2_com_2">
-        <item>O <b><u>coautor</u></b> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>O <u>coautor</u> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Certa</item>
+        <item>Errada</item>
+    </string-array>
+    <string-array name="sem2_com_3">
+        <item>Ele é <u>antihigiênico</u>.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
         <item>Errada</item>
         <item>Certa</item>
     </string-array>
     <array name="sem2_com_perguntas">
         <item>@array/sem2_com_1</item>
         <item>@array/sem2_com_2</item>
+        <item>@array/sem2_com_3</item>
     </array>
 
     <array name="sem2_ens_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem1_prg_1</item>
+        <item>@array/sem1_prg_2</item>
+        <item>@array/sem1_prg_3</item>
+        <item>@array/sem1_prg_4</item>
+        <item>@array/sem1_prg_5</item>
     </array>
 
 </resources>

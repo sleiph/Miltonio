@@ -1,6 +1,8 @@
 package com.test.miltonio
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.media.AudioManager
 import android.os.Build
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private var isSonando = true
+    var semestre = 0
     @RequiresApi(Build.VERSION_CODES.M)
     private fun setSound(valor: Boolean) {
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
@@ -373,6 +376,7 @@ class MainActivity : AppCompatActivity() {
                         )
                     )
                 }
+                semestre = position
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 // sei la
@@ -403,6 +407,30 @@ class MainActivity : AppCompatActivity() {
             true
         }
         R.id.menu_opcoes -> {
+            val alertBuilder = AlertDialog.Builder(this)
+            alertBuilder.setTitle(R.string.menu_config)
+                .setMessage(R.string.alerta_mensagem)
+                .setPositiveButton(R.string.alerta_positivo) { _: DialogInterface, _: Int ->
+                    resetDatabases()
+                    when (semestre) {
+                        0 -> desenharCardsSem1(
+                            MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
+                                R.id.cardParent
+                            )
+                        )
+                        1 -> desenharCards(
+                            MyApplication.database?.categoriaDao()?.getAll(), findViewById(
+                                R.id.cardParent
+                            )
+                        )
+                    }
+
+                }
+                .setNegativeButton(R.string.alerta_negativo) { dialogInterface: DialogInterface, _: Int ->
+                    dialogInterface.cancel()
+                }
+            val alertaDialogo = alertBuilder.create()
+            alertaDialogo.show()
             true
         }
         else -> {
