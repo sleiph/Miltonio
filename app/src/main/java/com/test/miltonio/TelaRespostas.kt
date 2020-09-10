@@ -21,7 +21,7 @@ class TelaRespostas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_respostas)
 
-        fun loadResultado(resul:Int) {
+        fun loadResultado(resul :IntArray) {
             val intent = Intent(this, TelaResultado::class.java)
             intent.putExtra("resul", resul)
             startActivity(intent)
@@ -117,19 +117,18 @@ class TelaRespostas : AppCompatActivity() {
                     somRuim.start()
                 }
                 progresso += 1
-                progressoBarra.progress = (
-                        (progresso.toDouble() / qntPerguntas.toDouble()) * 100
-                        ).toInt()
+                progressoBarra.progress =
+                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
                 if (progresso < qntPerguntas) {
                     getPergunta(progresso)
                 } else {
                     arrPerguntas!!.recycle()
-                    if (dados != null) {
-                        dados.pontos_db =
-                            ((acertos.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
+                    if (dados != null && pontos > dados.pontos_db) {
+                        dados.pontos_db = pontos.toInt()
                         MyApplication.sem1database?.sem1Dao()?.updateCatg(dados)
                     }
-                    loadResultado(categoria)
+                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
                 btnConferir.isEnabled = false
             }
@@ -163,19 +162,19 @@ class TelaRespostas : AppCompatActivity() {
                     somRuim.start()
                 }
                 progresso += 1
-                progressoBarra.progress = (
-                        (progresso.toDouble() / qntPerguntas.toDouble()) * 100
-                        ).toInt()
+                progressoBarra.progress =
+                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
                 if (progresso < qntPerguntas) {
                     getPergunta(progresso)
                 } else {
                     arrPerguntas!!.recycle()
-                    if (dados != null) {
+                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
+                    if (dados != null && pontos > dados.pontos_db) {
                         dados.pontos_db =
-                            ((acertos.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+                            pontos.toInt()
                         MyApplication.database?.categoriaDao()?.updateCatg(dados)
                     }
-                    loadResultado(categoria)
+                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
                 btnConferir.isEnabled = false
             }

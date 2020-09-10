@@ -30,8 +30,7 @@
             android:columnOrderPreserved="false"
             android:padding="@dimen/margem_dobro_margin">
 
-            <ImageView
-                android:id="@+id/imageView"
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_logo_main"
                 android:layout_marginTop="@dimen/distancia_topo_main"
@@ -41,8 +40,38 @@
                 android:layout_columnWeight="2"
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
-                android:contentDescription="@string/app_img_desc"
-                android:src="@drawable/appmilton"/>
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/logo_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tamanho_logo_main"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_img_desc"
+                    android:src="@drawable/appsemmilton" />
+
+                <ImageView
+                    android:id="@+id/logo_anima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX=".65"
+                    android:scaleY=".65"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_img_desc"
+                    android:src="@drawable/appsomilton" />
+
+                <ImageView
+                    android:id="@+id/logo_animo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="-.65"
+                    android:scaleY=".65"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/app_img_desc"
+                    android:src="@drawable/appsomilton" />
+
+            </RelativeLayout>
 
         </GridLayout>
 

@@ -741,7 +741,7 @@
         <item>R$40.000</item>
     </string-array>
     <string-array name="sem2_cnt_7">
-        <item>No patrimônio da empresa, qual dos exemplos abaixo é considerado um direito?</item>
+        <item>Considerando patrimônio da empresa, qual dos exemplos abaixo é considerado um direito?</item>
         <item>Contas a receber</item>
         <item>Caixa</item>
         <item>Estoque</item>
@@ -749,11 +749,16 @@
         <item>Máquinas e equipamentos</item>
     </string-array>
     <string-array name="sem2_cnt_8">
-        <item>Quais os dois tipos de Regime de escrituração contábil?</item>
+        <item>Quais os dois tipos de Regime de escrituração contábil em um relatório DRE?</item>
         <item>Regime de Competência e Regime de Caixa</item>
         <item>Regime Ativo e Regime Passivo</item>
         <item>Débito e Crédito</item>
         <item>Regime de Curto Prazo e Regime de Long Prazo</item>
+    </string-array>
+    <string-array name="sem2_cnt_9">
+        <item tools:ignore="Typos">Em um regime de competência, as movimentações são consideradas no momento da transação financeira?</item>
+        <item>Falso</item>
+        <item>Verdadeiro</item>
     </string-array>
     <array name="sem2_cnt_perguntas">
         <item>@array/sem2_cnt_1</item>
@@ -764,11 +769,62 @@
         <item>@array/sem2_cnt_6</item>
         <item>@array/sem2_cnt_7</item>
         <item>@array/sem2_cnt_8</item>
+        <item>@array/sem2_cnt_9</item>
     </array>
 
+    <string-array name="sem2_sis_1">
+        <item>Qual é o país exemplo da América Latina que oferece diferencial na educação e no acesso à internet?</item>
+        <item>Uruguai</item>
+        <item>Colômbia</item>
+        <item>Brasil</item>
+        <item>Argentina</item>
+    </string-array>
+    <string-array name="sem2_sis_2">
+        <item>Qual é o nome da empresa que controla a maior parte dos troncos de internet no mundo?</item>
+        <item>Level(3)</item>
+        <item>Google</item>
+        <item>Telecom</item>
+        <item>Warner</item>
+    </string-array>
+    <string-array name="sem2_sis_3">
+        <item>Qual foi a opção de logística que a Índia utilizou para enviar os produtos de artesanato, segundo documentário FREE NET?</item>
+        <item>e-commerce</item>
+        <item>créditos para celular</item>
+        <item>redes privadas</item>
+        <item>Facebook</item>
+    </string-array>
+    <string-array name="sem2_sis_4">
+        <item>Um exemplo de Sistema de Apoio às Operações é:</item>
+        <item>Sistema de Controle de Processo</item>
+        <item>Sistema de Informação Gerencial</item>
+        <item>Sistema de Apoio à Decisão</item>
+        <item>Sistema de Informação Executiva</item>
+    </string-array>
+    <string-array name="sem2_sis_5">
+        <item>Um exemplo de Sistema de Apoio Gerencial é:</item>
+        <item>Sistema de Apoio à Decisão</item>
+        <item>Sistema de Controle de Processo</item>
+        <item>Sistema de Processamento de Transações</item>
+        <item>Sistema Colaborativos</item>
+    </string-array>
+    <string-array name="sem2_sis_6">
+        <item>O usuário final pode ser considerado um recurso de um sistema de informações?</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string-array name="sem2_sis_7">
+        <item>Podemos dizer que o travazap é A MAIOR AMEAÇA CIBERNÉTICA já criada no mundo moderno?</item>
+        <item>COM CERTEZA!!!</item>
+        <item>Sim</item>
+    </string-array>
     <array name="sem2_sis_perguntas">
-        <item>@array/sem2_com_1</item>
-        <item>@array/sem2_com_2</item>
+        <item>@array/sem2_sis_1</item>
+        <item>@array/sem2_sis_2</item>
+        <item>@array/sem2_sis_3</item>
+        <item>@array/sem2_sis_4</item>
+        <item>@array/sem2_sis_5</item>
+        <item>@array/sem2_sis_6</item>
+        <item>@array/sem2_sis_7</item>
     </array>
 
     <string-array name="sem2_com_1">

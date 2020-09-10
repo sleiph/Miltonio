@@ -22,8 +22,8 @@ class TelaResultado : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val resulIntent = intent
-        val categoria = resulIntent.getIntExtra("resul", 0)
+        val resulIntent = intent.extras
+        val categoria = resulIntent?.getIntArray("resul")
 
         val corFnd = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFnd = findViewById<RelativeLayout>(R.id.img_fnd)
@@ -39,7 +39,7 @@ class TelaResultado : AppCompatActivity() {
 
         fun setPontuacao(pnts: Any) {
             txtResultado.text = getString(R.string.resultado_pontos, pnts)
-            if (pnts.toString().toInt() >= 60) {
+            if (categoria?.get(1)!!.toInt() >= 60) {
                 imgMensagem.setBackgroundResource(R.drawable.respostasnossas)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
             }
@@ -51,7 +51,7 @@ class TelaResultado : AppCompatActivity() {
 
         fun setMateria1(dados :Sem1DB?) {
             if (dados != null) {
-                setPontuacao(dados.pontos_db)
+                setPontuacao(categoria?.get(1)!!)
                 corFnd.setBackgroundColor(getColor(dados.cor_db))
                 imgFnd.setBackgroundResource(dados.fundo_db)
                 txtCategoria.text =
@@ -66,7 +66,7 @@ class TelaResultado : AppCompatActivity() {
         }
         fun setMateria2(dados :Categorias_DB?) {
             if (dados != null) {
-                setPontuacao(dados.pontos_db)
+                setPontuacao(categoria?.get(1)!!)
                 corFnd.setBackgroundColor(getColor(dados.cor_db))
                 imgFnd.setBackgroundResource(dados.fundo_db)
                 txtCategoria.text =
@@ -80,10 +80,10 @@ class TelaResultado : AppCompatActivity() {
             }
         }
 
-        if (categoria < 20)
-            setMateria1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria-10))
+        if (categoria?.get(0)!! < 20)
+            setMateria1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria[0] -10))
         else
-            setMateria2 (MyApplication.database?.categoriaDao()?.loadById(categoria-20))
+            setMateria2 (MyApplication.database?.categoriaDao()?.loadById(categoria[0] -20))
 
         btnMain.setOnClickListener {
             loadMain()
@@ -93,4 +93,3 @@ class TelaResultado : AppCompatActivity() {
 
 //Todo: High Scores
 //Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
-//Todo: Quando voltar pra tela inicial, voltar no semestre escolhido

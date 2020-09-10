@@ -4,29 +4,30 @@ import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.graphics.Matrix
 import android.media.AudioManager
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.AdapterView
+import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
-import android.widget.ArrayAdapter
-import android.widget.GridLayout
-import android.widget.Spinner
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardMateria
 
-
 fun matarChildren(pai: GridLayout) {
     if (pai.childCount > 1)
         for (i in 1 until pai.childCount)
             pai.removeViewAt(1)
 }
+
+var semestre = 1 //Todo: acabar com as variáveis globais
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private var isSonando = true
-    var semestre = 0
+
     @RequiresApi(Build.VERSION_CODES.M)
     private fun setSound(valor: Boolean) {
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
@@ -320,7 +321,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -331,15 +331,48 @@ class MainActivity : AppCompatActivity() {
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
-        //resetDatabases()
-
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         isSonando = !audiomanager.isStreamMute(AudioManager.STREAM_MUSIC)
 
-        val dbVal = MyApplication.database?.categoriaDao()?.getAll()
-        val gridCards = findViewById<GridLayout>(R.id.cardParent)
+        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
+        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
+        val logoAnimadoBmp = BitmapFactory.decodeResource(resources, R.drawable.appsomilton)
+        val angulo = 60
+        val matrixAnima = Matrix()
+        val matrixAnami = Matrix()
 
-        desenharCards(dbVal, gridCards)
+        logoAnimado.setOnClickListener {
+            matrixAnima.postRotate(angulo.toFloat())
+            val rodado = Bitmap.createBitmap(
+                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
+                matrixAnima, true
+            )
+            logoAnimado.setImageBitmap(rodado)
+        }
+
+        logoAnamido.setOnClickListener {
+            matrixAnami.postRotate(-angulo.toFloat())
+            val rodado = Bitmap.createBitmap(
+                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
+                matrixAnami, true
+            )
+            logoAnamido.setImageBitmap(rodado)
+        }
+
+        //resetDatabases()
+
+        when(semestre) {
+            0 -> desenharCardsSem1(
+                MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
+            1 -> desenharCards(
+                MyApplication.database?.categoriaDao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
+        }
     }
 
     //Todo: Desenhar ícones do menu
@@ -355,7 +388,7 @@ class MainActivity : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter = adapter
         }
-        spinner.setSelection(1)
+        spinner.setSelection(semestre)
         spinner.onItemSelectedListener = object : OnItemSelectedListener {
             @RequiresApi(Build.VERSION_CODES.M)
             override fun onItemSelected(
@@ -398,7 +431,7 @@ class MainActivity : AppCompatActivity() {
         }
         R.id.menu_sons -> {
             setSound(false)
-            invalidateOptionsMenu() //Todo: achar um jeito melhor de fazer isso
+            invalidateOptionsMenu() //Todo: achar um jeito melhor de atualizar o menu
             true
         }
         R.id.menu_Nsons -> {
@@ -444,7 +477,3 @@ class MainActivity : AppCompatActivity() {
 //Todo: Animações
 //Todo: Layout responsivo
 //Todo: Usuários com senha
-//Todo: Exibir na tela inicial a pontuação mais alta
-//Todo: Mudar a fonte tipográfica do app
-//Todo: Tirar a barra de status
-//Todo: Título do app interativo
