@@ -842,10 +842,79 @@
         <item>Errada</item>
         <item>Certa</item>
     </string-array>
+    <string-array name="sem2_com_4">
+        <item>Em qual ano o acordo ortográfico mais recente começou a ser implantado no Brasil?</item>
+        <item>2009</item>
+        <item>1990</item>
+        <item>2002</item>
+        <item>2016</item>
+    </string-array>
+    <string-array name="sem2_com_5">
+        <item>Qual o nome da instituição internacional responsável por formular os acordos ortográficos de língua portuguesa?</item>
+        <item>CPLP</item>
+        <item>ONU</item>
+        <item>Academia Brasileira de Letras</item>
+    </string-array>
+    <string-array name="sem2_com_6">
+        <item>Uma exposição escrita, minuciosa e cirunstanciada relativa a um assunto ou fato ocorrido, escrito por um especialista da área:</item>
+        <item>Relatório</item>
+        <item>Relato</item>
+    </string-array>
+    <string-array name="sem2_com_7">
+        <item>Uma exposição escrita ou oral sobre um acontecimento; narração, descrição, informação.</item>
+        <item>Relato</item>
+        <item>Relatório</item>
+    </string-array>
+    <string-array name="sem2_com_8">
+        <item>Precisa-se ou Precisam-se de operários?</item>
+        <item>Precisa-se</item>
+        <item>Precisam-se</item>
+    </string-array>
+    <string-array name="sem2_com_9">
+        <item>Aluga-se ou Alugam-se apartamentos?</item>
+        <item>Alugam-se</item>
+        <item>Aluga-se</item>
+    </string-array>
+    <string-array name="sem2_com_10">
+        <item>Mas a minha tristeza é sossego __________ é natural e justa.\nFernando Pessoa</item>
+        <item>porque</item>
+        <item>por que</item>
+        <item>porquê</item>
+        <item>por quê</item>
+    </string-array>
+    <string-array name="sem2_com_11">
+        <item>Estava inquieto. Não saberia dizer bem __________.\nÉrico Veríssimo</item>
+        <item>Por quê</item>
+        <item>Porque</item>
+        <item>Por que</item>
+        <item>Porquê</item>
+    </string-array>
+    <string-array name="sem2_com_12">
+        <item>Ele apresentou __ várias pessoas o recibo relativo __ compra do carro.</item>
+        <item>a à</item>
+        <item>à à</item>
+        <item>a a</item>
+        <item>à a</item>
+    </string-array>
+    <string-array name="sem2_com_13">
+        <item>Na frase\n\nAtravessamos a cidade de ponta <u> a </u> ponta.\n\nPor qual motivo o a não é craseado?</item>
+        <item>Ele está entre palavras repetidas</item>
+        <item>Artigo sem preposição</item>
+        <item>Ele está seguido de palavra masculina</item>
+        <item>Ponta não está especificada</item>
+    </string-array>
     <array name="sem2_com_perguntas">
         <item>@array/sem2_com_1</item>
         <item>@array/sem2_com_2</item>
         <item>@array/sem2_com_3</item>
+        <item>@array/sem2_com_4</item>
+        <item>@array/sem2_com_6</item>
+        <item>@array/sem2_com_7</item>
+        <item>@array/sem2_com_8</item>
+        <item>@array/sem2_com_10</item>
+        <item>@array/sem2_com_11</item>
+        <item>@array/sem2_com_12</item>
+        <item>@array/sem2_com_13</item>
     </array>
 
     <array name="sem2_ens_perguntas">

@@ -383,7 +383,8 @@ class MainActivity : AppCompatActivity() {
         ArrayAdapter.createFromResource(
             this,
             R.array.menu_semestres,
-            android.R.layout.simple_spinner_item //Todo: Fazer o spinner mais bonito
+            android.R.layout.simple_spinner_item
+            //Todo: Fazer o spinner mais bonito
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter = adapter
@@ -431,7 +432,8 @@ class MainActivity : AppCompatActivity() {
         }
         R.id.menu_sons -> {
             setSound(false)
-            invalidateOptionsMenu() //Todo: achar um jeito melhor de atualizar o menu
+            invalidateOptionsMenu()
+            //Todo: achar um jeito melhor de atualizar o menu
             true
         }
         R.id.menu_Nsons -> {

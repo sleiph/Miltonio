@@ -1,6 +1,7 @@
 package com.test.miltonio
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -25,6 +26,9 @@ class TelaResultado : AppCompatActivity() {
         val resulIntent = intent.extras
         val categoria = resulIntent?.getIntArray("resul")
 
+        val somBom = MediaPlayer.create(this, R.raw.tudo)
+        val somRuim = MediaPlayer.create(this, R.raw.nada)
+
         val corFnd = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFnd = findViewById<RelativeLayout>(R.id.img_fnd)
 
@@ -42,10 +46,12 @@ class TelaResultado : AppCompatActivity() {
             if (categoria?.get(1)!!.toInt() >= 60) {
                 imgMensagem.setBackgroundResource(R.drawable.respostasnossas)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
+                somBom.start()
             }
             else {
                 imgMensagem.setBackgroundResource(R.drawable.respostassuas)
                 txtMensagem.text = getString(R.string.resultado_msg_ruim)
+                somRuim.start()
             }
         }
 
@@ -92,4 +98,3 @@ class TelaResultado : AppCompatActivity() {
 }
 
 //Todo: High Scores
-//Todo: Música pra quando terminar os exercícios (diferente se vc fez uma pontuação melhor ou não)
