@@ -897,7 +897,7 @@
         <item>à a</item>
     </string-array>
     <string-array name="sem2_com_13">
-        <item>Na frase\n\nAtravessamos a cidade de ponta <u> a </u> ponta.\n\nPor qual motivo o a não é craseado?</item>
+        <item>Na frase:\n\nAtravessamos a cidade de ponta <u> a </u> ponta.\n\nPor qual motivo o <u> a </u> não é craseado?</item>
         <item>Ele está entre palavras repetidas</item>
         <item>Artigo sem preposição</item>
         <item>Ele está seguido de palavra masculina</item>
@@ -917,12 +917,72 @@
         <item>@array/sem2_com_13</item>
     </array>
 
+    <string-array name="sem2_ens_1">
+        <item>É exemplo de um problema do modelo de desenvolvimento de <i>softwares</i> em cascata:</item>
+        <item>Particionamento inflexível do projeto em fases distintas</item>
+        <item>Os sistemas frequentemente possuem pouca estrutura</item>
+        <item>Falta de visibilidade dos processos</item>
+    </string-array>
+    <string-array name="sem2_ens_2">
+        <item>É exemplo de um problema do modelo de desenvolvimento evolucionário de <i>softwares</i>:</item>
+        <item>Falta de visibilidade dos processos</item>
+        <item>Particionamento inflexível do projeto em fases distintas</item>
+        <item>Difícil resposta a novos requisitos do usuário</item>
+    </string-array>
+    <string-array name="sem2_ens_3">
+        <item>O que é análise de domínio de um software?</item>
+        <item>É a identificação, a análise e a especificação de requisitos comuns de um campo de aplicação específico.</item>
+        <item>É a identificação, a análise e a especificação de requisitos não funcionais.</item>
+        <item>É a análise de capacidades não implementadas, mas necessárias.</item>
+        <item>É a análise de capacidades específicas do software, não reutilizáveis.</item>
+        <item>É a especificação de requisitos que não tem valor para o software, mas que pode gerar valor futuro.</item>
+    </string-array>
+    <string-array name="sem2_ens_4">
+        <item>Qual componente de um sistema fornece serviços para outros componentes, mas não pode ser considerado um sistema independente?</item>
+        <item>Módulo</item>
+        <item>Subsistema</item>
+        <item>Rotina</item>
+        <item>Domínio</item>
+    </string-array>
+    <string-array name="sem2_ens_5">
+        <item>Assinale a finalidade correta  da engenharia de requisitos:</item>
+        <item tools:ignore="Typos">Ajudar os engenheiros de software a compreender melhor o problema que eles vão trabalhar para resolver.</item>
+        <item>Usar uma combinação de formas textuais e diagramáticas para mostrar os requisitos de dados, função e comportamento.</item>
+        <item>Especificar o conjunto de áreas que farão parte do projeto.</item>
+        <item>Determinar o objetivo geral do sistema.</item>
+        <item>Definir um amplo conjunto de conceitos, princípios, métodos e ferramentas que se pode considerar à medida que o software é planejado e desenvolvido.</item>
+    </string-array>
+    <string-array name="sem2_ens_6">
+        <item>Um relacionamento de inclusão (Include) do Caso de Uso A com o Caso de Uso B indica que:</item>
+        <item>Quando o Caso A for acionado, <b>obrigatoriamente</b> B <b>também</b> será acionado</item>
+        <item>Quando o Caso A for acionado, <b>opcionalmente</b> B <b>também</b> será acionado</item>
+        <item>Quando o Caso A for acionado, <b>obrigatoriamente</b> B <b>NÃO</b> será acionado</item>
+        <item>Quando o Caso A for acionado, <b>opcionalmente</b> B <b>NÃO</b> será acionado</item>
+    </string-array>
+    <string-array name="sem2_ens_7">
+        <item>Assinale a alternativa <u>FALSA</u>:</item>
+        <item tools:ignore="Typos">O termo função é usado no sentido genérico de operação que pode ser realizada pelo sistema, seja através de comandos dos usuários ou seja pela ocorrência de eventos internos ou externos ao sistema.</item>
+        <item tools:ignore="Typos">Tradicionalmente, os requisitos de software são separados em requisitos funcionais e não-funcionais. Os requisitos funcionais são a descrição das diversas funções que clientes e usuários querem ou precisam que o software ofereça. Eles definem a funcionalidade desejada do software.</item>
+        <item>Requisitos não-funcionais são as qualidades globais de um software, como manutenibilidade, usabilidade, desempenho, custos e várias outras. Normalmente estes requisitos são descritos de maneira informal, de maneira controversa e são fáceis de validar.</item>
+        <item>No design do software deve-se tomar a decisão de quais a funções o sistema efetivamente terá para satisfazer àquilo que os usuários querem.</item>
+        <item>A especificação de um requisito funcional deve determinar o que se espera que o software faça, sem a preocupação de como ele faz. É importante diferenciar a atividade de especificar requisitos da atividade de especificação que ocorre durante o design do software.</item>
+    </string-array>
+    <string-array name="sem2_ens_8">
+        <item>Requisitos de um sistema são freqüentemente classificados como funcionais, não-funcionais e de domínio. Qual a definição que melhor descreve requisitos não-funcionais?</item>
+        <item>São requisitos que não estão diretamente relacionados com as funções específicas do sistema, mas com os atributos de qualidade do sistema.</item>
+        <item>São requisitos que especificam como deve ser testada uma parte do sistema, incluindo-se as entradas, os resultados esperados e as condições sob as quais os testes devem ocorrer.</item>
+        <item>São requisitos que derivam do domínio da aplicação e que refletem características e restrições desse domínio.</item>
+        <item>São ferramentas automatizadas de apoio ao processo de desenvolvimento de sistemas.</item>
+        <item>São requisitos que descrevem o que o sistema deve fazer, como deve reagir a determinadas entradas e como deve comportar-se em situações particulares.</item>
+    </string-array>
     <array name="sem2_ens_perguntas">
-        <item>@array/sem1_prg_1</item>
-        <item>@array/sem1_prg_2</item>
-        <item>@array/sem1_prg_3</item>
-        <item>@array/sem1_prg_4</item>
-        <item>@array/sem1_prg_5</item>
+        <item>@array/sem2_ens_1</item>
+        <item>@array/sem2_ens_2</item>
+        <item>@array/sem2_ens_3</item>
+        <item>@array/sem2_ens_4</item>
+        <item>@array/sem2_ens_5</item>
+        <item>@array/sem2_ens_6</item>
+        <item>@array/sem2_ens_7</item>
+        <item>@array/sem2_ens_8</item>
     </array>
-
 </resources>
