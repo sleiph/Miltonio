@@ -27,7 +27,7 @@
             android:columnCount="2"
             android:alignmentMode="alignBounds"
             android:columnOrderPreserved="false"
-            android:padding="@dimen/margem_dobro_margin">
+            android:padding="@dimen/margem_qsereal_margin">
 
             <RelativeLayout
                 android:layout_width="0dp"

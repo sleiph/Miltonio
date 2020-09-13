@@ -2,6 +2,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="margem_real_margin">16dp</dimen>
     <dimen name="margem_meia_margin">8dp</dimen>
+    <dimen name="margem_qsereal_margin">24dp</dimen>
     <dimen name="margem_dobro_margin">32dp</dimen>
     <dimen name="margem_card_interna">6dp</dimen>
     <dimen name="margem_botao_interna">24dp</dimen>
