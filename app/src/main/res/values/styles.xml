@@ -7,11 +7,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppTheme.ActionBarraTheme">
-        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:titleTextStyle">@style/AppTheme.ActionBarraTheme.ActionTextoTheme</item>
     </style>
     <style name="AppTheme.ActionBarraTheme.ActionTextoTheme">
-        <item name="android:textColor">@color/colorBnc</item>
+        <item name="android:textColor">@color/colorPrt</item>
     </style>
 
 </resources>

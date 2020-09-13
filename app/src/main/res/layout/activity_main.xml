@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/AppTheme.ActionBarraTheme"
-        android:elevation="@dimen/margem_card_interna"
-        app:titleTextColor="@color/colorBnc" />
+        android:elevation="@dimen/margem_card_interna" />
 
     <ScrollView
         android:layout_width="match_parent"

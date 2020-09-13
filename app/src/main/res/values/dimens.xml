@@ -13,7 +13,7 @@
     <dimen name="tamanho_cards">186dp</dimen>
     <dimen name="tamanho_barra_progresso">12dp</dimen>
     <dimen name="tamanho_area_botao">88dp</dimen>
-    <dimen name="distancia_topo_main">66dp</dimen>
+    <dimen name="distancia_topo_main">64dp</dimen>
     <dimen name="distancia_topo_pergunta">44dp</dimen>
     <dimen name="distancia_separador">86dp</dimen>
     <dimen name="texto_normal">14sp</dimen>
