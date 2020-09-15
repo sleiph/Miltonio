@@ -1023,7 +1023,7 @@
         <item>A especificação de um requisito funcional deve determinar o que se espera que o software faça, sem a preocupação de como ele faz. É importante diferenciar a atividade de especificar requisitos da atividade de especificação que ocorre durante o design do software.</item>
     </string-array>
     <string-array name="sem2_ens_8">
-        <item>Requisitos de um sistema são freqüentemente classificados como funcionais, não-funcionais e de domínio. Qual a definição que melhor descreve requisitos não-funcionais?</item>
+        <item>Requisitos de um sistema são frequentemente classificados como funcionais, não-funcionais e de domínio. Qual a definição que melhor descreve requisitos não-funcionais?</item>
         <item>São requisitos que não estão diretamente relacionados com as funções específicas do sistema, mas com os atributos de qualidade do sistema.</item>
         <item>São requisitos que especificam como deve ser testada uma parte do sistema, incluindo-se as entradas, os resultados esperados e as condições sob as quais os testes devem ocorrer.</item>
         <item>São requisitos que derivam do domínio da aplicação e que refletem características e restrições desse domínio.</item>
