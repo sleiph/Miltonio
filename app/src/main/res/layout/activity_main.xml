@@ -33,7 +33,7 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/tamanho_logo_main"
                 android:layout_marginTop="@dimen/distancia_topo_main"
-                android:layout_marginBottom="@dimen/margem_real_margin"
+                android:layout_marginBottom="@dimen/margem_meia_margin"
                 android:layout_marginStart="@dimen/margem_meia_margin"
                 android:layout_marginEnd="@dimen/margem_meia_margin"
                 android:layout_columnWeight="2"
