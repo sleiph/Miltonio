@@ -475,6 +475,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 //Todo: Acessibilidade!!!
+//Todo: Deixar o app usável em versões mais antigas do Android
 //Todo: Darkmode
 //Todo: Animações
 //Todo: Layout responsivo

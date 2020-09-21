@@ -815,6 +815,34 @@
         <item>Falso</item>
         <item>Verdadeiro</item>
     </string-array>
+    <string-array name="sem2_cnt_10">
+        <item>Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Econômico</u> desta empresa?</item>
+        <item>42 dias</item>
+        <item>102 dias</item>
+        <item>72 dias</item>
+        <item>5 dias</item>
+    </string-array>
+    <string-array name="sem2_cnt_11">
+        <item>Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Operacional</u> desta empresa?</item>
+        <item>102 dias</item>
+        <item>42 dias</item>
+        <item>72 dias</item>
+        <item>5 dias</item>
+    </string-array>
+    <string-array name="sem2_cnt_12">
+        <item>Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Financeiro</u> desta empresa?</item>
+        <item>72 dias</item>
+        <item>42 dias</item>
+        <item>102 dias</item>
+        <item>5 dias</item>
+    </string-array>
+    <string-array name="sem2_cnt_13">
+        <item>Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo da Empresa</u>?</item>
+        <item>5 dias</item>
+        <item>42 dias</item>
+        <item>102 dias</item>
+        <item>72 dias</item>
+    </string-array>
     <array name="sem2_cnt_perguntas">
         <item>@array/sem2_cnt_1</item>
         <item>@array/sem2_cnt_2</item>
@@ -825,6 +853,10 @@
         <item>@array/sem2_cnt_7</item>
         <item>@array/sem2_cnt_8</item>
         <item>@array/sem2_cnt_9</item>
+        <item>@array/sem2_cnt_10</item>
+        <item>@array/sem2_cnt_11</item>
+        <item>@array/sem2_cnt_12</item>
+        <item>@array/sem2_cnt_13</item>
     </array>
 
     <string-array name="sem2_sis_1">
@@ -872,6 +904,18 @@
         <item>COM CERTEZA!!!</item>
         <item>Sim</item>
     </string-array>
+    <string-array name="sem2_sis_8">
+        <item>Qual seria o tipo de computador mais indicado para resolver um problema em que o tempo de cálculo é uma limitação?</item>
+        <item>Supercomputador</item>
+        <item>Mainframe</item>
+    </string-array>
+    <string-array name="sem2_sis_9">
+        <item>Qual foi a maior contribuição da Terceira Geração Computacional(1964–1977)?</item>
+        <item>Circuitos Integrados</item>
+        <item>Transistores</item>
+        <item>Válvulas</item>
+        <item>Processadores</item>
+    </string-array>
     <array name="sem2_sis_perguntas">
         <item>@array/sem2_sis_1</item>
         <item>@array/sem2_sis_2</item>
@@ -880,6 +924,8 @@
         <item>@array/sem2_sis_5</item>
         <item>@array/sem2_sis_6</item>
         <item>@array/sem2_sis_7</item>
+        <item>@array/sem2_sis_8</item>
+        <item>@array/sem2_sis_9</item>
     </array>
 
     <string-array name="sem2_com_1">
@@ -958,18 +1004,36 @@
         <item>Ele está seguido de palavra masculina</item>
         <item>Ponta não está especificada</item>
     </string-array>
+    <string-array name="sem2_com_14">
+        <item>Nas frases a seguir, informe se os pronomes oblíquos átonos estão naposição proclítica, mesoclítica ou enclítica:\n\nMandar-lhe-ei o livro amanhã.\nAjude-me na cozinha.\nMuitos lhe telefonaram pelo aniversário.</item>
+        <item>Mesóclise, ênclise, próclise</item>
+        <item>Mesóclise, próclise, ênclise</item>
+        <item>Ênclise, mesóclise, próclise</item>
+        <item>Ênclise, próclise, mesóclise</item>
+    </string-array>
+    <string-array name="sem2_com_15">
+        <item>A colocação dos pronomes oblíquos átonos leva em consideração o processo da Eufonia (Boniteza da frase)?</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string-array name="sem2_com_16">
+        <item>É descrição técnica. Caracteriza-se pela objetividade, clareza e preocupação com os pormenores:</item>
+        <item>Referencial</item>
+        <item>Subjetiva</item>
+    </string-array>
     <array name="sem2_com_perguntas">
         <item>@array/sem2_com_1</item>
         <item>@array/sem2_com_2</item>
-        <item>@array/sem2_com_3</item>
         <item>@array/sem2_com_4</item>
         <item>@array/sem2_com_6</item>
-        <item>@array/sem2_com_7</item>
         <item>@array/sem2_com_8</item>
+        <item>@array/sem2_com_9</item>
         <item>@array/sem2_com_10</item>
         <item>@array/sem2_com_11</item>
         <item>@array/sem2_com_12</item>
         <item>@array/sem2_com_13</item>
+        <item>@array/sem2_com_14</item>
+        <item>@array/sem2_com_15</item>
     </array>
 
     <string-array name="sem2_ens_1">
@@ -1030,6 +1094,20 @@
         <item>São ferramentas automatizadas de apoio ao processo de desenvolvimento de sistemas.</item>
         <item>São requisitos que descrevem o que o sistema deve fazer, como deve reagir a determinadas entradas e como deve comportar-se em situações particulares.</item>
     </string-array>
+    <string-array name="sem2_ens_9">
+        <item>Escolha dois requisitos não funcionais possivelmente conflitantes:</item>
+        <item>Manutenibilidade e Desempenho</item>
+        <item>Confidencialidade e Segurança</item>
+        <item>Segurança e Proteção</item>
+        <item>Qualidade e Desempenho</item>
+    </string-array>
+    <string-array name="sem2_ens_10">
+        <item>Um exemplo de <u>Restrição</u> do projeto:</item>
+        <item>O prazo de implantação do sistema deve ser até 31/dez.</item>
+        <item>Num mesmo dia, o caixa pode ser aberto e encerrado quantas vezes forem necessárias.</item>
+        <item>O sistema deverá realizar backups dos dados diariamente.</item>
+        <item>Como governo, quero que o sistema emita NFC-e para controlar o pagamento de impostos.</item>
+    </string-array>
     <array name="sem2_ens_perguntas">
         <item>@array/sem2_ens_1</item>
         <item>@array/sem2_ens_2</item>
@@ -1039,5 +1117,7 @@
         <item>@array/sem2_ens_6</item>
         <item>@array/sem2_ens_7</item>
         <item>@array/sem2_ens_8</item>
+        <item>@array/sem2_ens_9</item>
+        <item>@array/sem2_ens_10</item>
     </array>
 </resources>

@@ -24,6 +24,15 @@
         android:progress="0"
         style='@android:style/Widget.ProgressBar.Horizontal'/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/distancia_topo_pergunta"
+        android:layout_marginHorizontal="@dimen/margem_real_margin"
+        android:background="@drawable/ic_separador"
+        android:backgroundTint="@color/colorCnzEsc"
+        android:backgroundTintMode="screen" />
+
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -67,7 +76,8 @@
         android:layout_marginBottom="@dimen/distancia_separador"
         android:layout_marginHorizontal="@dimen/margem_real_margin"
         android:background="@drawable/ic_separador"
-        android:backgroundTint="@color/colorCnzEsc" />
+        android:backgroundTint="@color/colorCnzEsc"
+        android:backgroundTintMode="screen" />
 
     <RelativeLayout
         android:layout_width="match_parent"

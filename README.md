@@ -1,5 +1,6 @@
 # Milton.io
 O Milton.io é um aplicativo de quiz criado pra testar os conhecimentos do jogador sobre as matérias do curso de Análise de Sistemas da FATEC Guarulhos.
+
 Criei esse aplicativo no [MIT App Inventor](https://appinventor.mit.edu) como parte de um laboratório de criação de aplicativos dado na disciplina de administração, agora recriei ele no Android Studio pra aprender um pouco sobre Kotlin e desenvolvimento de aplicativos.
 
 ![capa](/img/main.jpg)
@@ -12,6 +13,7 @@ A tela inicial exibe as matérias do semestre, com a sua melhor pontuação em c
 
 Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 - Acessibilidade!!!
+- Deixar o app usável em versões mais antigas do Android
 - *Darkmode*
 - Animações
 - Layout responsivo
