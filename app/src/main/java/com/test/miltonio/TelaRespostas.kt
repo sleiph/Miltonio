@@ -192,3 +192,4 @@ class TelaRespostas : AppCompatActivity() {
 //Todo: Perguntas de múltipla escolha
 //Todo: Tamanho das caixas de resposta uniforme
 //Todo: Scroll mais bonito/intuitivo das respostas
+//Todo: Adicionar só x do array de perguntas no quiz
