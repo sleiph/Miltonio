@@ -651,6 +651,11 @@
         <item>8</item>
         <item>10</item>
     </string-array>
+    <string-array name="sem2_cal_11">
+        <item>Se, após fazer o cálculo dos pontos críticos de um modelo funcional por um critério de segunda derivada, o valor encontrado para y\'\' for maior que 0, o ponto encontrado é o:</item>
+        <item>Ponto Mínimo da função</item>
+        <item>Ponto Máximo da função</item>
+    </string-array>
     <array name="sem2_cal_perguntas">
         <item>@array/sem2_cal_1</item>
         <item>@array/sem2_cal_2</item>
@@ -662,6 +667,7 @@
         <item>@array/sem2_cal_8</item>
         <item>@array/sem2_cal_9</item>
         <item>@array/sem2_cal_10</item>
+        <item>@array/sem2_cal_11</item>
     </array>
 
     <string-array name="sem2_lnp_1">
@@ -739,6 +745,19 @@
         <item>Representação de um objeto de forma abstrata</item>
         <item>Estruturação de comportamento interno que varie de acordo com a circunstâncias</item>
     </string-array>
+    <string-array name="sem2_lnp_12">
+        <item>Uma __________ inicia o corpo de uma definição de método.</item>
+        <item>Chave de Abertura</item>
+        <item>Colchete de Abertura</item>
+        <item>Parênteses de Abertura</item>
+        <item>Símbolo menor de abertura</item>
+        <item>Nenhuma das anteriores</item>
+    </string-array>
+    <string-array name="sem2_lnp_13">
+        <item>Colocar as expressões cujos valores não mudam dentro de um laço pode levar a um desempenho deficiente.</item>
+        <item>Verdadeiro</item>
+        <item>Falso</item>
+    </string-array>
     <array name="sem2_lnp_perguntas">
         <item>@array/sem2_lnp_1</item>
         <item>@array/sem2_lnp_2</item>
@@ -751,6 +770,8 @@
         <item>@array/sem2_lnp_9</item>
         <item>@array/sem2_lnp_10</item>
         <item>@array/sem2_lnp_11</item>
+        <item>@array/sem2_lnp_12</item>
+        <item>@array/sem2_lnp_13</item>
     </array>
 
     <string-array name="sem2_eng_1">
@@ -912,6 +933,15 @@
         <item>Analisar o Endividamento da empresa</item>
         <item>Analisar os ciclos econômicos da empresa</item>
     </string-array>
+    <string-array name="sem2_cnt_17">
+        <item>Qual dos seguintes ativos não é um bem sujeito à depreciação?</item>
+        <item>Terrenos</item>
+        <item>Imóveis</item>
+        <item>Instalações</item>
+        <item>Maquinário</item>
+        <item>Móveis</item>
+        <item>Utensílios</item>
+    </string-array>
     <array name="sem2_cnt_perguntas">
         <item>@array/sem2_cnt_1</item>
         <item>@array/sem2_cnt_2</item>
@@ -929,6 +959,7 @@
         <item>@array/sem2_cnt_14</item>
         <item>@array/sem2_cnt_15</item>
         <item>@array/sem2_cnt_16</item>
+        <item>@array/sem2_cnt_17</item>
     </array>
 
     <string-array name="sem2_sis_1">
@@ -1116,6 +1147,14 @@
         <item>São frases com significados ambíguos</item>
         <item>São frases com sonoridade desagradável</item>
     </string-array>
+    <string-array name="sem2_com_19">
+        <item>Qual dos seguintes tópicos frasais apresenta uma idéia núcleo comparativa?</item>
+        <item>Igualmente, do mesmo modo, à semelhança de, como etc.</item>
+        <item>No Brasil, em São Paulo, nesta sala, ao longo do rio, ao redor da cidade, perto do armazém, além das casas etc.</item>
+        <item>O primeiro…, o segundo…, na primeira etapa…, na fase inicial… etc.</item>
+        <item tools:ignore="Typos">No fim dos anos 60, quando a guerra terminou, no momento em que abriu a porta, naquela época etc.</item>
+        <item>Por um lado, por outro, antigamente, hoje, em contraste, em oposição, diferentemente, apesar de, embora etc.</item>
+    </string-array>
     <array name="sem2_com_perguntas">
         <item>@array/sem2_com_1</item>
         <item>@array/sem2_com_2</item>
@@ -1135,6 +1174,7 @@
         <item>@array/sem2_com_16</item>
         <item>@array/sem2_com_17</item>
         <item>@array/sem2_com_18</item>
+        <item>@array/sem2_com_19</item>
     </array>
 
     <string-array name="sem2_ens_1">
