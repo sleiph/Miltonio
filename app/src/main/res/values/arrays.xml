@@ -656,6 +656,13 @@
         <item>Ponto Mínimo da função</item>
         <item>Ponto Máximo da função</item>
     </string-array>
+    <string-array name="sem2_cal_12">
+        <item>Indique a derivada de \n2x³ - x + 42:</item>
+        <item>6x² - 1</item>
+        <item>6x² - 1 + 42</item>
+        <item>6x - x</item>
+        <item>7x² + 42</item>
+    </string-array>
     <array name="sem2_cal_perguntas">
         <item>@array/sem2_cal_1</item>
         <item>@array/sem2_cal_2</item>
@@ -668,6 +675,7 @@
         <item>@array/sem2_cal_9</item>
         <item>@array/sem2_cal_10</item>
         <item>@array/sem2_cal_11</item>
+        <item>@array/sem2_cal_12</item>
     </array>
 
     <string-array name="sem2_lnp_1">
@@ -758,6 +766,14 @@
         <item>Verdadeiro</item>
         <item>Falso</item>
     </string-array>
+    <string-array name="sem2_lnp_14">
+        <item>Qual componente do Windows Forms pode ser usado para criação de um menu suspenso (<i>drop-down</i>)?</item>
+        <item>ComboBox</item>
+        <item>ListBox</item>
+        <item>ListView</item>
+        <item>TabControl</item>
+        <item>TreeView</item>
+    </string-array>
     <array name="sem2_lnp_perguntas">
         <item>@array/sem2_lnp_1</item>
         <item>@array/sem2_lnp_2</item>
@@ -772,6 +788,7 @@
         <item>@array/sem2_lnp_11</item>
         <item>@array/sem2_lnp_12</item>
         <item>@array/sem2_lnp_13</item>
+        <item>@array/sem2_lnp_14</item>
     </array>
 
     <string-array name="sem2_eng_1">
@@ -1046,6 +1063,11 @@
         <item>Pouca elasticidade na arquitetura</item>
         <item>Baixa eficiência de custos</item>
     </string-array>
+    <string-array name="sem2_sis_11">
+        <item>Entre os sistemas MRP, MRP 2 e ERP, qual é o que engloba o maior número de atividades da empresa?</item>
+        <item>ERP</item>
+        <item>MRP 2</item>
+    </string-array>
     <array name="sem2_sis_perguntas">
         <item>@array/sem2_sis_1</item>
         <item>@array/sem2_sis_2</item>
@@ -1057,6 +1079,7 @@
         <item>@array/sem2_sis_8</item>
         <item>@array/sem2_sis_9</item>
         <item>@array/sem2_sis_10</item>
+        <item>@array/sem2_sis_11</item>
     </array>
 
     <string-array name="sem2_com_1">
@@ -1309,6 +1332,14 @@
         <item>As reuniões diárias do Scrum</item>
         <item>Reunião de revisão do Sprint</item>
     </string-array>
+    <string-array name="sem2_ens_14">
+        <item>Scrum e XP são metodologias ágeis usadas no contexto de desenvolvimento de software que:</item>
+        <item>Podem ser usadas em conjunto, criando uma metodologia híbrida própria, de forma a unir as práticas de gestão do Scrum com as práticas de desenvolvimento da XP.</item>
+        <item>Ambas utilizam reuniões diárias (Daily Meetings) de aproximadamente 30 minutos em pé para ajudar a tornar as reuniões mais produtivas, colaborativas e úteis.</item>
+        <item>Podem ser usadas juntas, desde que em um contexto em que o gerenciamento do projeto seja realizado por um framework como o PMBoK.</item>
+        <item>Não podem ser usadas em conjunto por serem ambas voltadas para a gestão do processo de desenvolvimento de software.</item>
+        <item>Podem ser usadas em conjunto, já que a XP foca mais na gestão do processo de desenvolvimento e a Scrum, no desenvolvimento propriamente dito.</item>
+    </string-array>
     <array name="sem2_ens_perguntas">
         <item>@array/sem2_ens_1</item>
         <item>@array/sem2_ens_2</item>
@@ -1323,5 +1354,6 @@
         <item>@array/sem2_ens_11</item>
         <item>@array/sem2_ens_12</item>
         <item>@array/sem2_ens_13</item>
+        <item>@array/sem2_ens_14</item>
     </array>
 </resources>
