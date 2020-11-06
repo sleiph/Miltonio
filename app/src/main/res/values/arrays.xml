@@ -774,6 +774,16 @@
         <item>TabControl</item>
         <item>TreeView</item>
     </string-array>
+    <string-array name="sem2_lnp_15">
+        <item>Tem o objetivo de avaliar se o que foi entregue atende as expectativas do cliente:</item>
+        <item>Validação</item>
+        <item>Verificação</item>
+    </string-array>
+    <string-array name="sem2_lnp_16">
+        <item>Tem o objetivo de avaliar se o que foi planejado realmente foi realizado:</item>
+        <item>Verificação</item>
+        <item>Validação</item>
+    </string-array>
     <array name="sem2_lnp_perguntas">
         <item>@array/sem2_lnp_1</item>
         <item>@array/sem2_lnp_2</item>
@@ -789,6 +799,8 @@
         <item>@array/sem2_lnp_12</item>
         <item>@array/sem2_lnp_13</item>
         <item>@array/sem2_lnp_14</item>
+        <item>@array/sem2_lnp_15</item>
+        <item>@array/sem2_lnp_16</item>
     </array>
 
     <string-array name="sem2_eng_1">
