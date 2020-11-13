@@ -1226,6 +1226,13 @@
         <item>Finalidade</item>
         <item>Conformidade</item>
     </string-array>
+    <string-array name="sem2_com_22">
+        <item>Quais são os três tipos de <u>Ponto de Equilíbrio</u> em uma análise de custo/volume/luvro?</item>
+        <item>Contábil, Financeiro E Econômico</item>
+        <item>Econômico, Capital e de Gestão</item>
+        <item>Logístico, Capital e Financeiro</item>
+        <item>Circulante, Contributivo e Contábil</item>
+    </string-array>
     <array name="sem2_com_perguntas">
         <item>@array/sem2_com_1</item>
         <item>@array/sem2_com_2</item>
@@ -1248,6 +1255,7 @@
         <item>@array/sem2_com_19</item>
         <item>@array/sem2_com_20</item>
         <item>@array/sem2_com_21</item>
+        <item>@array/sem2_com_22</item>
     </array>
 
     <string-array name="sem2_ens_1">
