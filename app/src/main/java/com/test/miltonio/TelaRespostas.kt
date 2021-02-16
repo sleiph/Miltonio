@@ -179,11 +179,58 @@ class TelaRespostas : AppCompatActivity() {
                 btnConferir.isEnabled = false
             }
         }
+        fun setSemestre3 (dados :Sem3DB?) {
+            if (dados != null) {
+                corFundo.setBackgroundColor(getColor(dados.cor_db))
+                imgFundo.setBackgroundResource(dados.fundo_db)
+                if (dados.isPreto_db)
+                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
+                else
+                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
+                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
+                qntPerguntas = arrPerguntas!!.length()
+                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+                ordemPerguntas.shuffle()
+                getPergunta(progresso)
+            }
+
+            btnConferir.setOnClickListener {
+                if (resposta == 1) {
+                    acertos += 1
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(50, 180, 75)
+                    )
+                    somBom.start()
+                } else {
+                    progressoBarra.progressTintList = ColorStateList.valueOf(
+                        Color.rgb(235, 5, 0)
+                    )
+                    somRuim.start()
+                }
+                progresso += 1
+                progressoBarra.progress =
+                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+                if (progresso < qntPerguntas) {
+                    getPergunta(progresso)
+                } else {
+                    arrPerguntas!!.recycle()
+                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
+                    if (dados != null && pontos > dados.pontos_db) {
+                        dados.pontos_db = pontos.toInt()
+                        MyApplication.sem3database?.sem3Dao()?.updateCatg(dados)
+                    }
+                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
+                }
+                btnConferir.isEnabled = false
+            }
+        }
 
         if (categoria < 20)
             setSemestre1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria-10))
-        else
+        else if (categoria < 30)
             setSemestre2 (MyApplication.database?.categoriaDao()?.loadById(categoria-20))
+        else
+            setSemestre3 (MyApplication.sem3database?.sem3Dao()?.loadById(categoria-30))
     }
 }
 

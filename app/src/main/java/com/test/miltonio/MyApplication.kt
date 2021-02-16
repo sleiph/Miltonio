@@ -309,79 +309,79 @@ class MyApplication: Application() {
             Sem3DB(
                 0,
                 0,
-                R.color.colorCyan,
-                R.drawable.simb1mat,
-                R.drawable.fnd1mat,
-                true,
-                R.string.categ_sem1_mat_prof,
-                R.string.categ_sem1_mat,
-                R.array.sem1_mat_perguntas
+                R.color.colorVerdEsc,
+                R.drawable.simb1prg,
+                R.drawable.fnd1prg,
+                false,
+                R.string.categ_sem3_esd_prof,
+                R.string.categ_sem3_esd,
+                R.array.sem3_esd_perguntas
             ),
             Sem3DB(
                 1,
+                0,
+                R.color.colorLrnj,
+                R.drawable.simb2com,
+                R.drawable.fnd2com,
+                false,
+                R.string.categ_sem3_sot_prof,
+                R.string.categ_sem3_sot,
+                R.array.sem3_sot_perguntas
+            ),
+            Sem3DB(
+                2,
                 0,
                 R.color.colorRoxo,
                 R.drawable.simb1alg,
                 R.drawable.fnd1alg,
                 false,
-                R.string.categ_sem1_alg_prof,
-                R.string.categ_sem1_alg,
-                R.array.sem1_alg_perguntas
+                R.string.categ_sem3_en2_prof,
+                R.string.categ_sem3_en2,
+                R.array.sem3_en2_perguntas
             ),
             Sem3DB(
-                2,
+                3,
+                0,
+                R.color.colorCyan,
+                R.drawable.simb1mat,
+                R.drawable.fnd1mat,
+                true,
+                R.string.categ_sem3_eap_prof,
+                R.string.categ_sem3_eap,
+                R.array.sem3_eap_perguntas
+            ),
+            Sem3DB(
+                4,
+                0,
+                R.color.colorAmrl,
+                R.drawable.simb2cnt,
+                R.drawable.fnd2cnt,
+                true,
+                R.string.categ_sem3_efi_prof,
+                R.string.categ_sem3_efi,
+                R.array.sem3_efi_perguntas
+            ),
+            Sem3DB(
+                5,
                 0,
                 R.color.colorMagt,
                 R.drawable.simbeng,
                 R.drawable.fndeng,
                 false,
-                R.string.categ_sem1_eng_prof,
-                R.string.categ_sem1_eng,
-                R.array.sem1_eng_perguntas
-            ),
-            Sem3DB(
-                3,
-                0,
-                R.color.colorAzul,
-                R.drawable.simb1aoc,
-                R.drawable.fnd1aoc,
-                false,
-                R.string.categ_sem1_aoc_prof,
-                R.string.categ_sem1_aoc,
-                R.array.sem1_aoc_perguntas
-            ),
-            Sem3DB(
-                4,
-                0,
-                R.color.colorLrnj,
-                R.drawable.simb1lhw,
-                R.drawable.fnd1lhw,
-                true,
-                R.string.categ_sem1_lhw_prof,
-                R.string.categ_sem1_lhw,
-                R.array.sem1_lhw_perguntas
-            ),
-            Sem3DB(
-                5,
-                0,
-                R.color.colorAmrl,
-                R.drawable.simb1adm,
-                R.drawable.fnd1adm,
-                true,
-                R.string.categ_sem1_adm_prof,
-                R.string.categ_sem1_adm,
-                R.array.sem1_adm_perguntas
+                R.string.categ_sem3_eng_prof,
+                R.string.categ_sem3_eng,
+                R.array.sem3_eng_perguntas
             ),
             Sem3DB(
                 6,
                 0,
-                R.color.colorVerdEsc,
-                R.drawable.simb1prg,
-                R.drawable.fnd1prg,
+                R.color.colorAzul,
+                R.drawable.simb2sis,
+                R.drawable.fnd2sis,
                 false,
-                R.string.categ_sem1_prg_prof,
-                R.string.categ_sem1_prg,
-                R.array.sem1_prg_perguntas
+                R.string.categ_sem3_ihc_prof,
+                R.string.categ_sem3_ihc,
+                R.array.sem3_ihc_perguntas
             )
         )
         for (categ in sem3Init)

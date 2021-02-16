@@ -27,7 +27,7 @@ fun matarChildren(pai: GridLayout) {
             pai.removeViewAt(1)
 }
 
-var semestre = 1 //Todo: acabar com as variáveis globais
+var semestre = 2 //Todo: acabar com as variáveis globais
 
 class MainActivity : AppCompatActivity() {
 
@@ -224,6 +224,136 @@ class MainActivity : AppCompatActivity() {
         )
         for (categ in sem2Update)
             MyApplication.database?.categoriaDao()?.updateCatg(categ)
+
+        val sem3Update = arrayOf(
+            Sem3DB(
+                0,
+                0,
+                R.color.colorVerdEsc,
+                R.drawable.simb1prg,
+                R.drawable.fnd1prg,
+                false,
+                R.string.categ_sem3_esd_prof,
+                R.string.categ_sem3_esd,
+                R.array.sem3_esd_perguntas
+            ),
+            Sem3DB(
+                1,
+                0,
+                R.color.colorLrnj,
+                R.drawable.simb2com,
+                R.drawable.fnd2com,
+                false,
+                R.string.categ_sem3_sot_prof,
+                R.string.categ_sem3_sot,
+                R.array.sem3_sot_perguntas
+            ),
+            Sem3DB(
+                2,
+                0,
+                R.color.colorRoxo,
+                R.drawable.simb1alg,
+                R.drawable.fnd1alg,
+                false,
+                R.string.categ_sem3_en2_prof,
+                R.string.categ_sem3_en2,
+                R.array.sem3_en2_perguntas
+            ),
+            Sem3DB(
+                3,
+                0,
+                R.color.colorCyan,
+                R.drawable.simb1mat,
+                R.drawable.fnd1mat,
+                true,
+                R.string.categ_sem3_eap_prof,
+                R.string.categ_sem3_eap,
+                R.array.sem3_eap_perguntas
+            ),
+            Sem3DB(
+                4,
+                0,
+                R.color.colorAmrl,
+                R.drawable.simb2cnt,
+                R.drawable.fnd2cnt,
+                true,
+                R.string.categ_sem3_efi_prof,
+                R.string.categ_sem3_efi,
+                R.array.sem3_efi_perguntas
+            ),
+            Sem3DB(
+                5,
+                0,
+                R.color.colorMagt,
+                R.drawable.simbeng,
+                R.drawable.fndeng,
+                false,
+                R.string.categ_sem3_eng_prof,
+                R.string.categ_sem3_eng,
+                R.array.sem3_eng_perguntas
+            ),
+            Sem3DB(
+                6,
+                0,
+                R.color.colorAzul,
+                R.drawable.simb2sis,
+                R.drawable.fnd2sis,
+                false,
+                R.string.categ_sem3_ihc_prof,
+                R.string.categ_sem3_ihc,
+                R.array.sem3_ihc_perguntas
+            )
+        )
+        for (categ in sem3Update)
+            MyApplication.sem3database?.sem3Dao()?.updateCatg(categ)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun desenharCardsSem1(dados: List<Sem1DB>?, pai: GridLayout) {
+        matarChildren(pai)
+
+        if (dados != null) {
+            for (i in dados.indices) {
+                val cardLayout = CardMateria(this)
+                val param = GridLayout.LayoutParams(
+                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+                    if (i == dados.size - 1 && dados.size % 2 != 0)
+                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
+                    else
+                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+                )
+                param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
+                param.width = 0
+                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+                cardLayout.layoutParams = param
+                cardLayout.setCardBack(getColor(dados[i].cor_db))
+                cardLayout.setMateriaDrawable(
+                    ContextCompat.getDrawable(this, dados[i].simb_db)
+                )
+                cardLayout.setProfessorText(
+                    getString(dados[i].professor_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                cardLayout.setProgressoText(
+                    getString(
+                        R.string.resultado_pontos,
+                        dados[i].pontos_db.toString()
+                    ),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                cardLayout.setMateriaText(
+                    getString(dados[i].materia_db),
+                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
+                    else getColor(R.color.colorBnc)
+                )
+                pai.addView(cardLayout)
+                cardLayout.setOnClickListener {
+                    loadRespostas(i + 10)
+                }
+            }
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -273,8 +403,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun desenharCardsSem1(dados: List<Sem1DB>?, pai: GridLayout) {
+    private fun desenharCardsSem3(dados: List<Sem3DB>?, pai: GridLayout) {
         matarChildren(pai)
 
         if (dados != null) {
@@ -315,7 +446,7 @@ class MainActivity : AppCompatActivity() {
                 )
                 pai.addView(cardLayout)
                 cardLayout.setOnClickListener {
-                    loadRespostas(i + 10)
+                    loadRespostas(i + 30)
                 }
             }
         }
@@ -372,6 +503,11 @@ class MainActivity : AppCompatActivity() {
                     R.id.cardParent
                 )
             )
+            2 -> desenharCardsSem3(
+                MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
         }
     }
 
@@ -406,6 +542,11 @@ class MainActivity : AppCompatActivity() {
                     )
                     1 -> desenharCards(
                         MyApplication.database?.categoriaDao()?.getAll(), findViewById(
+                            R.id.cardParent
+                        )
+                    )
+                    2 -> desenharCardsSem3(
+                        MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
                             R.id.cardParent
                         )
                     )
@@ -458,6 +599,11 @@ class MainActivity : AppCompatActivity() {
                                 R.id.cardParent
                             )
                         )
+                        2 -> desenharCardsSem3(
+                            MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
+                                R.id.cardParent
+                            )
+                        )
                     }
 
                 }
@@ -480,3 +626,6 @@ class MainActivity : AppCompatActivity() {
 //Todo: Animações
 //Todo: Layout responsivo
 //Todo: Usuários com senha
+//Todo: Quando o usuário mudar o semestre, mudar as imagens do título
+    //Todo: Semestre 2 == corona virus
+//Todo: Sons quando clica na cabecinha do Milton

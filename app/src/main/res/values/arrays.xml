@@ -3,6 +3,7 @@
     <string-array name="menu_semestres">
         <item>1° Semestre</item>
         <item>2° Semestre</item>
+        <item>3° Semestre</item>
     </string-array>
 
     <string-array name="sem1_mat_1">
@@ -1376,4 +1377,89 @@
         <item>@array/sem2_ens_13</item>
         <item>@array/sem2_ens_14</item>
     </array>
+
+    <string-array name="sem3_esd_1">
+        <item>Na programação orientada a objetos, qual a definição de parâmetros?</item>
+        <item>Valores que passamos para um método.</item>
+        <item>Descrições que abstraem um conjunto de objetos com características similares.</item>
+        <item>Sub-rotinas associadas a um objeto.</item>
+        <item>Mensagems dentro do sistema que invocam diretamente uma classe.</item>
+    </string-array>
+    <string-array name="sem3_esd_2">
+        <item>Verdadeiro o Falso?\nListas são um tipo abstrato de dados, independente de qual seja seu conteúdo.</item>
+        <item>Verdadeiro</item>
+        <item>Falso</item>
+    </string-array>
+    <array name="sem3_esd_perguntas">
+        <item>@array/sem3_esd_1</item>
+        <item>@array/sem3_esd_2</item>
+    </array>
+
+    <string-array name="sem3_sot_1">
+        <item>O conhecimento adquirido através da observação sensorial é chamado de:</item>
+        <item>Conhecimento Empírico</item>
+        <item>Técnica</item>
+        <item>Tecnologia</item>
+        <item>Conhecimento Científico</item>
+        <item>Conhecimento Tácito</item>
+    </string-array>
+    <array name="sem3_sot_perguntas">
+        <item>@array/sem3_sot_1</item>
+    </array>
+
+    <string-array name="sem3_en2_1">
+        <item>p</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <array name="sem3_en2_perguntas">
+        <item>@array/sem3_en2_1</item>
+    </array>
+
+    <string-array name="sem3_eap_1">
+        <item>p</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <array name="sem3_eap_perguntas">
+        <item>@array/sem3_eap_1</item>
+    </array>
+
+    <string-array name="sem3_efi_1">
+        <item>p</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <array name="sem3_efi_perguntas">
+        <item>@array/sem3_efi_1</item>
+    </array>
+
+    <string-array name="sem3_eng_1">
+        <item>p</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <array name="sem3_eng_perguntas">
+        <item>@array/sem3_eng_1</item>
+    </array>
+
+    <string-array name="sem3_ihc_1">
+        <item>p</item>
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <array name="sem3_ihc_perguntas">
+        <item>@array/sem3_ihc_1</item>
+    </array>
+
 </resources>

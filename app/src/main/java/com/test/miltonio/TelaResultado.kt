@@ -85,11 +85,28 @@ class TelaResultado : AppCompatActivity() {
                 }
             }
         }
+        fun setMateria3(dados :Sem3DB?) {
+            if (dados != null) {
+                setPontuacao(categoria?.get(1)!!)
+                corFnd.setBackgroundColor(getColor(dados.cor_db))
+                imgFnd.setBackgroundResource(dados.fundo_db)
+                txtCategoria.text =
+                    getString(R.string.resultado_categoria, getString(dados.materia_db))
+                if (!dados.isPreto_db) {
+                    txtComeco.setTextColor(getColor(R.color.colorBnc))
+                    txtResultado.setTextColor(getColor(R.color.colorBnc))
+                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
+                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
+                }
+            }
+        }
 
         if (categoria?.get(0)!! < 20)
             setMateria1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria[0] -10))
-        else
+        else if (categoria?.get(0)!! < 30)
             setMateria2 (MyApplication.database?.categoriaDao()?.loadById(categoria[0] -20))
+        else
+            setMateria3 (MyApplication.sem3database?.sem3Dao()?.loadById(categoria[0] -30))
 
         btnMain.setOnClickListener {
             loadMain()
