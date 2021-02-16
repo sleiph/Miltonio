@@ -27,6 +27,18 @@ data class Categorias_DB(
     @ColumnInfo(name = "materia") var materia_db: Int,
     @ColumnInfo(name = "perguntas") var arrayPerguntas_db: Int
 )
+@Entity(tableName = "sem3_DB")
+data class Sem3DB(
+    @PrimaryKey val cid: Int,
+    @ColumnInfo(name = "pontos") var pontos_db: Int,
+    @ColumnInfo(name = "cor") var cor_db: Int,
+    @ColumnInfo(name = "simbolo") var simb_db: Int,
+    @ColumnInfo(name = "fundo") var fundo_db: Int,
+    @ColumnInfo(name = "corTexto") var isPreto_db: Boolean,
+    @ColumnInfo(name = "professor") var professor_db: Int,
+    @ColumnInfo(name = "materia") var materia_db: Int,
+    @ColumnInfo(name = "perguntas") var arrayPerguntas_db: Int
+)
 
 @Dao
 interface Sem1Dao {
@@ -72,6 +84,28 @@ interface CategoriasDao {
     fun deleteAll()
     */
 }
+@Dao
+interface Sem3Dao {
+    @Query("SELECT * from sem3_DB")
+    fun getAll(): List<Sem3DB>
+
+    @Query("SELECT * FROM sem3_DB WHERE cid = (:catgId)")
+    fun loadById(catgId: Int): Sem3DB
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    fun insert(categoria_insrt: Sem3DB)
+
+    @Update
+    fun updateCatg(categoria_updt: Sem3DB)
+
+    @Delete
+    fun delete(categoria_dlet: Sem3DB)
+
+    /*
+    @Query("DELETE FROM Sem3_DB")
+    fun deleteAll()
+    */
+}
 
 @Database(version = 1, entities = [Sem1DB::class])
 abstract class Sem1DataBase : RoomDatabase() {
@@ -81,12 +115,17 @@ abstract class Sem1DataBase : RoomDatabase() {
 abstract class AppDataBase : RoomDatabase() {
     abstract fun categoriaDao(): CategoriasDao
 }
+@Database(version = 1, entities = [Sem3DB::class])
+abstract class Sem3DataBase : RoomDatabase() {
+    abstract fun sem3Dao(): Sem3Dao
+}
 
 class MyApplication: Application() {
 
     companion object {
         var sem1database: Sem1DataBase? = null
         var database: AppDataBase? = null
+        var sem3database: Sem3DataBase? = null
     }
 
     override fun onCreate() {
@@ -96,6 +135,9 @@ class MyApplication: Application() {
             .allowMainThreadQueries()
             .build()
         database = Room.databaseBuilder(this, AppDataBase::class.java, "categorias-DB")
+            .allowMainThreadQueries()
+            .build()
+        sem3database = Room.databaseBuilder(this, Sem3DataBase::class.java, "sem3_DB")
             .allowMainThreadQueries()
             .build()
 
@@ -262,5 +304,87 @@ class MyApplication: Application() {
         )
         for (categ in catgInit)
             database?.categoriaDao()?.insert(categ)
+
+        val sem3Init = arrayOf(
+            Sem3DB(
+                0,
+                0,
+                R.color.colorCyan,
+                R.drawable.simb1mat,
+                R.drawable.fnd1mat,
+                true,
+                R.string.categ_sem1_mat_prof,
+                R.string.categ_sem1_mat,
+                R.array.sem1_mat_perguntas
+            ),
+            Sem3DB(
+                1,
+                0,
+                R.color.colorRoxo,
+                R.drawable.simb1alg,
+                R.drawable.fnd1alg,
+                false,
+                R.string.categ_sem1_alg_prof,
+                R.string.categ_sem1_alg,
+                R.array.sem1_alg_perguntas
+            ),
+            Sem3DB(
+                2,
+                0,
+                R.color.colorMagt,
+                R.drawable.simbeng,
+                R.drawable.fndeng,
+                false,
+                R.string.categ_sem1_eng_prof,
+                R.string.categ_sem1_eng,
+                R.array.sem1_eng_perguntas
+            ),
+            Sem3DB(
+                3,
+                0,
+                R.color.colorAzul,
+                R.drawable.simb1aoc,
+                R.drawable.fnd1aoc,
+                false,
+                R.string.categ_sem1_aoc_prof,
+                R.string.categ_sem1_aoc,
+                R.array.sem1_aoc_perguntas
+            ),
+            Sem3DB(
+                4,
+                0,
+                R.color.colorLrnj,
+                R.drawable.simb1lhw,
+                R.drawable.fnd1lhw,
+                true,
+                R.string.categ_sem1_lhw_prof,
+                R.string.categ_sem1_lhw,
+                R.array.sem1_lhw_perguntas
+            ),
+            Sem3DB(
+                5,
+                0,
+                R.color.colorAmrl,
+                R.drawable.simb1adm,
+                R.drawable.fnd1adm,
+                true,
+                R.string.categ_sem1_adm_prof,
+                R.string.categ_sem1_adm,
+                R.array.sem1_adm_perguntas
+            ),
+            Sem3DB(
+                6,
+                0,
+                R.color.colorVerdEsc,
+                R.drawable.simb1prg,
+                R.drawable.fnd1prg,
+                false,
+                R.string.categ_sem1_prg_prof,
+                R.string.categ_sem1_prg,
+                R.array.sem1_prg_perguntas
+            )
+        )
+        for (categ in sem3Init)
+            sem3database?.sem3Dao()?.insert(categ)
     }
 }
