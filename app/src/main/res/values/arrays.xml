@@ -1419,14 +1419,22 @@
     </array>
 
     <string-array name="sem3_eap_1">
-        <item>p</item>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
+        <item>Em uma pesquisa para determinar o nível de satisfação dos clientes de uma loja.\n
+            Qual a classificação da varíavel desta pesquisa?</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa Contínua</item>
+        <item>Quantitativa Discreta</item>
+    </string-array>
+    <string-array name="sem3_eap_2">
+        <item>Em uma pesquisa para determinar o preço total do combustível ao abastecer o tanque do carro.\n
+            Qual a classificação da varíavel desta pesquisa?</item>
+        <item>Quantitativa Contínua</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa Discreta</item>
     </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
+        <item>@array/sem3_eap_2</item>
     </array>
 
     <string-array name="sem3_efi_1">
