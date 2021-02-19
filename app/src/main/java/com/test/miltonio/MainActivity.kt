@@ -631,4 +631,3 @@ class MainActivity : AppCompatActivity() {
     //Todo: Semestre 2 == corona virus
 //Todo: Sons quando clica na cabecinha do Milton
 //Todo: Criar os fundos do 3 semestre
-//Todo: Mudar o branch master pra main
