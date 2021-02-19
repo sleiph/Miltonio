@@ -1460,11 +1460,12 @@
     </array>
 
     <string-array name="sem3_ihc_1">
-        <item>p</item>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
+        <item>Qual das seguintes áreas <u>NÃO</u> está envolvida na Interação Humano-Computador (IHC)?</item>
+        <item>Todas as áreas listadas pertencem à IHC</item>
+        <item>Engenharia de Software</item>
+        <item>Ergonomia</item>
+        <item>Design</item>
+        <item>Psicologia Cognitiva</item>
     </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>

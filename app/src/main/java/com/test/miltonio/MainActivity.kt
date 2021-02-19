@@ -627,7 +627,7 @@ class MainActivity : AppCompatActivity() {
 //Todo: Layout responsivo
 //Todo: Usuários com senha
 
-//Todo: Quando o usuário mudar o semestre, mudar as imagens do título
+//Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
     //Todo: Semestre 2 == corona virus
 //Todo: Sons quando clica na cabecinha do Milton
 //Todo: Criar os fundos do 3 semestre
