@@ -620,14 +620,20 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//Todo: Acessibilidade!!!
-//Todo: Deixar o app usável em versões mais antigas do Android
-//Todo: Darkmode
-//Todo: Animações
-//Todo: Layout responsivo
-//Todo: Usuários com senha
+//Todo: Funcionalidade
+    //Todo: Usuários com senha
 
-//Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
-    //Todo: Semestre 2 == corona virus
-//Todo: Sons quando clica na cabecinha do Milton
-//Todo: Criar os fundos do 3 semestre
+//Todo: Acessibilidade
+    //Todo: Deixar o app usável em versões mais antigas do Android
+
+//Todo: Design
+    //Todo: Darkmode
+    //Todo: Animações
+    //Todo: Layout responsivo
+    //Todo: Sons quando clica na cabecinha do Milton
+    //Todo: Criar os fundos do 3 semestre
+    //Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
+        //Todo: Semestre 2 == corona virus
+
+//Todo: Performance
+    //Todo: Diminuir repetição de código

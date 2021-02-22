@@ -237,6 +237,7 @@ class TelaRespostas : AppCompatActivity() {
 //Todo: Adicionar imagens nas perguntas
 //Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Perguntas de múltipla escolha
-//Todo: Tamanho das caixas de resposta uniforme
 //Todo: Scroll mais bonito/intuitivo das respostas
 //Todo: Adicionar só x do array de perguntas no quiz
+//Todo: mudar o nome desse arquivo pra TelaPerguntas
+//Todo: formatar melhor strings de código

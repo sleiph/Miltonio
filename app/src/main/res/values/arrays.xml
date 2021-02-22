@@ -1390,9 +1390,24 @@
         <item>Verdadeiro</item>
         <item>Falso</item>
     </string-array>
+    <string-array name="sem3_esd_3">
+        <item>Considere as linhas de código Java a seguir:\n
+            \n
+            char[] itens = new char[10];\n
+            itens[0] = 2;\n
+            System.out.println(itens.length);\n
+            \n
+            Qual será o valor impresso pelo programa?
+        </item>
+        <item>10</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
+        <item>@array/sem3_esd_3</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1403,8 +1418,15 @@
         <item>Conhecimento Científico</item>
         <item>Conhecimento Tácito</item>
     </string-array>
+    <string-array name="sem3_sot_2">
+        <item>Os Chicago Boys, grupo de economistas latino-americanos, ficaram mais conhecidos por defender qual ideologia?</item>
+        <item>Neo-liberalismo</item>
+        <item>Comunismo</item>
+        <item>Intervencionismo</item>
+    </string-array>
     <array name="sem3_sot_perguntas">
         <item>@array/sem3_sot_1</item>
+        <item>@array/sem3_sot_2</item>
     </array>
 
     <string-array name="sem3_en2_1">
