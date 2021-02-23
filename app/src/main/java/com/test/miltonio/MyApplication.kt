@@ -126,22 +126,8 @@ class MyApplication: Application() {
         var sem1database: Sem1DataBase? = null
         var database: AppDataBase? = null
         var sem3database: Sem3DataBase? = null
-    }
 
-    override fun onCreate() {
-        super.onCreate()
-        //Room
-        sem1database = Room.databaseBuilder(this, Sem1DataBase::class.java, "sem1_DB")
-            .allowMainThreadQueries()
-            .build()
-        database = Room.databaseBuilder(this, AppDataBase::class.java, "categorias-DB")
-            .allowMainThreadQueries()
-            .build()
-        sem3database = Room.databaseBuilder(this, Sem3DataBase::class.java, "sem3_DB")
-            .allowMainThreadQueries()
-            .build()
-
-        val sem1Init = arrayOf(
+        val sem1Array = arrayOf(
             Sem1DB(
                 0,
                 0,
@@ -220,10 +206,8 @@ class MyApplication: Application() {
                 R.array.sem1_prg_perguntas
             )
         )
-        for (categ in sem1Init)
-            sem1database?.sem1Dao()?.insert(categ)
 
-        val catgInit = arrayOf(
+        val catgArray = arrayOf(
             Categorias_DB(
                 0,
                 0,
@@ -302,10 +286,8 @@ class MyApplication: Application() {
                 R.array.sem2_ens_perguntas
             )
         )
-        for (categ in catgInit)
-            database?.categoriaDao()?.insert(categ)
 
-        val sem3Init = arrayOf(
+        val sem3Array = arrayOf(
             Sem3DB(
                 0,
                 0,
@@ -384,6 +366,32 @@ class MyApplication: Application() {
                 R.array.sem3_ihc_perguntas
             )
         )
+
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        //Room
+        sem1database = Room.databaseBuilder(this, Sem1DataBase::class.java, "sem1_DB")
+            .allowMainThreadQueries()
+            .build()
+        database = Room.databaseBuilder(this, AppDataBase::class.java, "categorias-DB")
+            .allowMainThreadQueries()
+            .build()
+        sem3database = Room.databaseBuilder(this, Sem3DataBase::class.java, "sem3_DB")
+            .allowMainThreadQueries()
+            .build()
+
+        val sem1Init = sem1Array
+        val catgInit = catgArray
+        val sem3Init = sem3Array
+
+        for (categ in sem1Init)
+            sem1database?.sem1Dao()?.insert(categ)
+
+        for (categ in catgInit)
+            database?.categoriaDao()?.insert(categ)
+
         for (categ in sem3Init)
             sem3database?.sem3Dao()?.insert(categ)
     }

@@ -1430,11 +1430,14 @@
     </array>
 
     <string-array name="sem3_en2_1">
-        <item>p</item>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
+        <item>Se simplicidade é bom, sempre faça a coisa mais simples possível que possa fazer o trabalho.\n
+            \n
+            A frase acima é um dos princípios de qual método de desenvolvimento?
+        </item>
+        <item>XP</item>
+        <item>Rup</item>
+        <item>P-e-D</item>
+        <item>Tradicional</item>
     </string-array>
     <array name="sem3_en2_perguntas">
         <item>@array/sem3_en2_1</item>
