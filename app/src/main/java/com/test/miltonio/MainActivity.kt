@@ -60,21 +60,39 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun resetDatabases() {
-        val sem1Update = MyApplication.sem1Array
+    private fun resetSemestre( semestre: Int ) {
+        when(semestre) {
+            0 ->
+                for (categ in MyApplication.sem1Array)
+                    MyApplication.sem1database?.sem1Dao()?.updateCatg(categ)
+            1 ->
+                for (categ in MyApplication.catgArray)
+                    MyApplication.database?.categoriaDao()?.updateCatg(categ)
+            2 ->
+                for (categ in MyApplication.sem3Array)
+                    MyApplication.sem3database?.sem3Dao()?.updateCatg(categ)
+        }
+    }
 
-        for (categ in sem1Update)
-            MyApplication.sem1database?.sem1Dao()?.updateCatg(categ)
-
-        val sem2Update = MyApplication.catgArray
-
-        for (categ in sem2Update)
-            MyApplication.database?.categoriaDao()?.updateCatg(categ)
-
-        val sem3Update = MyApplication.sem3Array
-
-        for (categ in sem3Update)
-            MyApplication.sem3database?.sem3Dao()?.updateCatg(categ)
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun desenhaSemestre( semestre: Int ) {
+        when(semestre) {
+            0 -> desenharCardsSem1(
+                MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
+            1 -> desenharCards(
+                MyApplication.database?.categoriaDao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
+            2 -> desenharCardsSem3(
+                MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
+                    R.id.cardParent
+                )
+            )
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -259,25 +277,8 @@ class MainActivity : AppCompatActivity() {
             logoAnamido.setImageBitmap(rodado)
         }
 
-        //resetDatabases()
-
-        when(semestre) {
-            0 -> desenharCardsSem1(
-                MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-            1 -> desenharCards(
-                MyApplication.database?.categoriaDao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-            2 -> desenharCardsSem3(
-                MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-        }
+        // resetSemestre(semestre)
+        desenhaSemestre( semestre )
     }
 
     //Todo: Desenhar ícones do menu
@@ -303,24 +304,8 @@ class MainActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                when(position) {
-                    0 -> desenharCardsSem1(
-                        MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
-                            R.id.cardParent
-                        )
-                    )
-                    1 -> desenharCards(
-                        MyApplication.database?.categoriaDao()?.getAll(), findViewById(
-                            R.id.cardParent
-                        )
-                    )
-                    2 -> desenharCardsSem3(
-                        MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
-                            R.id.cardParent
-                        )
-                    )
-                }
                 semestre = position
+                desenhaSemestre( semestre )
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 // sei la
@@ -356,25 +341,8 @@ class MainActivity : AppCompatActivity() {
             alertBuilder.setTitle(R.string.menu_config)
                 .setMessage(R.string.alerta_mensagem)
                 .setPositiveButton(R.string.alerta_positivo) { _: DialogInterface, _: Int ->
-                    resetDatabases()
-                    when (semestre) {
-                        0 -> desenharCardsSem1(
-                            MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
-                                R.id.cardParent
-                            )
-                        )
-                        1 -> desenharCards(
-                            MyApplication.database?.categoriaDao()?.getAll(), findViewById(
-                                R.id.cardParent
-                            )
-                        )
-                        2 -> desenharCardsSem3(
-                            MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
-                                R.id.cardParent
-                            )
-                        )
-                    }
-
+                    resetSemestre( semestre )
+                    desenhaSemestre( semestre )
                 }
                 .setNegativeButton(R.string.alerta_negativo) { dialogInterface: DialogInterface, _: Int ->
                     dialogInterface.cancel()

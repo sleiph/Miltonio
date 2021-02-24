@@ -366,7 +366,6 @@ class MyApplication: Application() {
                 R.array.sem3_ihc_perguntas
             )
         )
-
     }
 
     override fun onCreate() {
