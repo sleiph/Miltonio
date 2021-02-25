@@ -1475,11 +1475,10 @@
     </array>
 
     <string-array name="sem3_efi_1">
-        <item>p</item>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
+        <item>Escolha um recurso natural que não seja atualmente (2021) fator de produção:</item>
+        <item>Magma vulcânico</item>
+        <item>Água</item>
+        <item>Ar</item>
     </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>

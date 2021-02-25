@@ -83,70 +83,72 @@ class MainActivity : AppCompatActivity() {
         val professores: Array<Int> = Array(10) {0}
         val materias: Array<Int> = Array(10) {0}
 
-        if (semestre == 0) {
-            val dados = MyApplication.sem1database?.Sem1Dao()?.getAll()
-            if (dados != null) {
-                val n = dados.size
+        when(semestre) {
+            0 -> {
+                val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
+                if (dados != null) {
+                    val n = dados.size
 
-                for (i in 0 until n) {
-                    pontos[i] = dados[i].pontos_db
-                    cores[i] = dados[i].cor_db
-                    simbolos[i] = dados[i].simb_db
-                    isPreto[i] = dados[i].isPreto_db
-                    professores[i] = dados[i].professor_db
-                    materias[i] = dados[i].materia_db
+                    for (i in 0 until n) {
+                        pontos[i] = dados[i].pontos_db
+                        cores[i] = dados[i].cor_db
+                        simbolos[i] = dados[i].simb_db
+                        isPreto[i] = dados[i].isPreto_db
+                        professores[i] = dados[i].professor_db
+                        materias[i] = dados[i].materia_db
+                    }
+
+                    montarCards(
+                        n, pontos,
+                        cores, simbolos, isPreto,
+                        professores, materias,
+                        findViewById(R.id.cardParent)
+                    )
                 }
-
-                montarCards(
-                    n, pontos,
-                    cores, simbolos, isPreto,
-                    professores, materias,
-                    findViewById(R.id.cardParent)
-                )
             }
-        }
-        else if (semestre == 1) {
-            val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
-            if (dados != null) {
-                val n = dados.size
+            1 -> {
+                val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
+                if (dados != null) {
+                    val n = dados.size
 
-                for (i in 0 until n) {
-                    pontos[i] = dados[i].pontos_db
-                    cores[i] = dados[i].cor_db
-                    simbolos[i] = dados[i].simb_db
-                    isPreto[i] = dados[i].isPreto_db
-                    professores[i] = dados[i].professor_db
-                    materias[i] = dados[i].materia_db
+                    for (i in 0 until n) {
+                        pontos[i] = dados[i].pontos_db
+                        cores[i] = dados[i].cor_db
+                        simbolos[i] = dados[i].simb_db
+                        isPreto[i] = dados[i].isPreto_db
+                        professores[i] = dados[i].professor_db
+                        materias[i] = dados[i].materia_db
+                    }
+
+                    montarCards(
+                        n, pontos,
+                        cores, simbolos, isPreto,
+                        professores, materias,
+                        findViewById(R.id.cardParent)
+                    )
                 }
-
-                montarCards(
-                    n, pontos,
-                    cores, simbolos, isPreto,
-                    professores, materias,
-                    findViewById(R.id.cardParent)
-                )
             }
-        }
-        else if (semestre == 2) {
-            val dados = MyApplication.sem3database?.Sem3Dao()?.getAll()
-            if (dados != null) {
-                val n = dados.size
+            2 -> {
+                val dados = MyApplication.sem3database?.Sem3Dao()?.getAll()
+                if (dados != null) {
+                    val n = dados.size
 
-                for (i in 0 until n) {
-                    pontos[i] = dados[i].pontos_db
-                    cores[i] = dados[i].cor_db
-                    simbolos[i] = dados[i].simb_db
-                    isPreto[i] = dados[i].isPreto_db
-                    professores[i] = dados[i].professor_db
-                    materias[i] = dados[i].materia_db
+                    for (i in 0 until n) {
+                        pontos[i] = dados[i].pontos_db
+                        cores[i] = dados[i].cor_db
+                        simbolos[i] = dados[i].simb_db
+                        isPreto[i] = dados[i].isPreto_db
+                        professores[i] = dados[i].professor_db
+                        materias[i] = dados[i].materia_db
+                    }
+
+                    montarCards(
+                        n, pontos,
+                        cores, simbolos, isPreto,
+                        professores, materias,
+                        findViewById(R.id.cardParent)
+                    )
                 }
-
-                montarCards(
-                    n, pontos,
-                    cores, simbolos, isPreto,
-                    professores, materias,
-                    findViewById(R.id.cardParent)
-                )
             }
         }
     }
