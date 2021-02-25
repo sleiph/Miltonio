@@ -126,14 +126,14 @@ class TelaRespostas : AppCompatActivity() {
                     val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
                     if (dados != null && pontos > dados.pontos_db) {
                         dados.pontos_db = pontos.toInt()
-                        MyApplication.sem1database?.sem1Dao()?.updateCatg(dados)
+                        MyApplication.sem1database?.Sem1Dao()?.updateCatg(dados)
                     }
                     loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
                 btnConferir.isEnabled = false
             }
         }
-        fun setSemestre2 (dados :Categorias_DB?) {
+        fun setSemestre2 (dados :Sem2DB?) {
             if (dados != null) {
                 corFundo.setBackgroundColor(getColor(dados.cor_db))
                 imgFundo.setBackgroundResource(dados.fundo_db)
@@ -172,7 +172,7 @@ class TelaRespostas : AppCompatActivity() {
                     if (dados != null && pontos > dados.pontos_db) {
                         dados.pontos_db =
                             pontos.toInt()
-                        MyApplication.database?.categoriaDao()?.updateCatg(dados)
+                        MyApplication.sem2database?.Sem2Dao()?.updateCatg(dados)
                     }
                     loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
@@ -217,7 +217,7 @@ class TelaRespostas : AppCompatActivity() {
                     val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
                     if (dados != null && pontos > dados.pontos_db) {
                         dados.pontos_db = pontos.toInt()
-                        MyApplication.sem3database?.sem3Dao()?.updateCatg(dados)
+                        MyApplication.sem3database?.Sem3Dao()?.updateCatg(dados)
                     }
                     loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
@@ -226,11 +226,11 @@ class TelaRespostas : AppCompatActivity() {
         }
 
         if (categoria < 20)
-            setSemestre1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria-10))
+            setSemestre1 (MyApplication.sem1database?.Sem1Dao()?.loadById(categoria-10))
         else if (categoria < 30)
-            setSemestre2 (MyApplication.database?.categoriaDao()?.loadById(categoria-20))
+            setSemestre2 (MyApplication.sem2database?.Sem2Dao()?.loadById(categoria-20))
         else
-            setSemestre3 (MyApplication.sem3database?.sem3Dao()?.loadById(categoria-30))
+            setSemestre3 (MyApplication.sem3database?.Sem3Dao()?.loadById(categoria-30))
     }
 }
 

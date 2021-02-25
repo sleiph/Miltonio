@@ -15,8 +15,8 @@ data class Sem1DB(
     @ColumnInfo(name = "materia") var materia_db: Int,
     @ColumnInfo(name = "perguntas") var arrayPerguntas_db: Int
 )
-@Entity(tableName = "categorias_DB")
-data class Categorias_DB(
+@Entity(tableName = "sem2_DB")
+data class Sem2DB(
     @PrimaryKey val cid: Int,
     @ColumnInfo(name = "pontos") var pontos_db: Int,
     @ColumnInfo(name = "cor") var cor_db: Int,
@@ -54,33 +54,33 @@ interface Sem1Dao {
     @Update
     fun updateCatg(categoria_updt: Sem1DB)
 
+    /*
     @Delete
     fun delete(categoria_dlet: Sem1DB)
 
-    /*
-    @Query("DELETE FROM Sem1_DB")
+    @Query("DELETE FROM sem1_DB")
     fun deleteAll()
     */
 }
 @Dao
-interface CategoriasDao {
-    @Query("SELECT * from categorias_DB")
-    fun getAll(): List<Categorias_DB>
+interface Sem2Dao {
+    @Query("SELECT * from sem2_DB")
+    fun getAll(): List<Sem2DB>
 
-    @Query("SELECT * FROM categorias_DB WHERE cid = (:catgId)")
-    fun loadById(catgId: Int): Categorias_DB
+    @Query("SELECT * FROM sem2_DB WHERE cid = (:catgId)")
+    fun loadById(catgId: Int): Sem2DB
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(categoria_insrt: Categorias_DB)
+    fun insert(categoria_insrt: Sem2DB)
 
     @Update
-    fun updateCatg(categoria_updt: Categorias_DB)
-
-    @Delete
-    fun delete(categoria_dlet: Categorias_DB)
+    fun updateCatg(categoria_updt: Sem2DB)
 
     /*
-    @Query("DELETE FROM categorias_DB")
+    @Delete
+    fun delete(categoria_dlet: Sem2DB)
+
+    @Query("DELETE FROM sem2_DB")
     fun deleteAll()
     */
 }
@@ -98,33 +98,33 @@ interface Sem3Dao {
     @Update
     fun updateCatg(categoria_updt: Sem3DB)
 
+    /*
     @Delete
     fun delete(categoria_dlet: Sem3DB)
 
-    /*
-    @Query("DELETE FROM Sem3_DB")
+    @Query("DELETE FROM sem3_DB")
     fun deleteAll()
     */
 }
 
 @Database(version = 1, entities = [Sem1DB::class])
 abstract class Sem1DataBase : RoomDatabase() {
-    abstract fun sem1Dao(): Sem1Dao
+    abstract fun Sem1Dao(): Sem1Dao
 }
-@Database(version = 1, entities = [Categorias_DB::class])
-abstract class AppDataBase : RoomDatabase() {
-    abstract fun categoriaDao(): CategoriasDao
+@Database(version = 1, entities = [Sem2DB::class])
+abstract class Sem2DataBase : RoomDatabase() {
+    abstract fun Sem2Dao(): Sem2Dao
 }
 @Database(version = 1, entities = [Sem3DB::class])
 abstract class Sem3DataBase : RoomDatabase() {
-    abstract fun sem3Dao(): Sem3Dao
+    abstract fun Sem3Dao(): Sem3Dao
 }
 
 class MyApplication: Application() {
 
     companion object {
         var sem1database: Sem1DataBase? = null
-        var database: AppDataBase? = null
+        var sem2database: Sem2DataBase? = null
         var sem3database: Sem3DataBase? = null
 
         val sem1Array = arrayOf(
@@ -207,8 +207,8 @@ class MyApplication: Application() {
             )
         )
 
-        val catgArray = arrayOf(
-            Categorias_DB(
+        val sem2Array = arrayOf(
+            Sem2DB(
                 0,
                 0,
                 R.color.colorCyan,
@@ -219,7 +219,7 @@ class MyApplication: Application() {
                 R.string.categ_sem2_cal,
                 R.array.sem2_cal_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 1,
                 0,
                 R.color.colorVerdEsc,
@@ -230,7 +230,7 @@ class MyApplication: Application() {
                 R.string.categ_sem2_lnp,
                 R.array.sem2_lnp_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 2,
                 0,
                 R.color.colorMagt,
@@ -241,7 +241,7 @@ class MyApplication: Application() {
                 R.string.categ_sem2_eng,
                 R.array.sem2_eng_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 3,
                 0,
                 R.color.colorAmrl,
@@ -252,7 +252,7 @@ class MyApplication: Application() {
                 R.string.categ_sem2_cnt,
                 R.array.sem2_cnt_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 4,
                 0,
                 R.color.colorAzul,
@@ -263,7 +263,7 @@ class MyApplication: Application() {
                 R.string.categ_sem2_sis,
                 R.array.sem2_sis_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 5,
                 0,
                 R.color.colorLrnj,
@@ -274,16 +274,16 @@ class MyApplication: Application() {
                 R.string.categ_sem2_com,
                 R.array.sem2_com_perguntas
             ),
-            Categorias_DB(
+            Sem2DB(
                 6,
                 0,
                 R.color.colorRoxo,
                 R.drawable.simb2ens,
                 R.drawable.fnd2ens,
                 false,
-                R.string.categ_sem2_ens_prof,
-                R.string.categ_sem2_ens,
-                R.array.sem2_ens_perguntas
+                R.string.categ_sem2_es1_prof,
+                R.string.categ_sem2_es1,
+                R.array.sem2_es1_perguntas
             )
         )
 
@@ -317,9 +317,9 @@ class MyApplication: Application() {
                 R.drawable.simb1alg,
                 R.drawable.fnd1alg,
                 false,
-                R.string.categ_sem3_en2_prof,
-                R.string.categ_sem3_en2,
-                R.array.sem3_en2_perguntas
+                R.string.categ_sem3_es2_prof,
+                R.string.categ_sem3_es2,
+                R.array.sem3_es2_perguntas
             ),
             Sem3DB(
                 3,
@@ -371,27 +371,23 @@ class MyApplication: Application() {
     override fun onCreate() {
         super.onCreate()
         //Room
-        sem1database = Room.databaseBuilder(this, Sem1DataBase::class.java, "sem1_DB")
+        sem1database = Room.databaseBuilder(this, Sem1DataBase::class.java, "sem1-DB")
             .allowMainThreadQueries()
             .build()
-        database = Room.databaseBuilder(this, AppDataBase::class.java, "categorias-DB")
+        sem2database = Room.databaseBuilder(this, Sem2DataBase::class.java, "sem2-DB")
             .allowMainThreadQueries()
             .build()
-        sem3database = Room.databaseBuilder(this, Sem3DataBase::class.java, "sem3_DB")
+        sem3database = Room.databaseBuilder(this, Sem3DataBase::class.java, "sem3-DB")
             .allowMainThreadQueries()
             .build()
 
-        val sem1Init = sem1Array
-        val catgInit = catgArray
-        val sem3Init = sem3Array
+        for (categ in sem1Array)
+            sem1database?.Sem1Dao()?.insert(categ)
 
-        for (categ in sem1Init)
-            sem1database?.sem1Dao()?.insert(categ)
+        for (categ in sem2Array)
+            sem2database?.Sem2Dao()?.insert(categ)
 
-        for (categ in catgInit)
-            database?.categoriaDao()?.insert(categ)
-
-        for (categ in sem3Init)
-            sem3database?.sem3Dao()?.insert(categ)
+        for (categ in sem3Array)
+            sem3database?.Sem3Dao()?.insert(categ)
     }
 }

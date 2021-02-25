@@ -30,15 +30,15 @@
     <string name="categ_sem2_sis_prof">Alex</string>
     <string name="categ_sem2_com">Comunicação e Expressão</string>
     <string name="categ_sem2_com_prof">Raquel</string>
-    <string name="categ_sem2_ens">Engenharia de Software I</string>
-    <string name="categ_sem2_ens_prof">Eliane</string>
+    <string name="categ_sem2_es1">Engenharia de Software I</string>
+    <string name="categ_sem2_es1_prof">Eliane</string>
 
     <string name="categ_sem3_esd">Estrutura de Dados</string>
     <string name="categ_sem3_esd_prof">Alecio</string>
     <string name="categ_sem3_sot">Sociedade e Tecnologia</string>
     <string name="categ_sem3_sot_prof">Sergio</string>
-    <string name="categ_sem3_en2">Engenharia de Software II</string>
-    <string name="categ_sem3_en2_prof">Alecio</string>
+    <string name="categ_sem3_es2">Engenharia de Software II</string>
+    <string name="categ_sem3_es2_prof">Alecio</string>
     <string name="categ_sem3_eap">Estatística Aplicada</string>
     <string name="categ_sem3_eap_prof">Marco Rodrigo</string>
     <string name="categ_sem3_efi">Economia e Finanças</string>
@@ -60,7 +60,7 @@
     <string name="menu_sons"><strike>Sons</strike></string>
     <string name="menu_Nsons">Sons</string>
     <string name="menu_config">Resetar progresso</string>
-    <string name="alerta_mensagem">Tem certeza que deseja resetar seu o progresso deste semestre?</string>
+    <string name="alerta_mensagem">Tem certeza que deseja resetar todo seu progresso deste semnestre?</string>
     <string name="alerta_positivo">OK</string>
     <string name="alerta_negativo">Cancelar</string>
 </resources>

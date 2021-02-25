@@ -31,7 +31,7 @@ var semestre = 2 //Todo: acabar com as variáveis globais
 
 class MainActivity : AppCompatActivity() {
 
-    private fun loadRespostas(resul: Int){
+    private fun loadRespostas(resul: Int) {
         val intent = Intent(this, TelaRespostas::class.java)
         intent.putExtra("resul", resul)
         startActivity(intent)
@@ -64,177 +64,146 @@ class MainActivity : AppCompatActivity() {
         when(semestre) {
             0 ->
                 for (categ in MyApplication.sem1Array)
-                    MyApplication.sem1database?.sem1Dao()?.updateCatg(categ)
+                    MyApplication.sem1database?.Sem1Dao()?.updateCatg(categ)
             1 ->
-                for (categ in MyApplication.catgArray)
-                    MyApplication.database?.categoriaDao()?.updateCatg(categ)
+                for (categ in MyApplication.sem2Array)
+                    MyApplication.sem2database?.Sem2Dao()?.updateCatg(categ)
             2 ->
                 for (categ in MyApplication.sem3Array)
-                    MyApplication.sem3database?.sem3Dao()?.updateCatg(categ)
+                    MyApplication.sem3database?.Sem3Dao()?.updateCatg(categ)
         }
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
     private fun desenhaSemestre( semestre: Int ) {
-        when(semestre) {
-            0 -> desenharCardsSem1(
-                MyApplication.sem1database?.sem1Dao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-            1 -> desenharCards(
-                MyApplication.database?.categoriaDao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-            2 -> desenharCardsSem3(
-                MyApplication.sem3database?.sem3Dao()?.getAll(), findViewById(
-                    R.id.cardParent
-                )
-            )
-        }
-    }
+        val pontos: Array<Int> = Array(10) {0}
+        val cores: Array<Int> = Array(10) {0}
+        val simbolos: Array<Int> = Array(10) {0}
+        val isPreto: Array<Boolean> = Array(10) {false}
+        val professores: Array<Int> = Array(10) {0}
+        val materias: Array<Int> = Array(10) {0}
 
-    @RequiresApi(Build.VERSION_CODES.M)
-    private fun desenharCardsSem1(dados: List<Sem1DB>?, pai: GridLayout) {
-        matarChildren(pai)
+        if (semestre == 0) {
+            val dados = MyApplication.sem1database?.Sem1Dao()?.getAll()
+            if (dados != null) {
+                val n = dados.size
 
-        if (dados != null) {
-            for (i in dados.indices) {
-                val cardLayout = CardMateria(this)
-                val param = GridLayout.LayoutParams(
-                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == dados.size - 1 && dados.size % 2 != 0)
-                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
-                    else
-                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-                )
-                param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
-                param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-                cardLayout.layoutParams = param
-                cardLayout.setCardBack(getColor(dados[i].cor_db))
-                cardLayout.setMateriaDrawable(
-                    ContextCompat.getDrawable(this, dados[i].simb_db)
-                )
-                cardLayout.setProfessorText(
-                    getString(dados[i].professor_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setProgressoText(
-                    getString(
-                        R.string.resultado_pontos,
-                        dados[i].pontos_db.toString()
-                    ),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setMateriaText(
-                    getString(dados[i].materia_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                pai.addView(cardLayout)
-                cardLayout.setOnClickListener {
-                    loadRespostas(i + 10)
+                for (i in 0 until n) {
+                    pontos[i] = dados[i].pontos_db
+                    cores[i] = dados[i].cor_db
+                    simbolos[i] = dados[i].simb_db
+                    isPreto[i] = dados[i].isPreto_db
+                    professores[i] = dados[i].professor_db
+                    materias[i] = dados[i].materia_db
                 }
+
+                montarCards(
+                    n, pontos,
+                    cores, simbolos, isPreto,
+                    professores, materias,
+                    findViewById(R.id.cardParent)
+                )
+            }
+        }
+        else if (semestre == 1) {
+            val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
+            if (dados != null) {
+                val n = dados.size
+
+                for (i in 0 until n) {
+                    pontos[i] = dados[i].pontos_db
+                    cores[i] = dados[i].cor_db
+                    simbolos[i] = dados[i].simb_db
+                    isPreto[i] = dados[i].isPreto_db
+                    professores[i] = dados[i].professor_db
+                    materias[i] = dados[i].materia_db
+                }
+
+                montarCards(
+                    n, pontos,
+                    cores, simbolos, isPreto,
+                    professores, materias,
+                    findViewById(R.id.cardParent)
+                )
+            }
+        }
+        else if (semestre == 2) {
+            val dados = MyApplication.sem3database?.Sem3Dao()?.getAll()
+            if (dados != null) {
+                val n = dados.size
+
+                for (i in 0 until n) {
+                    pontos[i] = dados[i].pontos_db
+                    cores[i] = dados[i].cor_db
+                    simbolos[i] = dados[i].simb_db
+                    isPreto[i] = dados[i].isPreto_db
+                    professores[i] = dados[i].professor_db
+                    materias[i] = dados[i].materia_db
+                }
+
+                montarCards(
+                    n, pontos,
+                    cores, simbolos, isPreto,
+                    professores, materias,
+                    findViewById(R.id.cardParent)
+                )
             }
         }
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun desenharCards(dados: List<Categorias_DB>?, pai: GridLayout) {
+    private fun montarCards(
+        n: Int, pontos: Array<Int>,
+        cores: Array<Int>, simbolos: Array<Int>, isPreto: Array<Boolean>,
+        professores: Array<Int>, materias: Array<Int>,
+        pai: GridLayout
+    ) {
         matarChildren(pai)
 
-        if (dados != null) {
-            for (i in dados.indices) {
-                val cardLayout = CardMateria(this)
-                val param = GridLayout.LayoutParams(
-                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == dados.size - 1 && dados.size % 2 != 0)
-                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
-                    else
-                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-                )
-                param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
-                param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-                cardLayout.layoutParams = param
-                cardLayout.setCardBack(getColor(dados[i].cor_db))
-                cardLayout.setMateriaDrawable(
-                    ContextCompat.getDrawable(this, dados[i].simb_db)
-                )
-                cardLayout.setProfessorText(
-                    getString(dados[i].professor_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setProgressoText(
-                    getString(
-                        R.string.resultado_pontos,
-                        dados[i].pontos_db.toString()
-                    ),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setMateriaText(
-                    getString(dados[i].materia_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                pai.addView(cardLayout)
-                cardLayout.setOnClickListener {
-                    loadRespostas(i + 20)
-                }
-            }
-        }
-    }
-
-    @RequiresApi(Build.VERSION_CODES.M)
-    private fun desenharCardsSem3(dados: List<Sem3DB>?, pai: GridLayout) {
-        matarChildren(pai)
-
-        if (dados != null) {
-            for (i in dados.indices) {
-                val cardLayout = CardMateria(this)
-                val param = GridLayout.LayoutParams(
-                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    if (i == dados.size - 1 && dados.size % 2 != 0)
-                        GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
-                    else
-                        GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-                )
-                param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
-                param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-                cardLayout.layoutParams = param
-                cardLayout.setCardBack(getColor(dados[i].cor_db))
-                cardLayout.setMateriaDrawable(
-                    ContextCompat.getDrawable(this, dados[i].simb_db)
-                )
-                cardLayout.setProfessorText(
-                    getString(dados[i].professor_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setProgressoText(
-                    getString(
-                        R.string.resultado_pontos,
-                        dados[i].pontos_db.toString()
-                    ),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                cardLayout.setMateriaText(
-                    getString(dados[i].materia_db),
-                    if (dados[i].isPreto_db) getColor(R.color.colorPrt)
-                    else getColor(R.color.colorBnc)
-                )
-                pai.addView(cardLayout)
-                cardLayout.setOnClickListener {
-                    loadRespostas(i + 30)
-                }
+        for (i in 0 until n) {
+            val cardLayout = CardMateria(this)
+            val param = GridLayout.LayoutParams(
+                GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+                if (i == n - 1 && n % 2 != 0)
+                    GridLayout.spec(GridLayout.UNDEFINED, 2, 2f)
+                else
+                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+            )
+            param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
+            param.width = 0
+            param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+            cardLayout.layoutParams = param
+            cardLayout.setCardBack(getColor(cores[i]))
+            cardLayout.setMateriaDrawable(
+                ContextCompat.getDrawable(this, simbolos[i])
+            )
+            cardLayout.setProfessorText(
+                getString(professores[i]),
+                if (isPreto[i])
+                    getColor(R.color.colorPrt)
+                else
+                    getColor(R.color.colorBnc)
+            )
+            cardLayout.setProgressoText(
+                getString(
+                    R.string.resultado_pontos,
+                    pontos[i].toString()
+                ),
+                if (isPreto[i])
+                    getColor(R.color.colorPrt)
+                else
+                    getColor(R.color.colorBnc)
+            )
+            cardLayout.setMateriaText(
+                getString(materias[i]),
+                if (isPreto[i])
+                    getColor(R.color.colorPrt)
+                else
+                    getColor(R.color.colorBnc)
+            )
+            pai.addView(cardLayout)
+            cardLayout.setOnClickListener {
+                loadRespostas(i + 30)
             }
         }
     }

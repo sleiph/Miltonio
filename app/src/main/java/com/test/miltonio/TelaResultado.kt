@@ -70,7 +70,7 @@ class TelaResultado : AppCompatActivity() {
                 }
             }
         }
-        fun setMateria2(dados :Categorias_DB?) {
+        fun setMateria2(dados :Sem2DB?) {
             if (dados != null) {
                 setPontuacao(categoria?.get(1)!!)
                 corFnd.setBackgroundColor(getColor(dados.cor_db))
@@ -102,11 +102,11 @@ class TelaResultado : AppCompatActivity() {
         }
 
         if (categoria?.get(0)!! < 20)
-            setMateria1 (MyApplication.sem1database?.sem1Dao()?.loadById(categoria[0] -10))
+            setMateria1 (MyApplication.sem1database?.Sem1Dao()?.loadById(categoria[0] -10))
         else if (categoria?.get(0)!! < 30)
-            setMateria2 (MyApplication.database?.categoriaDao()?.loadById(categoria[0] -20))
+            setMateria2 (MyApplication.sem2database?.Sem2Dao()?.loadById(categoria[0] -20))
         else
-            setMateria3 (MyApplication.sem3database?.sem3Dao()?.loadById(categoria[0] -30))
+            setMateria3 (MyApplication.sem3database?.Sem3Dao()?.loadById(categoria[0] -30))
 
         btnMain.setOnClickListener {
             loadMain()
