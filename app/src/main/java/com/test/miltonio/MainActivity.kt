@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     montarCards(
-                        n, pontos,
+                        n, pontos, 10,
                         cores, simbolos, isPreto,
                         professores, materias,
                         findViewById(R.id.cardParent)
@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     montarCards(
-                        n, pontos,
+                        n, pontos, 20,
                         cores, simbolos, isPreto,
                         professores, materias,
                         findViewById(R.id.cardParent)
@@ -143,7 +143,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     montarCards(
-                        n, pontos,
+                        n, pontos, 30,
                         cores, simbolos, isPreto,
                         professores, materias,
                         findViewById(R.id.cardParent)
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     private fun montarCards(
-        n: Int, pontos: Array<Int>,
+        n: Int, pontos: Array<Int>, cat: Int,
         cores: Array<Int>, simbolos: Array<Int>, isPreto: Array<Boolean>,
         professores: Array<Int>, materias: Array<Int>,
         pai: GridLayout
@@ -205,7 +205,7 @@ class MainActivity : AppCompatActivity() {
             )
             pai.addView(cardLayout)
             cardLayout.setOnClickListener {
-                loadRespostas(i + 30)
+                loadRespostas(i + cat)
             }
         }
     }

@@ -60,7 +60,7 @@
     <string name="menu_sons"><strike>Sons</strike></string>
     <string name="menu_Nsons">Sons</string>
     <string name="menu_config">Resetar progresso</string>
-    <string name="alerta_mensagem">Tem certeza que deseja resetar todo seu progresso deste semnestre?</string>
+    <string name="alerta_mensagem">Tem certeza que deseja resetar todo seu progresso deste semestre?</string>
     <string name="alerta_positivo">OK</string>
     <string name="alerta_negativo">Cancelar</string>
 </resources>

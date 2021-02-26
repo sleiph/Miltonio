@@ -33,7 +33,6 @@ class TelaRespostas : AppCompatActivity() {
         var acertos = 0
         var resposta = 0
         var progresso = 0
-        var qntPerguntas = 0
 
         var arrPerguntas : TypedArray? = null
         var ordemPerguntas = mutableListOf<Int>()
@@ -88,111 +87,48 @@ class TelaRespostas : AppCompatActivity() {
             }
         }
 
-        fun setSemestre1 (dados :Sem1DB?) {
-            if (dados != null) {
-                corFundo.setBackgroundColor(getColor(dados.cor_db))
-                imgFundo.setBackgroundResource(dados.fundo_db)
-                if (dados.isPreto_db)
-                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
-                else
-                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
-                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
-                qntPerguntas = arrPerguntas!!.length()
-                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-                ordemPerguntas.shuffle()
-                getPergunta(progresso)
-            }
-
-            btnConferir.setOnClickListener {
-                if (resposta == 1) {
-                    acertos += 1
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(50, 180, 75)
-                    )
-                    somBom.start()
-                } else {
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(235, 5, 0)
-                    )
-                    somRuim.start()
-                }
-                progresso += 1
-                progressoBarra.progress =
-                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
-                if (progresso < qntPerguntas) {
-                    getPergunta(progresso)
-                } else {
-                    arrPerguntas!!.recycle()
-                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
-                    if (dados != null && pontos > dados.pontos_db) {
-                        dados.pontos_db = pontos.toInt()
+        fun setPontuacao(pontos: Int, semestre: Int) {
+            when(semestre) {
+                0 -> {
+                    val dados = MyApplication.sem1database?.Sem1Dao()?.loadById(categoria-10)
+                    if (dados != null) {
+                        dados.pontos_db = pontos
                         MyApplication.sem1database?.Sem1Dao()?.updateCatg(dados)
                     }
-                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
-                btnConferir.isEnabled = false
-            }
-        }
-        fun setSemestre2 (dados :Sem2DB?) {
-            if (dados != null) {
-                corFundo.setBackgroundColor(getColor(dados.cor_db))
-                imgFundo.setBackgroundResource(dados.fundo_db)
-                if (dados.isPreto_db)
-                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
-                else
-                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
-                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
-                qntPerguntas = arrPerguntas!!.length()
-                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-                ordemPerguntas.shuffle()
-                getPergunta(progresso)
-            }
-
-            btnConferir.setOnClickListener {
-                if (resposta == 1) {
-                    acertos += 1
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(50, 180, 75)
-                    )
-                    somBom.start()
-                } else {
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(235, 5, 0)
-                    )
-                    somRuim.start()
-                }
-                progresso += 1
-                progressoBarra.progress =
-                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
-                if (progresso < qntPerguntas) {
-                    getPergunta(progresso)
-                } else {
-                    arrPerguntas!!.recycle()
-                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
-                    if (dados != null && pontos > dados.pontos_db) {
-                        dados.pontos_db =
-                            pontos.toInt()
+                1 -> {
+                    val dados = MyApplication.sem2database?.Sem2Dao()?.loadById(categoria-20)
+                    if (dados != null) {
+                        dados.pontos_db = pontos
                         MyApplication.sem2database?.Sem2Dao()?.updateCatg(dados)
                     }
-                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
-                btnConferir.isEnabled = false
+                2 -> {
+                    val dados = MyApplication.sem3database?.Sem3Dao()?.loadById(categoria-30)
+                    if (dados != null) {
+                        dados.pontos_db = pontos
+                        MyApplication.sem3database?.Sem3Dao()?.updateCatg(dados)
+                    }
+                }
             }
         }
-        fun setSemestre3 (dados :Sem3DB?) {
-            if (dados != null) {
-                corFundo.setBackgroundColor(getColor(dados.cor_db))
-                imgFundo.setBackgroundResource(dados.fundo_db)
-                if (dados.isPreto_db)
-                    txtPergunta.setTextColor(getColor(R.color.colorPrt))
-                else
-                    txtPergunta.setTextColor(getColor(R.color.colorBnc))
-                arrPerguntas = resources.obtainTypedArray(dados.arrayPerguntas_db)
-                qntPerguntas = arrPerguntas!!.length()
-                ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
-                ordemPerguntas.shuffle()
-                getPergunta(progresso)
-            }
+
+        fun desenhaPerguntas (
+            record: Int, arrPerg: Int,
+            cor: Int, fundo: Int, isPreto: Boolean
+        ) {
+            corFundo.setBackgroundColor(getColor(cor))
+            imgFundo.setBackgroundResource(fundo)
+            if (isPreto)
+                txtPergunta.setTextColor(getColor(R.color.colorPrt))
+            else
+                txtPergunta.setTextColor(getColor(R.color.colorBnc))
+
+            arrPerguntas = resources.obtainTypedArray(arrPerg)
+            val qntPerguntas = arrPerguntas!!.length()
+            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+            ordemPerguntas.shuffle()
+            getPergunta(progresso)
 
             btnConferir.setOnClickListener {
                 if (resposta == 1) {
@@ -210,27 +146,72 @@ class TelaRespostas : AppCompatActivity() {
                 progresso += 1
                 progressoBarra.progress =
                     ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
+
                 if (progresso < qntPerguntas) {
                     getPergunta(progresso)
-                } else {
-                    arrPerguntas!!.recycle()
+                }
+                else {
                     val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
-                    if (dados != null && pontos > dados.pontos_db) {
-                        dados.pontos_db = pontos.toInt()
-                        MyApplication.sem3database?.Sem3Dao()?.updateCatg(dados)
-                    }
+                    if (pontos > record)
+                        setPontuacao(pontos.toInt(), semestre)
+
                     loadResultado( intArrayOf(categoria, pontos.toInt()) )
                 }
                 btnConferir.isEnabled = false
             }
         }
 
-        if (categoria < 20)
-            setSemestre1 (MyApplication.sem1database?.Sem1Dao()?.loadById(categoria-10))
-        else if (categoria < 30)
-            setSemestre2 (MyApplication.sem2database?.Sem2Dao()?.loadById(categoria-20))
-        else
-            setSemestre3 (MyApplication.sem3database?.Sem3Dao()?.loadById(categoria-30))
+        fun setSemestre(categ: Int) {
+            when(categ) {
+                in 0 until 20 -> {
+                    val dados = MyApplication.sem1database?.Sem1Dao()?.loadById(categ-10)
+                    if (dados != null) {
+                        val pontos = dados.pontos_db
+                        val arrPerg = dados.arrayPerguntas_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaPerguntas(
+                            pontos, arrPerg,
+                            cor, fundo, isPreto
+                        )
+                    }
+                }
+                in 20 until 30 -> {
+                    val dados = MyApplication.sem2database?.Sem2Dao()?.loadById(categ-20)
+                    if (dados != null) {
+                        val pontos = dados.pontos_db
+                        val arrPerg = dados.arrayPerguntas_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaPerguntas(
+                            pontos, arrPerg,
+                            cor, fundo, isPreto
+                        )
+                    }
+                }
+                in 30 until 40 -> {
+                    val dados = MyApplication.sem3database?.Sem3Dao()?.loadById(categ-30)
+                    if (dados != null) {
+                        val pontos = dados.pontos_db
+                        val arrPerg = dados.arrayPerguntas_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaPerguntas(
+                            pontos, arrPerg,
+                            cor, fundo, isPreto
+                        )
+                    }
+                }
+            }
+        }
+
+        setSemestre(categoria)
     }
 }
 
