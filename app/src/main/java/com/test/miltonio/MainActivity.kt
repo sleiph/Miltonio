@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
         when(semestre) {
             0 -> {
-                val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
+                val dados = MyApplication.sem1database?.Sem1Dao()?.getAll()
                 if (dados != null) {
                     val n = dados.size
 

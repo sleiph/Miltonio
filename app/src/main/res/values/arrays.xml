@@ -1503,8 +1503,24 @@
         <item>Design</item>
         <item>Psicologia Cognitiva</item>
     </string-array>
+    <string-array name="sem3_ihc_2">
+        <item>Escolha um exemplo de sistema desenvolvido com perspectiva de discurso:</item>
+        <item>Um chatbot</item>
+        <item>Pacote Office</item>
+        <item>Um formulário de site</item>
+        <item>Twitter</item>
+    </string-array>
+    <string-array name="sem3_ihc_3">
+        <item>Escolha um exemplo de sistema desenvolvido com perspectiva de ferramenta:</item>
+        <item>Pacote Office</item>
+        <item>Um chatbot</item>
+        <item>Um formulário de site</item>
+        <item>Twitter</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
+        <item>@array/sem3_ihc_2</item>
+        <item>@array/sem3_ihc_3</item>
     </array>
 
 </resources>
