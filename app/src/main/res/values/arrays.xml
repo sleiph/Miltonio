@@ -1404,10 +1404,28 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="sem3_esd_4">
+        <item>Uma PILHA implementa qual mecanismo de inserção/remoção:</item>
+        <item>LIFO</item>
+        <item>FIFO</item>
+        <item>FIFA</item>
+        <item>FFLL</item>
+        <item>N.D.A.</item>
+    </string-array>
+    <string-array name="sem3_esd_5">
+        <item>Uma FILA implementa qual mecanismo de inserção/remoção:</item>
+        <item>FIFO</item>
+        <item>LIFO</item>
+        <item>FIFA</item>
+        <item>FFLL</item>
+        <item>N.D.A.</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
         <item>@array/sem3_esd_3</item>
+        <item>@array/sem3_esd_4</item>
+        <item>@array/sem3_esd_5</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1439,8 +1457,16 @@
         <item>P-e-D</item>
         <item>Tradicional</item>
     </string-array>
+    <string-array name="sem3_es2_2">
+        <item>Quais três fatores DEVEM SER garantidos quando escolhendo uma arquitetura de software?</item>
+        <item>Escalabilidade, Distribuição, Desempenho</item>
+        <item>Desempenho, Design, Segurança</item>
+        <item>Requisitos funcionais, Distribuição, Demanda</item>
+        <item>Orçamento, Escalabilidade, Estética</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
+        <item>@array/sem3_es2_2</item>
     </array>
 
     <string-array name="sem3_eap_1">
@@ -1468,10 +1494,25 @@
         <item>de 1 a 9</item>
         <item>de 1 a 10</item>
     </string-array>
+    <string-array name="sem3_eap_4">
+        <item>Em uma pesquisa sobre a idade média dos eleitores de um bairro, foi decidido que a tabela de distribuição de frequências teria 7 classes (k), de 16 a 93 anos (AA), qual será então a amplitude de cada classe (h)?</item>
+        <item>11</item>
+        <item>7</item>
+        <item>77</item>
+    </string-array>
+    <string-array name="sem3_eap_5">
+        <item>Qual a definição de moda em estatística?</item>
+        <item>É o valor que ocorre com maior frequência nos dados</item>
+        <item>É a média dos valores coletados</item>
+        <item>É a média ponderada dos valores de cada classe</item>
+        <item>É a média aritmética dos valores coletados</item>
+    </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
         <item>@array/sem3_eap_2</item>
         <item>@array/sem3_eap_3</item>
+        <item>@array/sem3_eap_4</item>
+        <item>@array/sem3_eap_5</item>
     </array>
 
     <string-array name="sem3_efi_1">
@@ -1480,16 +1521,23 @@
         <item>Água</item>
         <item>Ar</item>
     </string-array>
+    <string-array name="sem3_efi_2">
+        <item>Qual característica indica que um mercado está firme?</item>
+        <item>Se a procura for maior que a oferta</item>
+        <item>Se a procura for igual a oferta</item>
+        <item>Se a procura for menor que a oferta</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
+        <item>@array/sem3_efi_2</item>
     </array>
 
     <string-array name="sem3_eng_1">
-        <item>p</item>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
+        <item>Ógust?</item>
+        <item>Ógust</item>
+        <item>August</item>
+        <item>Augost</item>
+        <item>Óguste</item>
     </string-array>
     <array name="sem3_eng_perguntas">
         <item>@array/sem3_eng_1</item>
