@@ -14,7 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
 import com.test.miltonio.ui.CardResposta
 
-class TelaRespostas : AppCompatActivity() {
+class TelaPerguntas : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {

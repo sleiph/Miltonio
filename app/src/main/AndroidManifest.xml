@@ -15,7 +15,7 @@
             android:label="Resultado">
         </activity>
         <activity
-            android:name=".TelaRespostas"
+            android:name=".TelaPerguntas"
             android:label="Perguntas">
         </activity>
         <activity

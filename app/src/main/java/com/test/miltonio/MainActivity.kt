@@ -32,7 +32,7 @@ var semestre = 2 //Todo: acabar com as variáveis globais
 class MainActivity : AppCompatActivity() {
 
     private fun loadRespostas(resul: Int) {
-        val intent = Intent(this, TelaRespostas::class.java)
+        val intent = Intent(this, TelaPerguntas::class.java)
         intent.putExtra("resul", resul)
         startActivity(intent)
     }
