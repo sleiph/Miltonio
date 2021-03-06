@@ -342,6 +342,7 @@ class MainActivity : AppCompatActivity() {
     //Todo: Criar os fundos do 3 semestre
     //Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
         //Todo: Semestre 2 == corona virus
+    //Todo: Trocar esse verde escuro por um cinza escuro
 
 //Todo: Performance
     //Todo: Diminuir repetição de código
