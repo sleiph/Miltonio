@@ -19,7 +19,7 @@ class TelaPerguntas : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tela_respostas)
+        setContentView(R.layout.activity_tela_perguntas)
 
         fun loadResultado(resul :IntArray) {
             val intent = Intent(this, TelaResultado::class.java)
