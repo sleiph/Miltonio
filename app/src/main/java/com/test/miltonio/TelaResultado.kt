@@ -55,58 +55,71 @@ class TelaResultado : AppCompatActivity() {
             }
         }
 
-        fun setMateria1(dados :Sem1DB?) {
-            if (dados != null) {
-                setPontuacao(categoria?.get(1)!!)
-                corFnd.setBackgroundColor(getColor(dados.cor_db))
-                imgFnd.setBackgroundResource(dados.fundo_db)
-                txtCategoria.text =
-                    getString(R.string.resultado_categoria, getString(dados.materia_db))
-                if (!dados.isPreto_db) {
-                    txtComeco.setTextColor(getColor(R.color.colorBnc))
-                    txtResultado.setTextColor(getColor(R.color.colorBnc))
-                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
-                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
-                }
+        fun desenhaResultados (materia: Int, cor: Int, fundo: Int, isPreto: Boolean) {
+            setPontuacao(categoria?.get(1)!!)
+            corFnd.setBackgroundColor(getColor(cor))
+            imgFnd.setBackgroundResource(fundo)
+            txtCategoria.text =
+                getString(R.string.resultado_categoria, getString(materia))
+            if (isPreto) {
+                txtComeco.setTextColor(getColor(R.color.colorBnc))
+                txtResultado.setTextColor(getColor(R.color.colorBnc))
+                txtCategoria.setTextColor(getColor(R.color.colorBnc))
+                txtMensagem.setTextColor(getColor(R.color.colorBnc))
             }
         }
-        fun setMateria2(dados :Sem2DB?) {
-            if (dados != null) {
-                setPontuacao(categoria?.get(1)!!)
-                corFnd.setBackgroundColor(getColor(dados.cor_db))
-                imgFnd.setBackgroundResource(dados.fundo_db)
-                txtCategoria.text =
-                    getString(R.string.resultado_categoria, getString(dados.materia_db))
-                if (!dados.isPreto_db) {
-                    txtComeco.setTextColor(getColor(R.color.colorBnc))
-                    txtResultado.setTextColor(getColor(R.color.colorBnc))
-                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
-                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
+
+        fun setSemestre(categ: Int?) {
+            when(categ) {
+                in 0 until 20 -> {
+                    val dados = categ?.minus(10)?.let {
+                        MyApplication.sem1database?.Sem1Dao()?.loadById(
+                            it
+                        )
+                    }
+                    if (dados != null) {
+                        val materia = dados.materia_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaResultados(materia, cor, fundo, isPreto)
+                    }
                 }
-            }
-        }
-        fun setMateria3(dados :Sem3DB?) {
-            if (dados != null) {
-                setPontuacao(categoria?.get(1)!!)
-                corFnd.setBackgroundColor(getColor(dados.cor_db))
-                imgFnd.setBackgroundResource(dados.fundo_db)
-                txtCategoria.text =
-                    getString(R.string.resultado_categoria, getString(dados.materia_db))
-                if (!dados.isPreto_db) {
-                    txtComeco.setTextColor(getColor(R.color.colorBnc))
-                    txtResultado.setTextColor(getColor(R.color.colorBnc))
-                    txtCategoria.setTextColor(getColor(R.color.colorBnc))
-                    txtMensagem.setTextColor(getColor(R.color.colorBnc))
+                in 20 until 30 -> {
+                    val dados = categ?.minus(20)?.let {
+                        MyApplication.sem2database?.Sem2Dao()?.loadById(
+                            it
+                        )
+                    }
+                    if (dados != null) {
+                        val materia = dados.materia_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaResultados(materia, cor, fundo, isPreto)
+                    }
+                }
+                in 30 until 40 -> {
+                    val dados = categ?.minus(30)?.let {
+                        MyApplication.sem3database?.Sem3Dao()?.loadById(
+                            it
+                        )
+                    }
+                    if (dados != null) {
+                        val materia = dados.materia_db
+                        val cor = dados.cor_db
+                        val fundo = dados.fundo_db
+                        val isPreto = dados.isPreto_db
+
+                        desenhaResultados(materia, cor, fundo, isPreto)
+                    }
                 }
             }
         }
 
-        if (categoria?.get(0)!! < 20)
-            setMateria1 (MyApplication.sem1database?.Sem1Dao()?.loadById(categoria[0] -10))
-        else if (categoria?.get(0)!! < 30)
-            setMateria2 (MyApplication.sem2database?.Sem2Dao()?.loadById(categoria[0] -20))
-        else
-            setMateria3 (MyApplication.sem3database?.Sem3Dao()?.loadById(categoria[0] -30))
+        setSemestre(categoria?.get(0))
 
         btnMain.setOnClickListener {
             loadMain()
