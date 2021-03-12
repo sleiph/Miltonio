@@ -2,7 +2,6 @@ package com.test.miltonio
 
 import android.content.Intent
 import android.content.res.ColorStateList
-import android.content.res.TypedArray
 import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Build
@@ -34,8 +33,7 @@ class TelaPerguntas : AppCompatActivity() {
         var resposta = 0
         var progresso = 0
 
-        var arrPerguntas : TypedArray? = null
-        var ordemPerguntas = mutableListOf<Int>()
+        val arrPerguntas = mutableListOf<Array<CharSequence>>()
 
         val fundoRespostaDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_fundo)
         val fundoSelecionadoDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_selecionada)
@@ -51,15 +49,19 @@ class TelaPerguntas : AppCompatActivity() {
         val btnConferir = findViewById<Button>(R.id.btn_conferir)
 
         fun getPergunta(indice: Int){
-            txtPergunta.text = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(0)
-            val respostaCards = mutableListOf<CardResposta>()
-            val qntRespostas = arrPerguntas?.getTextArray(ordemPerguntas[indice])?.size?.minus(1)
-            val ordemRespostas: MutableList<Int> = (1 .. qntRespostas!!).toMutableList()
+            txtPergunta.text = arrPerguntas[indice][0]
+
+            val qntRespostas = arrPerguntas[indice].size - 1
+            val ordemRespostas = (1 .. qntRespostas).toMutableList()
             ordemRespostas.shuffle()
 
-            matarChildren(gridPergunta)
+            val respostaCards = mutableListOf<CardResposta>()
 
+            // remove os elementos passados do layout
+            matarChildren(gridPergunta)
             respostaCards.clear()
+
+            // começa a desenhar os cards de resposta
             for (i in 0 until qntRespostas) {
                 val cardLayout = CardResposta(this)
                 val param = GridLayout.LayoutParams(
@@ -69,8 +71,9 @@ class TelaPerguntas : AppCompatActivity() {
                 param.width = 0
                 param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
                 cardLayout.layoutParams = param
+                // adicionando o texto da resposta
                 cardLayout.setRespostaText(
-                    arrPerguntas?.getTextArray(ordemPerguntas[indice])?.get(ordemRespostas[i])
+                    arrPerguntas[indice][ordemRespostas[i]]
                 )
                 cardLayout.setRespostaDrawable(fundoRespostaDrawable)
                 respostaCards.add(cardLayout)
@@ -124,10 +127,19 @@ class TelaPerguntas : AppCompatActivity() {
             else
                 txtPergunta.setTextColor(getColor(R.color.colorBnc))
 
-            arrPerguntas = resources.obtainTypedArray(arrPerg)
-            val qntPerguntas = arrPerguntas!!.length()
-            ordemPerguntas = (0 until (qntPerguntas)).toMutableList()
+            val arrPerguntasTemp = resources.obtainTypedArray(arrPerg)
+
+            var qntPerguntas = arrPerguntasTemp.length()
+            if (qntPerguntas > 10) qntPerguntas = 10
+
+            val ordemPerguntas = (0 until qntPerguntas).toMutableList()
             ordemPerguntas.shuffle()
+
+            for (i in 0 until qntPerguntas)
+                arrPerguntas.add(arrPerguntasTemp.getTextArray(ordemPerguntas[i]))
+
+            arrPerguntasTemp.recycle()
+
             getPergunta(progresso)
 
             btnConferir.setOnClickListener {

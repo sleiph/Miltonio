@@ -61,7 +61,7 @@ class TelaResultado : AppCompatActivity() {
             imgFnd.setBackgroundResource(fundo)
             txtCategoria.text =
                 getString(R.string.resultado_categoria, getString(materia))
-            if (isPreto) {
+            if (!isPreto) {
                 txtComeco.setTextColor(getColor(R.color.colorBnc))
                 txtResultado.setTextColor(getColor(R.color.colorBnc))
                 txtCategoria.setTextColor(getColor(R.color.colorBnc))
