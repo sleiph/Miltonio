@@ -82,7 +82,8 @@ class TelaPerguntas : AppCompatActivity() {
                     resposta = ordemRespostas[i]
                     if (!btnConferir.isEnabled)
                         btnConferir.isEnabled = true
-                    //fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc)) //Todo: Tentar usar Tints em vez de drawables diferentes
+                    //Todo: Tentar usar Tints em vez de drawables diferentes
+                    ///fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc))
                     for (card in respostaCards)
                         card.setRespostaDrawable(fundoRespostaDrawable)
                     respostaCards[i].setRespostaDrawable(fundoSelecionadoDrawable)
@@ -130,7 +131,9 @@ class TelaPerguntas : AppCompatActivity() {
             val arrPerguntasTemp = resources.obtainTypedArray(arrPerg)
 
             var qntPerguntas = arrPerguntasTemp.length()
-            if (qntPerguntas > 10) qntPerguntas = 10
+            // número de perguntas que vão fazer parte do jogo
+            val maxPerguntas = 10
+            if (qntPerguntas > maxPerguntas) qntPerguntas = maxPerguntas
 
             val ordemPerguntas = (0 until qntPerguntas).toMutableList()
             ordemPerguntas.shuffle()
@@ -231,6 +234,4 @@ class TelaPerguntas : AppCompatActivity() {
 //Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Perguntas de múltipla escolha
 //Todo: Scroll mais bonito/intuitivo das respostas
-//Todo: Adicionar só x do array de perguntas no quiz
-//Todo: mudar o nome desse arquivo pra TelaPerguntas
 //Todo: formatar melhor strings de código

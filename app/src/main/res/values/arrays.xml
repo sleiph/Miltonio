@@ -1420,12 +1420,19 @@
         <item>FFLL</item>
         <item>N.D.A.</item>
     </string-array>
+    <string-array name="sem3_esd_6">
+        <item>Qual das justificativas abaixo é FALSA para o uso de filas circulares no lugar de filas cumuns?</item>
+        <item>Se o tamanho da fila for menor que dez elementos, uma fila circular pode aumentar a performance.</item>
+        <item>Se o tamanho da fila for muito grande, uma fila circular pode aumentar a performance.</item>
+        <item>Se quisermos ter uma fila reversível, uma fila circular pode simplificar o código.</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
         <item>@array/sem3_esd_3</item>
         <item>@array/sem3_esd_4</item>
         <item>@array/sem3_esd_5</item>
+        <item>@array/sem3_esd_6</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1464,9 +1471,25 @@
         <item>Requisitos funcionais, Distribuição, Demanda</item>
         <item>Orçamento, Escalabilidade, Estética</item>
     </string-array>
+    <string-array name="sem3_es2_3">
+        <item>Uma classe é representada por um retângulo dividido em três partes, sendo estas partes compostas por:</item>
+        <item>Nome da classe, atributos, métodos.</item>
+        <item>Visibilidade, tipo da classe, número de objetos.</item>
+        <item>Atributos, 2° métodos, 3° tipo da classe.</item>
+        <item>Tipo de retorno da classe, atributos, visibilidade.</item>
+    </string-array>
+    <string-array name="sem3_es2_4">
+        <item>Na Programação Orientada a Objetos, qual a definição de polimorfismo?</item>
+        <item>Quando o mesmo método tem execuções diferenciadas dependendo da classe que o chama.</item>
+        <item>Quando uma classe passa seus atributos para outra.</item>
+        <item>Quando uma classe tem seus atributos alterados.</item>
+        <item>Quando os atributos de uma classe são inacessíveis a outras classes.</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
+        <item>@array/sem3_es2_3</item>
+        <item>@array/sem3_es2_4</item>
     </array>
 
     <string-array name="sem3_eap_1">
@@ -1527,9 +1550,17 @@
         <item>Se a procura for igual a oferta</item>
         <item>Se a procura for menor que a oferta</item>
     </string-array>
+    <string-array name="sem3_efi_3">
+        <item>Qual dos seguintes fatores é capaz de distorcer a percepção de um consumidor sobre seu poder aquisitivo?</item>
+        <item>Crédito</item>
+        <item>Preço</item>
+        <item>Hábitos do Consumidor</item>
+        <item>Renda</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
+        <item>@array/sem3_efi_3</item>
     </array>
 
     <string-array name="sem3_eng_1">
