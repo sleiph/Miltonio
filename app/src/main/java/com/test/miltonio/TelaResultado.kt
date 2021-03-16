@@ -5,11 +5,11 @@ import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 class TelaResultado : AppCompatActivity() {
 
@@ -37,20 +37,21 @@ class TelaResultado : AppCompatActivity() {
         val txtCategoria = findViewById<TextView>(R.id.categoria)
 
         val txtMensagem = findViewById<TextView>(R.id.mensagem)
-        val imgMensagem = findViewById<ImageView>(R.id.img_mensagem)
 
         val btnMain = findViewById<Button>(R.id.btn_main)
 
         fun setPontuacao(pnts: Any) {
             txtResultado.text = getString(R.string.resultado_pontos, pnts)
             if (categoria?.get(1)!!.toInt() >= 60) {
-                imgMensagem.setBackgroundResource(R.drawable.respostasnossas)
+                val drawable = ContextCompat.getDrawable(this, R.drawable.mensagem_resultado_bom)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
+                txtMensagem.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null)
                 somBom.start()
             }
             else {
-                imgMensagem.setBackgroundResource(R.drawable.respostassuas)
+                val drawable = ContextCompat.getDrawable(this, R.drawable.mensagem_resultado_ruim)
                 txtMensagem.text = getString(R.string.resultado_msg_ruim)
+                txtMensagem.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null)
                 somRuim.start()
             }
         }
@@ -128,3 +129,5 @@ class TelaResultado : AppCompatActivity() {
 }
 
 //Todo: High Scores
+//Todo: achar um jeito de centralizar o drawable na textview de mensagem
+    //Todo: ou criar um widget de verdade

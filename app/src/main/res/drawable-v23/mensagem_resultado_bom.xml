@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/img_mensagem_boa"
+        android:drawable="@drawable/respostasnossas"
+        android:width="@dimen/tamanho_cards"
+        android:height="@dimen/tamanho_cards"
+        />
+
+</layer-list>

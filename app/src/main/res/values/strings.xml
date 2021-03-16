@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Miltonio</string>
     <string name="title_home">Home</string>
     <string name="app_img_desc">Título do aplicativo</string>
