@@ -61,7 +61,7 @@
         android:layout_below="@id/txt_principal"
         android:layout_marginHorizontal="@dimen/margem_dobro_margin"
         android:layout_marginBottom="@dimen/tamanho_area_botao"
-        android:paddingTop="@dimen/margem_qsereal_margin"
+        android:paddingTop="@dimen/margem_real_margin"
         android:textSize="@dimen/texto_pergunta"
         android:textAlignment="center"
         android:textStyle="italic"
