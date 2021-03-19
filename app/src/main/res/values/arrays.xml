@@ -1426,6 +1426,13 @@
         <item>Se o tamanho da fila for muito grande, uma fila circular pode aumentar a performance.</item>
         <item>Se quisermos ter uma fila reversível, uma fila circular pode simplificar o código.</item>
     </string-array>
+    <string-array name="sem3_esd_7">
+        <item>Coleção linear de dados, onde um elemento da lista aponta para a posição do próximo na memória:</item>
+        <item>Lista Ligada</item>
+        <item>Pilha</item>
+        <item>Fila</item>
+        <item>Lista</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
@@ -1433,6 +1440,7 @@
         <item>@array/sem3_esd_4</item>
         <item>@array/sem3_esd_5</item>
         <item>@array/sem3_esd_6</item>
+        <item>@array/sem3_esd_7</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1530,12 +1538,20 @@
         <item>É a média ponderada dos valores de cada classe</item>
         <item>É a média aritmética dos valores coletados</item>
     </string-array>
+    <string-array name="sem3_eap_6">
+        <item>O que são medidas separatrizes?</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados e organizados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados e organizados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados.</item>
+    </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
         <item>@array/sem3_eap_2</item>
         <item>@array/sem3_eap_3</item>
         <item>@array/sem3_eap_4</item>
         <item>@array/sem3_eap_5</item>
+        <item>@array/sem3_eap_6</item>
     </array>
 
     <string-array name="sem3_efi_1">
@@ -1557,10 +1573,16 @@
         <item>Hábitos do Consumidor</item>
         <item>Renda</item>
     </string-array>
+    <string-array name="sem3_efi_4">
+        <item>Bens de Giffen???</item>
+        <item>Bens de pequeno valor. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
+        <item>Bens de consumo ostentário. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
         <item>@array/sem3_efi_3</item>
+        <item>@array/sem3_efi_4</item>
     </array>
 
     <string-array name="sem3_eng_1">
