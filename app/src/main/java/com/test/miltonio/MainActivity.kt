@@ -83,8 +83,14 @@ class MainActivity : AppCompatActivity() {
         val professores: Array<Int> = Array(10) {0}
         val materias: Array<Int> = Array(10) {0}
 
+        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
+        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
+
         when(semestre) {
             0 -> {
+                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomilton))
+                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomilton))
+
                 val dados = MyApplication.sem1database?.Sem1Dao()?.getAll()
                 if (dados != null) {
                     val n = dados.size
@@ -107,6 +113,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             1 -> {
+                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsocoronga))
+                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsocoronga))
+
                 val dados = MyApplication.sem2database?.Sem2Dao()?.getAll()
                 if (dados != null) {
                     val n = dados.size
@@ -129,6 +138,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             2 -> {
+                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomascara))
+                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomascara))
+
                 val dados = MyApplication.sem3database?.Sem3Dao()?.getAll()
                 if (dados != null) {
                     val n = dados.size
