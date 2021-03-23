@@ -222,6 +222,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun SetImgTtl() {
+        val bitmaps = intArrayOf( R.drawable.appsomilton, R.drawable.appsocoronga, R.drawable.appsomascara )
+        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
+        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
+        val angulo = 60
+        val matrixAnima = Matrix()
+        val matrixAnami = Matrix()
+
+        logoAnimado.setOnClickListener {
+            val logoAnimadoBmp = BitmapFactory.decodeResource(resources, bitmaps[semestre])
+            matrixAnima.postRotate(angulo.toFloat())
+            val rodado = Bitmap.createBitmap(
+                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
+                matrixAnima, true
+            )
+            logoAnimado.setImageBitmap(rodado)
+        }
+
+        logoAnamido.setOnClickListener {
+            val logoAnimadoBmp = BitmapFactory.decodeResource(resources, bitmaps[semestre])
+            matrixAnami.postRotate(-angulo.toFloat())
+            val rodado = Bitmap.createBitmap(
+                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
+                matrixAnami, true
+            )
+            logoAnamido.setImageBitmap(rodado)
+        }
+    }
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -235,30 +264,7 @@ class MainActivity : AppCompatActivity() {
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         isSonando = !audiomanager.isStreamMute(AudioManager.STREAM_MUSIC)
 
-        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
-        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
-        val logoAnimadoBmp = BitmapFactory.decodeResource(resources, R.drawable.appsomilton)
-        val angulo = 60
-        val matrixAnima = Matrix()
-        val matrixAnami = Matrix()
-
-        logoAnimado.setOnClickListener {
-            matrixAnima.postRotate(angulo.toFloat())
-            val rodado = Bitmap.createBitmap(
-                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
-                matrixAnima, true
-            )
-            logoAnimado.setImageBitmap(rodado)
-        }
-
-        logoAnamido.setOnClickListener {
-            matrixAnami.postRotate(-angulo.toFloat())
-            val rodado = Bitmap.createBitmap(
-                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
-                matrixAnami, true
-            )
-            logoAnamido.setImageBitmap(rodado)
-        }
+        SetImgTtl()
 
         // resetSemestre(semestre)
         desenhaSemestre( semestre )
@@ -355,6 +361,7 @@ class MainActivity : AppCompatActivity() {
     //Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
         //Todo: Semestre 2 == corona virus
     //Todo: Trocar esse verde escuro por um cinza escuro
+    //Todo: https://stackoverflow.com/questions/1700099/android-how-to-create-a-background-from-pattern
 
 //Todo: Performance
     //Todo: Diminuir repetição de código
