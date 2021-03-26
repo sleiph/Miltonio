@@ -1493,11 +1493,18 @@
         <item>Quando uma classe tem seus atributos alterados.</item>
         <item>Quando os atributos de uma classe são inacessíveis a outras classes.</item>
     </string-array>
+    <string-array name="sem3_es2_5">
+        <item>Qual a principal vantagem do encapsulamento?</item>
+        <item tools:ignore="Typos">Proteger os dados e fazer com que eles sigam as regras de negócio do programa.</item>
+        <item>Diminuir a complexidade do projeto.</item>
+        <item>Associar duas classes distintas.</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
         <item>@array/sem3_es2_3</item>
         <item>@array/sem3_es2_4</item>
+        <item>@array/sem3_es2_5</item>
     </array>
 
     <string-array name="sem3_eap_1">
@@ -1578,11 +1585,17 @@
         <item>Bens de pequeno valor. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
         <item>Bens de consumo ostentário. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
     </string-array>
+    <string-array name="sem3_efi_5">
+        <item>Predominantemente, os agregados do setor financeiro são:</item>
+        <item>Variáveis-estoque</item>
+        <item>Variáveis-fluxo</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
         <item>@array/sem3_efi_3</item>
         <item>@array/sem3_efi_4</item>
+        <item>@array/sem3_efi_5</item>
     </array>
 
     <string-array name="sem3_eng_1">
