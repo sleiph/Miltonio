@@ -1552,6 +1552,13 @@
         <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados e organizados.</item>
         <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados.</item>
     </string-array>
+    <string-array name="sem3_eap_7">
+        <item>Qual a aplicação da medida de variância?</item>
+        <item>Relacionar os desvios em torno da média.</item>
+        <item>Encontrar o valor de maior frequência.</item>
+        <item>Encontrar o valor total médio.</item>
+        <item>Relacionar os desvios em torno da moda.</item>
+    </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
         <item>@array/sem3_eap_2</item>
@@ -1559,6 +1566,7 @@
         <item>@array/sem3_eap_4</item>
         <item>@array/sem3_eap_5</item>
         <item>@array/sem3_eap_6</item>
+        <item>@array/sem3_eap_7</item>
     </array>
 
     <string-array name="sem3_efi_1">
