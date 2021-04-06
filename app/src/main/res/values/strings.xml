@@ -2,6 +2,21 @@
     <string name="app_name">Miltonio</string>
     <string name="title_home">Home</string>
     <string name="app_img_desc">Título do aplicativo</string>
+    <string name="txt_btn_conferir">conferir</string>
+    <string name="resultado_comeco">Você acertou</string>
+    <string name="resultado_pontos">%s%%</string>
+    <string name="resultado_categoria">das perguntas de \n<b>%s</b></string>
+    <string name="resultado_msg_boa">Agora que tal compartilhar as respostas com o clã?</string>
+    <string name="resultado_msg_ruim">É… que tal pedir a ajuda do clã nessa matéria?</string>
+    <string name="resultado_btn">voltar</string>
+    <string name="resultado_msg_descricao">meme inspirador</string>
+    <string name="menu_sem">Semestre</string>
+    <string name="menu_sons"><strike>Sons</strike></string>
+    <string name="menu_Nsons">Sons</string>
+    <string name="menu_config">Resetar progresso</string>
+    <string name="alerta_mensagem">Tem certeza que deseja resetar todo seu progresso deste semestre?</string>
+    <string name="alerta_positivo">OK</string>
+    <string name="alerta_negativo">Cancelar</string>
 
     <string name="categ_sem1_mat">Matemática Discreta</string>
     <string name="categ_sem1_mat_prof">Jayme</string>
@@ -48,19 +63,4 @@
     <string name="categ_sem3_ihc">Interação Humano-Computador</string>
     <string name="categ_sem3_ihc_prof">Daniel</string>
 
-    <string name="txt_btn_conferir">conferir</string>
-    <string name="resultado_comeco">Você acertou</string>
-    <string name="resultado_pontos">%s%%</string>
-    <string name="resultado_categoria">das perguntas de \n<b>%s</b></string>
-    <string name="resultado_msg_boa">Agora que tal compartilhar as respostas com o clã?</string>
-    <string name="resultado_msg_ruim">É… que tal pedir a ajuda do clã nessa matéria?</string>
-    <string name="resultado_btn">voltar</string>
-    <string name="resultado_msg_descricao">meme inspirador</string>
-    <string name="menu_sem">Semestre</string>
-    <string name="menu_sons"><strike>Sons</strike></string>
-    <string name="menu_Nsons">Sons</string>
-    <string name="menu_config">Resetar progresso</string>
-    <string name="alerta_mensagem">Tem certeza que deseja resetar todo seu progresso deste semestre?</string>
-    <string name="alerta_positivo">OK</string>
-    <string name="alerta_negativo">Cancelar</string>
 </resources>

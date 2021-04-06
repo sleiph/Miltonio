@@ -358,8 +358,6 @@ class MainActivity : AppCompatActivity() {
     //Todo: Layout responsivo
     //Todo: Sons quando clica na cabecinha do Milton
     //Todo: Criar os fundos do 3 semestre
-    //Todo: Quando o usuário mudar o semestre >> mudar as imagens do título
-        //Todo: Semestre 2 == corona virus
     //Todo: Trocar esse verde escuro por um cinza escuro
     //Todo: https://stackoverflow.com/questions/1700099/android-how-to-create-a-background-from-pattern
 
