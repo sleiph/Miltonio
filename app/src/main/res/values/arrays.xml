@@ -1499,12 +1499,20 @@
         <item>Diminuir a complexidade do projeto.</item>
         <item>Associar duas classes distintas.</item>
     </string-array>
+    <string-array name="sem3_es2_6">
+        <item>Qual afirmação abaixo é FALSA sobre o ciclo de vida dos processos em Cascata, Espiral e Rational Unified Process?</item>
+        <item>Todos usam iterações e protótipos</item>
+        <item>Todos dependem de um planejamento meticuloso e medem o progresso do projeto de acordo com o plano inicial</item>
+        <item>Todos dependem de uma documentação completa e minuciosa</item>
+        <item>Todos dependem de um gerente que será responsável pelo projeto</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
         <item>@array/sem3_es2_3</item>
         <item>@array/sem3_es2_4</item>
         <item>@array/sem3_es2_5</item>
+        <item>@array/sem3_es2_6</item>
     </array>
 
     <string-array name="sem3_eap_1">
@@ -1639,10 +1647,19 @@
         <item>Um formulário de site</item>
         <item>Twitter</item>
     </string-array>
+    <string-array name="sem3_ihc_4">
+        <item>Considere a sentença a seguir: “um produto da engenharia humana cuja ação envolve a manipulação de símbolos controlada por um conjunto específico e finito de regras capaz de realizar interação.” . Podemos afirmar que a definição se trata de:</item>
+        <item>Artefato Computacional Interativo</item>
+        <item>Experiência do usuário.</item>
+        <item>Controles</item>
+        <item>Desenho Universal</item>
+        <item>Comunicabilidade</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
         <item>@array/sem3_ihc_3</item>
+        <item>@array/sem3_ihc_4</item>
     </array>
 
 </resources>
