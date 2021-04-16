@@ -1606,12 +1606,19 @@
         <item>Variáveis-estoque</item>
         <item>Variáveis-fluxo</item>
     </string-array>
+    <string-array name="sem3_efi_6">
+        <item>Qual o fator principal para que um montante seja maior vindo de um financiamento de juros simples que de um financiamento de juros compostos?</item>
+        <item>A taxa cobrada dos juros</item>
+        <item>O prazo de pagamento</item>
+        <item>A taxa SELIC</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
         <item>@array/sem3_efi_3</item>
         <item>@array/sem3_efi_4</item>
         <item>@array/sem3_efi_5</item>
+        <item>@array/sem3_efi_6</item>
     </array>
 
     <string-array name="sem3_eng_1">
@@ -1621,8 +1628,48 @@
         <item>Augost</item>
         <item>Óguste</item>
     </string-array>
+    <string-array name="sem3_eng_2">
+        <item>Complete the following phrase with the correct pronoum:\n\nTeacher, please, can you tell I/me if my/mine project is correct?</item>
+        <item>me - my</item>
+        <item>I - my</item>
+        <item>I - mine</item>
+        <item>me - mine</item>
+    </string-array>
+    <string-array name="sem3_eng_3">
+        <item>Choose the option with the CORRECT answer for the following question:\n\nWhen does the recruitment supervisor decide to change the schedule?</item>
+        <item>The recruitment supervisor decides to change schedule this week</item>
+        <item>The recruitment supervisor decide to change schedule this week</item>
+        <item>The recruitment supervisor decided to change schedule this week</item>
+    </string-array>
+    <string-array name="sem3_eng_4">
+        <item>Choose the option with the correct Wh words sequence:\n\n____________ is the reception desk? The reception desk is at the first floor.</item>
+        <item>Where</item>
+        <item>How much</item>
+        <item>How far</item>
+        <item>Whom</item>
+    </string-array>
+    <string-array name="sem3_eng_5">
+        <item>Choose the option with the correct short answer:\n\nWere the investors aware about the contract rules?</item>
+        <item>Yes, the investors were</item>
+        <item>Yes, the investors was</item>
+        <item>Yes, the investor were</item>
+        <item>Yes, the investors did</item>
+    </string-array>
+    <string-array name="sem3_eng_6">
+        <item>Vocabulary exercise: Match the words and meanings:\n\nAn organization that sells goods or services in order to make money.</item>
+        <item>Company</item>
+        <item>Computer</item>
+        <item>Meeting</item>
+        <item>Business</item>
+        <item>Human</item>
+    </string-array>
     <array name="sem3_eng_perguntas">
         <item>@array/sem3_eng_1</item>
+        <item>@array/sem3_eng_2</item>
+        <item>@array/sem3_eng_3</item>
+        <item>@array/sem3_eng_4</item>
+        <item>@array/sem3_eng_5</item>
+        <item>@array/sem3_eng_6</item>
     </array>
 
     <string-array name="sem3_ihc_1">
@@ -1648,7 +1695,7 @@
         <item>Twitter</item>
     </string-array>
     <string-array name="sem3_ihc_4">
-        <item>Considere a sentença a seguir: “um produto da engenharia humana cuja ação envolve a manipulação de símbolos controlada por um conjunto específico e finito de regras capaz de realizar interação.” . Podemos afirmar que a definição se trata de:</item>
+        <item>Considere a sentença a seguir:\n\n“um produto da engenharia humana cuja ação envolve a manipulação de símbolos controlada por um conjunto específico e finito de regras capaz de realizar interação.”.\n\nPodemos afirmar que a definição se trata de:</item>
         <item>Artefato Computacional Interativo</item>
         <item>Experiência do usuário.</item>
         <item>Controles</item>
