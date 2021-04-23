@@ -5,7 +5,7 @@ Criei esse aplicativo no [MIT App Inventor](https://appinventor.mit.edu) como pa
 
 ![capa](/img/main.jpg)
 
-Se quiser testar o aplicativo, só baixar o arquivo `Miltonio_debug.apk` da raiz do projeto e instalar no seu celular Android.
+Se quiser testar o aplicativo, só baixar o arquivo [Miltonio_debug.apk](/Miltonio_debug.apk) da raiz do projeto e instalar no seu celular Android.
 
 A tela inicial exibe as matérias do semestre, com a sua melhor pontuação em cada tema, o App usa um banco de dados SQLite pra guardar seu progresso, assim como as matérias de cada semestre, que pode ser escolhido na tela inicial. Quando uma das matérias é escolhida você é levado pra tela de quiz, as perguntas aparecem em ordem aleatória, cada uma tem uma quantidade variável de respostas possíveis. A barra de progresso no topo da página muda pra cor verde, ou vermelha, acompanhando seu progresso, um som agradável é tocado pra indicar seu acerto, ou um som menos agradável pra indicar erro. Depois que as perguntas são respondidas você é encaminhado pra uma tela onde pode conferir sua pontuação.
 
