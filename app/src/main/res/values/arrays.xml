@@ -1506,6 +1506,14 @@
         <item>Todos dependem de uma documentação completa e minuciosa</item>
         <item>Todos dependem de um gerente que será responsável pelo projeto</item>
     </string-array>
+    <string-array name="sem3_es2_7">
+        <item>Qual das seguintes opções NÃO é um exemplo de mensagens possíveis em um diagrama de sequência?</item>
+        <item>Entre atributos</item>
+        <item>Entre atores</item>
+        <item>Entre objetos</item>
+        <item>Instância de um novo objeto</item>
+        <item>Que dispara um método destrutor</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
@@ -1513,6 +1521,7 @@
         <item>@array/sem3_es2_4</item>
         <item>@array/sem3_es2_5</item>
         <item>@array/sem3_es2_6</item>
+        <item>@array/sem3_es2_7</item>
     </array>
 
     <string-array name="sem3_eap_1">
