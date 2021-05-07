@@ -1433,6 +1433,13 @@
         <item>Fila</item>
         <item>Lista</item>
     </string-array>
+    <string-array name="sem3_esd_8">
+        <item>Nós que não possuem filhos são chamados de?</item>
+        <item>Folhas</item>
+        <item>Raizes</item>
+        <item>Filhos</item>
+        <item>Irmãos</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
@@ -1441,6 +1448,7 @@
         <item>@array/sem3_esd_5</item>
         <item>@array/sem3_esd_6</item>
         <item>@array/sem3_esd_7</item>
+        <item>@array/sem3_esd_8</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1621,6 +1629,13 @@
         <item>O prazo de pagamento</item>
         <item>A taxa SELIC</item>
     </string-array>
+    <string-array name="sem3_efi_7">
+        <item>Amortização é:</item>
+        <item>O pagamento do principal ou capital emprestado que é feito normalmente de forma periódica e sucessiva durante o prazo de financiamento.</item>
+        <item>O custo do capital tomado sob o aspecto do mutuário e o retorno do capital investido sob o aspect do mutuante.</item>
+        <item>O pagamento da amortização mais os juros relativos ao saldo devedor imediatamente anterior ao período referente a prestação.</item>
+        <item>O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
@@ -1628,6 +1643,7 @@
         <item>@array/sem3_efi_4</item>
         <item>@array/sem3_efi_5</item>
         <item>@array/sem3_efi_6</item>
+        <item>@array/sem3_efi_7</item>
     </array>
 
     <string-array name="sem3_eng_1">
