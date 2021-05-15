@@ -1727,11 +1727,18 @@
         <item>Desenho Universal</item>
         <item>Comunicabilidade</item>
     </string-array>
+    <string-array name="sem3_ihc_5">
+        <item>Dentro da semiótica, signos dinâmicos se referem a:</item>
+        <item>Aspectos temporais e causais</item>
+        <item>O estado do sistema</item>
+        <item>Outros signos da interface</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
         <item>@array/sem3_ihc_3</item>
         <item>@array/sem3_ihc_4</item>
+        <item>@array/sem3_ihc_5</item>
     </array>
 
 </resources>
