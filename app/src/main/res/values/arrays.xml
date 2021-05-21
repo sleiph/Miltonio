@@ -1584,6 +1584,12 @@
         <item>Encontrar o valor total médio.</item>
         <item>Relacionar os desvios em torno da moda.</item>
     </string-array>
+    <string-array name="sem3_eap_8">
+        <item>Se o valor de curtose de um conjunto de dados for maior que o de uma distribuição normal, qual será o tipo de curva do conjunto?</item>
+        <item>Leptocúrtica</item>
+        <item>Mesocúrtica</item>
+        <item>Platicúrtica</item>
+    </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
         <item>@array/sem3_eap_2</item>
@@ -1592,6 +1598,7 @@
         <item>@array/sem3_eap_5</item>
         <item>@array/sem3_eap_6</item>
         <item>@array/sem3_eap_7</item>
+        <item>@array/sem3_eap_8</item>
     </array>
 
     <string-array name="sem3_efi_1">
@@ -1634,7 +1641,7 @@
         <item>O pagamento do principal ou capital emprestado que é feito normalmente de forma periódica e sucessiva durante o prazo de financiamento.</item>
         <item>O custo do capital tomado sob o aspecto do mutuário e o retorno do capital investido sob o aspect do mutuante.</item>
         <item>O pagamento da amortização mais os juros relativos ao saldo devedor imediatamente anterior ao período referente a prestação.</item>
-        <item>O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</item>
+        <item tools:ignore="Typos">O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</item>
     </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
@@ -1733,12 +1740,19 @@
         <item>O estado do sistema</item>
         <item>Outros signos da interface</item>
     </string-array>
+    <string-array name="sem3_ihc_6">
+        <item>Qual a principal motivação do método de avaliação heurística de Nielsen?</item>
+        <item>Facilitar e acelerar o processo de avaliação de interfaces.</item>
+        <item>Determinar o valor de uma interface.</item>
+        <item>Avaliar o tempo que será gasto no projeto.</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
         <item>@array/sem3_ihc_3</item>
         <item>@array/sem3_ihc_4</item>
         <item>@array/sem3_ihc_5</item>
+        <item>@array/sem3_ihc_6</item>
     </array>
 
 </resources>
