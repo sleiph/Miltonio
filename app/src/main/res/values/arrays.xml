@@ -1440,6 +1440,13 @@
         <item>Filhos</item>
         <item>Irmãos</item>
     </string-array>
+    <string-array name="sem3_esd_9">
+        <item>Qual das seguintes opções é uma estrutura de dados análoga às tabelas Hash do Java?</item>
+        <item>Dicionários do Python</item>
+        <item>Filas</item>
+        <item>Pilhas</item>
+        <item>Árvores</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
@@ -1449,6 +1456,7 @@
         <item>@array/sem3_esd_6</item>
         <item>@array/sem3_esd_7</item>
         <item>@array/sem3_esd_8</item>
+        <item>@array/sem3_esd_9</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1746,6 +1754,11 @@
         <item>Determinar o valor de uma interface.</item>
         <item>Avaliar o tempo que será gasto no projeto.</item>
     </string-array>
+    <string-array name="sem3_ihc_7">
+        <item>O método de avaliação de comunicabilidade (MAC), que envolve a observação dos usuários durante a interação com o sistema, faz uma análise:</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
@@ -1753,6 +1766,7 @@
         <item>@array/sem3_ihc_4</item>
         <item>@array/sem3_ihc_5</item>
         <item>@array/sem3_ihc_6</item>
+        <item>@array/sem3_ihc_7</item>
     </array>
 
 </resources>
