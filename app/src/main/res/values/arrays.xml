@@ -1447,6 +1447,13 @@
         <item>Pilhas</item>
         <item>Árvores</item>
     </string-array>
+    <string-array name="sem3_esd_10">
+        <item>A sequência de chaves 20 – 30 – 25 – 31 – 12 – 15 – 8 – 6 – 9 – 14 – 18 é inserida em uma árvore binária de busca. Em seguida, a árvore é percorrida em pré-ordem. Qual é a sequência de nós visitados?</item>
+        <item>20 – 12 – 8 – 6 – 9 – 15 – 14 – 18 – 30 – 25 – 31</item>
+        <item>6 – 9 – 8 – 14 – 18 – 15 – 12 – 25 – 31 – 30 – 20</item>
+        <item>6 – 8 – 9 – 12 – 14 – 15 – 18 – 20 – 25 – 30 – 31</item>
+        <item>6 – 8 – 9 – 14 – 15 – 18 – 12 – 25 – 30 – 31 – 20</item>
+    </string-array>
     <array name="sem3_esd_perguntas">
         <item>@array/sem3_esd_1</item>
         <item>@array/sem3_esd_2</item>
@@ -1457,6 +1464,7 @@
         <item>@array/sem3_esd_7</item>
         <item>@array/sem3_esd_8</item>
         <item>@array/sem3_esd_9</item>
+        <item>@array/sem3_esd_10</item>
     </array>
 
     <string-array name="sem3_sot_1">
@@ -1473,9 +1481,24 @@
         <item>Comunismo</item>
         <item>Intervencionismo</item>
     </string-array>
+    <string-array name="sem3_sot_3">
+        <item>Qual o objetivo do estudo de Sociedade e Tecnologia?</item>
+        <item>Refletir sobre os impactos da Tecnologia da Informação na Sociedade Contemporânea.</item>
+        <item>Refletir sobre os impactos da Sociedade na Tecnologia da Informação Contemporânea.</item>
+        <item>Refletir sobre os impactos da Informação e Comunicação na Sociedade Contemporânea.</item>
+    </string-array>
+    <string-array name="sem3_sot_4">
+        <item>Fenômeno gerado a partir da soma das circunstâncias sociais, econômicas, políticas e tecnológicas, que moldaram as relações entre as nações, as empresas e os agentes internos (governo, mercado, indivíduos) da segunda metade da década de 80 até hoje:</item>
+        <item>globalização</item>
+        <item>politização</item>
+        <item>importação</item>
+        <item>exportação</item>
+    </string-array>
     <array name="sem3_sot_perguntas">
         <item>@array/sem3_sot_1</item>
         <item>@array/sem3_sot_2</item>
+        <item>@array/sem3_sot_3</item>
+        <item>@array/sem3_sot_4</item>
     </array>
 
     <string-array name="sem3_es2_1">
@@ -1759,6 +1782,22 @@
         <item>Qualitativa</item>
         <item>Quantitativa</item>
     </string-array>
+    <string-array name="sem3_ihc_8">
+        <item>Vimos em sala de aula que no método de avaliação da comunicabilidade, existem uma série de etiquetas que são associadas a alguma resposta dos usuários ao utilizar um sistema. Indique abaixo qual alternativa não se trata de uma etiqueta:</item>
+        <item>Aí sim!</item>
+        <item>Socorro!</item>
+        <item>Vai de outro jeito.</item>
+        <item>Pra mim, está bom.</item>
+        <item>Assim não dá</item>
+    </string-array>
+    <string-array name="sem3_ihc_9">
+        <item>Considere a sentença a seguir:\n“É uma regra que funciona na prática, mas para a qual não há (ou não importa procurar) uma explicação teórica. Se trata de um conhecimento que se constrói ao longo de anos de prática, como uma compilação ‘do que funciona’ e ‘do que não funciona’.”.\nPodemos afirmar que a definição se trata de:</item>
+        <item>Heurística</item>
+        <item>Metalinguística.</item>
+        <item>Relação triádica</item>
+        <item>Semiótica</item>
+        <item>Comunicabilidade</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
@@ -1767,6 +1806,8 @@
         <item>@array/sem3_ihc_5</item>
         <item>@array/sem3_ihc_6</item>
         <item>@array/sem3_ihc_7</item>
+        <item>@array/sem3_ihc_8</item>
+        <item>@array/sem3_ihc_9</item>
     </array>
 
 </resources>
