@@ -1553,6 +1553,21 @@
         <item>Instância de um novo objeto</item>
         <item>Que dispara um método destrutor</item>
     </string-array>
+    <string-array name="sem3_es2_8">
+        <item>Seja um diagrama de classes, segundo o modelo UML. E m uma classe Y desse diagrama há um atributo que pode ser acessível por todas as outras classes existentes no diagrama.\nEsse atributo é dito como sendo um atributo</item>
+        <item>público</item>
+        <item>secreto</item>
+        <item>protegido</item>
+        <item>privado</item>
+    </string-array>
+    <string-array name="sem3_es2_9">
+        <item>No diagrama de sequência da UML, o nome do elemento que representa o tempo que um objeto existiu durante o processo:</item>
+        <item>Linha de vida</item>
+        <item>Foco de controle</item>
+        <item>Ponto de transição</item>
+        <item>Marcador de interação</item>
+        <item>Ator</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
@@ -1561,6 +1576,8 @@
         <item>@array/sem3_es2_5</item>
         <item>@array/sem3_es2_6</item>
         <item>@array/sem3_es2_7</item>
+        <item>@array/sem3_es2_8</item>
+        <item>@array/sem3_es2_9</item>
     </array>
 
     <string-array name="sem3_eap_1">
