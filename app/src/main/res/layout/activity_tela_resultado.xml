@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TelaResultado">
+    tools:context=".ui.TelaResultado">
 
     <RelativeLayout
         android:id="@+id/img_fnd"

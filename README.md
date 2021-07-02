@@ -11,6 +11,8 @@ A tela inicial exibe as matérias do semestre, com a sua melhor pontuação em c
 
 ---
 
+### Fazer
+
 Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 - Acessibilidade!!!
 - Deixar o app usável em versões mais antigas do Android
@@ -30,5 +32,7 @@ Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 
 ---
 ![blocos](/img/blocos2.png)
+
+### Créditos
 
 Eu não tenho direito sobre muitas coisas desse aplicativo, as perguntas pertencem aos professores de cada matéria, os memes pertencem ... à internet? ... eu não tenho direito sobre a imagem do professor Milton, utilizada no título do aplicativo, nem sobre as fontes utilizadas, os [sons](https://freesound.org/people/HenryRichard) ou os sistemas em que o aplicativo foi desenvolvido (MIT app inventor e Android Studio). O pouco que eu posso permitir que seja copiado são a lógica utilizada no app e os padrões de fundo das matérias, essas duas coisas podem ser reproduzidas livremente.
