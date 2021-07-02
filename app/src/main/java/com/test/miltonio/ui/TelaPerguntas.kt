@@ -1,5 +1,8 @@
 package com.test.miltonio.ui
 
+import com.test.miltonio.MyApplication
+import com.test.miltonio.R
+import com.test.miltonio.ui.componentes.CardResposta
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -11,9 +14,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
-import com.test.miltonio.MyApplication
-import com.test.miltonio.R
-import com.test.miltonio.ui.componentes.CardResposta
 
 class TelaPerguntas : AppCompatActivity() {
 
@@ -22,29 +22,42 @@ class TelaPerguntas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_perguntas)
 
-        fun loadResultado(resul :IntArray) {
+        fun loadTelaResultado(id :Int) {
             val intent = Intent(this, TelaResultado::class.java)
-            intent.putExtra("resul", resul)
+            intent.putExtra("id", id)
             startActivity(intent)
         }
 
+        // pega a materia escolhida do intent da tela anterior
         val resulIntent = intent
-        val categoria = resulIntent.getIntExtra("resul", 0)
+        val id = resulIntent.getIntExtra("id", 0)
+        val materia = MyApplication.materiasdatabase?.MateriaDao()?.loadById(id)
 
-        var acertos = 0
-        var resposta = 0
-        var progresso = 0
+        println(materia?.materia_db)
 
-        val arrPerguntas = mutableListOf<Array<CharSequence>>()
+        fun escolherPerguntas ( nPerguntas: Int ) : MutableList<Array<CharSequence>> {
+            val arrPerguntas = mutableListOf<Array<CharSequence>>()
 
-        val fundoRespostaDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_fundo)
-        val fundoSelecionadoDrawable = ContextCompat.getDrawable(this,
-            R.drawable.card_respostas_selecionada
-        )
+            if (materia != null) {
+                val arrPerguntasTemp = resources.obtainTypedArray(materia.arrayPerguntas_db)
 
-        val somBom = MediaPlayer.create(this, R.raw.certo)
-        val somRuim = MediaPlayer.create(this, R.raw.errado)
+                var qntPerguntas = arrPerguntasTemp.length()
 
+                if (qntPerguntas > nPerguntas)
+                    qntPerguntas = nPerguntas
+
+                val ordemPerguntas = (0 until qntPerguntas).toMutableList()
+                ordemPerguntas.shuffle()
+
+                for (i in 0 until qntPerguntas)
+                    arrPerguntas.add( arrPerguntasTemp.getTextArray(ordemPerguntas[i]) )
+
+                arrPerguntasTemp.recycle()
+            }
+            return arrPerguntas
+        }
+
+        // declarando os elementos do layout
         val corFundo = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFundo = findViewById<RelativeLayout>(R.id.img_fnd)
         val progressoBarra = findViewById<ProgressBar>(R.id.progressoBarra)
@@ -52,11 +65,79 @@ class TelaPerguntas : AppCompatActivity() {
         val txtPergunta = findViewById<TextView>(R.id.pergunta)
         val btnConferir = findViewById<Button>(R.id.btn_conferir)
 
-        fun getPergunta(indice: Int){
-            txtPergunta.text = arrPerguntas[indice][0]
+        val fundoRespostaDrawable = ContextCompat.getDrawable(
+            this,
+            R.drawable.card_respostas_fundo
+        )
+        val fundoSelecionadoDrawable = ContextCompat.getDrawable(
+            this,
+            R.drawable.card_respostas_selecionada
+        )
 
-            val qntRespostas = arrPerguntas[indice].size - 1
-            val ordemRespostas = (1 .. qntRespostas).toMutableList()
+        val somBom = MediaPlayer.create(this, R.raw.certo)
+        val somRuim = MediaPlayer.create(this, R.raw.errado)
+
+        // desenhando a view
+        if (materia != null) {
+            corFundo.setBackgroundColor(getColor(materia.cor_db))
+            imgFundo.setBackgroundResource(materia.fundo_db)
+            if (materia.isPreto_db)
+                txtPergunta.setTextColor(getColor(R.color.colorPrt))
+            else
+                txtPergunta.setTextColor(getColor(R.color.colorBnc))
+        }
+
+        val nPerguntas = 10
+        var acertos = 0
+        var progresso = 0
+        var resposta = 0
+
+        val perguntas = escolherPerguntas(nPerguntas)
+
+        btnConferir.setOnClickListener {
+            if (resposta == 1) {
+                acertos += 1
+                progressoBarra.progressTintList = ColorStateList.valueOf(
+                    Color.rgb(50, 180, 75)
+                )
+                somBom.start()
+            }
+            else {
+                progressoBarra.progressTintList = ColorStateList.valueOf(
+                    Color.rgb(235, 5, 0)
+                )
+                somRuim.start()
+            }
+            progresso += 1
+            progressoBarra.progress =
+                ((progresso.toDouble() / nPerguntas.toDouble()) * 100).toInt()
+            btnConferir.isEnabled = false
+        }
+
+        fun montarResposta( resposta: CharSequence ) : CardResposta {
+            val cardLayout = CardResposta(this)
+            val param = GridLayout.LayoutParams(
+                GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+                GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+            )
+            param.width = 0
+            param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+            cardLayout.layoutParams = param
+
+            // adicionando o texto da resposta
+            cardLayout.setRespostaText(
+                resposta
+            )
+            cardLayout.setRespostaDrawable(fundoRespostaDrawable)
+
+            return cardLayout
+        }
+
+        fun montarPergunta( pergunta: Array<CharSequence>) {
+            txtPergunta.text = perguntas[progresso][0]
+
+            val qntRespostas = pergunta.size - 1
+            val ordemRespostas = (1..qntRespostas).toMutableList()
             ordemRespostas.shuffle()
 
             val respostaCards = mutableListOf<CardResposta>()
@@ -67,27 +148,18 @@ class TelaPerguntas : AppCompatActivity() {
 
             // começa a desenhar os cards de resposta
             for (i in 0 until qntRespostas) {
-                val cardLayout = CardResposta(this)
-                val param = GridLayout.LayoutParams(
-                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                    GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-                )
-                param.width = 0
-                param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-                cardLayout.layoutParams = param
-                // adicionando o texto da resposta
-                cardLayout.setRespostaText(
-                    arrPerguntas[indice][ordemRespostas[i]]
-                )
-                cardLayout.setRespostaDrawable(fundoRespostaDrawable)
-                respostaCards.add(cardLayout)
-                gridPergunta.addView(cardLayout)
-                cardLayout.setOnClickListener {
+                val cardResposta = montarResposta( pergunta[ordemRespostas[i]] )
+                respostaCards.add( cardResposta )
+
+                gridPergunta.addView( cardResposta )
+                cardResposta.setOnClickListener {
                     resposta = ordemRespostas[i]
                     if (!btnConferir.isEnabled)
                         btnConferir.isEnabled = true
+
                     //Todo: Tentar usar Tints em vez de drawables diferentes
                     ///fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc))
+
                     for (card in respostaCards)
                         card.setRespostaDrawable(fundoRespostaDrawable)
                     respostaCards[i].setRespostaDrawable(fundoSelecionadoDrawable)
@@ -95,144 +167,17 @@ class TelaPerguntas : AppCompatActivity() {
             }
         }
 
-        fun setPontuacao(pontos: Int, semestre: Int) {
-            when(semestre) {
-                0 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem1Dao()?.loadById(categoria-10)
-                    if (dados != null) {
-                        dados.pontos_db = pontos
-                        MyApplication.materiasdatabase?.Sem1Dao()?.updateCatg(dados)
-                    }
-                }
-                1 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem2Dao()?.loadById(categoria-20)
-                    if (dados != null) {
-                        dados.pontos_db = pontos
-                        MyApplication.materiasdatabase?.Sem2Dao()?.updateCatg(dados)
-                    }
-                }
-                2 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem3Dao()?.loadById(categoria-30)
-                    println("val")
-                    if (dados != null) {
-                        println("notnull")
-                        dados.pontos_db = pontos
-                        MyApplication.materiasdatabase?.Sem3Dao()?.updateCatg(dados)
-                    }
-                }
+        while(progresso < nPerguntas) {
+            montarPergunta( perguntas[progresso] )
+        }
+        val pontos = (acertos.toDouble() / nPerguntas.toDouble()) * 100
+        if (materia != null) {
+            if (pontos > materia.pontos_db) {
+                materia.pontos_db = pontos.toInt()
+                MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
             }
         }
-
-        fun desenhaPerguntas (
-            record: Int, arrPerg: Int,
-            cor: Int, fundo: Int, isPreto: Boolean
-        ) {
-            corFundo.setBackgroundColor(getColor(cor))
-            imgFundo.setBackgroundResource(fundo)
-            if (isPreto)
-                txtPergunta.setTextColor(getColor(R.color.colorPrt))
-            else
-                txtPergunta.setTextColor(getColor(R.color.colorBnc))
-
-            val arrPerguntasTemp = resources.obtainTypedArray(arrPerg)
-
-            var qntPerguntas = arrPerguntasTemp.length()
-            // número de perguntas que vão fazer parte do jogo
-            val maxPerguntas = 10
-            if (qntPerguntas > maxPerguntas) qntPerguntas = maxPerguntas
-
-            val ordemPerguntas = (0 until qntPerguntas).toMutableList()
-            ordemPerguntas.shuffle()
-
-            for (i in 0 until qntPerguntas)
-                arrPerguntas.add(arrPerguntasTemp.getTextArray(ordemPerguntas[i]))
-
-            arrPerguntasTemp.recycle()
-
-            getPergunta(progresso)
-
-            btnConferir.setOnClickListener {
-                if (resposta == 1) {
-                    acertos += 1
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(50, 180, 75)
-                    )
-                    somBom.start()
-                } else {
-                    progressoBarra.progressTintList = ColorStateList.valueOf(
-                        Color.rgb(235, 5, 0)
-                    )
-                    somRuim.start()
-                }
-                progresso += 1
-                progressoBarra.progress =
-                    ((progresso.toDouble() / qntPerguntas.toDouble()) * 100).toInt()
-
-                if (progresso < qntPerguntas) {
-                    getPergunta(progresso)
-                }
-                else {
-                    val pontos = (acertos.toDouble() / qntPerguntas.toDouble()) * 100
-                    if (pontos > record)
-                        setPontuacao(pontos.toInt(), semestre)
-
-                    loadResultado( intArrayOf(categoria, pontos.toInt()) )
-                }
-                btnConferir.isEnabled = false
-            }
-        }
-
-        fun setSemestre(categ: Int) {
-            when(categ) {
-                in 0 until 20 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem1Dao()?.loadById(categ-10)
-                    if (dados != null) {
-                        val pontos = dados.pontos_db
-                        val arrPerg = dados.arrayPerguntas_db
-                        val cor = dados.cor_db
-                        val fundo = dados.fundo_db
-                        val isPreto = dados.isPreto_db
-
-                        desenhaPerguntas(
-                            pontos, arrPerg,
-                            cor, fundo, isPreto
-                        )
-                    }
-                }
-                in 20 until 30 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem2Dao()?.loadById(categ-20)
-                    if (dados != null) {
-                        val pontos = dados.pontos_db
-                        val arrPerg = dados.arrayPerguntas_db
-                        val cor = dados.cor_db
-                        val fundo = dados.fundo_db
-                        val isPreto = dados.isPreto_db
-
-                        desenhaPerguntas(
-                            pontos, arrPerg,
-                            cor, fundo, isPreto
-                        )
-                    }
-                }
-                in 30 until 40 -> {
-                    val dados = MyApplication.materiasdatabase?.Sem3Dao()?.loadById(categ-30)
-                    if (dados != null) {
-                        val pontos = dados.pontos_db
-                        val arrPerg = dados.arrayPerguntas_db
-                        val cor = dados.cor_db
-                        val fundo = dados.fundo_db
-                        val isPreto = dados.isPreto_db
-
-                        desenhaPerguntas(
-                            pontos, arrPerg,
-                            cor, fundo, isPreto
-                        )
-                    }
-                }
-            }
-        }
-
-        setSemestre(categoria)
+        loadTelaResultado( id )
     }
 }
 

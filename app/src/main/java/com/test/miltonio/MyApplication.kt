@@ -1,9 +1,9 @@
 package com.test.miltonio
 
 import com.test.miltonio.datasource.MateriaDataBase
-import com.test.miltonio.modelo.Semestre1Materias
-import com.test.miltonio.modelo.Semestre2Materias
-import com.test.miltonio.modelo.Semestre3Materias
+import com.test.miltonio.modelo.Semestre1
+import com.test.miltonio.modelo.Semestre2
+import com.test.miltonio.modelo.Semestre3
 import android.app.Application
 import androidx.room.*
 
@@ -18,21 +18,21 @@ class MyApplication: Application() {
         super.onCreate()
         //Room
         materiasdatabase = Room.databaseBuilder(
-            this, MateriaDataBase::class.java, "materias"
+            this, MateriaDataBase::class.java, "miltaoDB"
         )
             .allowMainThreadQueries()
             .build()
 
-        var semestre1materias = Semestre1Materias()
+        val semestre1materias = Semestre1()
         for (materia in semestre1materias.getMaterias())
-            materiasdatabase?.Sem1Dao()?.insert(materia)
+            materiasdatabase?.MateriaDao()?.insert(materia)
 
-        var semestre2materias = Semestre2Materias()
+        val semestre2materias = Semestre2()
         for (materia in semestre2materias.getMaterias())
-            materiasdatabase?.Sem2Dao()?.insert(materia)
+            materiasdatabase?.MateriaDao()?.insert(materia)
 
-        var semestre3materias = Semestre3Materias()
+        val semestre3materias = Semestre3()
         for (materia in semestre3materias.getMaterias())
-            materiasdatabase?.Sem3Dao()?.insert(materia)
+            materiasdatabase?.MateriaDao()?.insert(materia)
     }
 }
