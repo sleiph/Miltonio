@@ -23,16 +23,17 @@ class MyApplication: Application() {
             .allowMainThreadQueries()
             .build()
 
-        val semestre1materias = Semestre1()
-        for (materia in semestre1materias.getMaterias())
+        //populando os semestres
+        val semestre1 = Semestre1()
+        for (materia in semestre1.getMaterias())
             materiasdatabase?.MateriaDao()?.insert(materia)
 
-        val semestre2materias = Semestre2()
-        for (materia in semestre2materias.getMaterias())
+        val semestre2 = Semestre2()
+        for (materia in semestre2.getMaterias())
             materiasdatabase?.MateriaDao()?.insert(materia)
 
-        val semestre3materias = Semestre3()
-        for (materia in semestre3materias.getMaterias())
+        val semestre3 = Semestre3()
+        for (materia in semestre3.getMaterias())
             materiasdatabase?.MateriaDao()?.insert(materia)
     }
 }

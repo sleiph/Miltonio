@@ -29,6 +29,8 @@ Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 - Deixar os menus mais personalizados
 - Otimizar o número de assets (tilesets, tints, ...)
 - Limpar (bastante) o meu código, principalmente o controle do banco de dados
+- Usar recycler views
+- Usar ActivityAddTaskBinding, igual gente grande
 
 ---
 ![blocos](/img/blocos2.png)

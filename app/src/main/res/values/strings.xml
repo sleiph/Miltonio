@@ -62,5 +62,7 @@
     <string name="categ_sem3_eng_prof">Simone</string>
     <string name="categ_sem3_ihc">Interação Humano-Computador</string>
     <string name="categ_sem3_ihc_prof">Daniel</string>
+    <string name="categ_sem3_so1">Sistemas Operacionais 1</string>
+    <string name="categ_sem3_so1_prof">Edidio Dantas</string>
 
 </resources>

@@ -1494,11 +1494,56 @@
         <item>importação</item>
         <item>exportação</item>
     </string-array>
+    <string-array name="sem3_sot_5">
+        <item>No modelo de aulas expositivas clássicas:</item>
+        <item>O professor discorre sobre determinado tema, os alunos assistem de forma passiva.</item>
+        <item>O professor oferece uma visão ampla sobre o tema, os alunos discutem.</item>
+        <item>O professor propõe um problema, os alunos tentam resolvê-lo.</item>
+    </string-array>
+    <string-array name="sem3_sot_6">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor secundário</b> da economia?</item>
+        <item>Indústria e artesanato</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Mineiração e agricultura</item>
+    </string-array>
+    <string-array name="sem3_sot_7">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor terciário</b> da economia?</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Indústria e artesanato</item>
+        <item>Mineiração e agricultura</item>
+    </string-array>
+    <string-array name="sem3_sot_8">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor primário</b> da economia?</item>
+        <item>Mineiração e agricultura</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Indústria e artesanato</item>
+    </string-array>
+    <string-array name="sem3_sot_9">
+        <item>Quais as etapas básicas para construir um sistema de medição de inovação confiável?</item>
+        <item>Por que medir? O que medir? Como medir?</item>
+        <item>Por que medir? O que medir?</item>
+        <item>Por que medir? Como medir?</item>
+        <item>O que medir? Como medir?</item>
+        <item>Como medir?</item>
+    </string-array>
+    <string-array name="sem3_sot_10">
+        <item>Qual o órgão responsável pelo desenvolvimento dos 17 Objetivos do Desenvolvimento Sustentável (ODS)?</item>
+        <item>ONU</item>
+        <item>Governo Brasileiro</item>
+        <item>Governo dos Estados Unidos</item>
+        <item>União Européia</item>
+    </string-array>
     <array name="sem3_sot_perguntas">
         <item>@array/sem3_sot_1</item>
         <item>@array/sem3_sot_2</item>
         <item>@array/sem3_sot_3</item>
         <item>@array/sem3_sot_4</item>
+        <item>@array/sem3_sot_5</item>
+        <item>@array/sem3_sot_6</item>
+        <item>@array/sem3_sot_7</item>
+        <item>@array/sem3_sot_8</item>
+        <item>@array/sem3_sot_9</item>
+        <item>@array/sem3_sot_10</item>
     </array>
 
     <string-array name="sem3_es2_1">
@@ -1568,6 +1613,12 @@
         <item>Marcador de interação</item>
         <item>Ator</item>
     </string-array>
+    <string-array name="sem3_es2_10">
+        <item>Em um diagrama de classes, qual a função de um <![CDATA[&#lt;]]>&lt;<i>boundary</i>&gt;<![CDATA[&#gt;]]>, ou estereótipo de fronteira?</item>
+        <item>Identifica uma classe que serve de comunicação entre os atores externos e o sistema propriamente dito.</item>
+        <item>Armazena informações referentes ao problema no qual o sistema pretende solucionar.</item>
+        <item>Identifica classes que servem de intermédio entre as classes &lt;&lt;<i>boundary</i>&gt;&gt; e as demais classes do sistema.</item>
+    </string-array>
     <array name="sem3_es2_perguntas">
         <item>@array/sem3_es2_1</item>
         <item>@array/sem3_es2_2</item>
@@ -1578,6 +1629,7 @@
         <item>@array/sem3_es2_7</item>
         <item>@array/sem3_es2_8</item>
         <item>@array/sem3_es2_9</item>
+        <item>@array/sem3_es2_10</item>
     </array>
 
     <string-array name="sem3_eap_1">
@@ -1638,6 +1690,20 @@
         <item>Mesocúrtica</item>
         <item>Platicúrtica</item>
     </string-array>
+    <string-array name="sem3_eap_9">
+        <item>O que pode ser determinado à partir da distribuição binomial?</item>
+        <item>A probabilidade de se obter k sucessos em n tentativas.</item>
+        <item>A média de um conjunto ordenado.</item>
+        <item>A média de um conjunto não ordenado.</item>
+        <item>O percentual de curtose de um conjunto ordenado.</item>
+    </string-array>
+    <string-array name="sem3_eap_10">
+        <item>Ao jogar um dado, qual a probabilidade de obtermos um número ímpar voltado para cima?</item>
+        <item><![CDATA[&#189;]]></item>
+        <item>6/3</item>
+        <item>1/6</item>
+        <item>4/6</item>
+    </string-array>
     <array name="sem3_eap_perguntas">
         <item>@array/sem3_eap_1</item>
         <item>@array/sem3_eap_2</item>
@@ -1647,6 +1713,8 @@
         <item>@array/sem3_eap_6</item>
         <item>@array/sem3_eap_7</item>
         <item>@array/sem3_eap_8</item>
+        <item>@array/sem3_eap_9</item>
+        <item>@array/sem3_eap_10</item>
     </array>
 
     <string-array name="sem3_efi_1">
@@ -1691,6 +1759,25 @@
         <item>O pagamento da amortização mais os juros relativos ao saldo devedor imediatamente anterior ao período referente a prestação.</item>
         <item tools:ignore="Typos">O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</item>
     </string-array>
+    <string-array name="sem3_efi_8">
+        <item>Em um sistema de amortização constante (SAC) de empréstimos, a prestação:</item>
+        <item>É a soma da amortização aos juros calculados no período</item>
+        <item>É obtida através da formula F * V * Pm</item>
+        <item>É obtida através da formula F * A * C * m</item>
+    </string-array>
+    <string-array name="sem3_efi_9">
+        <item tools:ignore="Typos">Seguindo o método de avaliação de fluxo de caixa VAUE (Valor Anual Uniforme Equivalente), como será verificado o impacto anual dos custos mensais?</item>
+        <item>Através da capitalização composta.</item>
+        <item>Através da capitalização simples.</item>
+        <item>Através do valor presente líquido.</item>
+    </string-array>
+    <string-array name="sem3_efi_10">
+        <item>A 1ª regra de decisão para matrizes de decisão (Maximin), pode ser definida como:</item>
+        <item>Regra do pessimista.</item>
+        <item>Regra do otimista.</item>
+        <item>Regra da razão insuficiente.</item>
+        <item>Regra do mínimo arrependimento.</item>
+    </string-array>
     <array name="sem3_efi_perguntas">
         <item>@array/sem3_efi_1</item>
         <item>@array/sem3_efi_2</item>
@@ -1699,6 +1786,9 @@
         <item>@array/sem3_efi_5</item>
         <item>@array/sem3_efi_6</item>
         <item>@array/sem3_efi_7</item>
+        <item>@array/sem3_efi_8</item>
+        <item>@array/sem3_efi_9</item>
+        <item>@array/sem3_efi_10</item>
     </array>
 
     <string-array name="sem3_eng_1">
@@ -1743,6 +1833,36 @@
         <item>Business</item>
         <item>Human</item>
     </string-array>
+    <string-array name="sem3_eng_7">
+        <item>Siemens, IBM and Red Hat today ____________ a new collaboration that will ____________ a hybrid cloud ____________ to ____________ an open, flexible and more secure solution for manufacturers and plant operators to ____________ real-time value from operational data.\n\nChoose the sentence with the correct verb sequence:</item>
+        <item>announced; use; designed; deliver; drive</item>
+        <item>use; announced; designed;deliver; generate</item>
+        <item>designed; announced; use; deliver; generate</item>
+        <item>generate; goes; announced; use; designed</item>
+        <item>operate; use; provides; designed; deliver</item>
+    </string-array>
+    <string-array name="sem3_eng_8">
+        <item>MindSphere already ____________ customers with data-driven insights to strengthen operations  through Industrial IoT. Through our work with IBM and Red Hat, we can now ____________ customers the flexibility to ____________ to ____________ MindSphere on-premise or in the cloud to best meet their distinct operational needs and become more efficient.\n\nChoose the sentence with the correct verb sequence:</item>
+        <item>provides; offer; choose; operate</item>
+        <item>provides; choose; operate; offer</item>
+        <item>provides;  choose; operate; drive</item>
+        <item>offer; choose; operate ; deliver</item>
+        <item>goes; offer; choose; announced</item>
+    </string-array>
+    <string-array name="sem3_eng_9">
+        <item>Let   <u>we/us</u>   explain the scenario to   <u>he/him</u>.\n\nComplete with the correct pronoum:</item>
+        <item>us - him</item>
+        <item>us - he</item>
+        <item>we - him</item>
+        <item>we - he</item>
+    </string-array>
+    <string-array name="sem3_eng_10">
+        <item>Choose the option with the correct Wh words sequence:\n\n____________ was the supervisor on duty yesterday? Mr. Simon was the supervisor on duty yesterday.</item>
+        <item>Who</item>
+        <item>How</item>
+        <item>Why</item>
+        <item>Whom</item>
+    </string-array>
     <array name="sem3_eng_perguntas">
         <item>@array/sem3_eng_1</item>
         <item>@array/sem3_eng_2</item>
@@ -1750,6 +1870,10 @@
         <item>@array/sem3_eng_4</item>
         <item>@array/sem3_eng_5</item>
         <item>@array/sem3_eng_6</item>
+        <item>@array/sem3_eng_7</item>
+        <item>@array/sem3_eng_8</item>
+        <item>@array/sem3_eng_9</item>
+        <item>@array/sem3_eng_10</item>
     </array>
 
     <string-array name="sem3_ihc_1">
@@ -1815,6 +1939,15 @@
         <item>Semiótica</item>
         <item>Comunicabilidade</item>
     </string-array>
+    <string-array name="sem3_ihc_10">
+        <item>Quais das seguntes opções <b><u>não</u></b> uma das cinco etapas do Método de Avaliação de Comunicabilidade (MAC)?</item>
+        <item>Priorização dos problemas encontrados</item>
+        <item>Preparação.</item>
+        <item>Aplicação</item>
+        <item>Interpretação</item>
+        <item>Consolidação dos resultados</item>
+        <item>Relato dos resultados</item>
+    </string-array>
     <array name="sem3_ihc_perguntas">
         <item>@array/sem3_ihc_1</item>
         <item>@array/sem3_ihc_2</item>
@@ -1825,6 +1958,86 @@
         <item>@array/sem3_ihc_7</item>
         <item>@array/sem3_ihc_8</item>
         <item>@array/sem3_ihc_9</item>
+        <item>@array/sem3_ihc_10</item>
+    </array>
+
+    <string-array name="sem3_so1_1">
+        <item>Qual a principal função do sistema operacional?</item>
+        <item>Gerenciar acesso a recursos</item>
+        <item>Armazenar informações</item>
+        <item>Transmitir as imagens para o monitor</item>
+        <item>Controlar o envio e recebimento de dados</item>
+    </string-array>
+    <string-array name="sem3_so1_2">
+        <item>Qual a função de um montador (Assembler) na programação de computadores?</item>
+        <item>Transformar um código de programação em código de máquina.</item>
+        <item>Carregar as memórias.</item>
+        <item>Transformar um código binário em código de programação.</item>
+        <item>Comunicar a BIOS com o SO.</item>
+    </string-array>
+    <string-array name="sem3_so1_3">
+        <item>Em qual tipo de sistema operacional vários processadores compartilham uma única memória e dispositivos I/O, sendo gerenciados por apenas um sistema?</item>
+        <item>Sistemas fortemente acoplados</item>
+        <item>Sistemas fracamente acoplados</item>
+    </string-array>
+    <string-array name="sem3_so1_4">
+        <item>Em qual tipo de sistema operacional podem existir dois ou mais sistemas conectados através de linhas de comunicação, cada sistema funcionando de forma independente, com seu próprio S.O., memória e dispositivos de I/O?</item>
+        <item>Sistemas fracamente acoplados</item>
+        <item>Sistemas fortemente acoplados</item>
+    </string-array>
+    <string-array name="sem3_so1_5">
+        <item>Em sistemas formetemente acoplados, qual a denominação dada quando os processadores tem acesso uniforme às memórias?</item>
+        <item>UMA ou SMP</item>
+        <item>NUMA</item>
+        <item>COMA</item>
+        <item>CC-NUMA</item>
+    </string-array>
+    <string-array name="sem3_so1_6">
+        <item>Quais das seguintes opções <b><u>não</u></b> é uma das três maneiras básicas de se implantar operações de Entrada e Saída:</item>
+        <item>por programa</item>
+        <item>por interrupção</item>
+        <item>por DMA (Direct Memory Access)</item>
+        <item>por periféricos</item>
+    </string-array>
+    <string-array name="sem3_so1_7">
+        <item>Qual foi o objetivo da criação da técnica de spooling, onde os professos são gravados em fita para leitura e execução posterior?</item>
+        <item>Auxiliar a submissão de processos ao sistema.</item>
+        <item>Auxiliar a transferência de dados entre dispositivos de E/S e a memória.</item>
+        <item>Permitir a implementação da concorrência nos computadores.</item>
+        <item>Interromper as tarefas do processador, caso uma exceção seja encontrada.</item>
+    </string-array>
+    <string-array name="sem3_so1_8">
+        <item>O Linux foi originalmente escrito na seguinte linguagem de programação:</item>
+        <item>Assembly</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>PHP</item>
+    </string-array>
+    <string-array name="sem3_so1_9">
+        <item>O sistema operacional é formado por um conjunto de rotinas que oferecem serviços essenciais aos usuários. A esse conjunto de rotinas dá-se o nome de:</item>
+        <item>Kernel</item>
+        <item>Threads</item>
+        <item>Utilitários</item>
+        <item>Processador</item>
+    </string-array>
+    <string-array name="sem3_so1_10">
+        <item>Pode ser comparada com uma aplicação formada por vários módulos que são compilados separadamente e depois linkados formando um grande e único programa executável:</item>
+        <item>Arquitetura Monolítica</item>
+        <item>Arquitetura de Camadas</item>
+        <item>Máquina Virtual</item>
+        <item>Arquitetura Microkernel</item>
+    </string-array>
+    <array name="sem3_so1_perguntas">
+        <item>@array/sem3_so1_1</item>
+        <item>@array/sem3_so1_2</item>
+        <item>@array/sem3_so1_3</item>
+        <item>@array/sem3_so1_4</item>
+        <item>@array/sem3_so1_5</item>
+        <item>@array/sem3_so1_6</item>
+        <item>@array/sem3_so1_7</item>
+        <item>@array/sem3_so1_8</item>
+        <item>@array/sem3_so1_9</item>
+        <item>@array/sem3_so1_10</item>
     </array>
 
 </resources>

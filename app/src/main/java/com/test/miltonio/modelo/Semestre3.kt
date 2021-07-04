@@ -87,6 +87,18 @@ class Semestre3 {
             R.string.categ_sem3_ihc,
             3,
             R.array.sem3_ihc_perguntas
+        ),
+        Materia(
+            27,
+            0,
+            R.color.colorRosa,
+            R.drawable.simb3so1,
+            R.drawable.fnd3so1,
+            true,
+            R.string.categ_sem3_so1_prof,
+            R.string.categ_sem3_so1,
+            3,
+            R.array.sem3_so1_perguntas
         )
     )
 

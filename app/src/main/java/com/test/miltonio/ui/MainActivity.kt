@@ -4,6 +4,9 @@ import com.test.miltonio.R
 import com.test.miltonio.MyApplication
 import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.modelo.Materia
+import com.test.miltonio.modelo.Semestre1
+import com.test.miltonio.modelo.Semestre2
+import com.test.miltonio.modelo.Semestre3
 
 import android.app.AlertDialog
 import android.content.Context
@@ -34,13 +37,13 @@ fun matarChildren(pai: GridLayout) {
 var semestre = 3 //Todo: acabar com as variáveis globais
 
 class MainActivity : AppCompatActivity() {
-
+    
     private fun loadTelaPerguntas(id: Int) {
         val intent = Intent(this, TelaPerguntas::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
     }
-
+    
     private var isSonando = true
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -64,6 +67,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Todo: remover essa função quando terminar o app
+    private fun debugSemestre(  ) {
+        val semestre1 = Semestre1()
+        for (materia in semestre1.getMaterias())
+            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+
+        val semestre2 = Semestre2()
+        for (materia in semestre2.getMaterias())
+            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+
+        val semestre3 = Semestre3()
+        for (materia in semestre3.getMaterias())
+            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+    }
+    
     private fun resetSemestre( semestre: Int ) {
         MyApplication.materiasdatabase?.MateriaDao()?.resetSemestre(semestre)
     }
@@ -191,7 +209,7 @@ class MainActivity : AppCompatActivity() {
 
         setHeader()
 
-        //resetSemestre(semestre)
+        //debugSemestre()
         montarSemestre( semestre )
     }
 
