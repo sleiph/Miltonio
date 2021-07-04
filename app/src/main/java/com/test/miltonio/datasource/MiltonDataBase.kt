@@ -9,6 +9,6 @@ import androidx.room.RoomDatabase
         Materia :: class
     ]
 )
-abstract class MateriaDataBase : RoomDatabase() {
+abstract class MiltonDataBase : RoomDatabase() {
     abstract fun MateriaDao(): MateriaDao
 }

@@ -1,6 +1,6 @@
 package com.test.miltonio
 
-import com.test.miltonio.datasource.MateriaDataBase
+import com.test.miltonio.datasource.MiltonDataBase
 import com.test.miltonio.modelo.Semestre1
 import com.test.miltonio.modelo.Semestre2
 import com.test.miltonio.modelo.Semestre3
@@ -10,7 +10,7 @@ import androidx.room.*
 class MyApplication: Application() {
 
     companion object {
-        var materiasdatabase: MateriaDataBase? = null
+        var materiasdatabase: MiltonDataBase? = null
 
     }
 
@@ -18,7 +18,7 @@ class MyApplication: Application() {
         super.onCreate()
         //Room
         materiasdatabase = Room.databaseBuilder(
-            this, MateriaDataBase::class.java, "miltaoDB"
+            this, MiltonDataBase::class.java, "miltaoDB"
         )
             .allowMainThreadQueries()
             .build()
