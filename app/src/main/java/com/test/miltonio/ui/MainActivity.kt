@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     private var isSonando = true
 
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun setSound(valor: Boolean) {
+    private fun setSound(valor: Boolean) {      //Todo: mutar os sons só do aplicativo -_-
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         if (valor) {
             audiomanager.adjustStreamVolume(

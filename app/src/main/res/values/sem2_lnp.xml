@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_lnp">Linguagem de Programação</string>
+    <string name="categ_sem2_lnp_prof">Jane Maria</string>
+
+    <string-array name="sem2_lnp_1">
+        <item>No C#, o que acontecerá quando a linha a seguir for executada?\nx++;</item>
+        <item>O valor da variável x será incrementado em 1</item>
+        <item>O valor da variável x será dobrado</item>
+        <item>Iniciará a variável x</item>
+    </string-array>
+    <string-array name="sem2_lnp_2">
+        <item tools:ignore="Typos">No C#, qual comando pode ser utilizado para escrever valores no console?</item>
+        <item>Console.WriteLine();</item>
+        <item>Console.ReadLine();</item>
+        <item>WriteLine();</item>
+        <item>ReadLine();</item>
+        <item>Console();</item>
+    </string-array>
+    <string-array name="sem2_lnp_3">
+        <item>int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) continue;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</item>
+        <item>11</item>
+        <item>10</item>
+        <item>15</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="sem2_lnp_4">
+        <item>int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) break;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</item>
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="sem2_lnp_5">
+        <item>No C#, em uma estrutura de switch, qual condição será executada caso o comparativo não passe em nenhum dos testes?</item>
+        <item>default</item>
+        <item>else</item>
+        <item>case 0</item>
+        <item>nenhum</item>
+    </string-array>
+    <string-array name="sem2_lnp_6">
+        <item>Qual a principal vantagem de se usar o operador lógico &amp;&amp; e não o comparador &amp;?</item>
+        <item>velocidade de execução</item>
+        <item>legibilidade</item>
+        <item>coerência</item>
+    </string-array>
+    <string-array name="sem2_lnp_7">
+        <item>No C#, qual o significado do operador ^ ?</item>
+        <item>xOR</item>
+        <item>potência</item>
+        <item>raiz</item>
+    </string-array>
+    <string-array name="sem2_lnp_8">
+        <item>No C#, como eu posso inserir a variável\nstring valor = \"sete\";\nno array\nint[] xpto = new int[10]; ?</item>
+        <item>Não se pode inserir um valor de tipo string em um array de ints</item>
+        <item>xpto.Append(valor);</item>
+        <item>xpto[0] = valor;</item>
+        <item>xpto.Add(valor);</item>
+    </string-array>
+    <string-array name="sem2_lnp_9">
+        <item>Qual a função de um algoritmo <i>Bubble Sort</i>?</item>
+        <item>Ordenar arrays</item>
+        <item>Encontrar um valor dentro do array</item>
+        <item>Tornar o programa mais rápido</item>
+        <item>Iterar por todos os elementos de um array</item>
+    </string-array>
+    <string-array name="sem2_lnp_10">
+        <item>Na programação orientada a objetos (OOP), como podemos definir o princípio de <u>encapsulamento</u>?</item>
+        <item>A capacidade de ocultar detalhes do objeto</item>
+        <item>Representação de um objeto de forma abstrata</item>
+        <item>O reaproveitamento de código para se evitar código duplicado</item>
+        <item>Estruturação de comportamento interno que varie de acordo com a circunstâncias</item>
+    </string-array>
+    <string-array name="sem2_lnp_11">
+        <item>Na programação orientada a objetos (OOP), como podemos definir o princípio de <u>herança</u>?</item>
+        <item>O reaproveitamento de código para se evitar código duplicado</item>
+        <item>A capacidade de ocultar detalhes do objeto</item>
+        <item>Representação de um objeto de forma abstrata</item>
+        <item>Estruturação de comportamento interno que varie de acordo com a circunstâncias</item>
+    </string-array>
+    <string-array name="sem2_lnp_12">
+        <item>Uma __________ inicia o corpo de uma definição de método.</item>
+        <item>Chave de Abertura</item>
+        <item>Colchete de Abertura</item>
+        <item>Parênteses de Abertura</item>
+        <item>Símbolo menor de abertura</item>
+        <item>Nenhuma das anteriores</item>
+    </string-array>
+    <string-array name="sem2_lnp_13">
+        <item>Colocar as expressões cujos valores não mudam dentro de um laço pode levar a um desempenho deficiente.</item>
+        <item>Verdadeiro</item>
+        <item>Falso</item>
+    </string-array>
+    <string-array name="sem2_lnp_14">
+        <item>Qual componente do Windows Forms pode ser usado para criação de um menu suspenso (<i>drop-down</i>)?</item>
+        <item>ComboBox</item>
+        <item>ListBox</item>
+        <item>ListView</item>
+        <item>TabControl</item>
+        <item>TreeView</item>
+    </string-array>
+    <string-array name="sem2_lnp_15">
+        <item>Tem o objetivo de avaliar se o que foi entregue atende as expectativas do cliente:</item>
+        <item>Validação</item>
+        <item>Verificação</item>
+    </string-array>
+    <string-array name="sem2_lnp_16">
+        <item>Tem o objetivo de avaliar se o que foi planejado realmente foi realizado:</item>
+        <item>Verificação</item>
+        <item>Validação</item>
+    </string-array>
+    <array name="sem2_lnp_perguntas">
+        <item>@array/sem2_lnp_1</item>
+        <item>@array/sem2_lnp_2</item>
+        <item>@array/sem2_lnp_3</item>
+        <item>@array/sem2_lnp_4</item>
+        <item>@array/sem2_lnp_5</item>
+        <item>@array/sem2_lnp_6</item>
+        <item>@array/sem2_lnp_7</item>
+        <item>@array/sem2_lnp_8</item>
+        <item>@array/sem2_lnp_9</item>
+        <item>@array/sem2_lnp_10</item>
+        <item>@array/sem2_lnp_11</item>
+        <item>@array/sem2_lnp_12</item>
+        <item>@array/sem2_lnp_13</item>
+        <item>@array/sem2_lnp_14</item>
+        <item>@array/sem2_lnp_15</item>
+        <item>@array/sem2_lnp_16</item>
+    </array>
+</resources>

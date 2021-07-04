@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem3_efi">Economia e Finanças</string>
+    <string name="categ_sem3_efi_prof">Joyce</string>
+
+    <string-array name="sem3_efi_1">
+        <item>Escolha um recurso natural que não seja atualmente (2021) fator de produção:</item>
+        <item>Magma vulcânico</item>
+        <item>Água</item>
+        <item>Ar</item>
+    </string-array>
+    <string-array name="sem3_efi_2">
+        <item>Qual característica indica que um mercado está firme?</item>
+        <item>Se a procura for maior que a oferta</item>
+        <item>Se a procura for igual a oferta</item>
+        <item>Se a procura for menor que a oferta</item>
+    </string-array>
+    <string-array name="sem3_efi_3">
+        <item>Qual dos seguintes fatores é capaz de distorcer a percepção de um consumidor sobre seu poder aquisitivo?</item>
+        <item>Crédito</item>
+        <item>Preço</item>
+        <item>Hábitos do Consumidor</item>
+        <item>Renda</item>
+    </string-array>
+    <string-array name="sem3_efi_4">
+        <item>Bens de Giffen???</item>
+        <item>Bens de pequeno valor. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
+        <item>Bens de consumo ostentário. Caso haja uma elevação no preço, seu consumo tende a aumentar.</item>
+    </string-array>
+    <string-array name="sem3_efi_5">
+        <item>Predominantemente, os agregados do setor financeiro são:</item>
+        <item>Variáveis-estoque</item>
+        <item>Variáveis-fluxo</item>
+    </string-array>
+    <string-array name="sem3_efi_6">
+        <item>Qual o fator principal para que um montante seja maior vindo de um financiamento de juros simples que de um financiamento de juros compostos?</item>
+        <item>A taxa cobrada dos juros</item>
+        <item>O prazo de pagamento</item>
+        <item>A taxa SELIC</item>
+    </string-array>
+    <string-array name="sem3_efi_7">
+        <item>Amortização é:</item>
+        <item>O pagamento do principal ou capital emprestado que é feito normalmente de forma periódica e sucessiva durante o prazo de financiamento.</item>
+        <item>O custo do capital tomado sob o aspecto do mutuário e o retorno do capital investido sob o aspect do mutuante.</item>
+        <item>O pagamento da amortização mais os juros relativos ao saldo devedor imediatamente anterior ao período referente a prestação.</item>
+        <item tools:ignore="Typos">O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</item>
+    </string-array>
+    <string-array name="sem3_efi_8">
+        <item>Em um sistema de amortização constante (SAC) de empréstimos, a prestação:</item>
+        <item>É a soma da amortização aos juros calculados no período</item>
+        <item>É obtida através da formula F * V * Pm</item>
+        <item>É obtida através da formula F * A * C * m</item>
+    </string-array>
+    <string-array name="sem3_efi_9">
+        <item tools:ignore="Typos">Seguindo o método de avaliação de fluxo de caixa VAUE (Valor Anual Uniforme Equivalente), como será verificado o impacto anual dos custos mensais?</item>
+        <item>Através da capitalização composta.</item>
+        <item>Através da capitalização simples.</item>
+        <item>Através do valor presente líquido.</item>
+    </string-array>
+    <string-array name="sem3_efi_10">
+        <item>A 1ª regra de decisão para matrizes de decisão (Maximin), pode ser definida como:</item>
+        <item>Regra do pessimista.</item>
+        <item>Regra do otimista.</item>
+        <item>Regra da razão insuficiente.</item>
+        <item>Regra do mínimo arrependimento.</item>
+    </string-array>
+    <array name="sem3_efi_perguntas">
+        <item>@array/sem3_efi_1</item>
+        <item>@array/sem3_efi_2</item>
+        <item>@array/sem3_efi_3</item>
+        <item>@array/sem3_efi_4</item>
+        <item>@array/sem3_efi_5</item>
+        <item>@array/sem3_efi_6</item>
+        <item>@array/sem3_efi_7</item>
+        <item>@array/sem3_efi_8</item>
+        <item>@array/sem3_efi_9</item>
+        <item>@array/sem3_efi_10</item>
+    </array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_adm">Administração Geral</string>
+    <string name="categ_sem1_adm_prof">Milton</string>
+
+    <string-array name="sem1_adm_1">
+        <item>A experiência de Hawthorne foi realizada por:</item>
+        <item>Elton Maio</item>
+        <item>Max Weber</item>
+        <item>Frederick Taylor</item>
+        <item>Henry Ford</item>
+    </string-array>
+    <string-array name="sem1_adm_2">
+        <item>Descreva um medidor de capacidade:</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_3">
+        <item>Descreva um medidor de produtividade:</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_4">
+        <item>Descreva um medidor de qualidade:</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+    </string-array>
+    <string-array name="sem1_adm_5">
+        <item>Descreva um medidor de rentabilidade:</item>
+        <item>Faz uma relação entre o lucro e o investimento</item>
+        <item>Verifica a produção em termos de quantidade em um determinado período de tempo</item>
+        <item>Faz uma medição da produção de um colaborador em um mesmo período de tempo</item>
+        <item>Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</item>
+    </string-array>
+    <string-array name="sem1_adm_6">
+        <item>Qual estrutura contemporânea combina as estruturas funcional e de produtos?</item>
+        <item>Estrutura Matricial</item>
+        <item>Estrutura Linear</item>
+        <item>Estrutura Funcional</item>
+        <item>Estrutura Linha-Staff</item>
+    </string-array>
+    <string-array name="sem1_adm_7">
+        <item>A fabricação dos produtos e serviços da empresa é função de qual setor?</item>
+        <item>Produção</item>
+        <item>Marketing</item>
+        <item>Desenvolvimento de produto</item>
+        <item>Contábil</item>
+    </string-array>
+    <string-array name="sem1_adm_8">
+        <item>Quem desenvolveu a Teoria Clássica da Administração?</item>
+        <item>Henry Fayol</item>
+        <item>Max Weber</item>
+        <item>Frederick Taylor</item>
+        <item>Henry Ford</item>
+    </string-array>
+    <string-array name="sem1_adm_9">
+        <item>Empresas que passam por mudanças quase que diariamente são exemplo de que tipo de organização?</item>
+        <item>Organização Organismo Vivo</item>
+        <item>Organização Cultura</item>
+        <item>Organização Cerebro</item>
+        <item>Organizacao Sistema em Fluxo e Transformação</item>
+    </string-array>
+    <string-array name="sem1_adm_10">
+        <item>Preocupado com as relações de autoridade, Max Weber desenvolveu:</item>
+        <item>Teoria da Burocracia</item>
+        <item>Teoria das Relações Humanas</item>
+        <item>Administração Científica</item>
+        <item>Teoria Clássica</item>
+    </string-array>
+    <array name="sem1_adm_perguntas">
+        <item>@array/sem1_adm_1</item>
+        <item>@array/sem1_adm_2</item>
+        <item>@array/sem1_adm_3</item>
+        <item>@array/sem1_adm_4</item>
+        <item>@array/sem1_adm_5</item>
+        <item>@array/sem1_adm_6</item>
+        <item>@array/sem1_adm_7</item>
+        <item>@array/sem1_adm_8</item>
+        <item>@array/sem1_adm_9</item>
+        <item>@array/sem1_adm_10</item>
+    </array>
+</resources>

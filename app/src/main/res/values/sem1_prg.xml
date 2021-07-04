@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem1_prg">Programação em Microinformática</string>
+    <string name="categ_sem1_prg_prof">Pinho</string>
+
+    <string-array name="sem1_prg_1">
+        <item tools:ignore="Typos">Qual o comando utilizado para iniciar uma macro?</item>
+        <item>Sub nome()</item>
+        <item>Macro nome()</item>
+        <item>Macro()</item>
+        <item>Sub()</item>
+    </string-array>
+    <string-array name="sem1_prg_2">
+        <item tools:ignore="Typos">Qual o comando utilizado para terminar uma macro?</item>
+        <item>End Sub</item>
+        <item>End Macro</item>
+        <item>/sub</item>
+        <item>/macro</item>
+    </string-array>
+    <string-array name="sem1_prg_3">
+        <item tools:ignore="Typos">Qual será a célula selecionada com o comando \nCell(3, 4).Select?</item>
+        <item>C4</item>
+        <item>D3</item>
+        <item>A34</item>
+        <item>A4</item>
+    </string-array>
+    <string-array name="sem1_prg_4">
+        <item tools:ignore="Typos">Qual o comando utilizado para fechar uma função While?</item>
+        <item>Loop</item>
+        <item>While End</item>
+        <item>End While</item>
+        <item>End Loop</item>
+    </string-array>
+    <string-array name="sem1_prg_5">
+        <item tools:ignore="Typos">Qual o comando utilizado para chamar uma caixa de entrada?</item>
+        <item>InputBox()</item>
+        <item>ImputBox()</item>
+        <item>callBox()</item>
+        <item>Input()</item>
+    </string-array>
+    <string-array name="sem1_prg_6">
+        <item>Qual a forma certa de iniciar uma variável inteira?</item>
+        <item>Dim x As Integer</item>
+        <item>Dim x = 10</item>
+        <item>Dim 10 As Integer</item>
+        <item>x = 10</item>
+    </string-array>
+    <string-array name="sem1_prg_7">
+        <item>Qual o tipo padrão de uma MsgBox()?</item>
+        <item>OKOnly</item>
+        <item>OKCancel</item>
+        <item>Critical</item>
+        <item>Question</item>
+    </string-array>
+    <string-array name="sem1_prg_8">
+        <item>Como selecionar um grupo de celulas?</item>
+        <item>Range(\"B5:D6\")</item>
+        <item>Range(B5,D6)</item>
+        <item>Range(25:46)</item>
+        <item>Range(B5)</item>
+    </string-array>
+    <string-array name="sem1_prg_9">
+        <item>Qual o atalho utilizado para abrir o editor do Visual Basic?</item>
+        <item>Alt-F11</item>
+        <item>F11</item>
+        <item>Ctrl-F11</item>
+        <item>Shift-F11</item>
+    </string-array>
+    <string-array name="sem1_prg_10">
+        <item>Qual a sintaxe correta de uma condicional IF?</item>
+        <item>If (condição) Then</item>
+        <item>If (condição):</item>
+        <item>If (condição) DO</item>
+        <item>If (condição) {}</item>
+    </string-array>
+    <array name="sem1_prg_perguntas">
+        <item>@array/sem1_prg_1</item>
+        <item>@array/sem1_prg_2</item>
+        <item>@array/sem1_prg_3</item>
+        <item>@array/sem1_prg_4</item>
+        <item>@array/sem1_prg_5</item>
+        <item>@array/sem1_prg_6</item>
+        <item>@array/sem1_prg_7</item>
+        <item>@array/sem1_prg_8</item>
+        <item>@array/sem1_prg_9</item>
+        <item>@array/sem1_prg_10</item>
+    </array></resources>

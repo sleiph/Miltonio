@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem2_sis">Sistemas de Informação</string>
+    <string name="categ_sem2_sis_prof">Alex</string>
+
+    <string-array name="sem2_sis_1">
+        <item>Qual é o país exemplo da América Latina que oferece diferencial na educação e no acesso à internet?</item>
+        <item>Uruguai</item>
+        <item>Colômbia</item>
+        <item>Brasil</item>
+        <item>Argentina</item>
+    </string-array>
+    <string-array name="sem2_sis_2">
+        <item>Qual é o nome da empresa que controla a maior parte dos troncos de internet no mundo?</item>
+        <item>Level(3)</item>
+        <item>Google</item>
+        <item>Telecom</item>
+        <item>Warner</item>
+    </string-array>
+    <string-array name="sem2_sis_3">
+        <item>Qual foi a opção de logística que a Índia utilizou para enviar os produtos de artesanato, segundo documentário FREE NET?</item>
+        <item>e-commerce</item>
+        <item>créditos para celular</item>
+        <item>redes privadas</item>
+        <item>Facebook</item>
+    </string-array>
+    <string-array name="sem2_sis_4">
+        <item>Um exemplo de Sistema de Apoio às Operações é:</item>
+        <item>Sistema de Controle de Processo</item>
+        <item>Sistema de Informação Gerencial</item>
+        <item>Sistema de Apoio à Decisão</item>
+        <item>Sistema de Informação Executiva</item>
+    </string-array>
+    <string-array name="sem2_sis_5">
+        <item>Um exemplo de Sistema de Apoio Gerencial é:</item>
+        <item>Sistema de Apoio à Decisão</item>
+        <item>Sistema de Controle de Processo</item>
+        <item>Sistema de Processamento de Transações</item>
+        <item>Sistema Colaborativos</item>
+    </string-array>
+    <string-array name="sem2_sis_6">
+        <item>O usuário final pode ser considerado um recurso de um sistema de informações?</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string-array name="sem2_sis_7">
+        <item>Podemos dizer que o travazap é A MAIOR AMEAÇA CIBERNÉTICA já criada no mundo moderno?</item>
+        <item>COM CERTEZA!!!</item>
+        <item>Sim</item>
+    </string-array>
+    <string-array name="sem2_sis_8">
+        <item>Qual seria o tipo de computador mais indicado para resolver um problema em que o tempo de cálculo é uma limitação?</item>
+        <item>Supercomputador</item>
+        <item>Mainframe</item>
+    </string-array>
+    <string-array name="sem2_sis_9">
+        <item>Qual foi a maior contribuição da Terceira Geração Computacional(1964–1977)?</item>
+        <item>Circuitos Integrados</item>
+        <item>Transistores</item>
+        <item>Válvulas</item>
+        <item>Processadores</item>
+    </string-array>
+    <string-array name="sem2_sis_10">
+        <item>Cite uma desvantagem da computação em núvem:</item>
+        <item>Dependência do vendedor</item>
+        <item>Falta de backup e recuperação de dados</item>
+        <item>Pouca elasticidade na arquitetura</item>
+        <item>Baixa eficiência de custos</item>
+    </string-array>
+    <string-array name="sem2_sis_11">
+        <item>Entre os sistemas MRP, MRP 2 e ERP, qual é o que engloba o maior número de atividades da empresa?</item>
+        <item>ERP</item>
+        <item>MRP 2</item>
+    </string-array>
+    <array name="sem2_sis_perguntas">
+        <item>@array/sem2_sis_1</item>
+        <item>@array/sem2_sis_2</item>
+        <item>@array/sem2_sis_3</item>
+        <item>@array/sem2_sis_4</item>
+        <item>@array/sem2_sis_5</item>
+        <item>@array/sem2_sis_6</item>
+        <item>@array/sem2_sis_7</item>
+        <item>@array/sem2_sis_8</item>
+        <item>@array/sem2_sis_9</item>
+        <item>@array/sem2_sis_10</item>
+        <item>@array/sem2_sis_11</item>
+    </array>
+</resources>

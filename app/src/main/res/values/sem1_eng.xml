@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_eng">Inglês</string>
+    <string name="categ_sem1_eng_prof">Simone</string>
+
+    <string-array name="sem1_eng_1">
+        <item>No ensino do inglês, o elemento cultural dessa linguagem serve para:</item>
+        <item>Entender que cada linguagem representa uma visao diferente</item>
+        <item>Mostrar a falta de cultura do Brasil</item>
+        <item>Enfatizar que a cultura britânica é superior às outras</item>
+        <item>Ensinar inglês com o sotaque de um falante nativo</item>
+    </string-array>
+    <string-array name="sem1_eng_2">
+        <item>Qual das alternativas apresenta apenas adverbios de tempo?</item>
+        <item>lately, still, next, finally</item>
+        <item>first, here, rarely, yet</item>
+        <item>already, always, then, above</item>
+        <item>first, already, usually, yet</item>
+    </string-array>
+    <string-array name="sem1_eng_3">
+        <item>Chamar a atenção ao gênero de um texto no ensino da leitura serve para:</item>
+        <item>Focalizar o texto como organização significativa</item>
+        <item>Facilitar a leitura oral do texto</item>
+        <item>Deve ser evitado uma vez que textos não tem gênero</item>
+        <item>Induz o aluno a ler o texto de forma errada</item>
+    </string-array>
+    <string-array name="sem1_eng_4">
+        <item>Em qual das alternativas a seguir o advérbio esta INCORRETO?</item>
+        <item>Jamie is waiting for us always</item>
+        <item>They work very hardly on Fridays</item>
+        <item>We were rather hot yesterday</item>
+        <item>She hasn\'t met them yet</item>
+    </string-array>
+    <string-array name="sem1_eng_5">
+        <item>Assinale a alternativa que expressa uma comparação de igualdade.</item>
+        <item>Brazilians are as technology-hungry as anywhere in the world</item>
+        <item>You used to wait years to have a telephone installed</item>
+        <item>We are the worlds leading producer</item>
+        <item>We are the worlds largest producer of sugar</item>
+    </string-array>
+    <string-array name="sem1_eng_6">
+        <item>Qual frase traz exemplos de graus de comparação?</item>
+        <item>Making computers cheaper and faster and more powerful</item>
+        <item>Within a decade we will likely see chips with 100 cores</item>
+        <item>And now we are changing to a different model</item>
+        <item>Neither, in fact, are the programmers themselves</item>
+    </string-array>
+    <string-array name="sem1_eng_7">
+        <item>In my opinion, Goiania is \n_________________\ncity in Brazil.</item>
+        <item>the most beautiful</item>
+        <item>beautifuller</item>
+        <item>more beautiful</item>
+        <item>the beautifulest</item>
+    </string-array>
+    <string-array name="sem1_eng_8">
+        <item>Chose the alternative with the same meaning as:\nHe will talk to his brother after school.</item>
+        <item>He is going to talk to his brother after school</item>
+        <item>He going to talk to his brother after school</item>
+        <item>He is going talk to his brother after school</item>
+        <item>He going to talk his brother after school</item>
+    </string-array>
+    <string-array name="sem1_eng_9">
+        <item>Qual o melhor jeito de responder a: \nWhat are you going to do?</item>
+        <item>I am going to call the police</item>
+        <item>I travel to Los Angeles</item>
+        <item>I do my homework</item>
+        <item>We will think about it last week</item>
+    </string-array>
+    <string-array name="sem1_eng_10">
+        <item>A: Would you like some more whisky?\nB: Yes, you ___________ it.</item>
+        <item>have already drunk</item>
+        <item>have already drink</item>
+        <item>have already drinking</item>
+        <item>already drink</item>
+    </string-array>
+    <array name="sem1_eng_perguntas">
+        <item>@array/sem1_eng_1</item>
+        <item>@array/sem1_eng_2</item>
+        <item>@array/sem1_eng_3</item>
+        <item>@array/sem1_eng_4</item>
+        <item>@array/sem1_eng_5</item>
+        <item>@array/sem1_eng_6</item>
+        <item>@array/sem1_eng_7</item>
+        <item>@array/sem1_eng_8</item>
+        <item>@array/sem1_eng_9</item>
+        <item>@array/sem1_eng_10</item>
+    </array>
+</resources>

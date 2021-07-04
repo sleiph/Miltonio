@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem1_alg">Algoritmos e Lógica de Programação</string>
+    <string name="categ_sem1_alg_prof">Jane Maria</string>
+
+    <string-array name="sem1_alg_1">
+        <item>Qual instrução indica uma estrutura condicional?</item>
+        <item>SE…ENTAO…SENAO</item>
+        <item>REPITA…ATE</item>
+        <item>PARA…</item>
+        <item>ENQUANTO…</item>
+    </string-array>
+    <string-array name="sem1_alg_2">
+        <item>São tipos de dados primitivos em um algoritmo:</item>
+        <item>Numérico, Lógico e Caractere</item>
+        <item>Vetores, Numérico e Lógico</item>
+        <item>Caracteres, Numérico e Matrizes</item>
+        <item>Vetores, Matrizes e Registros</item>
+    </string-array>
+    <string-array name="sem1_alg_3">
+        <item>Que tipo de variável está sendo declarada? \nDECLARE xpto[10,20] NUMERICO</item>
+        <item>Matriz numérico</item>
+        <item>Tipo primitivo caractere</item>
+        <item>Vetor numérico</item>
+        <item>Tipo primitivo numérico</item>
+    </string-array>
+    <string-array name="sem1_alg_4">
+        <item>São exemplos de estrutura de dados homogêneas:</item>
+        <item>Vetores e Matrizes</item>
+        <item>Registro e Arquivos</item>
+        <item>Caractere e Numérico</item>
+        <item>Numérico e Lógico</item>
+    </string-array>
+    <string-array name="sem1_alg_5">
+        <item>Qual a definição de lógica difusa</item>
+        <item>Tenta solucionar os problemas simulando o pensamento humano</item>
+        <item>Soluciona os problemas da melhor forma</item>
+        <item>Soluciona os problemas da forma mais lógica</item>
+        <item>Tenta solucionar os problemas de forma mais rápida</item>
+    </string-array>
+    <string-array name="sem1_alg_6">
+        <item>Qual a definição de ponteiros na programação?</item>
+        <item>É uma variável que aponta para o primeiro endereço de uma memória reservada</item>
+        <item>É uma variável que armazena uma estrutura homogênea</item>
+        <item>É uma variável que armazena os dados de forma contígua</item>
+        <item>É uma variável que armazena o conteúdo de uma lista</item>
+    </string-array>
+    <string-array name="sem1_alg_7">
+        <item>Uma função é dita recursiva quando:</item>
+        <item>Chama ela própria</item>
+        <item>Não se repete</item>
+        <item>Resolve problemas complexos</item>
+        <item>Chama outra função</item>
+    </string-array>
+    <string-array name="sem1_alg_8">
+        <item tools:ignore="Typos">Qual o comando em Python utilizado para chamar a próxima linha de um arquivo de texto?</item>
+        <item>read()</item>
+        <item>input()</item>
+        <item>open()</item>
+        <item>write()</item>
+    </string-array>
+    <string-array name="sem1_alg_9">
+        <item tools:ignore="Typos">Em C++ qual o comando utilizado para calcular a raiz quadrada?</item>
+        <item>sqrt()</item>
+        <item>pow()</item>
+        <item>Square()</item>
+        <item>squareRoot()</item>
+    </string-array>
+    <string-array name="sem1_alg_10">
+        <item>Qual o símbolo lógico utilizado na expressão \n(p -> q)?</item>
+        <item>Condicional</item>
+        <item>Conjunção</item>
+        <item>Negação</item>
+        <item>Disjunção</item>
+    </string-array>
+    <array name="sem1_alg_perguntas">
+        <item>@array/sem1_alg_1</item>
+        <item>@array/sem1_alg_2</item>
+        <item>@array/sem1_alg_3</item>
+        <item>@array/sem1_alg_4</item>
+        <item>@array/sem1_alg_5</item>
+        <item>@array/sem1_alg_6</item>
+        <item>@array/sem1_alg_7</item>
+        <item>@array/sem1_alg_8</item>
+        <item>@array/sem1_alg_9</item>
+        <item>@array/sem1_alg_10</item>
+    </array>
+</resources>

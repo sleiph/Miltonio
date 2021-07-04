@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_lhw">Laboratório de Hardware</string>
+    <string name="categ_sem1_lhw_prof">Estevão</string>
+
+    <string-array name="sem1_lhw_1">
+        <item>Se a placa-mãe fosse uma cidade e os componentes prédios, então os barramentos seriam:</item>
+        <item>As ruas e avenidas</item>
+        <item>As represas</item>
+        <item>Os semáforos</item>
+        <item>Os estacionamentos</item>
+    </string-array>
+    <string-array name="sem1_lhw_2">
+        <item>O que podemos considerar como cérebro do computador?</item>
+        <item>Processador</item>
+        <item>Memória</item>
+        <item>Chipset</item>
+        <item>BIOS</item>
+    </string-array>
+    <string-array name="sem1_lhw_3">
+        <item>Dentre os formatos de placa-mãe qual definição abaixo NÃO existe?</item>
+        <item>DTX</item>
+        <item>ATX</item>
+        <item>ITX</item>
+        <item>Micro ATX</item>
+    </string-array>
+    <string-array name="sem1_lhw_4">
+        <item>Dentre os tipos de memória qual tem a característica de ser volátil?</item>
+        <item>RAM</item>
+        <item>EEPROM</item>
+        <item>PROM</item>
+        <item>EPROM</item>
+    </string-array>
+    <string-array name="sem1_lhw_5">
+        <item>Qual módulo de memória comporta chips SDRAM, DDR SDRAM, DDR2 SDRAM E DDR3 SDRAM?</item>
+        <item>DIMM</item>
+        <item>SODIMM</item>
+        <item>SIMM</item>
+        <item>DIP</item>
+    </string-array>
+    <string-array name="sem1_lhw_6">
+        <item>Unidade de armazenamento que usa chips de memória flash não volátil para armazenar dados:</item>
+        <item>Unidade de estado sólido SSD</item>
+        <item>Unidade Híbrida</item>
+        <item>Unidade de disco Rígido HDD</item>
+        <item>Unidade de Fita</item>
+    </string-array>
+    <string-array name="sem1_lhw_7">
+        <item>Ao substituir um disco rígido qual deve ser a maior preocupação do técnico?</item>
+        <item>Perda do dados</item>
+        <item>Reutilização indevida do periférico</item>
+        <item>Lixo ambiental\n;-;</item>
+        <item>Realizar o descarte corretamente</item>
+    </string-array>
+    <string-array name="sem1_lhw_8">
+        <item>Uma tática para resolução de problemas complexos é:</item>
+        <item>Dividir um grande problema em problemas menores</item>
+        <item>Encerrar o chamado por dificuldade de resolução</item>
+        <item>Repassar o chamado para um técnico mais experiente</item>
+        <item>Contratar uma empresa para resolver o problema</item>
+    </string-array>
+    <string-array name="sem1_lhw_9">
+        <item>Permanece acesa ou pisca quando lê ou grava dados:</item>
+        <item>Led de atividade da Unidade</item>
+        <item>Botão de energia</item>
+        <item>Led principal</item>
+        <item>Botão Reset</item>
+    </string-array>
+    <string-array name="sem1_lhw_10">
+        <item>Qual componente realiza uma verificação de hardware quando o computador é iniciado?</item>
+        <item>BIOS</item>
+        <item>Boot</item>
+        <item>RAM</item>
+        <item>DIP</item>
+    </string-array>
+    <array name="sem1_lhw_perguntas">
+        <item>@array/sem1_lhw_1</item>
+        <item>@array/sem1_lhw_2</item>
+        <item>@array/sem1_lhw_3</item>
+        <item>@array/sem1_lhw_4</item>
+        <item>@array/sem1_lhw_5</item>
+        <item>@array/sem1_lhw_6</item>
+        <item>@array/sem1_lhw_7</item>
+        <item>@array/sem1_lhw_8</item>
+        <item>@array/sem1_lhw_9</item>
+        <item>@array/sem1_lhw_10</item>
+    </array>
+</resources>

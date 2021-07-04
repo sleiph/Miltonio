@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_com">Comunicação e Expressão</string>
+    <string name="categ_sem2_com_prof">Raquel</string>
+
+    <string-array name="sem2_com_1">
+        <item>A <u>idéia</u> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Errada</item>
+        <item>Certa</item>
+    </string-array>
+    <string-array name="sem2_com_2">
+        <item>O <u>coautor</u> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Certa</item>
+        <item>Errada</item>
+    </string-array>
+    <string-array name="sem2_com_3">
+        <item>Ele é <u>antihigiênico</u>.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</item>
+        <item>Errada</item>
+        <item>Certa</item>
+    </string-array>
+    <string-array name="sem2_com_4">
+        <item>Em qual ano o acordo ortográfico mais recente começou a ser implantado no Brasil?</item>
+        <item>2009</item>
+        <item>1990</item>
+        <item>2002</item>
+        <item>2016</item>
+    </string-array>
+    <string-array name="sem2_com_5">
+        <item>Qual o nome da instituição internacional responsável por formular os acordos ortográficos de língua portuguesa?</item>
+        <item>CPLP</item>
+        <item>ONU</item>
+        <item>Academia Brasileira de Letras</item>
+    </string-array>
+    <string-array name="sem2_com_6">
+        <item>Uma exposição escrita, minuciosa e cirunstanciada relativa a um assunto ou fato ocorrido, escrito por um especialista da área:</item>
+        <item>Relatório</item>
+        <item>Relato</item>
+    </string-array>
+    <string-array name="sem2_com_7">
+        <item>Uma exposição escrita ou oral sobre um acontecimento; narração, descrição, informação.</item>
+        <item>Relato</item>
+        <item>Relatório</item>
+    </string-array>
+    <string-array name="sem2_com_8">
+        <item>Precisa-se ou Precisam-se de operários?</item>
+        <item>Precisa-se</item>
+        <item>Precisam-se</item>
+    </string-array>
+    <string-array name="sem2_com_9">
+        <item>Aluga-se ou Alugam-se apartamentos?</item>
+        <item>Alugam-se</item>
+        <item>Aluga-se</item>
+    </string-array>
+    <string-array name="sem2_com_10">
+        <item>Mas a minha tristeza é sossego __________ é natural e justa.\nFernando Pessoa</item>
+        <item>porque</item>
+        <item>por que</item>
+        <item>porquê</item>
+        <item>por quê</item>
+    </string-array>
+    <string-array name="sem2_com_11">
+        <item>Estava inquieto. Não saberia dizer bem __________.\nÉrico Veríssimo</item>
+        <item>Por quê</item>
+        <item>Porque</item>
+        <item>Por que</item>
+        <item>Porquê</item>
+    </string-array>
+    <string-array name="sem2_com_12">
+        <item>Ele apresentou __ várias pessoas o recibo relativo __ compra do carro.</item>
+        <item>a à</item>
+        <item>à à</item>
+        <item>a a</item>
+        <item>à a</item>
+    </string-array>
+    <string-array name="sem2_com_13">
+        <item>Na frase:\n\nAtravessamos a cidade de ponta <u> a </u> ponta.\n\nPor qual motivo o <u> a </u> não é craseado?</item>
+        <item>Ele está entre palavras repetidas</item>
+        <item>Artigo sem preposição</item>
+        <item>Ele está seguido de palavra masculina</item>
+        <item>Ponta não está especificada</item>
+    </string-array>
+    <string-array name="sem2_com_14">
+        <item>Nas frases a seguir, informe se os pronomes oblíquos átonos estão naposição proclítica, mesoclítica ou enclítica:\n\nMandar-lhe-ei o livro amanhã.\nAjude-me na cozinha.\nMuitos lhe telefonaram pelo aniversário.</item>
+        <item>Mesóclise, ênclise, próclise</item>
+        <item>Mesóclise, próclise, ênclise</item>
+        <item>Ênclise, mesóclise, próclise</item>
+        <item>Ênclise, próclise, mesóclise</item>
+    </string-array>
+    <string-array name="sem2_com_15">
+        <item>A colocação dos pronomes oblíquos átonos leva em consideração o processo da Eufonia (Boniteza da frase)?</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string-array name="sem2_com_16">
+        <item>É descrição técnica. Caracteriza-se pela objetividade, clareza e preocupação com os pormenores:</item>
+        <item>Referencial</item>
+        <item>Subjetiva</item>
+    </string-array>
+    <string-array name="sem2_com_17">
+        <item>Seguindo os princípios de concordância nominal, qual das duas frases à seguir está escrita de forma correta?\n\nÉ proibido a entrada de animais.\nÉ proibida a entrada de bicicletas.</item>
+        <item>Somente a segunda está correta.</item>
+        <item>Somente a primeira está correta.</item>
+        <item>Nenhuma das duas está correta.</item>
+        <item>As duas frases podem ser utilizadas.</item>
+    </string-array>
+    <string-array name="sem2_com_18">
+        <item>O que são solecismos?</item>
+        <item>São erros gramaticais</item>
+        <item>São erros ortográficos</item>
+        <item>A presença de palavras redundantes na frase</item>
+        <item>São frases com significados ambíguos</item>
+        <item>São frases com sonoridade desagradável</item>
+    </string-array>
+    <string-array name="sem2_com_19">
+        <item>Qual dos seguintes tópicos frasais apresenta uma idéia núcleo comparativa?</item>
+        <item>Igualmente, do mesmo modo, à semelhança de, como etc.</item>
+        <item>No Brasil, em São Paulo, nesta sala, ao longo do rio, ao redor da cidade, perto do armazém, além das casas etc.</item>
+        <item>O primeiro…, o segundo…, na primeira etapa…, na fase inicial… etc.</item>
+        <item tools:ignore="Typos">No fim dos anos 60, quando a guerra terminou, no momento em que abriu a porta, naquela época etc.</item>
+        <item>Por um lado, por outro, antigamente, hoje, em contraste, em oposição, diferentemente, apesar de, embora etc.</item>
+    </string-array>
+    <string-array name="sem2_com_20">
+        <item>Aponte o período em que o pronome oblíquo está colocado <u>incorretamente</u>:</item>
+        <item>Se cuida, Romeu.</item>
+        <item>Aquele corpo é para te servires</item>
+        <item>Ela era muito inteligente, muito se esperando dela</item>
+        <item>Em se falando disso, é preciso ter prudência</item>
+        <item>Os anseios que acalentamos fugiram-nos</item>
+    </string-array>
+    <string-array name="sem2_com_21">
+        <item>Indique a circunstância expressa pela oração sublinada a seguir:\n\nViajaremos para a praia no dia 20 e, <u>estando bom o tempo</u>, ficaremos lá até o final do mês.</item>
+        <item>Condição</item>
+        <item>Comparação</item>
+        <item>Consequência</item>
+        <item>Finalidade</item>
+        <item>Conformidade</item>
+    </string-array>
+    <string-array name="sem2_com_22">
+        <item>Quais são os três tipos de <u>Ponto de Equilíbrio</u> em uma análise de custo/volume/luvro?</item>
+        <item>Contábil, Financeiro E Econômico</item>
+        <item>Econômico, Capital e de Gestão</item>
+        <item>Logístico, Capital e Financeiro</item>
+        <item>Circulante, Contributivo e Contábil</item>
+    </string-array>
+    <array name="sem2_com_perguntas">
+        <item>@array/sem2_com_1</item>
+        <item>@array/sem2_com_2</item>
+        <item>@array/sem2_com_3</item>
+        <item>@array/sem2_com_4</item>
+        <item>@array/sem2_com_5</item>
+        <item>@array/sem2_com_6</item>
+        <item>@array/sem2_com_7</item>
+        <item>@array/sem2_com_8</item>
+        <item>@array/sem2_com_9</item>
+        <item>@array/sem2_com_10</item>
+        <item>@array/sem2_com_11</item>
+        <item>@array/sem2_com_12</item>
+        <item>@array/sem2_com_13</item>
+        <item>@array/sem2_com_14</item>
+        <item>@array/sem2_com_15</item>
+        <item>@array/sem2_com_16</item>
+        <item>@array/sem2_com_17</item>
+        <item>@array/sem2_com_18</item>
+        <item>@array/sem2_com_19</item>
+        <item>@array/sem2_com_20</item>
+        <item>@array/sem2_com_21</item>
+        <item>@array/sem2_com_22</item>
+    </array>
+</resources>

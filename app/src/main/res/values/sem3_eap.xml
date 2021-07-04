@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_eap">Estatística Aplicada</string>
+    <string name="categ_sem3_eap_prof">Marco Rodrigo</string>
+
+    <string-array name="sem3_eap_1">
+        <item>Em uma pesquisa para determinar o nível de satisfação dos clientes de uma loja.\n
+            Qual a classificação da varíavel desta pesquisa?</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa Contínua</item>
+        <item>Quantitativa Discreta</item>
+    </string-array>
+    <string-array name="sem3_eap_2">
+        <item>Em uma pesquisa para determinar o preço total do combustível ao abastecer o tanque do carro.\n
+            Qual a classificação da varíavel desta pesquisa?</item>
+        <item>Quantitativa Contínua</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa Discreta</item>
+    </string-array>
+    <string-array name="sem3_eap_3">
+        <item>
+            0 |-------- 10\n
+            \n
+            Quais números inteiros pertencem à sequência distributiva acima?
+        </item>
+        <item>de 0 a 9</item>
+        <item>de 0 a 10</item>
+        <item>de 1 a 9</item>
+        <item>de 1 a 10</item>
+    </string-array>
+    <string-array name="sem3_eap_4">
+        <item>Em uma pesquisa sobre a idade média dos eleitores de um bairro, foi decidido que a tabela de distribuição de frequências teria 7 classes (k), de 16 a 93 anos (AA), qual será então a amplitude de cada classe (h)?</item>
+        <item>11</item>
+        <item>7</item>
+        <item>77</item>
+    </string-array>
+    <string-array name="sem3_eap_5">
+        <item>Qual a definição de moda em estatística?</item>
+        <item>É o valor que ocorre com maior frequência nos dados</item>
+        <item>É a média dos valores coletados</item>
+        <item>É a média ponderada dos valores de cada classe</item>
+        <item>É a média aritmética dos valores coletados</item>
+    </string-array>
+    <string-array name="sem3_eap_6">
+        <item>O que são medidas separatrizes?</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados e organizados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados e organizados.</item>
+        <item>Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados.</item>
+    </string-array>
+    <string-array name="sem3_eap_7">
+        <item>Qual a aplicação da medida de variância?</item>
+        <item>Relacionar os desvios em torno da média.</item>
+        <item>Encontrar o valor de maior frequência.</item>
+        <item>Encontrar o valor total médio.</item>
+        <item>Relacionar os desvios em torno da moda.</item>
+    </string-array>
+    <string-array name="sem3_eap_8">
+        <item>Se o valor de curtose de um conjunto de dados for maior que o de uma distribuição normal, qual será o tipo de curva do conjunto?</item>
+        <item>Leptocúrtica</item>
+        <item>Mesocúrtica</item>
+        <item>Platicúrtica</item>
+    </string-array>
+    <string-array name="sem3_eap_9">
+        <item>O que pode ser determinado à partir da distribuição binomial?</item>
+        <item>A probabilidade de se obter k sucessos em n tentativas.</item>
+        <item>A média de um conjunto ordenado.</item>
+        <item>A média de um conjunto não ordenado.</item>
+        <item>O percentual de curtose de um conjunto ordenado.</item>
+    </string-array>
+    <string-array name="sem3_eap_10">
+        <item>Ao jogar um dado, qual a probabilidade de obtermos um número ímpar voltado para cima?</item>
+        <item><![CDATA[&#189;]]></item>
+        <item>6/3</item>
+        <item>1/6</item>
+        <item>4/6</item>
+    </string-array>
+    <array name="sem3_eap_perguntas">
+        <item>@array/sem3_eap_1</item>
+        <item>@array/sem3_eap_2</item>
+        <item>@array/sem3_eap_3</item>
+        <item>@array/sem3_eap_4</item>
+        <item>@array/sem3_eap_5</item>
+        <item>@array/sem3_eap_6</item>
+        <item>@array/sem3_eap_7</item>
+        <item>@array/sem3_eap_8</item>
+        <item>@array/sem3_eap_9</item>
+        <item>@array/sem3_eap_10</item>
+    </array>
+</resources>

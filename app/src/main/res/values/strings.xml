@@ -18,51 +18,9 @@
     <string name="alerta_positivo">OK</string>
     <string name="alerta_negativo">Cancelar</string>
 
-    <string name="categ_sem1_mat">Matemática Discreta</string>
-    <string name="categ_sem1_mat_prof">Jayme</string>
-    <string name="categ_sem1_alg">Algoritmos e Lógica de Programação</string>
-    <string name="categ_sem1_alg_prof">Jane Maria</string>
-    <string name="categ_sem1_eng">Inglês</string>
-    <string name="categ_sem1_eng_prof">Simone</string>
-    <string name="categ_sem1_aoc">Arquitetura de Computadores</string>
-    <string name="categ_sem1_aoc_prof">Rodrigo</string>
-    <string name="categ_sem1_lhw">Laboratório de Hardware</string>
-    <string name="categ_sem1_lhw_prof">Estevão</string>
-    <string name="categ_sem1_adm">Administração Geral</string>
-    <string name="categ_sem1_adm_prof">Milton</string>
-    <string name="categ_sem1_prg">Programação em Microinformática</string>
-    <string name="categ_sem1_prg_prof">Pinho</string>
-
-    <string name="categ_sem2_cal">Cálculo</string>
-    <string name="categ_sem2_cal_prof">Marco Rodrigo</string>
-    <string name="categ_sem2_lnp">Linguagem de Programação</string>
-    <string name="categ_sem2_lnp_prof">Jane Maria</string>
-    <string name="categ_sem2_eng">Inglês</string>
-    <string name="categ_sem2_eng_prof">Simone</string>
-    <string name="categ_sem2_cnt">Contabilidade</string>
-    <string name="categ_sem2_cnt_prof">Célia</string>
-    <string name="categ_sem2_sis">Sistemas de Informação</string>
-    <string name="categ_sem2_sis_prof">Alex</string>
-    <string name="categ_sem2_com">Comunicação e Expressão</string>
-    <string name="categ_sem2_com_prof">Raquel</string>
-    <string name="categ_sem2_es1">Engenharia de Software I</string>
-    <string name="categ_sem2_es1_prof">Eliane</string>
-
-    <string name="categ_sem3_esd">Estrutura de Dados</string>
-    <string name="categ_sem3_esd_prof">Alecio</string>
-    <string name="categ_sem3_sot">Sociedade e Tecnologia</string>
-    <string name="categ_sem3_sot_prof">Sergio</string>
-    <string name="categ_sem3_es2">Engenharia de Software II</string>
-    <string name="categ_sem3_es2_prof">Alecio</string>
-    <string name="categ_sem3_eap">Estatística Aplicada</string>
-    <string name="categ_sem3_eap_prof">Marco Rodrigo</string>
-    <string name="categ_sem3_efi">Economia e Finanças</string>
-    <string name="categ_sem3_efi_prof">Joyce</string>
-    <string name="categ_sem3_eng">Inglês</string>
-    <string name="categ_sem3_eng_prof">Simone</string>
-    <string name="categ_sem3_ihc">Interação Humano-Computador</string>
-    <string name="categ_sem3_ihc_prof">Daniel</string>
-    <string name="categ_sem3_so1">Sistemas Operacionais 1</string>
-    <string name="categ_sem3_so1_prof">Edidio Dantas</string>
-
+    <string-array name="menu_semestres">
+        <item>1° Semestre</item>
+        <item>2° Semestre</item>
+        <item>3° Semestre</item>
+    </string-array>
 </resources>

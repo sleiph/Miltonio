@@ -3,7 +3,7 @@ package com.test.miltonio.modelo
 import com.test.miltonio.R
 
 class Semestre3 {
-    val sem3Array = arrayOf(
+    val materiasSemestre = arrayOf(
         Materia(
             20,
             0,
@@ -101,8 +101,13 @@ class Semestre3 {
             R.array.sem3_so1_perguntas
         )
     )
+    val imagemHeader = R.drawable.appsomascara
 
     fun getMaterias() : Array<Materia> {
-        return sem3Array
+        return materiasSemestre
+    }
+
+    fun getImageHeader() : Int {
+        return imagemHeader
     }
 }

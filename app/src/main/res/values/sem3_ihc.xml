@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_ihc">Interação Humano-Computador</string>
+    <string name="categ_sem3_ihc_prof">Daniel</string>
+
+    <string-array name="sem3_ihc_1">
+        <item>Qual das seguintes áreas <u>NÃO</u> está envolvida na Interação Humano-Computador (IHC)?</item>
+        <item>Todas as áreas listadas pertencem à IHC</item>
+        <item>Engenharia de Software</item>
+        <item>Ergonomia</item>
+        <item>Design</item>
+        <item>Psicologia Cognitiva</item>
+    </string-array>
+    <string-array name="sem3_ihc_2">
+        <item>Escolha um exemplo de sistema desenvolvido com perspectiva de discurso:</item>
+        <item>Um chatbot</item>
+        <item>Pacote Office</item>
+        <item>Um formulário de site</item>
+        <item>Twitter</item>
+    </string-array>
+    <string-array name="sem3_ihc_3">
+        <item>Escolha um exemplo de sistema desenvolvido com perspectiva de ferramenta:</item>
+        <item>Pacote Office</item>
+        <item>Um chatbot</item>
+        <item>Um formulário de site</item>
+        <item>Twitter</item>
+    </string-array>
+    <string-array name="sem3_ihc_4">
+        <item>Considere a sentença a seguir:\n\n“um produto da engenharia humana cuja ação envolve a manipulação de símbolos controlada por um conjunto específico e finito de regras capaz de realizar interação.”.\n\nPodemos afirmar que a definição se trata de:</item>
+        <item>Artefato Computacional Interativo</item>
+        <item>Experiência do usuário.</item>
+        <item>Controles</item>
+        <item>Desenho Universal</item>
+        <item>Comunicabilidade</item>
+    </string-array>
+    <string-array name="sem3_ihc_5">
+        <item>Dentro da semiótica, signos dinâmicos se referem a:</item>
+        <item>Aspectos temporais e causais</item>
+        <item>O estado do sistema</item>
+        <item>Outros signos da interface</item>
+    </string-array>
+    <string-array name="sem3_ihc_6">
+        <item>Qual a principal motivação do método de avaliação heurística de Nielsen?</item>
+        <item>Facilitar e acelerar o processo de avaliação de interfaces.</item>
+        <item>Determinar o valor de uma interface.</item>
+        <item>Avaliar o tempo que será gasto no projeto.</item>
+    </string-array>
+    <string-array name="sem3_ihc_7">
+        <item>O método de avaliação de comunicabilidade (MAC), que envolve a observação dos usuários durante a interação com o sistema, faz uma análise:</item>
+        <item>Qualitativa</item>
+        <item>Quantitativa</item>
+    </string-array>
+    <string-array name="sem3_ihc_8">
+        <item>Vimos em sala de aula que no método de avaliação da comunicabilidade, existem uma série de etiquetas que são associadas a alguma resposta dos usuários ao utilizar um sistema. Indique abaixo qual alternativa não se trata de uma etiqueta:</item>
+        <item>Aí sim!</item>
+        <item>Socorro!</item>
+        <item>Vai de outro jeito.</item>
+        <item>Pra mim, está bom.</item>
+        <item>Assim não dá</item>
+    </string-array>
+    <string-array name="sem3_ihc_9">
+        <item>Considere a sentença a seguir:\n“É uma regra que funciona na prática, mas para a qual não há (ou não importa procurar) uma explicação teórica. Se trata de um conhecimento que se constrói ao longo de anos de prática, como uma compilação ‘do que funciona’ e ‘do que não funciona’.”.\nPodemos afirmar que a definição se trata de:</item>
+        <item>Heurística</item>
+        <item>Metalinguística.</item>
+        <item>Relação triádica</item>
+        <item>Semiótica</item>
+        <item>Comunicabilidade</item>
+    </string-array>
+    <string-array name="sem3_ihc_10">
+        <item>Quais das seguntes opções <b><u>não</u></b> uma das cinco etapas do Método de Avaliação de Comunicabilidade (MAC)?</item>
+        <item>Priorização dos problemas encontrados</item>
+        <item>Preparação.</item>
+        <item>Aplicação</item>
+        <item>Interpretação</item>
+        <item>Consolidação dos resultados</item>
+        <item>Relato dos resultados</item>
+    </string-array>
+    <array name="sem3_ihc_perguntas">
+        <item>@array/sem3_ihc_1</item>
+        <item>@array/sem3_ihc_2</item>
+        <item>@array/sem3_ihc_3</item>
+        <item>@array/sem3_ihc_4</item>
+        <item>@array/sem3_ihc_5</item>
+        <item>@array/sem3_ihc_6</item>
+        <item>@array/sem3_ihc_7</item>
+        <item>@array/sem3_ihc_8</item>
+        <item>@array/sem3_ihc_9</item>
+        <item>@array/sem3_ihc_10</item>
+    </array>
+</resources>

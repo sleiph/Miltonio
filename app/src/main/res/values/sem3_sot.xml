@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_sot">Sociedade e Tecnologia</string>
+    <string name="categ_sem3_sot_prof">Sergio</string>
+
+    <string-array name="sem3_sot_1">
+        <item>O conhecimento adquirido através da observação sensorial é chamado de:</item>
+        <item>Conhecimento Empírico</item>
+        <item>Técnica</item>
+        <item>Tecnologia</item>
+        <item>Conhecimento Científico</item>
+        <item>Conhecimento Tácito</item>
+    </string-array>
+    <string-array name="sem3_sot_2">
+        <item>Os Chicago Boys, grupo de economistas latino-americanos, ficaram mais conhecidos por defender qual ideologia?</item>
+        <item>Neo-liberalismo</item>
+        <item>Comunismo</item>
+        <item>Intervencionismo</item>
+    </string-array>
+    <string-array name="sem3_sot_3">
+        <item>Qual o objetivo do estudo de Sociedade e Tecnologia?</item>
+        <item>Refletir sobre os impactos da Tecnologia da Informação na Sociedade Contemporânea.</item>
+        <item>Refletir sobre os impactos da Sociedade na Tecnologia da Informação Contemporânea.</item>
+        <item>Refletir sobre os impactos da Informação e Comunicação na Sociedade Contemporânea.</item>
+    </string-array>
+    <string-array name="sem3_sot_4">
+        <item>Fenômeno gerado a partir da soma das circunstâncias sociais, econômicas, políticas e tecnológicas, que moldaram as relações entre as nações, as empresas e os agentes internos (governo, mercado, indivíduos) da segunda metade da década de 80 até hoje:</item>
+        <item>globalização</item>
+        <item>politização</item>
+        <item>importação</item>
+        <item>exportação</item>
+    </string-array>
+    <string-array name="sem3_sot_5">
+        <item>No modelo de aulas expositivas clássicas:</item>
+        <item>O professor discorre sobre determinado tema, os alunos assistem de forma passiva.</item>
+        <item>O professor oferece uma visão ampla sobre o tema, os alunos discutem.</item>
+        <item>O professor propõe um problema, os alunos tentam resolvê-lo.</item>
+    </string-array>
+    <string-array name="sem3_sot_6">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor secundário</b> da economia?</item>
+        <item>Indústria e artesanato</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Mineiração e agricultura</item>
+    </string-array>
+    <string-array name="sem3_sot_7">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor terciário</b> da economia?</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Indústria e artesanato</item>
+        <item>Mineiração e agricultura</item>
+    </string-array>
+    <string-array name="sem3_sot_8">
+        <item>Quais etapas produtivas estão relacionadas ao chamado <b>Setor primário</b> da economia?</item>
+        <item>Mineiração e agricultura</item>
+        <item>Comércio e prestação de serviços</item>
+        <item>Indústria e artesanato</item>
+    </string-array>
+    <string-array name="sem3_sot_9">
+        <item>Quais as etapas básicas para construir um sistema de medição de inovação confiável?</item>
+        <item>Por que medir? O que medir? Como medir?</item>
+        <item>Por que medir? O que medir?</item>
+        <item>Por que medir? Como medir?</item>
+        <item>O que medir? Como medir?</item>
+        <item>Como medir?</item>
+    </string-array>
+    <string-array name="sem3_sot_10">
+        <item>Qual o órgão responsável pelo desenvolvimento dos 17 Objetivos do Desenvolvimento Sustentável (ODS)?</item>
+        <item>ONU</item>
+        <item>Governo Brasileiro</item>
+        <item>Governo dos Estados Unidos</item>
+        <item>União Européia</item>
+    </string-array>
+    <array name="sem3_sot_perguntas">
+        <item>@array/sem3_sot_1</item>
+        <item>@array/sem3_sot_2</item>
+        <item>@array/sem3_sot_3</item>
+        <item>@array/sem3_sot_4</item>
+        <item>@array/sem3_sot_5</item>
+        <item>@array/sem3_sot_6</item>
+        <item>@array/sem3_sot_7</item>
+        <item>@array/sem3_sot_8</item>
+        <item>@array/sem3_sot_9</item>
+        <item>@array/sem3_sot_10</item>
+    </array>
+</resources>

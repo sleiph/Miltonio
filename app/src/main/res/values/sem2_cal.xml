@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_cal">Cálculo</string>
+    <string name="categ_sem2_cal_prof">Marco Rodrigo</string>
+
+    <string-array name="sem2_cal_1">
+        <item>Considere o domínio = {0, 1, 2} e contradomínio = {1, 2, 3, 4}, escolha a opção que representa uma função válida com esses valores:</item>
+        <item>(0, 1)(1, 4)(2, 2)</item>
+        <item>(1, 1)(2, 2)(3, 3)</item>
+        <item>(0, 1)(2, 2)(2, 4)</item>
+    </string-array>
+    <string-array name="sem2_cal_2">
+        <item>Qual o nome comumente dado ao domínio de uma função?</item>
+        <item>X</item>
+        <item>Y</item>
+    </string-array>
+    <string-array name="sem2_cal_3">
+        <item>Qual o nome comumente dado ao contradomínio de uma função?</item>
+        <item>Y</item>
+        <item>X</item>
+    </string-array>
+    <string-array name="sem2_cal_4">
+        <item>A função <b><i>f</i></b> é definida por \nf(x) = ax + b\nSabe-se que \nf(-1) = 3 e f(1) = 1\nDetermine o valor de f(3):</item>
+        <item>-1</item>
+        <item>-3</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="sem2_cal_5">
+        <item>Considerando a função quadrática\nf(x)=ax²+bx+c\nse a > 0, para onde estará voltada a concavidade da parábola?</item>
+        <item>Para cima</item>
+        <item>Para baixo</item>
+    </string-array>
+    <string-array name="sem2_cal_6">
+        <item>Considerando a função quadrática\nf(x)=x²-6x+9\nqual o vértice da parábola?</item>
+        <item>(3, 0)</item>
+        <item>(3, 3)</item>
+        <item>3</item>
+        <item>(0, 3)</item>
+    </string-array>
+    <string-array name="sem2_cal_7">
+        <item tools:ignore="TypographyFractions">Na função exponencial\ny = 1/3<sup>x</sup>\nquando o valor de x = 0, qual será o valor de y?</item>
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>3</item>
+        <item tools:ignore="TypographyFractions">1/3</item>
+    </string-array>
+    <string-array name="sem2_cal_8">
+        <item>Dizer que o limite de uma função y=f(x), em um ponto <i>p</i> é um número <i>L</i>, é afirmar que:</item>
+        <item>À medida que <b><i>x</i></b> se aproxima de <b><i>p</i></b>, os valores da função aproximam-se do número <b><i>L</i></b></item>
+        <item>À medida que <b><i>x</i></b> se aproxima de <b><i>p</i></b>, os valores da função aproximam-se do número <b><i>f(x)</i></b></item>
+        <item>À medida que <b><i>p</i></b> se aproxima de <b><i>x</i></b>, os valores da função aproximam-se do número <b><i>L</i></b></item>
+        <item>À medida que <b><i>p</i></b> se aproxima de <b><i>x</i></b>, os valores da função aproximam-se do número <b><i>f(x)</i></b></item>
+    </string-array>
+    <string-array name="sem2_cal_9">
+        <item>Quando sabemos que existe uma <u>Indeterminação</u> no cálculo dos Limites da função?</item>
+        <item>Quando o denominador da função é igual a zero</item>
+        <item>Quando o numerador da função é igual a zero</item>
+        <item>Quando <i>f(x)</i> é igual a zero</item>
+        <item>Quando o limite é indefinido</item>
+    </string-array>
+    <string-array name="sem2_cal_10">
+        <item>Qual a Taxa Média de Variação (TMV) da função seguinte no intervalo de [1, 3]?\n\nf(x) = x²+1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="sem2_cal_11">
+        <item>Se, após fazer o cálculo dos pontos críticos de um modelo funcional por um critério de segunda derivada, o valor encontrado para y\'\' for maior que 0, o ponto encontrado é o:</item>
+        <item>Ponto Mínimo da função</item>
+        <item>Ponto Máximo da função</item>
+    </string-array>
+    <string-array name="sem2_cal_12">
+        <item>Indique a derivada de \n2x³ - x + 42:</item>
+        <item>6x² - 1</item>
+        <item>6x² - 1 + 42</item>
+        <item>6x - x</item>
+        <item>7x² + 42</item>
+    </string-array>
+    <array name="sem2_cal_perguntas">
+        <item>@array/sem2_cal_1</item>
+        <item>@array/sem2_cal_2</item>
+        <item>@array/sem2_cal_3</item>
+        <item>@array/sem2_cal_4</item>
+        <item>@array/sem2_cal_5</item>
+        <item>@array/sem2_cal_6</item>
+        <item>@array/sem2_cal_7</item>
+        <item>@array/sem2_cal_8</item>
+        <item>@array/sem2_cal_9</item>
+        <item>@array/sem2_cal_10</item>
+        <item>@array/sem2_cal_11</item>
+        <item>@array/sem2_cal_12</item>
+    </array>
+</resources>
