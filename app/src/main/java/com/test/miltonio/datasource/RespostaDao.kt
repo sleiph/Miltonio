@@ -1,12 +1,12 @@
 package com.test.miltonio.datasource
 
 import com.test.miltonio.modelo.Resposta
-import com.test.miltonio.modelo.PerguntaNRespostas
 import androidx.room.*
 
+@Dao
 interface RespostaDao {
     @Query("SELECT * FROM respostas WHERE pergunta = (:id)")
-    fun loadByPerguntaId(id: Int): PerguntaNRespostas
+    fun loadByPerguntaId(id: Int): MutableList<Resposta>
 
     @Query("SELECT * FROM respostas WHERE id = (:id)")
     fun loadById(id: Int): Resposta

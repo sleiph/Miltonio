@@ -5,10 +5,10 @@ import androidx.room.Relation
 
 data class PerguntaNRespostas(
     @Embedded
-    val pergunta: Pergunta,
+    val descricao: Pergunta,
     @Relation(
         parentColumn = "id",
         entityColumn = "pergunta"
     )
-    val perguntas: List<Resposta>
+    val respostas: List<Resposta>
 )

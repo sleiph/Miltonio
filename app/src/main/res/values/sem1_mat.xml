@@ -3,6 +3,66 @@
     <string name="categ_sem1_mat">Matemática Discreta</string>
     <string name="categ_sem1_mat_prof">Jayme</string>
 
+    <string name="sem1_mat_p1">Numa função de segundo grau se (a > 0) a concavidade da função será:</string>
+    <string name="sem1_mat_p1r1">Para cima</string>
+    <string name="sem1_mat_p1r2">Para baixo</string>
+    <string name="sem1_mat_p1r3">Negativa</string>
+    <string name="sem1_mat_p1r4">Linear</string>
+
+    <string name="sem1_mat_p2">No plano carteziano, qual nome do eixo de x?</string>
+    <string name="sem1_mat_p2r1">eixo das abscissas</string>
+    <string name="sem1_mat_p2r2">eixo das ordenadas</string>
+    <string name="sem1_mat_p2r3">eixo linear</string>
+    <string name="sem1_mat_p2r4">eixo das abtivas</string>
+
+    <string name="sem1_mat_p3">Qual o segundo passo da verificação de indução finita?</string>
+    <string name="sem1_mat_p3r1">Assumir que a propriedade é verdadeira para n = k</string>
+    <string name="sem1_mat_p3r2">Verificar se a propriedade é válida pra um n qualquer</string>
+    <string name="sem1_mat_p3r3">Demonstrar que a propriedade é verdadeira para n = k + 1</string>
+    <string name="sem1_mat_p3r4">Verificar se n é verdadeiro</string>
+
+    <string name="sem1_mat_p4">Qual o primeiro passo da verificação de indução finita?</string>
+    <string name="sem1_mat_p4r1">Verificar se a propriedade é válida pra um n qualquer</string>
+    <string name="sem1_mat_p4r2">Assumir que a propriedade é verdadeira para n = k</string>
+    <string name="sem1_mat_p4r3">Demonstrar que a propriedade é verdadeira para n = k + 1</string>
+    <string name="sem1_mat_p4r4">Verificar se n é verdadeiro</string>
+
+    <string name="sem1_mat_p5">Qual o terceiro passo da verificação de indução finita?</string>
+    <string name="sem1_mat_p5r1">Demonstrar que a propriedade é verdadeira para n = k + 1</string>
+    <string name="sem1_mat_p5r2">Assumir que a propriedade é verdadeira para n = k</string>
+    <string name="sem1_mat_p5r3">Verificar se a propriedade é válida pra um n qualquer</string>
+    <string name="sem1_mat_p5r4">Verificar se n é verdadeiro</string>
+
+    <string name="sem1_mat_p6">Como se define o raciocínio dedutivo?</string>
+    <string name="sem1_mat_p6r1">Parte do geral pro particular</string>
+    <string name="sem1_mat_p6r2">Parte do particular pro geral</string>
+    <string name="sem1_mat_p6r3">Parte do verdadeiro para o falso</string>
+    <string name="sem1_mat_p6r4">Parte do falso para o verdadeiro</string>
+
+    <string name="sem1_mat_p7">Como se define o raciocínio indutivo?</string>
+    <string name="sem1_mat_p7r1">Parte do particular pro geral</string>
+    <string name="sem1_mat_p7r2">Parte do geral pro particular</string>
+    <string name="sem1_mat_p7r3">Parte do verdadeiro para o falso</string>
+    <string name="sem1_mat_p7r4">Parte do falso para o verdadeiro</string>
+
+    <string name="sem1_mat_p8">Traduza o número decimal 0 para a base JAYME</string>
+    <string name="sem1_mat_p8r1">JJ</string>
+    <string name="sem1_mat_p8r2">ME</string>
+    <string name="sem1_mat_p8r3">JA</string>
+    <string name="sem1_mat_p8r4">EE</string>
+
+    <string name="sem1_mat_p9">Qual o nome dado às linhas que compõe um grafo?</string>
+    <string name="sem1_mat_p9r1">Arestas</string>
+    <string name="sem1_mat_p9r2">Vértices</string>
+    <string name="sem1_mat_p9r3">Lados</string>
+    <string name="sem1_mat_p9r4">Traços</string>
+
+    <string name="sem1_mat_p10">Qual o nome dado aos nodos presentes em um grafo?</string>
+    <string name="sem1_mat_p10r1">Vértices</string>
+    <string name="sem1_mat_p10r2">Arestas</string>
+    <string name="sem1_mat_p10r3">Grafos</string>
+    <string name="sem1_mat_p10r4">Buracos</string>
+
     <string-array name="sem1_mat_1">
         <item>Numa função de segundo grau se (a > 0) a concavidade da função será:</item>
         <item>Para cima</item>

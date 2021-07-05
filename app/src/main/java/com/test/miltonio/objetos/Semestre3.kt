@@ -1,6 +1,7 @@
-package com.test.miltonio.modelo
+package com.test.miltonio.objetos
 
 import com.test.miltonio.R
+import com.test.miltonio.modelo.Materia
 
 class Semestre3 {
     val materiasSemestre = arrayOf(

@@ -4,18 +4,15 @@ import com.test.miltonio.MyApplication
 import com.test.miltonio.R
 import android.content.Intent
 import android.media.MediaPlayer
-import android.os.Build
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 class TelaResultado : AppCompatActivity() {
 
-    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_resultado)
@@ -59,15 +56,15 @@ class TelaResultado : AppCompatActivity() {
                 somRuim.start()
             }
 
-            corFnd.setBackgroundColor(getColor(materia.cor_db))
+            corFnd.setBackgroundColor(ContextCompat.getColor(this, materia.cor_db))
             imgFnd.setBackgroundResource(materia.fundo_db)
             txtCategoria.text =
                 getString(R.string.resultado_categoria, getString(materia.materia_db))
             if (!materia.isPreto_db) {
-                txtComeco.setTextColor(getColor(R.color.colorBnc))
-                txtResultado.setTextColor(getColor(R.color.colorBnc))
-                txtCategoria.setTextColor(getColor(R.color.colorBnc))
-                txtMensagem.setTextColor(getColor(R.color.colorBnc))
+                txtComeco.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
+                txtResultado.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
+                txtCategoria.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
+                txtMensagem.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
             }
         }
 

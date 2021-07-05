@@ -16,7 +16,7 @@ import androidx.room.PrimaryKey
 data class Pergunta(
     @PrimaryKey
     val id: Int,
-    @ColumnInfo(name = "tipo") var tipo: Int,
+    @ColumnInfo(name = "qntCertas") var qntCertas: Int,
     @ColumnInfo(index = true)
     val materia: Int
 )

@@ -10,5 +10,5 @@ data class MateriaNPerguntas(
         parentColumn = "cid",
         entityColumn = "materia"
     )
-    val perguntas: List<Pergunta>
+    val perguntas: List<PerguntaNRespostas>
 )
