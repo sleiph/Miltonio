@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_cal">Cálculo</string>
+    <string name="categ_sem2_cal_prof">Marco Rodrigo</string>
+
+    <string name="sem2_cal_p1">Considere o domínio = {0, 1, 2} e contradomínio = {1, 2, 3, 4}, escolha a opção que representa uma função válida com esses valores:</string>
+    <string name="sem2_cal_p1r1">(0, 1)(1, 4)(2, 2)</string>
+    <string name="sem2_cal_p1r2">(1, 1)(2, 2)(3, 3)</string>
+    <string name="sem2_cal_p1r3">(0, 1)(2, 2)(2, 4)</string>
+
+    <string name="sem2_cal_p2">Qual o nome comumente dado ao domínio de uma função?</string>
+    <string name="sem2_cal_p2r1">X</string>
+    <string name="sem2_cal_p2r2">Y</string>
+
+    <string name="sem2_cal_p3">Qual o nome comumente dado ao contradomínio de uma função?</string>
+    <string name="sem2_cal_p3r1">Y</string>
+    <string name="sem2_cal_p3r2">X</string>
+
+    <string name="sem2_cal_p4">A função <b><i>f</i></b> é definida por \nf(x) = ax + b\nSabe-se que \nf(-1) = 3 e f(1) = 1\nDetermine o valor de f(3):</string>
+    <string name="sem2_cal_p4r1">-1</string>
+    <string name="sem2_cal_p4r2">-3</string>
+    <string name="sem2_cal_p4r3">3</string>
+    <string name="sem2_cal_p4r4">9</string>
+
+    <string name="sem2_cal_p5">Considerando a função quadrática\nf(x)=ax²+bx+c\nse a > 0, para onde estará voltada a concavidade da parábola?</string>
+    <string name="sem2_cal_p5r1">Para cima</string>
+    <string name="sem2_cal_p5r2">Para baixo</string>
+
+    <string name="sem2_cal_p6">Considerando a função quadrática\nf(x)=x²-6x+9\nqual o vértice da parábola?</string>
+    <string name="sem2_cal_p6r1">(3, 0)</string>
+    <string name="sem2_cal_p6r2">(3, 3)</string>
+    <string name="sem2_cal_p6r3">3</string>
+    <string name="sem2_cal_p6r4">(0, 3)</string>
+
+    <string name="sem2_cal_p7" tools:ignore="TypographyFractions">Na função exponencial\ny = 1/3<sup>x</sup>\nquando o valor de x = 0, qual será o valor de y?</string>
+    <string name="sem2_cal_p7r1">1</string>
+    <string name="sem2_cal_p7r2">0</string>
+    <string name="sem2_cal_p7r3">-1</string>
+    <string name="sem2_cal_p7r4">3</string>
+    <string name="sem2_cal_p7r5" tools:ignore="TypographyFractions">1/3</string>
+
+    <string name="sem2_cal_p8">Dizer que o limite de uma função y=f(x), em um ponto <i>p</i> é um número <i>L</i>, é afirmar que:</string>
+    <string name="sem2_cal_p8r1">À medida que <b><i>x</i></b> se aproxima de <b><i>p</i></b>, os valores da função aproximam-se do número <b><i>L</i></b></string>
+    <string name="sem2_cal_p8r2">À medida que <b><i>x</i></b> se aproxima de <b><i>p</i></b>, os valores da função aproximam-se do número <b><i>f(x)</i></b></string>
+    <string name="sem2_cal_p8r3">À medida que <b><i>p</i></b> se aproxima de <b><i>x</i></b>, os valores da função aproximam-se do número <b><i>L</i></b></string>
+    <string name="sem2_cal_p8r4">À medida que <b><i>p</i></b> se aproxima de <b><i>x</i></b>, os valores da função aproximam-se do número <b><i>f(x)</i></b></string>
+
+    <string name="sem2_cal_p9">Quando sabemos que existe uma <u>Indeterminação</u> no cálculo dos Limites da função?</string>
+    <string name="sem2_cal_p9r1">Quando o denominador da função é igual a zero</string>
+    <string name="sem2_cal_p9r2">Quando o numerador da função é igual a zero</string>
+    <string name="sem2_cal_p9r3">Quando <i>f(x)</i> é igual a zero</string>
+    <string name="sem2_cal_p9r4">Quando o limite é indefinido</string>
+
+    <string name="sem2_cal_p10">Qual a Taxa Média de Variação (TMV) da função seguinte no intervalo de [1, 3]?\n\nf(x) = x²+1</string>
+    <string name="sem2_cal_p10r1">4</string>
+    <string name="sem2_cal_p10r2">2</string>
+    <string name="sem2_cal_p10r3">6</string>
+    <string name="sem2_cal_p10r4">8</string>
+    <string name="sem2_cal_p10r5">10</string>
+
+    <string name="sem2_cal_p11">Se, após fazer o cálculo dos pontos críticos de um modelo funcional por um critério de segunda derivada, o valor encontrado para y\'\' for maior que 0, o ponto encontrado é o:</string>
+    <string name="sem2_cal_p11r1">Ponto Mínimo da função</string>
+    <string name="sem2_cal_p11r2">Ponto Máximo da função</string>
+
+    <string name="sem2_cal_p12">Indique a derivada de \n2x³ - x + 42:</string>
+    <string name="sem2_cal_p12r1">6x² - 1</string>
+    <string name="sem2_cal_p12r2">6x² - 1 + 42</string>
+    <string name="sem2_cal_p12r3">6x - x</string>
+    <string name="sem2_cal_p12r4">7x² + 42</string>
+
+</resources>

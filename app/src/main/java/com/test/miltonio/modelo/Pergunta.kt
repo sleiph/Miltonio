@@ -1,14 +1,11 @@
 package com.test.miltonio.modelo
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.ForeignKey
-import androidx.room.PrimaryKey
+import androidx.room.*
 
 @Entity(tableName = "perguntas",
     foreignKeys = [ForeignKey(
         entity = Materia::class,
-        parentColumns = arrayOf("cid"),
+        parentColumns = arrayOf("id"),
         childColumns = arrayOf("materia"),
         onDelete = ForeignKey.CASCADE
     )]
@@ -16,7 +13,20 @@ import androidx.room.PrimaryKey
 data class Pergunta(
     @PrimaryKey
     val id: Int,
-    @ColumnInfo(name = "qntCertas") var qntCertas: Int,
+    @ColumnInfo(name = "qntCertas")
+    var qntCertas: Int,
     @ColumnInfo(index = true)
     val materia: Int
-)
+) {
+    @Ignore
+    var respostas: MutableList<Resposta> = mutableListOf()
+
+    constructor(
+        id: Int,
+        qntCertas: Int,
+        materia: Int,
+        respostas: MutableList<Resposta>
+    ) : this(id, qntCertas, materia) {
+        this.respostas = respostas
+    }
+}

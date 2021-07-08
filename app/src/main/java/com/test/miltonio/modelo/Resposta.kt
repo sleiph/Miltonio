@@ -16,7 +16,8 @@ import androidx.room.PrimaryKey
 data class Resposta(
     @PrimaryKey
     val id: Int,
-    @ColumnInfo(name = "isCerta") var isCerta: Boolean,
+    @ColumnInfo(name = "isCerta")
+    var isCerta: Boolean,
     @ColumnInfo(index = true)
     val pergunta: Int
 )

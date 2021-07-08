@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_esd">Estrutura de Dados</string>
+    <string name="categ_sem3_esd_prof">Alecio</string>
+
+    <string name="sem3_esd_p1">Na programação orientada a objetos, qual a definição de parâmetros?</string>
+    <string name="sem3_esd_p1r1">Valores que passamos para um método.</string>
+    <string name="sem3_esd_p1r2">Descrições que abstraem um conjunto de objetos com características similares.</string>
+    <string name="sem3_esd_p1r3">Sub-rotinas associadas a um objeto.</string>
+    <string name="sem3_esd_p1r4">Mensagems dentro do sistema que invocam diretamente uma classe.</string>
+
+    <string name="sem3_esd_p2">Verdadeiro o Falso?\nListas são um tipo abstrato de dados, independente de qual seja seu conteúdo.</string>
+    <string name="sem3_esd_p2r1">Verdadeiro</string>
+    <string name="sem3_esd_p2r2">Falso</string>
+
+    <string name="sem3_esd_p3">Considere as linhas de código Java a seguir:\n
+        \n
+        char[] itens = new char[10];\n
+        itens[0] = 2;\n
+        System.out.println(itens.length);\n
+        \n
+        Qual será o valor impresso pelo programa?
+    </string>
+    <string name="sem3_esd_p3r1">10</string>
+    <string name="sem3_esd_p3r2">0</string>
+    <string name="sem3_esd_p3r3">1</string>
+    <string name="sem3_esd_p3r4">2</string>
+
+    <string name="sem3_esd_p4">Uma PILHA implementa qual mecanismo de inserção/remoção:</string>
+    <string name="sem3_esd_p4r1">LIFO</string>
+    <string name="sem3_esd_p4r2">FIFO</string>
+    <string name="sem3_esd_p4r3">FIFA</string>
+    <string name="sem3_esd_p4r4">FFLL</string>
+    <string name="sem3_esd_p4r5">N.D.A.</string>
+
+    <string name="sem3_esd_p5">Uma FILA implementa qual mecanismo de inserção/remoção:</string>
+    <string name="sem3_esd_p5r1">FIFO</string>
+    <string name="sem3_esd_p5r2">LIFO</string>
+    <string name="sem3_esd_p5r3">FIFA</string>
+    <string name="sem3_esd_p5r4">FFLL</string>
+    <string name="sem3_esd_p5r5">N.D.A.</string>
+
+    <string name="sem3_esd_p6">Qual das justificativas abaixo é FALSA para o uso de filas circulares no lugar de filas cumuns?</string>
+    <string name="sem3_esd_p6r1">Se o tamanho da fila for menor que dez elementos, uma fila circular pode aumentar a performance.</string>
+    <string name="sem3_esd_p6r2">Se o tamanho da fila for muito grande, uma fila circular pode aumentar a performance.</string>
+    <string name="sem3_esd_p6r3">Se quisermos ter uma fila reversível, uma fila circular pode simplificar o código.</string>
+
+    <string name="sem3_esd_p7">Coleção linear de dados, onde um elemento da lista aponta para a posição do próximo na memória:</string>
+    <string name="sem3_esd_p7r1">Lista Ligada</string>
+    <string name="sem3_esd_p7r2">Pilha</string>
+    <string name="sem3_esd_p7r3">Fila</string>
+    <string name="sem3_esd_p7r4">Lista</string>
+
+    <string name="sem3_esd_p8">Nós que não possuem filhos são chamados de?</string>
+    <string name="sem3_esd_p8r1">Folhas</string>
+    <string name="sem3_esd_p8r2">Raizes</string>
+    <string name="sem3_esd_p8r3">Filhos</string>
+    <string name="sem3_esd_p8r4">Irmãos</string>
+
+    <string name="sem3_esd_p9">Qual das seguintes opções é uma estrutura de dados análoga às tabelas Hash do Java?</string>
+    <string name="sem3_esd_p9r1">Dicionários do Python</string>
+    <string name="sem3_esd_p9r2">Filas</string>
+    <string name="sem3_esd_p9r3">Pilhas</string>
+    <string name="sem3_esd_p9r4">Árvores</string>
+
+    <string name="sem3_esd_p10">A sequência de chaves 20 – 30 – 25 – 31 – 12 – 15 – 8 – 6 – 9 – 14 – 18 é inserida em uma árvore binária de busca. Em seguida, a árvore é percorrida em pré-ordem. Qual é a sequência de nós visitados?</string>
+    <string name="sem3_esd_p10r1">20 – 12 – 8 – 6 – 9 – 15 – 14 – 18 – 30 – 25 – 31</string>
+    <string name="sem3_esd_p10r2">6 – 9 – 8 – 14 – 18 – 15 – 12 – 25 – 31 – 30 – 20</string>
+    <string name="sem3_esd_p10r3">6 – 8 – 9 – 12 – 14 – 15 – 18 – 20 – 25 – 30 – 31</string>
+    <string name="sem3_esd_p10r4">6 – 8 – 9 – 14 – 15 – 18 – 12 – 25 – 30 – 31 – 20</string>
+
+</resources>

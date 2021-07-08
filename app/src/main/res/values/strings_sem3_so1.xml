@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_so1">Sistemas Operacionais 1</string>
+    <string name="categ_sem3_so1_prof">Edidio Dantas</string>
+
+    <string name="sem3_so1_p1">Qual a principal função do sistema operacional?</string>
+    <string name="sem3_so1_p1r1">Gerenciar acesso a recursos</string>
+    <string name="sem3_so1_p1r2">Armazenar informações</string>
+    <string name="sem3_so1_p1r3">Transmitir as imagens para o monitor</string>
+    <string name="sem3_so1_p1r4">Controlar o envio e recebimento de dados</string>
+
+    <string name="sem3_so1_p2">Qual a função de um montador (Assembler) na programação de computadores?</string>
+    <string name="sem3_so1_p2r1">Transformar um código de programação em código de máquina.</string>
+    <string name="sem3_so1_p2r2">Carregar as memórias.</string>
+    <string name="sem3_so1_p2r3">Transformar um código binário em código de programação.</string>
+    <string name="sem3_so1_p2r4">Comunicar a BIOS com o SO.</string>
+
+    <string name="sem3_so1_p3">Em qual tipo de sistema operacional vários processadores compartilham uma única memória e dispositivos I/O, sendo gerenciados por apenas um sistema?</string>
+    <string name="sem3_so1_p3r1">Sistemas fortemente acoplados</string>
+    <string name="sem3_so1_p3r2">Sistemas fracamente acoplados</string>
+
+    <string name="sem3_so1_p4">Em qual tipo de sistema operacional podem existir dois ou mais sistemas conectados através de linhas de comunicação, cada sistema funcionando de forma independente, com seu próprio S.O., memória e dispositivos de I/O?</string>
+    <string name="sem3_so1_p4r1">Sistemas fracamente acoplados</string>
+    <string name="sem3_so1_p4r2">Sistemas fortemente acoplados</string>
+
+    <string name="sem3_so1_p5">Em sistemas formetemente acoplados, qual a denominação dada quando os processadores tem acesso uniforme às memórias?</string>
+    <string name="sem3_so1_p5r1">UMA ou SMP</string>
+    <string name="sem3_so1_p5r2">NUMA</string>
+    <string name="sem3_so1_p5r3">COMA</string>
+    <string name="sem3_so1_p5r4">CC-NUMA</string>
+
+    <string name="sem3_so1_p6">Quais das seguintes opções <b><u>não</u></b> é uma das três maneiras básicas de se implantar operações de Entrada e Saída:</string>
+    <string name="sem3_so1_p6r1">por programa</string>
+    <string name="sem3_so1_p6r2">por interrupção</string>
+    <string name="sem3_so1_p6r3">por DMA (Direct Memory Access)</string>
+    <string name="sem3_so1_p6r4">por periféricos</string>
+
+    <string name="sem3_so1_p7">Qual foi o objetivo da criação da técnica de spooling, onde os professos são gravados em fita para leitura e execução posterior?</string>
+    <string name="sem3_so1_p7r1">Auxiliar a submissão de processos ao sistema.</string>
+    <string name="sem3_so1_p7r2">Auxiliar a transferência de dados entre dispositivos de E/S e a memória.</string>
+    <string name="sem3_so1_p7r3">Permitir a implementação da concorrência nos computadores.</string>
+    <string name="sem3_so1_p7r4">Interromper as tarefas do processador, caso uma exceção seja encontrada.</string>
+
+    <string name="sem3_so1_p8">O Linux foi originalmente escrito na seguinte linguagem de programação:</string>
+    <string name="sem3_so1_p8r1">Assembly</string>
+    <string name="sem3_so1_p8r2">Java</string>
+    <string name="sem3_so1_p8r3">Python</string>
+    <string name="sem3_so1_p8r4">PHP</string>
+
+    <string name="sem3_so1_p9">O sistema operacional é formado por um conjunto de rotinas que oferecem serviços essenciais aos usuários. A esse conjunto de rotinas dá-se o nome de:</string>
+    <string name="sem3_so1_p9r1">Kernel</string>
+    <string name="sem3_so1_p9r2">Threads</string>
+    <string name="sem3_so1_p9r3">Utilitários</string>
+    <string name="sem3_so1_p9r4">Processador</string>
+
+    <string name="sem3_so1_p10">Pode ser comparada com uma aplicação formada por vários módulos que são compilados separadamente e depois linkados formando um grande e único programa executável:</string>
+    <string name="sem3_so1_p10r1">Arquitetura Monolítica</string>
+    <string name="sem3_so1_p10r2">Arquitetura de Camadas</string>
+    <string name="sem3_so1_p10r3">Máquina Virtual</string>
+    <string name="sem3_so1_p10r4">Arquitetura Microkernel</string>
+    
+</resources>

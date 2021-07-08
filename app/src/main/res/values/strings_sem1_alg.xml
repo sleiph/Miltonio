@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem1_alg">Algoritmos e Lógica de Programação</string>
+    <string name="categ_sem1_alg_prof">Jane Maria</string>
+
+    <string name="sem1_alg_p1">Qual instrução indica uma estrutura condicional?</string>
+    <string name="sem1_alg_p1r1">SE…ENTAO…SENAO</string>
+    <string name="sem1_alg_p1r2">REPITA…ATE</string>
+    <string name="sem1_alg_p1r3">PARA…</string>
+    <string name="sem1_alg_p1r4">ENQUANTO…</string>
+
+    <string name="sem1_alg_p2">São tipos de dados primitivos em um algoritmo:</string>
+    <string name="sem1_alg_p2r1">Numérico, Lógico e Caractere</string>
+    <string name="sem1_alg_p2r2">Vetores, Numérico e Lógico</string>
+    <string name="sem1_alg_p2r3">Caracteres, Numérico e Matrizes</string>
+    <string name="sem1_alg_p2r4">Vetores, Matrizes e Registros</string>
+
+    <string name="sem1_alg_p3">Que tipo de variável está sendo declarada? \nDECLARE xpto[10,20] NUMERICO</string>
+    <string name="sem1_alg_p3r1">Matriz numérico</string>
+    <string name="sem1_alg_p3r2">Tipo primitivo caractere</string>
+    <string name="sem1_alg_p3r3">Vetor numérico</string>
+    <string name="sem1_alg_p3r4">Tipo primitivo numérico</string>
+
+    <string name="sem1_alg_p4">São exemplos de estrutura de dados homogêneas:</string>
+    <string name="sem1_alg_p4r1">Vetores e Matrizes</string>
+    <string name="sem1_alg_p4r2">Registro e Arquivos</string>
+    <string name="sem1_alg_p4r3">Caractere e Numérico</string>
+    <string name="sem1_alg_p4r4">Numérico e Lógico</string>
+
+    <string name="sem1_alg_p5">Qual a definição de lógica difusa</string>
+    <string name="sem1_alg_p5r1">Tenta solucionar os problemas simulando o pensamento humano</string>
+    <string name="sem1_alg_p5r2">Soluciona os problemas da melhor forma</string>
+    <string name="sem1_alg_p5r3">Soluciona os problemas da forma mais lógica</string>
+    <string name="sem1_alg_p5r4">Tenta solucionar os problemas de forma mais rápida</string>
+
+    <string name="sem1_alg_p6">Qual a definição de ponteiros na programação?</string>
+    <string name="sem1_alg_p6r1">É uma variável que aponta para o primeiro endereço de uma memória reservada</string>
+    <string name="sem1_alg_p6r2">É uma variável que armazena uma estrutura homogênea</string>
+    <string name="sem1_alg_p6r3">É uma variável que armazena os dados de forma contígua</string>
+    <string name="sem1_alg_p6r4">É uma variável que armazena o conteúdo de uma lista</string>
+
+    <string name="sem1_alg_p7">Uma função é dita recursiva quando:</string>
+    <string name="sem1_alg_p7r1">Chama ela própria</string>
+    <string name="sem1_alg_p7r2">Não se repete</string>
+    <string name="sem1_alg_p7r3">Resolve problemas complexos</string>
+    <string name="sem1_alg_p7r4">Chama outra função</string>
+
+    <string name="sem1_alg_p8" tools:ignore="Typos">Qual o comando em Python utilizado para chamar a próxima linha de um arquivo de texto?</string>
+    <string name="sem1_alg_p8r1">read()</string>
+    <string name="sem1_alg_p8r2">input()</string>
+    <string name="sem1_alg_p8r3">open()</string>
+    <string name="sem1_alg_p8r4">write()</string>
+
+    <string name="sem1_alg_p9" tools:ignore="Typos">Em C++ qual o comando utilizado para calcular a raiz quadrada?</string>
+    <string name="sem1_alg_p9r1">sqrt()</string>
+    <string name="sem1_alg_p9r2">pow()</string>
+    <string name="sem1_alg_p9r3">Square()</string>
+    <string name="sem1_alg_p9r4">squareRoot()</string>
+
+    <string name="sem1_alg_p10">Qual o símbolo lógico utilizado na expressão \n(p -> q)?</string>
+    <string name="sem1_alg_p10r1">Condicional</string>
+    <string name="sem1_alg_p10r2">Conjunção</string>
+    <string name="sem1_alg_p10r3">Negação</string>
+    <string name="sem1_alg_p10r4">Disjunção</string>
+
+</resources>

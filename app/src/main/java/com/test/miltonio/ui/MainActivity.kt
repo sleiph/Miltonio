@@ -4,7 +4,7 @@ import com.test.miltonio.R
 import com.test.miltonio.MyApplication
 import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.modelo.Materia
-import com.test.miltonio.objetos.Semestre1
+import com.test.miltonio.objetos.semestre1.Semestre1
 import com.test.miltonio.objetos.Semestre2
 import com.test.miltonio.objetos.Semestre3
 
@@ -23,6 +23,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
+
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -70,16 +71,37 @@ class MainActivity : AppCompatActivity() {
     // Todo: remover essa função quando terminar o app
     private fun debugSemestre(  ) {
         val semestre1 = Semestre1()
-        for (materia in semestre1.getMaterias())
-            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+        for (materia in semestre1.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
 
         val semestre2 = Semestre2()
-        for (materia in semestre2.getMaterias())
-            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+        for (materia in semestre2.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
 
         val semestre3 = Semestre3()
-        for (materia in semestre3.getMaterias())
-            MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+        for (materia in semestre3.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
     }
     
     private fun resetSemestre( semestre: Int ) {
@@ -109,7 +131,7 @@ class MainActivity : AppCompatActivity() {
 
         matarChildren( findViewById(R.id.cardParent) )
 
-        val materias = MyApplication.materiasdatabase?.MateriaDao()?.loadBySemestre(semestre)
+        val materias = MyApplication.materiasdatabase?.MateriaDao()?.getBySemestre(semestre)
         if (materias != null) {
             for (materia in materias) {
                 montarCard( materia, findViewById(R.id.cardParent) )
@@ -129,13 +151,13 @@ class MainActivity : AppCompatActivity() {
         param.width = 0
         param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
         cardLayout.layoutParams = param
-        cardLayout.setCardBack( ContextCompat.getColor(this, materia.cor_db) )
+        cardLayout.setCardBack( ContextCompat.getColor(this, materia.cor) )
         cardLayout.setMateriaDrawable(
-            ContextCompat.getDrawable(this, materia.simb_db)
+            ContextCompat.getDrawable(this, materia.imgSimbolo)
         )
         cardLayout.setProfessorText(
-            getString(materia.professor_db),
-            if (materia.isPreto_db)
+            getString(materia.professor),
+            if (materia.isPreto)
                 ContextCompat.getColor(this, R.color.colorPrt)
             else
                 ContextCompat.getColor(this, R.color.colorBnc)
@@ -143,16 +165,16 @@ class MainActivity : AppCompatActivity() {
         cardLayout.setProgressoText(
             getString(
                 R.string.resultado_pontos,
-                materia.pontos_db.toString()
+                materia.pontos.toString()
             ),
-            if (materia.isPreto_db)
+            if (materia.isPreto)
                 ContextCompat.getColor(this, R.color.colorPrt)
             else
                 ContextCompat.getColor(this, R.color.colorBnc)
         )
         cardLayout.setMateriaText(
-            getString(materia.materia_db),
-            if (materia.isPreto_db)
+            getString(materia.nome),
+            if (materia.isPreto)
                 ContextCompat.getColor(this, R.color.colorPrt)
             else
                 ContextCompat.getColor(this, R.color.colorBnc)
@@ -161,7 +183,7 @@ class MainActivity : AppCompatActivity() {
         pai.addView(cardLayout)
 
         cardLayout.setOnClickListener {
-            loadTelaPerguntas(materia.cid)
+            loadTelaPerguntas(materia.id)
         }
     }
 

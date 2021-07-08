@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_eap">Estatística Aplicada</string>
+    <string name="categ_sem3_eap_prof">Marco Rodrigo</string>
+    
+    <string name="sem3_eap_p1">Em uma pesquisa para determinar o nível de satisfação dos clientes de uma loja.\n
+        Qual a classificação da varíavel desta pesquisa?</string>
+    <string name="sem3_eap_p1r1">Qualitativa</string>
+    <string name="sem3_eap_p1r2">Quantitativa Contínua</string>
+    <string name="sem3_eap_p1r3">Quantitativa Discreta</string>
+
+    <string name="sem3_eap_p2">Em uma pesquisa para determinar o preço total do combustível ao abastecer o tanque do carro.\n
+        Qual a classificação da varíavel desta pesquisa?</string>
+    <string name="sem3_eap_p2r1">Quantitativa Contínua</string>
+    <string name="sem3_eap_p2r2">Qualitativa</string>
+    <string name="sem3_eap_p2r3">Quantitativa Discreta</string>
+
+    <string name="sem3_eap_p3">
+        0 |-------- 10\n
+        \n
+        Quais números inteiros pertencem à sequência distributiva acima?
+    </string>
+    <string name="sem3_eap_p3r1">de 0 a 9</string>
+    <string name="sem3_eap_p3r2">de 0 a 10</string>
+    <string name="sem3_eap_p3r3">de 1 a 9</string>
+    <string name="sem3_eap_p3r4">de 1 a 10</string>
+
+    <string name="sem3_eap_p4">Em uma pesquisa sobre a idade média dos eleitores de um bairro, foi decidido que a tabela de distribuição de frequências teria 7 classes (k), de 16 a 93 anos (AA), qual será então a amplitude de cada classe (h)?</string>
+    <string name="sem3_eap_p4r1">11</string>
+    <string name="sem3_eap_p4r2">7</string>
+    <string name="sem3_eap_p4r3">77</string>
+
+    <string name="sem3_eap_p5">Qual a definição de moda em estatística?</string>
+    <string name="sem3_eap_p5r1">É o valor que ocorre com maior frequência nos dados</string>
+    <string name="sem3_eap_p5r2">É a média dos valores coletados</string>
+    <string name="sem3_eap_p5r3">É a média ponderada dos valores de cada classe</string>
+    <string name="sem3_eap_p5r4">É a média aritmética dos valores coletados</string>
+
+    <string name="sem3_eap_p6">O que são medidas separatrizes?</string>
+    <string name="sem3_eap_p6r1">Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados e organizados.</string>
+    <string name="sem3_eap_p6r2">Valores que ocupam lugares, abrangendo intervalos iguais de um conjunto de valores coletados.</string>
+    <string name="sem3_eap_p6r3">Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados e organizados.</string>
+    <string name="sem3_eap_p6r4">Valores que ocupam lugares, abrangendo intervalos irregulares de um conjunto de valores coletados.</string>
+
+    <string name="sem3_eap_p7">Qual a aplicação da medida de variância?</string>
+    <string name="sem3_eap_p7r1">Relacionar os desvios em torno da média.</string>
+    <string name="sem3_eap_p7r2">Encontrar o valor de maior frequência.</string>
+    <string name="sem3_eap_p7r3">Encontrar o valor total médio.</string>
+    <string name="sem3_eap_p7r4">Relacionar os desvios em torno da moda.</string>
+
+    <string name="sem3_eap_p8">Se o valor de curtose de um conjunto de dados for maior que o de uma distribuição normal, qual será o tipo de curva do conjunto?</string>
+    <string name="sem3_eap_p8r1">Leptocúrtica</string>
+    <string name="sem3_eap_p8r2">Mesocúrtica</string>
+    <string name="sem3_eap_p8r3">Platicúrtica</string>
+
+    <string name="sem3_eap_p9">O que pode ser determinado à partir da distribuição binomial?</string>
+    <string name="sem3_eap_p9r1">A probabilidade de se obter k sucessos em n tentativas.</string>
+    <string name="sem3_eap_p9r2">A média de um conjunto ordenado.</string>
+    <string name="sem3_eap_p9r3">A média de um conjunto não ordenado.</string>
+    <string name="sem3_eap_p9r4">O percentual de curtose de um conjunto ordenado.</string>
+
+    <string name="sem3_eap_p10">Ao jogar um dado, qual a probabilidade de obtermos um número ímpar voltado para cima?</string>
+    <string name="sem3_eap_p10r1"><![CDATA[&#189;]]></string>
+    <string name="sem3_eap_p10r2">6/3</string>
+    <string name="sem3_eap_p10r3">1/6</string>
+    <string name="sem3_eap_p10r4">4/6</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_ihc">Interação Humano-Computador</string>
+    <string name="categ_sem3_ihc_prof">Daniel</string>
+
+    <string name="sem3_ihc_p1">Qual das seguintes áreas <u>NÃO</u> está envolvida na Interação Humano-Computador (IHC)?</string>
+    <string name="sem3_ihc_p1r1">Todas as áreas listadas pertencem à IHC</string>
+    <string name="sem3_ihc_p1r2">Engenharia de Software</string>
+    <string name="sem3_ihc_p1r3">Ergonomia</string>
+    <string name="sem3_ihc_p1r4">Design</string>
+    <string name="sem3_ihc_p1r5">Psicologia Cognitiva</string>
+
+    <string name="sem3_ihc_p2">Escolha um exemplo de sistema desenvolvido com perspectiva de discurso:</string>
+    <string name="sem3_ihc_p2r1">Um chatbot</string>
+    <string name="sem3_ihc_p2r2">Pacote Office</string>
+    <string name="sem3_ihc_p2r3">Um formulário de site</string>
+    <string name="sem3_ihc_p2r4">Twitter</string>
+
+    <string name="sem3_ihc_p3">Escolha um exemplo de sistema desenvolvido com perspectiva de ferramenta:</string>
+    <string name="sem3_ihc_p3r1">Pacote Office</string>
+    <string name="sem3_ihc_p3r2">Um chatbot</string>
+    <string name="sem3_ihc_p3r3">Um formulário de site</string>
+    <string name="sem3_ihc_p3r4">Twitter</string>
+
+    <string name="sem3_ihc_p4">Considere a sentença a seguir:\n\n“um produto da engenharia humana cuja ação envolve a manipulação de símbolos controlada por um conjunto específico e finito de regras capaz de realizar interação.”.\n\nPodemos afirmar que a definição se trata de:</string>
+    <string name="sem3_ihc_p4r1">Artefato Computacional Interativo</string>
+    <string name="sem3_ihc_p4r2">Experiência do usuário.</string>
+    <string name="sem3_ihc_p4r3">Controles</string>
+    <string name="sem3_ihc_p4r4">Desenho Universal</string>
+    <string name="sem3_ihc_p4r5">Comunicabilidade</string>
+
+    <string name="sem3_ihc_p5">Dentro da semiótica, signos dinâmicos se referem a:</string>
+    <string name="sem3_ihc_p5r1">Aspectos temporais e causais</string>
+    <string name="sem3_ihc_p5r2">O estado do sistema</string>
+    <string name="sem3_ihc_p5r3">Outros signos da interface</string>
+
+    <string name="sem3_ihc_p6">Qual a principal motivação do método de avaliação heurística de Nielsen?</string>
+    <string name="sem3_ihc_p6r1">Facilitar e acelerar o processo de avaliação de interfaces.</string>
+    <string name="sem3_ihc_p6r2">Determinar o valor de uma interface.</string>
+    <string name="sem3_ihc_p6r3">Avaliar o tempo que será gasto no projeto.</string>
+
+    <string name="sem3_ihc_p7">O método de avaliação de comunicabilidade (MAC), que envolve a observação dos usuários durante a interação com o sistema, faz uma análise:</string>
+    <string name="sem3_ihc_p7r1">Qualitativa</string>
+    <string name="sem3_ihc_p7r2">Quantitativa</string>
+
+    <string name="sem3_ihc_p8">Vimos em sala de aula que no método de avaliação da comunicabilidade, existem uma série de etiquetas que são associadas a alguma resposta dos usuários ao utilizar um sistema. Indique abaixo qual alternativa não se trata de uma etiqueta:</string>
+    <string name="sem3_ihc_p8r1">Aí sim!</string>
+    <string name="sem3_ihc_p8r2">Socorro!</string>
+    <string name="sem3_ihc_p8r3">Vai de outro jeito.</string>
+    <string name="sem3_ihc_p8r4">Pra mim, está bom.</string>
+    <string name="sem3_ihc_p8r5">Assim não dá</string>
+
+    <string name="sem3_ihc_p9">Considere a sentença a seguir:\n“É uma regra que funciona na prática, mas para a qual não há (ou não importa procurar) uma explicação teórica. Se trata de um conhecimento que se constrói ao longo de anos de prática, como uma compilação ‘do que funciona’ e ‘do que não funciona’.”.\nPodemos afirmar que a definição se trata de:</string>
+    <string name="sem3_ihc_p9r1">Heurística</string>
+    <string name="sem3_ihc_p9r2">Metalinguística.</string>
+    <string name="sem3_ihc_p9r3">Relação triádica</string>
+    <string name="sem3_ihc_p9r4">Semiótica</string>
+    <string name="sem3_ihc_p9r5">Comunicabilidade</string>
+
+    <string name="sem3_ihc_p10">Quais das seguntes opções <b><u>não</u></b> uma das cinco etapas do Método de Avaliação de Comunicabilidade (MAC)?</string>
+    <string name="sem3_ihc_p10r1">Priorização dos problemas encontrados</string>
+    <string name="sem3_ihc_p10r2">Preparação.</string>
+    <string name="sem3_ihc_p10r3">Aplicação</string>
+    <string name="sem3_ihc_p10r4">Interpretação</string>
+    <string name="sem3_ihc_p10r5">Consolidação dos resultados</string>
+    <string name="sem3_ihc_p10r6">Relato dos resultados</string>
+
+</resources>

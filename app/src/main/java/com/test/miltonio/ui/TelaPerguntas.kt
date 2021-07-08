@@ -32,7 +32,7 @@ class TelaPerguntas : AppCompatActivity() {
         val id = resulIntent.getIntExtra("id", 0)
 
         // pegando a materia do banco de dados
-        val materia = MyApplication.materiasdatabase?.MateriaDao()?.loadById( id )
+        val materia = MyApplication.materiasdatabase?.MateriaDao()?.get( id )
 
         // elementos do layout
         val fundoRespostaDrawable = ContextCompat.getDrawable(this, R.drawable.card_respostas_fundo)
@@ -57,7 +57,7 @@ class TelaPerguntas : AppCompatActivity() {
         var isCerta = false
 
         // pegando as perguntas do banco de dados
-        val perguntas = MyApplication.materiasdatabase?.PerguntaDao()?.loadByMateriaId( id )
+        val perguntas = MyApplication.materiasdatabase?.PerguntaDao()?.getByMateriaId( id )
         // número de perguntas que vão fazer parte do jogo
         var nPerguntas = 10
 
@@ -104,7 +104,7 @@ class TelaPerguntas : AppCompatActivity() {
 
         fun montarPergunta(pergunta: Pergunta) {
             val respostas = MyApplication.materiasdatabase?.RespostaDao()
-                ?.loadByPerguntaId( pergunta.id )
+                ?.getByPerguntaId( pergunta.id )
 
             txtPergunta.text = resources.getString( pergunta.id )
 
@@ -124,9 +124,9 @@ class TelaPerguntas : AppCompatActivity() {
 
         if (materia != null) {
             // desenhando a base da tela
-            corFundo.setBackgroundColor( ContextCompat.getColor(this, materia.cor_db) )
-            imgFundo.setBackgroundResource( materia.fundo_db )
-            if (materia.isPreto_db)
+            corFundo.setBackgroundColor( ContextCompat.getColor(this, materia.cor) )
+            imgFundo.setBackgroundResource( materia.imgFundo )
+            if (materia.isPreto)
                 txtPergunta.setTextColor(ContextCompat.getColor(this, R.color.colorPrt))
             else
                 txtPergunta.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
@@ -161,8 +161,8 @@ class TelaPerguntas : AppCompatActivity() {
                 }
                 else {
                     val pontos = (acertos.toDouble() / nPerguntas.toDouble()) * 100
-                    materia.pontos_db = pontos.toInt()
-                    MyApplication.materiasdatabase?.MateriaDao()?.updateCatg(materia)
+                    materia.pontos = pontos.toInt()
+                    MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
                     loadTelaResultado( id )
                 }
 

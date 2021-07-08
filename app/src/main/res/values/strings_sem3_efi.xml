@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem3_efi">Economia e Finanças</string>
+    <string name="categ_sem3_efi_prof">Joyce</string>
+
+    <string name="sem3_efi_p1">Escolha um recurso natural que não seja atualmente (2021) fator de produção:</string>
+    <string name="sem3_efi_p1r1">Magma vulcânico</string>
+    <string name="sem3_efi_p1r2">Água</string>
+    <string name="sem3_efi_p1r3">Ar</string>
+
+    <string name="sem3_efi_p2">Qual característica indica que um mercado está firme?</string>
+    <string name="sem3_efi_p2r1">Se a procura for maior que a oferta</string>
+    <string name="sem3_efi_p2r2">Se a procura for igual a oferta</string>
+    <string name="sem3_efi_p2r3">Se a procura for menor que a oferta</string>
+
+    <string name="sem3_efi_p3">Qual dos seguintes fatores é capaz de distorcer a percepção de um consumidor sobre seu poder aquisitivo?</string>
+    <string name="sem3_efi_p3r1">Crédito</string>
+    <string name="sem3_efi_p3r2">Preço</string>
+    <string name="sem3_efi_p3r3">Hábitos do Consumidor</string>
+    <string name="sem3_efi_p3r4">Renda</string>
+
+    <string name="sem3_efi_p4">Bens de Giffen???</string>
+    <string name="sem3_efi_p4r1">Bens de pequeno valor. Caso haja uma elevação no preço, seu consumo tende a aumentar.</string>
+    <string name="sem3_efi_p4r2">Bens de consumo ostentário. Caso haja uma elevação no preço, seu consumo tende a aumentar.</string>
+
+    <string name="sem3_efi_p5">Predominantemente, os agregados do setor financeiro são:</string>
+    <string name="sem3_efi_p5r1">Variáveis-estoque</string>
+    <string name="sem3_efi_p5r2">Variáveis-fluxo</string>
+
+    <string name="sem3_efi_p6">Qual o fator principal para que um montante seja maior vindo de um financiamento de juros simples que de um financiamento de juros compostos?</string>
+    <string name="sem3_efi_p6r1">A taxa cobrada dos juros</string>
+    <string name="sem3_efi_p6r2">O prazo de pagamento</string>
+    <string name="sem3_efi_p6r3">A taxa SELIC</string>
+
+    <string name="sem3_efi_p7">Amortização é:</string>
+    <string name="sem3_efi_p7r1">O pagamento do principal ou capital emprestado que é feito normalmente de forma periódica e sucessiva durante o prazo de financiamento.</string>
+    <string name="sem3_efi_p7r2">O custo do capital tomado sob o aspecto do mutuário e o retorno do capital investido sob o aspect do mutuante.</string>
+    <string name="sem3_efi_p7r3">O pagamento da amortização mais os juros relativos ao saldo devedor imediatamente anterior ao período referente a prestação.</string>
+    <string name="sem3_efi_p7r4" tools:ignore="Typos">O valor devido em certo período, imediatamente após a realização do pagamento correspondente ao momento da consulta.</string>
+
+    <string name="sem3_efi_p8">Em um sistema de amortização constante (SAC) de empréstimos, a prestação:</string>
+    <string name="sem3_efi_p8r1">É a soma da amortização aos juros calculados no período</string>
+    <string name="sem3_efi_p8r2">É obtida através da formula F * V * Pm</string>
+    <string name="sem3_efi_p8r3">É obtida através da formula F * A * C * m</string>
+
+    <string name="sem3_efi_p9" tools:ignore="Typos">Seguindo o método de avaliação de fluxo de caixa VAUE (Valor Anual Uniforme Equivalente), como será verificado o impacto anual dos custos mensais?</string>
+    <string name="sem3_efi_p9r1">Através da capitalização composta.</string>
+    <string name="sem3_efi_p9r2">Através da capitalização simples.</string>
+    <string name="sem3_efi_p9r3">Através do valor presente líquido.</string>
+
+    <string name="sem3_efi_p10">A 1ª regra de decisão para matrizes de decisão (Maximin), pode ser definida como:</string>
+    <string name="sem3_efi_p10r1">Regra do pessimista.</string>
+    <string name="sem3_efi_p10r2">Regra do otimista.</string>
+    <string name="sem3_efi_p10r3">Regra da razão insuficiente.</string>
+    <string name="sem3_efi_p10r4">Regra do mínimo arrependimento.</string>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_cnt">Contabilidade</string>
+    <string name="categ_sem2_cnt_prof">Célia</string>
+
+    <string name="sem2_cnt_p1">Quais as duas principais correntes do pensamento contábil?</string>
+    <string name="sem2_cnt_p1r1">Europeia e Estadunidense</string>
+    <string name="sem2_cnt_p1r2">Brasileira e Anglicana</string>
+    <string name="sem2_cnt_p1r3">Patrimonial e de Resultado</string>
+    <string name="sem2_cnt_p1r4">Débito e Crédito</string>
+
+    <string name="sem2_cnt_p2">A contabilidade é uma ciência exata?</string>
+    <string name="sem2_cnt_p2r1">Não</string>
+    <string name="sem2_cnt_p2r2">Sim</string>
+
+    <string name="sem2_cnt_p3">Quando os débitos de uma empresa excedem o seu patrimônio bruto, dizemos que a situação líquida é:</string>
+    <string name="sem2_cnt_p3r1">deficitária</string>
+    <string name="sem2_cnt_p3r2">favorável</string>
+    <string name="sem2_cnt_p3r3">superavitária</string>
+    <string name="sem2_cnt_p3r4">ativa</string>
+
+    <string name="sem2_cnt_p4">Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO <u>Ativo</u> da empresa totaliza:</string>
+    <string name="sem2_cnt_p4r1">R$55.000</string>
+    <string name="sem2_cnt_p4r2">R$25.000</string>
+    <string name="sem2_cnt_p4r3">R$70.000</string>
+    <string name="sem2_cnt_p4r4">R$15.000</string>
+
+    <string name="sem2_cnt_p5">Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO total <u>Passivo</u> da empresa totaliza:</string>
+    <string name="sem2_cnt_p5r1">R$40.000</string>
+    <string name="sem2_cnt_p5r2">R$25.000</string>
+    <string name="sem2_cnt_p5r3">R$15.000</string>
+    <string name="sem2_cnt_p5r4">R$30.000</string>
+
+    <string name="sem2_cnt_p6">Ao levantar o seu Patrimônio, uma empresa apurou os seguintes valores:\n\nBens R$25.000\nDireitos R$30.000\nObrigações R$40.000\n\nO <u>Patrimônio Líquido</u> da empresa totaliza:</string>
+    <string name="sem2_cnt_p6r1">R$15.000</string>
+    <string name="sem2_cnt_p6r2">R$55.000</string>
+    <string name="sem2_cnt_p6r3">R$95.000</string>
+    <string name="sem2_cnt_p6r4">R$40.000</string>
+
+    <string name="sem2_cnt_p7">Considerando patrimônio da empresa, qual dos exemplos abaixo é considerado um direito?</string>
+    <string name="sem2_cnt_p7r1">Contas a receber</string>
+    <string name="sem2_cnt_p7r2">Caixa</string>
+    <string name="sem2_cnt_p7r3">Estoque</string>
+    <string name="sem2_cnt_p7r4">Salários a pagar</string>
+    <string name="sem2_cnt_p7r5">Máquinas e equipamentos</string>
+
+    <string name="sem2_cnt_p8">Quais os dois tipos de Regime de escrituração contábil em um relatório DRE?</string>
+    <string name="sem2_cnt_p8r1">Regime de Competência e Regime de Caixa</string>
+    <string name="sem2_cnt_p8r2">Regime Ativo e Regime Passivo</string>
+    <string name="sem2_cnt_p8r3">Débito e Crédito</string>
+    <string name="sem2_cnt_p8r4">Regime de Curto Prazo e Regime de Long Prazo</string>
+
+    <string name="sem2_cnt_p9" tools:ignore="Typos">Em um regime de competência, as movimentações são consideradas no momento da transação financeira?</string>
+    <string name="sem2_cnt_p9r1">Falso</string>
+    <string name="sem2_cnt_p9r2">Verdadeiro</string>
+
+    <string name="sem2_cnt_p10">Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Econômico</u> desta empresa?</string>
+    <string name="sem2_cnt_p10r1">42 dias</string>
+    <string name="sem2_cnt_p10r2">102 dias</string>
+    <string name="sem2_cnt_p10r3">72 dias</string>
+    <string name="sem2_cnt_p10r4">5 dias</string>
+
+    <string name="sem2_cnt_p11">Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Operacional</u> desta empresa?</string>
+    <string name="sem2_cnt_p11r1">102 dias</string>
+    <string name="sem2_cnt_p11r2">42 dias</string>
+    <string name="sem2_cnt_p11r3">72 dias</string>
+    <string name="sem2_cnt_p11r4">5 dias</string>
+
+    <string name="sem2_cnt_p12">Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo Financeiro</u> desta empresa?</string>
+    <string name="sem2_cnt_p12r1">72 dias</string>
+    <string name="sem2_cnt_p12r2">42 dias</string>
+    <string name="sem2_cnt_p12r3">102 dias</string>
+    <string name="sem2_cnt_p12r4">5 dias</string>
+
+    <string name="sem2_cnt_p13">Considere uma empresa com os prazos médios a seguir:\n\nEstocagem: 42 dias\nRecebimento: 60 dias\nPagamento: 30 dias\n\nQual será o <u>Ciclo da Empresa</u>?</string>
+    <string name="sem2_cnt_p13r1">5 dias</string>
+    <string name="sem2_cnt_p13r2">42 dias</string>
+    <string name="sem2_cnt_p13r3">102 dias</string>
+    <string name="sem2_cnt_p13r4">72 dias</string>
+
+    <string name="sem2_cnt_p14">Qual a fórmula de cálculo do Capital Circulante Líquido (CCL ou CGL)?</string>
+    <string name="sem2_cnt_p14r1">A diferença entre o Ativo Circulante e o Passivo Circulante</string>
+    <string name="sem2_cnt_p14r2">A soma do Ativo Circulante com o Passivo Circulante</string>
+    <string name="sem2_cnt_p14r3">A diferença entre o Capital Circulante e os Lucros Líquidos</string>
+    <string name="sem2_cnt_p14r4">A soma do Capital Circulante com os Lucros Líquidos</string>
+
+    <string name="sem2_cnt_p15">O que significa uma empresa ter um índice de <u>Liquidez Corrente</u> igual a 1?</string>
+    <string name="sem2_cnt_p15r1">Os valores dos direitos e obrigações a curto prazo são equivalentes.</string>
+    <string name="sem2_cnt_p15r2">Demonstra folga no disponível para uma possível liquidação das obrigações.</string>
+    <string name="sem2_cnt_p15r3">Não há disponibilidade suficiente para quitar as obrigações a curto prazo.</string>
+
+    <string name="sem2_cnt_p16">Cite uma das aplicabilidades da <u>Análise Vertical</u> financeira?</string>
+    <string name="sem2_cnt_p16r1">Analisar o impacto dos investimentos sobre o patrimônio da empresa</string>
+    <string name="sem2_cnt_p16r2">Analisar a estruturação administrativa da empresa</string>
+    <string name="sem2_cnt_p16r3">Analisar o Endividamento da empresa</string>
+    <string name="sem2_cnt_p16r4">Analisar os ciclos econômicos da empresa</string>
+
+    <string name="sem2_cnt_p17">Qual dos seguintes ativos não é um bem sujeito à depreciação?</string>
+    <string name="sem2_cnt_p17r1">Terrenos</string>
+    <string name="sem2_cnt_p17r2">Imóveis</string>
+    <string name="sem2_cnt_p17r3">Instalações</string>
+    <string name="sem2_cnt_p17r4">Maquinário</string>
+    <string name="sem2_cnt_p17r5">Móveis</string>
+    <string name="sem2_cnt_p17r6">Utensílios</string>
+
+    <string name="sem2_cnt_p18">Método Direto é o demonstrativo dos recebimentos e pagamentos derivados das atividades operacionais da empresa, e não o lucro ajustado.</string>
+    <string name="sem2_cnt_p18r1">Certo</string>
+    <string name="sem2_cnt_p18r2">Errado</string>
+
+    <string name="sem2_cnt_p19">O caixa é dividido em três grupos de atividades: as Operacionais, de Investimento e de Financiamento.</string>
+    <string name="sem2_cnt_p19r1">Errado</string>
+    <string name="sem2_cnt_p19r2">Certo</string>
+
+    <string name="sem2_cnt_p20">Considerando um ponto de vista puramente econômico, qual o melhor critério de avaliação da gestão de estoque para o empresário?</string>
+    <string name="sem2_cnt_p20r1">UEPS</string>
+    <string name="sem2_cnt_p20r2">PEPS</string>
+    <string name="sem2_cnt_p20r3">Custo Médio</string>
+    <string name="sem2_cnt_p20r4">Custo Logístico</string>
+
+</resources>

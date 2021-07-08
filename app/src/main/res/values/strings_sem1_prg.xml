@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem1_prg">Programação em Microinformática</string>
+    <string name="categ_sem1_prg_prof">Pinho</string>
+
+    <string name="sem1_prg_p1" tools:ignore="Typos">Qual o comando utilizado para iniciar uma macro?</string>
+    <string name="sem1_prg_p1r1">Sub nome()</string>
+    <string name="sem1_prg_p1r2">Macro nome()</string>
+    <string name="sem1_prg_p1r3">Macro()</string>
+    <string name="sem1_prg_p1r4">Sub()</string>
+
+    <string name="sem1_prg_p2" tools:ignore="Typos">Qual o comando utilizado para terminar uma macro?</string>
+    <string name="sem1_prg_p2r1">End Sub</string>
+    <string name="sem1_prg_p2r2">End Macro</string>
+    <string name="sem1_prg_p2r3">/sub</string>
+    <string name="sem1_prg_p2r4">/macro</string>
+
+    <string name="sem1_prg_p3" tools:ignore="Typos">Qual será a célula selecionada com o comando \nCell(3, 4).Select?</string>
+    <string name="sem1_prg_p3r1">C4</string>
+    <string name="sem1_prg_p3r2">D3</string>
+    <string name="sem1_prg_p3r3">A34</string>
+    <string name="sem1_prg_p3r4">A4</string>
+
+    <string name="sem1_prg_p4" tools:ignore="Typos">Qual o comando utilizado para fechar uma função While?</string>
+    <string name="sem1_prg_p4r1">Loop</string>
+    <string name="sem1_prg_p4r2">While End</string>
+    <string name="sem1_prg_p4r3">End While</string>
+    <string name="sem1_prg_p4r4">End Loop</string>
+
+    <string name="sem1_prg_p5" tools:ignore="Typos">Qual o comando utilizado para chamar uma caixa de entrada?</string>
+    <string name="sem1_prg_p5r1">InputBox()</string>
+    <string name="sem1_prg_p5r2">ImputBox()</string>
+    <string name="sem1_prg_p5r3">callBox()</string>
+    <string name="sem1_prg_p5r4">Input()</string>
+
+    <string name="sem1_prg_p6">Qual a forma certa de iniciar uma variável inteira?</string>
+    <string name="sem1_prg_p6r1">Dim x As Integer</string>
+    <string name="sem1_prg_p6r2">Dim x = 10</string>
+    <string name="sem1_prg_p6r3">Dim 10 As Integer</string>
+    <string name="sem1_prg_p6r4">x = 10</string>
+
+    <string name="sem1_prg_p7">Qual o tipo padrão de uma MsgBox()?</string>
+    <string name="sem1_prg_p7r1">OKOnly</string>
+    <string name="sem1_prg_p7r2">OKCancel</string>
+    <string name="sem1_prg_p7r3">Critical</string>
+    <string name="sem1_prg_p7r4">Question</string>
+
+    <string name="sem1_prg_p8">Como selecionar um grupo de celulas?</string>
+    <string name="sem1_prg_p8r1">Range(\"B5:D6\")</string>
+    <string name="sem1_prg_p8r2">Range(B5,D6)</string>
+    <string name="sem1_prg_p8r3">Range(25:46)</string>
+    <string name="sem1_prg_p8r4">Range(B5)</string>
+
+    <string name="sem1_prg_p9">Qual o atalho utilizado para abrir o editor do Visual Basic?</string>
+    <string name="sem1_prg_p9r1">Alt-F11</string>
+    <string name="sem1_prg_p9r2">F11</string>
+    <string name="sem1_prg_p9r3">Ctrl-F11</string>
+    <string name="sem1_prg_p9r4">Shift-F11</string>
+
+    <string name="sem1_prg_p10">Qual a sintaxe correta de uma condicional IF?</string>
+    <string name="sem1_prg_p10r1">If (condição) Then</string>
+    <string name="sem1_prg_p10r2">If (condição):</string>
+    <string name="sem1_prg_p10r3">If (condição) DO</string>
+    <string name="sem1_prg_p10r4">If (condição) {}</string>
+
+</resources>

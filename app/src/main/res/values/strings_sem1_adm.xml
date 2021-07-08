@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_adm">Administração Geral</string>
+    <string name="categ_sem1_adm_prof">Milton</string>
+
+    <string name="sem1_adm_p1">A experiência de Hawthorne foi realizada por:</string>
+    <string name="sem1_adm_p1r1">Elton Maio</string>
+    <string name="sem1_adm_p1r2">Max Weber</string>
+    <string name="sem1_adm_p1r3">Frederick Taylor</string>
+    <string name="sem1_adm_p1r4">Henry Ford</string>
+
+    <string name="sem1_adm_p2">Descreva um medidor de capacidade:</string>
+    <string name="sem1_adm_p2r1">Verifica a produção em termos de quantidade em um determinado período de tempo</string>
+    <string name="sem1_adm_p2r2">Faz uma medição da produção de um colaborador em um mesmo período de tempo</string>
+    <string name="sem1_adm_p2r3">Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</string>
+    <string name="sem1_adm_p2r4">Faz uma relação entre o lucro e o investimento</string>
+
+    <string name="sem1_adm_p3">Descreva um medidor de produtividade:</string>
+    <string name="sem1_adm_p3r1">Faz uma medição da produção de um colaborador em um mesmo período de tempo</string>
+    <string name="sem1_adm_p3r2">Verifica a produção em termos de quantidade em um determinado período de tempo</string>
+    <string name="sem1_adm_p3r3">Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</string>
+    <string name="sem1_adm_p3r4">Faz uma relação entre o lucro e o investimento</string>
+
+    <string name="sem1_adm_p4">Descreva um medidor de qualidade:</string>
+    <string name="sem1_adm_p4r1">Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</string>
+    <string name="sem1_adm_p4r2">Verifica a produção em termos de quantidade em um determinado período de tempo</string>
+    <string name="sem1_adm_p4r3">Faz uma medição da produção de um colaborador em um mesmo período de tempo</string>
+    <string name="sem1_adm_p4r4">Faz uma relação entre o lucro e o investimento</string>
+
+    <string name="sem1_adm_p5">Descreva um medidor de rentabilidade:</string>
+    <string name="sem1_adm_p5r1">Faz uma relação entre o lucro e o investimento</string>
+    <string name="sem1_adm_p5r2">Verifica a produção em termos de quantidade em um determinado período de tempo</string>
+    <string name="sem1_adm_p5r3">Faz uma medição da produção de um colaborador em um mesmo período de tempo</string>
+    <string name="sem1_adm_p5r4">Faz uma comparação da produção avaliando produtos sem defeitos ou não conformidades</string>
+
+    <string name="sem1_adm_p6">Qual estrutura contemporânea combina as estruturas funcional e de produtos?</string>
+    <string name="sem1_adm_p6r1">Estrutura Matricial</string>
+    <string name="sem1_adm_p6r2">Estrutura Linear</string>
+    <string name="sem1_adm_p6r3">Estrutura Funcional</string>
+    <string name="sem1_adm_p6r4">Estrutura Linha-Staff</string>
+
+    <string name="sem1_adm_p7">A fabricação dos produtos e serviços da empresa é função de qual setor?</string>
+    <string name="sem1_adm_p7r1">Produção</string>
+    <string name="sem1_adm_p7r2">Marketing</string>
+    <string name="sem1_adm_p7r3">Desenvolvimento de produto</string>
+    <string name="sem1_adm_p7r4">Contábil</string>
+
+    <string name="sem1_adm_p8">Quem desenvolveu a Teoria Clássica da Administração?</string>
+    <string name="sem1_adm_p8r1">Henry Fayol</string>
+    <string name="sem1_adm_p8r2">Max Weber</string>
+    <string name="sem1_adm_p8r3">Frederick Taylor</string>
+    <string name="sem1_adm_p8r4">Henry Ford</string>
+
+    <string name="sem1_adm_p9">Empresas que passam por mudanças quase que diariamente são exemplo de que tipo de organização?</string>
+    <string name="sem1_adm_p9r1">Organização Organismo Vivo</string>
+    <string name="sem1_adm_p9r2">Organização Cultura</string>
+    <string name="sem1_adm_p9r3">Organização Cerebro</string>
+    <string name="sem1_adm_p9r4">Organizacao Sistema em Fluxo e Transformação</string>
+
+    <string name="sem1_adm_p10">Preocupado com as relações de autoridade, Max Weber desenvolveu:</string>
+    <string name="sem1_adm_p10r1">Teoria da Burocracia</string>
+    <string name="sem1_adm_p10r2">Teoria das Relações Humanas</string>
+    <string name="sem1_adm_p10r3">Administração Científica</string>
+    <string name="sem1_adm_p10r4">Teoria Clássica</string>
+
+</resources>

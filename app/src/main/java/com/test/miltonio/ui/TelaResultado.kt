@@ -25,7 +25,7 @@ class TelaResultado : AppCompatActivity() {
         //pegando o intent da tela anterior
         val resulIntent = intent
         val id = resulIntent.getIntExtra("id", 0)
-        val materia = MyApplication.materiasdatabase?.MateriaDao()?.loadById(id)
+        val materia = MyApplication.materiasdatabase?.MateriaDao()?.get(id)
 
         //declarando os elementos do layout
         val somBom = MediaPlayer.create(this, R.raw.tudo)
@@ -40,9 +40,9 @@ class TelaResultado : AppCompatActivity() {
 
         if (materia != null) {
             txtResultado.text =
-                getString(R.string.resultado_pontos, materia.pontos_db.toString())
+                getString(R.string.resultado_pontos, materia.pontos.toString())
 
-            if (materia.pontos_db >= 60) {
+            if (materia.pontos >= 60) {
                 val drawable =
                     ContextCompat.getDrawable(this, R.drawable.mensagem_resultado_bom)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
@@ -56,11 +56,11 @@ class TelaResultado : AppCompatActivity() {
                 somRuim.start()
             }
 
-            corFnd.setBackgroundColor(ContextCompat.getColor(this, materia.cor_db))
-            imgFnd.setBackgroundResource(materia.fundo_db)
+            corFnd.setBackgroundColor(ContextCompat.getColor(this, materia.cor))
+            imgFnd.setBackgroundResource(materia.imgFundo)
             txtCategoria.text =
-                getString(R.string.resultado_categoria, getString(materia.materia_db))
-            if (!materia.isPreto_db) {
+                getString(R.string.resultado_categoria, getString(materia.nome))
+            if (!materia.isPreto) {
                 txtComeco.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
                 txtResultado.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
                 txtCategoria.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))

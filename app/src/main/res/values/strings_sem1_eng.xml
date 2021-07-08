@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_eng">Inglês</string>
+    <string name="categ_sem1_eng_prof">Simone</string>
+
+    <string name="sem1_eng_p1">No ensino do inglês, o elemento cultural dessa linguagem serve para:</string>
+    <string name="sem1_eng_p1r1">Entender que cada linguagem representa uma visao diferente</string>
+    <string name="sem1_eng_p1r2">Mostrar a falta de cultura do Brasil</string>
+    <string name="sem1_eng_p1r3">Enfatizar que a cultura britânica é superior às outras</string>
+    <string name="sem1_eng_p1r4">Ensinar inglês com o sotaque de um falante nativo</string>
+
+    <string name="sem1_eng_p2">Qual das alternativas apresenta apenas adverbios de tempo?</string>
+    <string name="sem1_eng_p2r1">lately, still, next, finally</string>
+    <string name="sem1_eng_p2r2">first, here, rarely, yet</string>
+    <string name="sem1_eng_p2r3">already, always, then, above</string>
+    <string name="sem1_eng_p2r4">first, already, usually, yet</string>
+
+    <string name="sem1_eng_p3">Chamar a atenção ao gênero de um texto no ensino da leitura serve para:</string>
+    <string name="sem1_eng_p3r1">Focalizar o texto como organização significativa</string>
+    <string name="sem1_eng_p3r2">Facilitar a leitura oral do texto</string>
+    <string name="sem1_eng_p3r3">Deve ser evitado uma vez que textos não tem gênero</string>
+    <string name="sem1_eng_p3r4">Induz o aluno a ler o texto de forma errada</string>
+
+    <string name="sem1_eng_p4">Em qual das alternativas a seguir o advérbio esta INCORRETO?</string>
+    <string name="sem1_eng_p4r1">Jamie is waiting for us always</string>
+    <string name="sem1_eng_p4r2">They work very hardly on Fridays</string>
+    <string name="sem1_eng_p4r3">We were rather hot yesterday</string>
+    <string name="sem1_eng_p4r4">She hasn\'t met them yet</string>
+
+    <string name="sem1_eng_p5">Assinale a alternativa que expressa uma comparação de igualdade.</string>
+    <string name="sem1_eng_p5r1">Brazilians are as technology-hungry as anywhere in the world</string>
+    <string name="sem1_eng_p5r2">You used to wait years to have a telephone installed</string>
+    <string name="sem1_eng_p5r3">We are the worlds leading producer</string>
+    <string name="sem1_eng_p5r4">We are the worlds largest producer of sugar</string>
+
+    <string name="sem1_eng_p6">Qual frase traz exemplos de graus de comparação?</string>
+    <string name="sem1_eng_p6r1">Making computers cheaper and faster and more powerful</string>
+    <string name="sem1_eng_p6r2">Within a decade we will likely see chips with 100 cores</string>
+    <string name="sem1_eng_p6r3">And now we are changing to a different model</string>
+    <string name="sem1_eng_p6r4">Neither, in fact, are the programmers themselves</string>
+
+    <string name="sem1_eng_p7">In my opinion, Goiania is \n_________________\ncity in Brazil.</string>
+    <string name="sem1_eng_p7r1">the most beautiful</string>
+    <string name="sem1_eng_p7r2">beautifuller</string>
+    <string name="sem1_eng_p7r3">more beautiful</string>
+    <string name="sem1_eng_p7r4">the beautifulest</string>
+
+    <string name="sem1_eng_p8">Chose the alternative with the same meaning as:\nHe will talk to his brother after school.</string>
+    <string name="sem1_eng_p8r1">He is going to talk to his brother after school</string>
+    <string name="sem1_eng_p8r2">He going to talk to his brother after school</string>
+    <string name="sem1_eng_p8r3">He is going talk to his brother after school</string>
+    <string name="sem1_eng_p8r4">He going to talk his brother after school</string>
+
+    <string name="sem1_eng_p9">Qual o melhor jeito de responder a: \nWhat are you going to do?</string>
+    <string name="sem1_eng_p9r1">I am going to call the police</string>
+    <string name="sem1_eng_p9r2">I travel to Los Angeles</string>
+    <string name="sem1_eng_p9r3">I do my homework</string>
+    <string name="sem1_eng_p9r4">We will think about it last week</string>
+
+    <string name="sem1_eng_p10">A: Would you like some more whisky?\nB: Yes, you ___________ it.</string>
+    <string name="sem1_eng_p10r1">have already drunk</string>
+    <string name="sem1_eng_p10r2">have already drink</string>
+    <string name="sem1_eng_p10r3">have already drinking</string>
+    <string name="sem1_eng_p10r4">already drink</string>
+
+</resources>

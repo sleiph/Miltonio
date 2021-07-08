@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_lnp">Linguagem de Programação</string>
+    <string name="categ_sem2_lnp_prof">Jane Maria</string>
+
+    <string name="sem2_lnp_p1">No C#, o que acontecerá quando a linha a seguir for executada?\nx++;</string>
+    <string name="sem2_lnp_p1r1">O valor da variável x será incrementado em 1</string>
+    <string name="sem2_lnp_p1r2">O valor da variável x será dobrado</string>
+    <string name="sem2_lnp_p1r3">Iniciará a variável x</string>
+
+    <string name="sem2_lnp_p2" tools:ignore="Typos">No C#, qual comando pode ser utilizado para escrever valores no console?</string>
+    <string name="sem2_lnp_p2r1">Console.WriteLine();</string>
+    <string name="sem2_lnp_p2r2">Console.ReadLine();</string>
+    <string name="sem2_lnp_p2r3">WriteLine();</string>
+    <string name="sem2_lnp_p2r4">ReadLine();</string>
+    <string name="sem2_lnp_p2r5">Console();</string>
+
+    <string name="sem2_lnp_p3">int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) continue;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</string>
+    <string name="sem2_lnp_p3r1">11</string>
+    <string name="sem2_lnp_p3r2">10</string>
+    <string name="sem2_lnp_p3r3">15</string>
+    <string name="sem2_lnp_p3r4">6</string>
+
+    <string name="sem2_lnp_p4">int contador = 0;\nfor (int i = 0; i &lt;= 5; i++) {\n    if (i == 4) break;\n    contador += i;\n}\n\nQual será o valor final da variável contador?</string>
+    <string name="sem2_lnp_p4r1">6</string>
+    <string name="sem2_lnp_p4r2">10</string>
+    <string name="sem2_lnp_p4r3">15</string>
+    <string name="sem2_lnp_p4r4">11</string>
+
+    <string name="sem2_lnp_p5">No C#, em uma estrutura de switch, qual condição será executada caso o comparativo não passe em nenhum dos testes?</string>
+    <string name="sem2_lnp_p5r1">default</string>
+    <string name="sem2_lnp_p5r2">else</string>
+    <string name="sem2_lnp_p5r3">case 0</string>
+    <string name="sem2_lnp_p5r4">nenhum</string>
+
+    <string name="sem2_lnp_p6">Qual a principal vantagem de se usar o operador lógico &amp;&amp; e não o comparador &amp;?</string>
+    <string name="sem2_lnp_p6r1">velocidade de execução</string>
+    <string name="sem2_lnp_p6r2">legibilidade</string>
+    <string name="sem2_lnp_p6r3">coerência</string>
+
+    <string name="sem2_lnp_p7">No C#, qual o significado do operador ^ ?</string>
+    <string name="sem2_lnp_p7r1">xOR</string>
+    <string name="sem2_lnp_p7r2">potência</string>
+    <string name="sem2_lnp_p7r3">raiz</string>
+
+    <string name="sem2_lnp_p8">No C#, como eu posso inserir a variável\nstring valor = \"sete\";\nno array\nint[] xpto = new int[10]; ?</string>
+    <string name="sem2_lnp_p8r1">Não se pode inserir um valor de tipo string em um array de ints</string>
+    <string name="sem2_lnp_p8r2">xpto.Append(valor);</string>
+    <string name="sem2_lnp_p8r3">xpto[0] = valor;</string>
+    <string name="sem2_lnp_p8r4">xpto.Add(valor);</string>
+
+    <string name="sem2_lnp_p9">Qual a função de um algoritmo <i>Bubble Sort</i>?</string>
+    <string name="sem2_lnp_p9r1">Ordenar arrays</string>
+    <string name="sem2_lnp_p9r2">Encontrar um valor dentro do array</string>
+    <string name="sem2_lnp_p9r3">Tornar o programa mais rápido</string>
+    <string name="sem2_lnp_p9r4">Iterar por todos os elementos de um array</string>
+
+    <string name="sem2_lnp_p10">Na programação orientada a objetos (OOP), como podemos definir o princípio de <u>encapsulamento</u>?</string>
+    <string name="sem2_lnp_p10r1">A capacidade de ocultar detalhes do objeto</string>
+    <string name="sem2_lnp_p10r2">Representação de um objeto de forma abstrata</string>
+    <string name="sem2_lnp_p10r3">O reaproveitamento de código para se evitar código duplicado</string>
+    <string name="sem2_lnp_p10r4">Estruturação de comportamento interno que varie de acordo com a circunstâncias</string>
+
+    <string name="sem2_lnp_p11">Na programação orientada a objetos (OOP), como podemos definir o princípio de <u>herança</u>?</string>
+    <string name="sem2_lnp_p11r1">O reaproveitamento de código para se evitar código duplicado</string>
+    <string name="sem2_lnp_p11r2">A capacidade de ocultar detalhes do objeto</string>
+    <string name="sem2_lnp_p11r3">Representação de um objeto de forma abstrata</string>
+    <string name="sem2_lnp_p11r4">Estruturação de comportamento interno que varie de acordo com a circunstâncias</string>
+
+    <string name="sem2_lnp_p12">Uma __________ inicia o corpo de uma definição de método.</string>
+    <string name="sem2_lnp_p12r1">Chave de Abertura</string>
+    <string name="sem2_lnp_p12r2">Colchete de Abertura</string>
+    <string name="sem2_lnp_p12r3">Parênteses de Abertura</string>
+    <string name="sem2_lnp_p12r4">Símbolo menor de abertura</string>
+    <string name="sem2_lnp_p12r5">Nenhuma das anteriores</string>
+
+    <string name="sem2_lnp_p13">Colocar as expressões cujos valores não mudam dentro de um laço pode levar a um desempenho deficiente.</string>
+    <string name="sem2_lnp_p13r1">Verdadeiro</string>
+    <string name="sem2_lnp_p13r2">Falso</string>
+
+    <string name="sem2_lnp_p14">Qual componente do Windows Forms pode ser usado para criação de um menu suspenso (<i>drop-down</i>)?</string>
+    <string name="sem2_lnp_p14r1">ComboBox</string>
+    <string name="sem2_lnp_p14r2">ListBox</string>
+    <string name="sem2_lnp_p14r3">ListView</string>
+    <string name="sem2_lnp_p14r4">TabControl</string>
+    <string name="sem2_lnp_p14r5">TreeView</string>
+
+    <string name="sem2_lnp_p15">Tem o objetivo de avaliar se o que foi entregue atende as expectativas do cliente:</string>
+    <string name="sem2_lnp_p15r1">Validação</string>
+    <string name="sem2_lnp_p15r2">Verificação</string>
+
+    <string name="sem2_lnp_p16">Tem o objetivo de avaliar se o que foi planejado realmente foi realizado:</string>
+    <string name="sem2_lnp_p16r1">Verificação</string>
+    <string name="sem2_lnp_p16r2">Validação</string>
+
+</resources>

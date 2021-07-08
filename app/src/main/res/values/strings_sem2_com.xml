@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem2_com">Comunicação e Expressão</string>
+    <string name="categ_sem2_com_prof">Raquel</string>
+
+    <string name="sem2_com_p1">A <u>idéia</u> do presidente é que todos os países se unam contra o aquecimento.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</string>
+    <string name="sem2_com_p1r1">Errada</string>
+    <string name="sem2_com_p1r2">Certa</string>
+
+    <string name="sem2_com_p2">O <u>coautor</u> do estudo explicou que a descoberta ajuda no tratamento do câncer.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</string>
+    <string name="sem2_com_p2r1">Certa</string>
+    <string name="sem2_com_p2r2">Errada</string>
+
+    <string name="sem2_com_p3">Ele é <u>antihigiênico</u>.\n\nSegundo a reforma ortográfica de 2009 a palavra sublinhada acima está:</string>
+    <string name="sem2_com_p3r1">Errada</string>
+    <string name="sem2_com_p3r2">Certa</string>
+
+    <string name="sem2_com_p4">Em qual ano o acordo ortográfico mais recente começou a ser implantado no Brasil?</string>
+    <string name="sem2_com_p4r1">2009</string>
+    <string name="sem2_com_p4r2">1990</string>
+    <string name="sem2_com_p4r3">2002</string>
+    <string name="sem2_com_p4r4">2016</string>
+
+    <string name="sem2_com_p5">Qual o nome da instituição internacional responsável por formular os acordos ortográficos de língua portuguesa?</string>
+    <string name="sem2_com_p5r1">CPLP</string>
+    <string name="sem2_com_p5r2">ONU</string>
+    <string name="sem2_com_p5r3">Academia Brasileira de Letras</string>
+
+    <string name="sem2_com_p6">Uma exposição escrita, minuciosa e cirunstanciada relativa a um assunto ou fato ocorrido, escrito por um especialista da área:</string>
+    <string name="sem2_com_p6r1">Relatório</string>
+    <string name="sem2_com_p6r2">Relato</string>
+
+    <string name="sem2_com_p7">Uma exposição escrita ou oral sobre um acontecimento; narração, descrição, informação.</string>
+    <string name="sem2_com_p7r1">Relato</string>
+    <string name="sem2_com_p7r2">Relatório</string>
+
+    <string name="sem2_com_p8">Precisa-se ou Precisam-se de operários?</string>
+    <string name="sem2_com_p8r1">Precisa-se</string>
+    <string name="sem2_com_p8r2">Precisam-se</string>
+
+    <string name="sem2_com_p9">Aluga-se ou Alugam-se apartamentos?</string>
+    <string name="sem2_com_p9r1">Alugam-se</string>
+    <string name="sem2_com_p9r2">Aluga-se</string>
+
+    <string name="sem2_com_p10">Mas a minha tristeza é sossego __________ é natural e justa.\nFernando Pessoa</string>
+    <string name="sem2_com_p10r1">porque</string>
+    <string name="sem2_com_p10r2">por que</string>
+    <string name="sem2_com_p10r3">porquê</string>
+    <string name="sem2_com_p10r4">por quê</string>
+
+    <string name="sem2_com_p11">Estava inquieto. Não saberia dizer bem __________.\nÉrico Veríssimo</string>
+    <string name="sem2_com_p11r1">Por quê</string>
+    <string name="sem2_com_p11r2">Porque</string>
+    <string name="sem2_com_p11r3">Por que</string>
+    <string name="sem2_com_p11r4">Porquê</string>
+
+    <string name="sem2_com_p12">Ele apresentou __ várias pessoas o recibo relativo __ compra do carro.</string>
+    <string name="sem2_com_p12r1">a à</string>
+    <string name="sem2_com_p12r2">à à</string>
+    <string name="sem2_com_p12r3">a a</string>
+    <string name="sem2_com_p12r4">à a</string>
+
+    <string name="sem2_com_p13">Na frase:\n\nAtravessamos a cidade de ponta <u> a </u> ponta.\n\nPor qual motivo o <u> a </u> não é craseado?</string>
+    <string name="sem2_com_p13r1">Ele está entre palavras repetidas</string>
+    <string name="sem2_com_p13r2">Artigo sem preposição</string>
+    <string name="sem2_com_p13r3">Ele está seguido de palavra masculina</string>
+    <string name="sem2_com_p13r4">Ponta não está especificada</string>
+
+    <string name="sem2_com_p14">Nas frases a seguir, informe se os pronomes oblíquos átonos estão naposição proclítica, mesoclítica ou enclítica:\n\nMandar-lhe-ei o livro amanhã.\nAjude-me na cozinha.\nMuitos lhe telefonaram pelo aniversário.</string>
+    <string name="sem2_com_p14r1">Mesóclise, ênclise, próclise</string>
+    <string name="sem2_com_p14r2">Mesóclise, próclise, ênclise</string>
+    <string name="sem2_com_p14r3">Ênclise, mesóclise, próclise</string>
+    <string name="sem2_com_p14r4">Ênclise, próclise, mesóclise</string>
+
+    <string name="sem2_com_p15">A colocação dos pronomes oblíquos átonos leva em consideração o processo da Eufonia (Boniteza da frase)?</string>
+    <string name="sem2_com_p15r1">Sim</string>
+    <string name="sem2_com_p15r2">Não</string>
+
+    <string name="sem2_com_p16">É descrição técnica. Caracteriza-se pela objetividade, clareza e preocupação com os pormenores:</string>
+    <string name="sem2_com_p16r1">Referencial</string>
+    <string name="sem2_com_p16r2">Subjetiva</string>
+
+    <string name="sem2_com_p17">Seguindo os princípios de concordância nominal, qual das duas frases à seguir está escrita de forma correta?\n\nÉ proibido a entrada de animais.\nÉ proibida a entrada de bicicletas.</string>
+    <string name="sem2_com_p17r1">Somente a segunda está correta.</string>
+    <string name="sem2_com_p17r2">Somente a primeira está correta.</string>
+    <string name="sem2_com_p17r3">Nenhuma das duas está correta.</string>
+    <string name="sem2_com_p17r4">As duas frases podem ser utilizadas.</string>
+
+    <string name="sem2_com_p18">O que são solecismos?</string>
+    <string name="sem2_com_p18r1">São erros gramaticais</string>
+    <string name="sem2_com_p18r2">São erros ortográficos</string>
+    <string name="sem2_com_p18r3">A presença de palavras redundantes na frase</string>
+    <string name="sem2_com_p18r4">São frases com significados ambíguos</string>
+    <string name="sem2_com_p18r5">São frases com sonoridade desagradável</string>
+
+    <string name="sem2_com_p19">Qual dos seguintes tópicos frasais apresenta uma idéia núcleo comparativa?</string>
+    <string name="sem2_com_p19r1">Igualmente, do mesmo modo, à semelhança de, como etc.</string>
+    <string name="sem2_com_p19r2">No Brasil, em São Paulo, nesta sala, ao longo do rio, ao redor da cidade, perto do armazém, além das casas etc.</string>
+    <string name="sem2_com_p19r3">O primeiro…, o segundo…, na primeira etapa…, na fase inicial… etc.</string>
+    <string name="sem2_com_p19r4" tools:ignore="Typos">No fim dos anos 60, quando a guerra terminou, no momento em que abriu a porta, naquela época etc.</string>
+    <string name="sem2_com_p19r5">Por um lado, por outro, antigamente, hoje, em contraste, em oposição, diferentemente, apesar de, embora etc.</string>
+
+    <string name="sem2_com_p20">Aponte o período em que o pronome oblíquo está colocado <u>incorretamente</u>:</string>
+    <string name="sem2_com_p20r1">Se cuida, Romeu.</string>
+    <string name="sem2_com_p20r2">Aquele corpo é para te servires</string>
+    <string name="sem2_com_p20r3">Ela era muito inteligente, muito se esperando dela</string>
+    <string name="sem2_com_p20r4">Em se falando disso, é preciso ter prudência</string>
+    <string name="sem2_com_p20r5">Os anseios que acalentamos fugiram-nos</string>
+
+    <string name="sem2_com_p21">Indique a circunstância expressa pela oração sublinada a seguir:\n\nViajaremos para a praia no dia 20 e, <u>estando bom o tempo</u>, ficaremos lá até o final do mês.</string>
+    <string name="sem2_com_p21r1">Condição</string>
+    <string name="sem2_com_p21r2">Comparação</string>
+    <string name="sem2_com_p21r3">Consequência</string>
+    <string name="sem2_com_p21r4">Finalidade</string>
+    <string name="sem2_com_p21r5">Conformidade</string>
+
+    <string name="sem2_com_p22">Quais são os três tipos de <u>Ponto de Equilíbrio</u> em uma análise de custo/volume/luvro?</string>
+    <string name="sem2_com_p22r1">Contábil, Financeiro E Econômico</string>
+    <string name="sem2_com_p22r2">Econômico, Capital e de Gestão</string>
+    <string name="sem2_com_p22r3">Logístico, Capital e Financeiro</string>
+    <string name="sem2_com_p22r4">Circulante, Contributivo e Contábil</string>
+
+</resources>

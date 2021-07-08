@@ -6,10 +6,10 @@ import androidx.room.*
 @Dao
 interface RespostaDao {
     @Query("SELECT * FROM respostas WHERE pergunta = (:id)")
-    fun loadByPerguntaId(id: Int): MutableList<Resposta>
+    fun getByPerguntaId(id: Int): MutableList<Resposta>
 
     @Query("SELECT * FROM respostas WHERE id = (:id)")
-    fun loadById(id: Int): Resposta
+    fun get(id: Int): Resposta
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(resposta: Resposta)

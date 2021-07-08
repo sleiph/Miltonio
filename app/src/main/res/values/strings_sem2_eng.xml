@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem2_eng">Inglês</string>
+    <string name="categ_sem2_eng_prof">Simone</string>
+
+    <string name="sem2_eng_p1">Choose the best response to the phrase:\n\n    <i>Do you want a hand?</i></string>
+    <string name="sem2_eng_p1r1">That would be good</string>
+    <string name="sem2_eng_p1r2">Yes of course</string>
+
+    <string name="sem2_eng_p2">Choose the best response to the phrase:\n\n    <i>Can you give me a hand?</i></string>
+    <string name="sem2_eng_p2r1">Sure</string>
+    <string name="sem2_eng_p2r2">Yes, please</string>
+
+    <string name="sem2_eng_p3">Choose the best response to the phrase:\n\n    <i>Can you help me?</i></string>
+    <string name="sem2_eng_p3r1">Yes of course</string>
+    <string name="sem2_eng_p3r2">That would be good</string>
+
+    <string name="sem2_eng_p4">Choose the best response to the phrase:\n\n    <i>Can I help?</i></string>
+    <string name="sem2_eng_p4r1">Yes, please</string>
+    <string name="sem2_eng_p4r2">Yes, of course</string>
+
+    <string name="sem2_eng_p5">Put these dialogues in the right order:\n\n1 - Let me see…\n2 - How do I print this document?\n3 - What\'s the problem?</string>
+    <string name="sem2_eng_p5r1">3 – 2 – 1</string>
+    <string name="sem2_eng_p5r2">1 – 2 – 3</string>
+    <string name="sem2_eng_p5r3">1 – 3 – 2</string>
+    <string name="sem2_eng_p5r4">2 – 3 – 1</string>
+
+    <string name="sem2_eng_p6">Put these dialogues in the right order:\n\n1 - I\'m trying to book a flight online.\n2 - John, can you help me?\n3 - Sure, what do you want?\n4 - You have to login, then click here…</string>
+    <string name="sem2_eng_p6r1">2 – 3 – 1 – 4</string>
+    <string name="sem2_eng_p6r2">1 – 2 – 3 – 4</string>
+    <string name="sem2_eng_p6r3">4 – 2 – 3 – 1</string>
+    <string name="sem2_eng_p6r4">2 – 3 – 4 – 1</string>
+
+    <string name="sem2_eng_p7">Complete the conversation:\n\nA - I\'m trying to download a document.\nB - Can I ________?\nA - Oh, ________, ________</string>
+    <string name="sem2_eng_p7r1">Help; Yes, Please</string>
+    <string name="sem2_eng_p7r2">Talk; No, Bye</string>
+    <string name="sem2_eng_p7r3">Thanks; See, You</string>
+    <string name="sem2_eng_p7r4">Help; You, Please</string>
+
+</resources>

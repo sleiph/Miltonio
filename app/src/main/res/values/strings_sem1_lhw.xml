@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_lhw">Laboratório de Hardware</string>
+    <string name="categ_sem1_lhw_prof">Estevão</string>
+
+    <string name="sem1_lhw_p1">Se a placa-mãe fosse uma cidade e os componentes prédios, então os barramentos seriam:</string>
+    <string name="sem1_lhw_p1r1">As ruas e avenidas</string>
+    <string name="sem1_lhw_p1r2">As represas</string>
+    <string name="sem1_lhw_p1r3">Os semáforos</string>
+    <string name="sem1_lhw_p1r4">Os estacionamentos</string>
+
+    <string name="sem1_lhw_p2">O que podemos considerar como cérebro do computador?</string>
+    <string name="sem1_lhw_p2r1">Processador</string>
+    <string name="sem1_lhw_p2r2">Memória</string>
+    <string name="sem1_lhw_p2r3">Chipset</string>
+    <string name="sem1_lhw_p2r4">BIOS</string>
+
+    <string name="sem1_lhw_p3">Dentre os formatos de placa-mãe qual definição abaixo NÃO existe?</string>
+    <string name="sem1_lhw_p3r1">DTX</string>
+    <string name="sem1_lhw_p3r2">ATX</string>
+    <string name="sem1_lhw_p3r3">ITX</string>
+    <string name="sem1_lhw_p3r4">Micro ATX</string>
+
+    <string name="sem1_lhw_p4">Dentre os tipos de memória qual tem a característica de ser volátil?</string>
+    <string name="sem1_lhw_p4r1">RAM</string>
+    <string name="sem1_lhw_p4r2">EEPROM</string>
+    <string name="sem1_lhw_p4r3">PROM</string>
+    <string name="sem1_lhw_p4r4">EPROM</string>
+
+    <string name="sem1_lhw_p5">Qual módulo de memória comporta chips SDRAM, DDR SDRAM, DDR2 SDRAM E DDR3 SDRAM?</string>
+    <string name="sem1_lhw_p5r1">DIMM</string>
+    <string name="sem1_lhw_p5r2">SODIMM</string>
+    <string name="sem1_lhw_p5r3">SIMM</string>
+    <string name="sem1_lhw_p5r4">DIP</string>
+
+    <string name="sem1_lhw_p6">Unidade de armazenamento que usa chips de memória flash não volátil para armazenar dados:</string>
+    <string name="sem1_lhw_p6r1">Unidade de estado sólido SSD</string>
+    <string name="sem1_lhw_p6r2">Unidade Híbrida</string>
+    <string name="sem1_lhw_p6r3">Unidade de disco Rígido HDD</string>
+    <string name="sem1_lhw_p6r4">Unidade de Fita</string>
+
+    <string name="sem1_lhw_p7">Ao substituir um disco rígido qual deve ser a maior preocupação do técnico?</string>
+    <string name="sem1_lhw_p7r1">Perda do dados</string>
+    <string name="sem1_lhw_p7r2">Reutilização indevida do periférico</string>
+    <string name="sem1_lhw_p7r3">Lixo ambiental\n;-;</string>
+    <string name="sem1_lhw_p7r4">Realizar o descarte corretamente</string>
+
+    <string name="sem1_lhw_p8">Uma tática para resolução de problemas complexos é:</string>
+    <string name="sem1_lhw_p8r1">Dividir um grande problema em problemas menores</string>
+    <string name="sem1_lhw_p8r2">Encerrar o chamado por dificuldade de resolução</string>
+    <string name="sem1_lhw_p8r3">Repassar o chamado para um técnico mais experiente</string>
+    <string name="sem1_lhw_p8r4">Contratar uma empresa para resolver o problema</string>
+
+    <string name="sem1_lhw_p9">Permanece acesa ou pisca quando lê ou grava dados:</string>
+    <string name="sem1_lhw_p9r1">Led de atividade da Unidade</string>
+    <string name="sem1_lhw_p9r2">Botão de energia</string>
+    <string name="sem1_lhw_p9r3">Led principal</string>
+    <string name="sem1_lhw_p9r4">Botão Reset</string>
+
+    <string name="sem1_lhw_p10">Qual componente realiza uma verificação de hardware quando o computador é iniciado?</string>
+    <string name="sem1_lhw_p10r1">BIOS</string>
+    <string name="sem1_lhw_p10r2">Boot</string>
+    <string name="sem1_lhw_p10r3">RAM</string>
+    <string name="sem1_lhw_p10r4">DIP</string>
+
+</resources>

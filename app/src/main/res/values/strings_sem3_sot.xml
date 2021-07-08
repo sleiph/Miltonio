@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_sot">Sociedade e Tecnologia</string>
+    <string name="categ_sem3_sot_prof">Sergio/Milton</string>
+
+    <string name="sem3_sot_p1">O conhecimento adquirido através da observação sensorial é chamado de:</string>
+    <string name="sem3_sot_p1r1">Conhecimento Empírico</string>
+    <string name="sem3_sot_p1r2">Técnica</string>
+    <string name="sem3_sot_p1r3">Tecnologia</string>
+    <string name="sem3_sot_p1r4">Conhecimento Científico</string>
+    <string name="sem3_sot_p1r5">Conhecimento Tácito</string>
+
+    <string name="sem3_sot_p2">Os Chicago Boys, grupo de economistas latino-americanos, ficaram mais conhecidos por defender qual ideologia?</string>
+    <string name="sem3_sot_p2r1">Neo-liberalismo</string>
+    <string name="sem3_sot_p2r2">Comunismo</string>
+    <string name="sem3_sot_p2r3">Intervencionismo</string>
+
+    <string name="sem3_sot_p3">Qual o objetivo do estudo de Sociedade e Tecnologia?</string>
+    <string name="sem3_sot_p3r1">Refletir sobre os impactos da Tecnologia da Informação na Sociedade Contemporânea.</string>
+    <string name="sem3_sot_p3r2">Refletir sobre os impactos da Sociedade na Tecnologia da Informação Contemporânea.</string>
+    <string name="sem3_sot_p3r3">Refletir sobre os impactos da Informação e Comunicação na Sociedade Contemporânea.</string>
+
+    <string name="sem3_sot_p4">Fenômeno gerado a partir da soma das circunstâncias sociais, econômicas, políticas e tecnológicas, que moldaram as relações entre as nações, as empresas e os agentes internos (governo, mercado, indivíduos) da segunda metade da década de 80 até hoje:</string>
+    <string name="sem3_sot_p4r1">globalização</string>
+    <string name="sem3_sot_p4r2">politização</string>
+    <string name="sem3_sot_p4r3">importação</string>
+    <string name="sem3_sot_p4r4">exportação</string>
+
+    <string name="sem3_sot_p5">No modelo de aulas expositivas clássicas:</string>
+    <string name="sem3_sot_p5r1">O professor discorre sobre determinado tema, os alunos assistem de forma passiva.</string>
+    <string name="sem3_sot_p5r2">O professor oferece uma visão ampla sobre o tema, os alunos discutem.</string>
+    <string name="sem3_sot_p5r3">O professor propõe um problema, os alunos tentam resolvê-lo.</string>
+
+    <string name="sem3_sot_p6">Quais etapas produtivas estão relacionadas ao chamado <b>Setor secundário</b> da economia?</string>
+    <string name="sem3_sot_p6r1">Indústria e artesanato</string>
+    <string name="sem3_sot_p6r2">Comércio e prestação de serviços</string>
+    <string name="sem3_sot_p6r3">Mineiração e agricultura</string>
+
+    <string name="sem3_sot_p7">Quais etapas produtivas estão relacionadas ao chamado <b>Setor terciário</b> da economia?</string>
+    <string name="sem3_sot_p7r1">Comércio e prestação de serviços</string>
+    <string name="sem3_sot_p7r2">Indústria e artesanato</string>
+    <string name="sem3_sot_p7r3">Mineiração e agricultura</string>
+
+    <string name="sem3_sot_p8">Quais etapas produtivas estão relacionadas ao chamado <b>Setor primário</b> da economia?</string>
+    <string name="sem3_sot_p8r1">Mineiração e agricultura</string>
+    <string name="sem3_sot_p8r2">Comércio e prestação de serviços</string>
+    <string name="sem3_sot_p8r3">Indústria e artesanato</string>
+
+    <string name="sem3_sot_p9">Quais as etapas básicas para construir um sistema de medição de inovação confiável?</string>
+    <string name="sem3_sot_p9r1">Por que medir? O que medir? Como medir?</string>
+    <string name="sem3_sot_p9r2">Por que medir? O que medir?</string>
+    <string name="sem3_sot_p9r3">Por que medir? Como medir?</string>
+    <string name="sem3_sot_p9r4">O que medir? Como medir?</string>
+    <string name="sem3_sot_p9r5">Como medir?</string>
+
+    <string name="sem3_sot_p10">Qual o órgão responsável pelo desenvolvimento dos 17 Objetivos do Desenvolvimento Sustentável (ODS)?</string>
+    <string name="sem3_sot_p10r1">ONU</string>
+    <string name="sem3_sot_p10r2">Governo Brasileiro</string>
+    <string name="sem3_sot_p10r3">Governo dos Estados Unidos</string>
+    <string name="sem3_sot_p10r4">União Européia</string>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem1_aoc">Arquitetura de Computadores</string>
+    <string name="categ_sem1_aoc_prof">Rodrigo</string>
+
+    <string name="sem1_aoc_p1">Qual a principal função da unidade de controle?</string>
+    <string name="sem1_aoc_p1r1">Buscar a próxima instrução do programa na memória</string>
+    <string name="sem1_aoc_p1r2">Controlar a placa-mãe</string>
+    <string name="sem1_aoc_p1r3">Registrar os acessos à memória</string>
+    <string name="sem1_aoc_p1r4">Buscar a próxima instrução da memória no programa</string>
+
+    <string name="sem1_aoc_p2">Técnica que permite que a CPU execute diferentes instruções paralelamente:</string>
+    <string name="sem1_aoc_p2r1">Pipeline</string>
+    <string name="sem1_aoc_p2r2">Hardwiring</string>
+    <string name="sem1_aoc_p2r3">Multithreading</string>
+    <string name="sem1_aoc_p2r4">Modulação</string>
+
+    <string name="sem1_aoc_p3">Aponte uma característica da arquitetura RISC:</string>
+    <string name="sem1_aoc_p3r1">Tem um conjunto reduzido e simples de instruções</string>
+    <string name="sem1_aoc_p3r2">Qualquer instrução pode referenciar a memória</string>
+    <string name="sem1_aoc_p3r3">Possui um conjunto de registradores</string>
+    <string name="sem1_aoc_p3r4">Suas instruções são executadas pelo microprograma</string>
+
+    <string name="sem1_aoc_p4">Qual o melhor resumo das características de um processador CISC?</string>
+    <string name="sem1_aoc_p4r1">Instruções de tamanho variado; Maior número de transistores</string>
+    <string name="sem1_aoc_p4r2">Instruções de tamanho variado; Menor número de transistores</string>
+    <string name="sem1_aoc_p4r3">Instruções de tamanho único; Maior número de transistores</string>
+    <string name="sem1_aoc_p4r4">Instruções de tamanho único; Menor número de transistores</string>
+
+    <string name="sem1_aoc_p5">São consideradas características típicas da organização RISC:</string>
+    <string name="sem1_aoc_p5r1">Otimizar o pipeline de instrução</string>
+    <string name="sem1_aoc_p5r2">Dispor grande conjunto de instruções</string>
+    <string name="sem1_aoc_p5r3">Prover o computador com um conjunto complexo de instruções</string>
+    <string name="sem1_aoc_p5r4">Oferecer suporte para linguagens de alto nível</string>
+
+    <string name="sem1_aoc_p6">Arquitetura de memória que permite o controle do escalonamento de instruções:</string>
+    <string name="sem1_aoc_p6r1">CC-NUMA</string>
+    <string name="sem1_aoc_p6r2">NUMA</string>
+    <string name="sem1_aoc_p6r3">COMA</string>
+    <string name="sem1_aoc_p6r4">MIMD</string>
+
+    <string name="sem1_aoc_p7">Qual classificação de Flynn para uma unidade de controle única, diversas unidades funcionais?</string>
+    <string name="sem1_aoc_p7r1">SIMD (Single Instruction Multiple Data)</string>
+    <string name="sem1_aoc_p7r2">MISD (Multiple Instruction Single Data)</string>
+    <string name="sem1_aoc_p7r3">MIMD (Multiple Instruction Multiple Data)</string>
+    <string name="sem1_aoc_p7r4">SISD (Single Instruction Single Data)</string>
+
+    <string name="sem1_aoc_p8">Qual característica NÃO se refere à memória cache de processadores?</string>
+    <string name="sem1_aoc_p8r1">É implementada pelo sistema operacional com suporte do hardware</string>
+    <string name="sem1_aoc_p8r2">Tem o objetivo de reduzir o tempo de acesso à memória principal</string>
+    <string name="sem1_aoc_p8r3">Pode ser inserida diretamente no chip do processador</string>
+    <string name="sem1_aoc_p8r4">É comumente encontrada em processadores RISC</string>
+
+    <string name="sem1_aoc_p9">Qual a tradução decimal para o número 10100111?</string>
+    <string name="sem1_aoc_p9r1">167</string>
+    <string name="sem1_aoc_p9r2">166</string>
+    <string name="sem1_aoc_p9r3">175</string>
+    <string name="sem1_aoc_p9r4">174</string>
+
+    <string name="sem1_aoc_p10">Qual a tradução hexadecimal para o número 209?</string>
+    <string name="sem1_aoc_p10r1">D1</string>
+    <string name="sem1_aoc_p10r2">131</string>
+    <string name="sem1_aoc_p10r3">132</string>
+    <string name="sem1_aoc_p10r4">D2</string>
+
+</resources>

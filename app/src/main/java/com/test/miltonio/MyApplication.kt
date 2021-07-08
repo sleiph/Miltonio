@@ -1,7 +1,7 @@
 package com.test.miltonio
 
 import com.test.miltonio.datasource.MiltonDataBase
-import com.test.miltonio.objetos.Semestre1
+import com.test.miltonio.objetos.semestre1.Semestre1
 import com.test.miltonio.objetos.Semestre2
 import com.test.miltonio.objetos.Semestre3
 import android.app.Application
@@ -18,30 +18,43 @@ class MyApplication: Application() {
         super.onCreate()
         //Room
         materiasdatabase = Room.databaseBuilder(
-            this, MiltonDataBase::class.java, "miltonDB"
+            this, MiltonDataBase::class.java, "miltonioDB"
         )
             .allowMainThreadQueries()
             .build()
 
         //populando os semestres
         val semestre1 = Semestre1()
-        for (materia in semestre1.getMaterias())
+        for (materia in semestre1.getMaterias()) {
             materiasdatabase?.MateriaDao()?.insert(materia)
-
-        materiasdatabase?.MateriaDao()?.insert(semestre1.mat.materia)
-        for (pergunta in semestre1.mat.perguntas) {
-            materiasdatabase?.PerguntaDao()?.insert(pergunta.descricao)
-            for (resposta in pergunta.respostas) {
-                materiasdatabase?.RespostaDao()?.insert(resposta)
+            for (pergunta in materia.perguntas!!) {
+                materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
             }
         }
 
         val semestre2 = Semestre2()
-        for (materia in semestre2.getMaterias())
+        for (materia in semestre2.getMaterias()) {
             materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
 
         val semestre3 = Semestre3()
-        for (materia in semestre3.getMaterias())
+        for (materia in semestre3.getMaterias()) {
             materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
     }
 }

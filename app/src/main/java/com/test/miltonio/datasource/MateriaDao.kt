@@ -9,22 +9,22 @@ interface MateriaDao {
     fun getAll(): List<Materia>
 
     @Query("SELECT * FROM materias WHERE semestre = (:semestre)")
-    fun loadBySemestre(semestre: Int): List<Materia>
+    fun getBySemestre(semestre: Int): List<Materia>
 
-    @Query("SELECT * FROM materias WHERE cid = (:catgId)")
-    fun loadById(catgId: Int): Materia
+    @Query("SELECT * FROM materias WHERE id = (:id)")
+    fun get(id: Int): Materia
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(categoria_insrt: Materia)
+    fun insert(materia: Materia)
 
     @Update
-    fun updateCatg(categoria_updt: Materia)
+    fun update(materia: Materia)
 
     @Query("UPDATE materias SET pontos = 0 WHERE semestre = (:semestre)")
     fun resetSemestre(semestre: Int)
 
     @Delete
-    fun delete(categoria_dlet: Materia)
+    fun delete(materia: Materia)
 
     @Query("DELETE FROM materias")
     fun deleteAll()

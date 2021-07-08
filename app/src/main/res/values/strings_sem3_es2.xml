@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem3_es2">Engenharia de Software II</string>
+    <string name="categ_sem3_es2_prof">Alecio</string>
+
+    <string name="sem3_es2_p1">Se simplicidade é bom, sempre faça a coisa mais simples possível que possa fazer o trabalho.\n
+        \n
+        A frase acima é um dos princípios de qual método de desenvolvimento?
+    </string>
+    <string name="sem3_es2_p1r1">XP</string>
+    <string name="sem3_es2_p1r2">Rup</string>
+    <string name="sem3_es2_p1r3">P-e-D</string>
+    <string name="sem3_es2_p1r4">Tradicional</string>
+
+    <string name="sem3_es2_p2">Quais três fatores DEVEM SER garantidos quando escolhendo uma arquitetura de software?</string>
+    <string name="sem3_es2_p2r1">Escalabilidade, Distribuição, Desempenho</string>
+    <string name="sem3_es2_p2r2">Desempenho, Design, Segurança</string>
+    <string name="sem3_es2_p2r3">Requisitos funcionais, Distribuição, Demanda</string>
+    <string name="sem3_es2_p2r4">Orçamento, Escalabilidade, Estética</string>
+
+    <string name="sem3_es2_p3">Uma classe é representada por um retângulo dividido em três partes, sendo estas partes compostas por:</string>
+    <string name="sem3_es2_p3r1">Nome da classe, atributos, métodos.</string>
+    <string name="sem3_es2_p3r2">Visibilidade, tipo da classe, número de objetos.</string>
+    <string name="sem3_es2_p3r3">Atributos, 2° métodos, 3° tipo da classe.</string>
+    <string name="sem3_es2_p3r4">Tipo de retorno da classe, atributos, visibilidade.</string>
+
+    <string name="sem3_es2_p4">Na Programação Orientada a Objetos, qual a definição de polimorfismo?</string>
+    <string name="sem3_es2_p4r1">Quando o mesmo método tem execuções diferenciadas dependendo da classe que o chama.</string>
+    <string name="sem3_es2_p4r2">Quando uma classe passa seus atributos para outra.</string>
+    <string name="sem3_es2_p4r3">Quando uma classe tem seus atributos alterados.</string>
+    <string name="sem3_es2_p4r4">Quando os atributos de uma classe são inacessíveis a outras classes.</string>
+
+    <string name="sem3_es2_p5">Qual a principal vantagem do encapsulamento?</string>
+    <string name="sem3_es2_p5r1" tools:ignore="Typos">Proteger os dados e fazer com que eles sigam as regras de negócio do programa.</string>
+    <string name="sem3_es2_p5r2">Diminuir a complexidade do projeto.</string>
+    <string name="sem3_es2_p5r3">Associar duas classes distintas.</string>
+
+    <string name="sem3_es2_p6">Qual afirmação abaixo é FALSA sobre o ciclo de vida dos processos em Cascata, Espiral e Rational Unified Process?</string>
+    <string name="sem3_es2_p6r1">Todos usam iterações e protótipos</string>
+    <string name="sem3_es2_p6r2">Todos dependem de um planejamento meticuloso e medem o progresso do projeto de acordo com o plano inicial</string>
+    <string name="sem3_es2_p6r3">Todos dependem de uma documentação completa e minuciosa</string>
+    <string name="sem3_es2_p6r4">Todos dependem de um gerente que será responsável pelo projeto</string>
+
+    <string name="sem3_es2_p7">Qual das seguintes opções NÃO é um exemplo de mensagens possíveis em um diagrama de sequência?</string>
+    <string name="sem3_es2_p7r1">Entre atributos</string>
+    <string name="sem3_es2_p7r2">Entre atores</string>
+    <string name="sem3_es2_p7r3">Entre objetos</string>
+    <string name="sem3_es2_p7r4">Instância de um novo objeto</string>
+    <string name="sem3_es2_p7r5">Que dispara um método destrutor</string>
+
+    <string name="sem3_es2_p8">Seja um diagrama de classes, segundo o modelo UML. E m uma classe Y desse diagrama há um atributo que pode ser acessível por todas as outras classes existentes no diagrama.\nEsse atributo é dito como sendo um atributo</string>
+    <string name="sem3_es2_p8r1">público</string>
+    <string name="sem3_es2_p8r2">secreto</string>
+    <string name="sem3_es2_p8r3">protegido</string>
+    <string name="sem3_es2_p8r4">privado</string>
+
+    <string name="sem3_es2_p9">No diagrama de sequência da UML, o nome do elemento que representa o tempo que um objeto existiu durante o processo:</string>
+    <string name="sem3_es2_p9r1">Linha de vida</string>
+    <string name="sem3_es2_p9r2">Foco de controle</string>
+    <string name="sem3_es2_p9r3">Ponto de transição</string>
+    <string name="sem3_es2_p9r4">Marcador de interação</string>
+    <string name="sem3_es2_p9r5">Ator</string>
+
+    <string name="sem3_es2_p10">Em um diagrama de classes, qual a função de um <![CDATA[&#lt;]]>&lt;<i>boundary</i>&gt;<![CDATA[&#gt;]]>, ou estereótipo de fronteira?</string>
+    <string name="sem3_es2_p10r1">Identifica uma classe que serve de comunicação entre os atores externos e o sistema propriamente dito.</string>
+    <string name="sem3_es2_p10r2">Armazena informações referentes ao problema no qual o sistema pretende solucionar.</string>
+    <string name="sem3_es2_p10r3">Identifica classes que servem de intermédio entre as classes &lt;&lt;<i>boundary</i>&gt;&gt; e as demais classes do sistema.</string>
+
+</resources>

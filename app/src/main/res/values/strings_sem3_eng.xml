@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem3_eng">Inglês</string>
+    <string name="categ_sem3_eng_prof">Simone</string>
+    
+    <string name="sem3_eng_p1">Ógust?</string>
+    <string name="sem3_eng_p1r1">Ógust</string>
+    <string name="sem3_eng_p1r2">August</string>
+    <string name="sem3_eng_p1r3">Augost</string>
+    <string name="sem3_eng_p1r4">Óguste</string>
+
+    <string name="sem3_eng_p2">Complete the following phrase with the correct pronoum:\n\nTeacher, please, can you tell I/me if my/mine project is correct?</string>
+    <string name="sem3_eng_p2r1">me - my</string>
+    <string name="sem3_eng_p2r2">I - my</string>
+    <string name="sem3_eng_p2r3">I - mine</string>
+    <string name="sem3_eng_p2r4">me - mine</string>
+
+    <string name="sem3_eng_p3">Choose the option with the CORRECT answer for the following question:\n\nWhen does the recruitment supervisor decide to change the schedule?</string>
+    <string name="sem3_eng_p3r1">The recruitment supervisor decides to change schedule this week</string>
+    <string name="sem3_eng_p3r2">The recruitment supervisor decide to change schedule this week</string>
+    <string name="sem3_eng_p3r3">The recruitment supervisor decided to change schedule this week</string>
+
+    <string name="sem3_eng_p4">Choose the option with the correct Wh words sequence:\n\n____________ is the reception desk? The reception desk is at the first floor.</string>
+    <string name="sem3_eng_p4r1">Where</string>
+    <string name="sem3_eng_p4r2">How much</string>
+    <string name="sem3_eng_p4r3">How far</string>
+    <string name="sem3_eng_p4r4">Whom</string>
+
+    <string name="sem3_eng_p5">Choose the option with the correct short answer:\n\nWere the investors aware about the contract rules?</string>
+    <string name="sem3_eng_p5r1">Yes, the investors were</string>
+    <string name="sem3_eng_p5r2">Yes, the investors was</string>
+    <string name="sem3_eng_p5r3">Yes, the investor were</string>
+    <string name="sem3_eng_p5r4">Yes, the investors did</string>
+
+    <string name="sem3_eng_p6">Vocabulary exercise: Match the words and meanings:\n\nAn organization that sells goods or services in order to make money.</string>
+    <string name="sem3_eng_p6r1">Company</string>
+    <string name="sem3_eng_p6r2">Computer</string>
+    <string name="sem3_eng_p6r3">Meeting</string>
+    <string name="sem3_eng_p6r4">Business</string>
+    <string name="sem3_eng_p6r5">Human</string>
+
+    <string name="sem3_eng_p7">Siemens, IBM and Red Hat today ____________ a new collaboration that will ____________ a hybrid cloud ____________ to ____________ an open, flexible and more secure solution for manufacturers and plant operators to ____________ real-time value from operational data.\n\nChoose the sentence with the correct verb sequence:</string>
+    <string name="sem3_eng_p7r1">announced; use; designed; deliver; drive</string>
+    <string name="sem3_eng_p7r2">use; announced; designed;deliver; generate</string>
+    <string name="sem3_eng_p7r3">designed; announced; use; deliver; generate</string>
+    <string name="sem3_eng_p7r4">generate; goes; announced; use; designed</string>
+    <string name="sem3_eng_p7r5">operate; use; provides; designed; deliver</string>
+
+    <string name="sem3_eng_p8">MindSphere already ____________ customers with data-driven insights to strengthen operations  through Industrial IoT. Through our work with IBM and Red Hat, we can now ____________ customers the flexibility to ____________ to ____________ MindSphere on-premise or in the cloud to best meet their distinct operational needs and become more efficient.\n\nChoose the sentence with the correct verb sequence:</string>
+    <string name="sem3_eng_p8r1">provides; offer; choose; operate</string>
+    <string name="sem3_eng_p8r2">provides; choose; operate; offer</string>
+    <string name="sem3_eng_p8r3">provides;  choose; operate; drive</string>
+    <string name="sem3_eng_p8r4">offer; choose; operate ; deliver</string>
+    <string name="sem3_eng_p8r5">goes; offer; choose; announced</string>
+
+    <string name="sem3_eng_p9">Let   <u>we/us</u>   explain the scenario to   <u>he/him</u>.\n\nComplete with the correct pronoum:</string>
+    <string name="sem3_eng_p9r1">us - him</string>
+    <string name="sem3_eng_p9r2">us - he</string>
+    <string name="sem3_eng_p9r3">we - him</string>
+    <string name="sem3_eng_p9r4">we - he</string>
+
+    <string name="sem3_eng_p10">Choose the option with the correct Wh words sequence:\n\n____________ was the supervisor on duty yesterday? Mr. Simon was the supervisor on duty yesterday.</string>
+    <string name="sem3_eng_p10r1">Who</string>
+    <string name="sem3_eng_p10r2">How</string>
+    <string name="sem3_eng_p10r3">Why</string>
+    <string name="sem3_eng_p10r4">Whom</string>
+
+</resources>
