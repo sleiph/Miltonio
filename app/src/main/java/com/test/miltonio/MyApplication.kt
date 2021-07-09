@@ -1,9 +1,9 @@
 package com.test.miltonio
 
 import com.test.miltonio.datasource.MiltonDataBase
-import com.test.miltonio.objetos.semestre1.Semestre1
-import com.test.miltonio.objetos.Semestre2
-import com.test.miltonio.objetos.Semestre3
+import com.test.miltonio.objetos.semestre_1.Semestre1
+import com.test.miltonio.objetos.semestre_2.Semestre2
+import com.test.miltonio.objetos.semestre_3.Semestre3
 import android.app.Application
 import androidx.room.*
 

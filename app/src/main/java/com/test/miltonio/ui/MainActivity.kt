@@ -4,9 +4,9 @@ import com.test.miltonio.R
 import com.test.miltonio.MyApplication
 import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.modelo.Materia
-import com.test.miltonio.objetos.semestre1.Semestre1
-import com.test.miltonio.objetos.Semestre2
-import com.test.miltonio.objetos.Semestre3
+import com.test.miltonio.objetos.semestre_1.Semestre1
+import com.test.miltonio.objetos.semestre_2.Semestre2
+import com.test.miltonio.objetos.semestre_3.Semestre3
 
 import android.app.AlertDialog
 import android.content.Context
