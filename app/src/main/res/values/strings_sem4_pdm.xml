@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem4_pdm">Programação para Dispositivos Móveis</string>
+    <string name="categ_sem4_pdm_prof">Jadir</string>
+
+    <string name="sem4_pdm_p1"> </string>
+    <string name="sem4_pdm_p1r1"> </string>
+    <string name="sem4_pdm_p1r2"> </string>
+    <string name="sem4_pdm_p1r3"> </string>
+    <string name="sem4_pdm_p1r4"> </string>
+    
+</resources>
