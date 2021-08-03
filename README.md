@@ -11,7 +11,7 @@ Criei esse aplicativo no [MIT App Inventor](https://appinventor.mit.edu) como pa
 
 ![capa](/img/main.jpg)
 
-Se quiser testar o aplicativo, só baixar o arquivo [Miltonio_debug.apk](/Miltonio.apk) da raiz do projeto e instalar no seu celular Android.
+Se quiser testar o aplicativo, só baixar o arquivo [Miltonio.apk](https://github.com/sleiph/Miltonio/releases) da *release* mais recente e instalar no seu celular Android.
 
 O App usa um banco de dados SQLite pra guardar seu progresso, assim como as matérias de cada semestre, que pode ser escolhido na tela inicial. Quando uma das matérias é escolhida você é levado pra tela de quiz, as perguntas aparecem em ordem aleatória, cada uma tem uma quantidade variável de respostas possíveis. Depois que as perguntas são respondidas você é encaminhado pra uma tela onde pode conferir sua pontuação.
 
