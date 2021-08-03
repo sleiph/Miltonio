@@ -2,11 +2,12 @@ package com.test.miltonio.ui
 
 import com.test.miltonio.R
 import com.test.miltonio.MyApplication
-import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.modelo.Materia
 import com.test.miltonio.objetos.semestre_1.Semestre1
 import com.test.miltonio.objetos.semestre_2.Semestre2
 import com.test.miltonio.objetos.semestre_3.Semestre3
+import com.test.miltonio.objetos.semestre_4.Semestre4
+import com.test.miltonio.ui.componentes.CardMateria
 
 import android.app.AlertDialog
 import android.content.Context
@@ -28,7 +29,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
-import com.test.miltonio.objetos.semestre_4.Semestre4
 
 fun matarChildren(pai: GridLayout) {
     if (pai.childCount > 1)
@@ -69,74 +69,47 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Todo: remover essa função quando terminar o app
-    private fun setSemestre( debug: Boolean ) {
-        when(semestre) {
-            1 -> {
-                val sem = Semestre1()
-
-                setHeader(sem.imagemHeader)
-
-                if (debug) {
-                    for (materia in sem.getMaterias()) {
-                        MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
-                        for (pergunta in materia.perguntas!!) {
-                            MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
-                            for (resposta in pergunta.respostas) {
-                                MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
-                            }
-                        }
-                    }
+    private fun debugSemestre(  ) {
+        val semestre1 = Semestre1()
+        for (materia in semestre1.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.update(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.update(resposta)
                 }
             }
-            2 -> {
-                val sem = Semestre2()
+        }
 
-                setHeader(sem.imagemHeader)
-
-                if (debug) {
-                    for (materia in sem.getMaterias()) {
-                        MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
-                        for (pergunta in materia.perguntas!!) {
-                            MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
-                            for (resposta in pergunta.respostas) {
-                                MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
-                            }
-                        }
-                    }
+        val semestre2 = Semestre2()
+        for (materia in semestre2.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.update(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.update(resposta)
                 }
             }
-            3 -> {
-                val sem = Semestre3()
+        }
 
-                setHeader(sem.imagemHeader)
-
-                if (debug) {
-                    for (materia in sem.getMaterias()) {
-                        MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
-                        for (pergunta in materia.perguntas!!) {
-                            MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
-                            for (resposta in pergunta.respostas) {
-                                MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
-                            }
-                        }
-                    }
+        val semestre3 = Semestre3()
+        for (materia in semestre3.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.update(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.update(resposta)
                 }
             }
-            4 -> {
-                val sem = Semestre4()
+        }
 
-                setHeader(sem.imagemHeader)
-
-                if (debug) {
-                    for (materia in sem.getMaterias()) {
-                        MyApplication.materiasdatabase?.MateriaDao()?.insert(materia)
-                        for (pergunta in materia.perguntas!!) {
-                            MyApplication.materiasdatabase?.PerguntaDao()?.insert(pergunta)
-                            for (resposta in pergunta.respostas) {
-                                MyApplication.materiasdatabase?.RespostaDao()?.insert(resposta)
-                            }
-                        }
-                    }
+        val semestre4 = Semestre4()
+        for (materia in semestre4.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.update(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.update(resposta)
                 }
             }
         }
@@ -147,26 +120,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun montarSemestre( semestre: Int ) {
-
-        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
-        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
-
-        when(semestre) {
-            2 -> {
-                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsocoronga))
-                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsocoronga))
-            }
-            3 -> {
-                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomascara))
-                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomascara))
-            }
-            else -> {
-                logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomilton))
-                logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.appsomilton))
-            }
-        }
-
+    private fun montarSemestre(  ) {
         matarChildren( findViewById(R.id.cardParent) )
 
         val materias = MyApplication.materiasdatabase?.MateriaDao()?.getBySemestre(semestre)
@@ -225,9 +179,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setHeader(bitmap: Int) {
+    private fun setHeader() {
         val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
         val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
+
+        val bitmap = when (semestre) {
+            2 -> Semestre2().imagemHeader
+            3 -> Semestre3().imagemHeader
+            4 -> Semestre4().imagemHeader
+            else -> Semestre1().imagemHeader
+        }
+
         val angulo = 60
         val matrixAnima = Matrix()
         val matrixAnami = Matrix()
@@ -251,6 +213,9 @@ class MainActivity : AppCompatActivity() {
             )
             logoAnamido.setImageBitmap(rodado)
         }
+
+        logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, bitmap))
+        logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, bitmap))
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -266,9 +231,10 @@ class MainActivity : AppCompatActivity() {
         val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         isSonando = !audiomanager.isStreamMute(AudioManager.STREAM_MUSIC)
 
-        setSemestre( true )
+        //debugSemestre()
 
-        montarSemestre( semestre )
+        setHeader()
+        montarSemestre(  )
     }
 
     //Todo: Desenhar ícones do menu
@@ -295,7 +261,8 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 semestre = position+1
-                montarSemestre( semestre )
+                setHeader()
+                montarSemestre(  )
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 // sei la
@@ -332,7 +299,7 @@ class MainActivity : AppCompatActivity() {
                 .setMessage(R.string.alerta_mensagem)
                 .setPositiveButton(R.string.alerta_positivo) { _: DialogInterface, _: Int ->
                     resetSemestre( semestre )
-                    montarSemestre( semestre )
+                    montarSemestre(  )
                 }
                 .setNegativeButton(R.string.alerta_negativo) { dialogInterface: DialogInterface, _: Int ->
                     dialogInterface.cancel()

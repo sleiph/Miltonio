@@ -5,7 +5,7 @@ import com.test.miltonio.modelo.Materia
 
 class Semestre3 {
 
-    val imagemHeader = R.drawable.appsocoronga
+    val imagemHeader = R.drawable.appsomascara
 
     fun getMaterias() : Array<Materia> {
         return arrayOf(

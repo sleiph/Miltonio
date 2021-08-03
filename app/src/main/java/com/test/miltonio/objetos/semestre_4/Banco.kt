@@ -13,8 +13,8 @@ class Banco {
         4,
         0,
         R.color.colorAmrl,
-        R.drawable.simb1lhw,
-        R.drawable.fnd1lhw,
+        R.drawable.simb4bdd,
+        R.drawable.fnd4bdd,
         true,
         mutableListOf(
             Pergunta(

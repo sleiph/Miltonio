@@ -13,8 +13,8 @@ class ProgMov {
         4,
         0,
         R.color.colorLrnj,
-        R.drawable.simb2com,
-        R.drawable.fnd2com,
+        R.drawable.simb4pdm,
+        R.drawable.fnd4pdm,
         false,
         mutableListOf(
             Pergunta(

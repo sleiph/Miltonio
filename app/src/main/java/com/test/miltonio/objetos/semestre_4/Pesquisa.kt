@@ -13,8 +13,8 @@ class Pesquisa {
         4,
         0,
         R.color.colorAzul,
-        R.drawable.simb1aoc,
-        R.drawable.fnd1aoc,
+        R.drawable.simb4mpc,
+        R.drawable.fnd4mpc,
         false,
         mutableListOf(
             Pergunta(
