@@ -3,10 +3,28 @@
     <string name="categ_sem4_bdd">Banco de Dados</string>
     <string name="categ_sem4_bdd_prof">Daniel</string>
 
-    <string name="sem4_bdd_p1"> </string>
-    <string name="sem4_bdd_p1r1"> </string>
-    <string name="sem4_bdd_p1r2"> </string>
-    <string name="sem4_bdd_p1r3"> </string>
-    <string name="sem4_bdd_p1r4"> </string>
+    <string name="sem4_bdd_p1">Qual das seguintes descrições define melhor um Banco de Dados?</string>
+    <string name="sem4_bdd_p1r1">Uma coleçãode dados logicamente relacionados.</string>
+    <string name="sem4_bdd_p1r2">Fatos conhecidos que podem ser armazenados e que possuem um significado implícito.</string>
+    <string name="sem4_bdd_p1r3">Uma parte do mundo real sobre o qual os dados são armazenados em um banco de dados. Por exemplo, notas dos estudantes de uma universidade.</string>
+
+    <string name="sem4_bdd_p2">Quais as principais responsabilidades de um Administrador de Banco de Dados?</string>
+    <string name="sem4_bdd_p2r1">Autorizar o acesso ao banco de dados, aquisição de recursos de software e hardware, controlar o uso e monitorar as operações no Banco.</string>
+    <string name="sem4_bdd_p2r2">Definir o conteúdo, a estrutura, as restrições, e as funções do banco de dados.</string>
+
+    <string name="sem4_bdd_p3">Qual a estrutura dos dados armazenados em um Banco de Dados Relacional?</string>
+    <string name="sem4_bdd_p3r1">Tabelas</string>
+    <string name="sem4_bdd_p3r2">Árvores</string>
+    <string name="sem4_bdd_p3r3">Grafos</string>
+
+    <string name="sem4_bdd_p4">Qual a definição de um Atributo em modelos de dados?</string>
+    <string name="sem4_bdd_p4r1">Alguma propriedade de interesse que ajuda a descrever uma entidade, como o nome do funcionário ou seu salário.</string>
+    <string name="sem4_bdd_p4r2">Objeto do mundo real ou um conceito, como um funcionário ou um projeto, que são descritos no banco de dados.</string>
+    <string name="sem4_bdd_p4r3">Uma associação entre duas ou mais entidades.</string>
+
+    <string name="sem4_bdd_p5">Qual a primeira fase do processo de modelagem E-R de Peter P. Chen?</string>
+    <string name="sem4_bdd_p5r1">Modelo Conceitual de Dados (MCD)</string>
+    <string name="sem4_bdd_p5r2">Modelo Lógico de Dados (MLD)</string>
+    <string name="sem4_bdd_p5r3">Modelo Físico de Dados (MFD)</string>
     
 </resources>

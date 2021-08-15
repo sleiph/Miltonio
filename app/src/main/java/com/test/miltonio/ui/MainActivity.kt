@@ -36,6 +36,8 @@ fun matarChildren(pai: GridLayout) {
             pai.removeViewAt(1)
 }
 
+
+
 class MainActivity : AppCompatActivity() {
     
     private fun loadTelaPerguntas(id: Int) {

@@ -3,10 +3,22 @@
     <string name="categ_sem4_mpc">Metodologia da Pesquisa Científico-Tecnológica</string>
     <string name="categ_sem4_mpc_prof">Eliacy</string>
 
-    <string name="sem4_mpc_p1"> </string>
-    <string name="sem4_mpc_p1r1"> </string>
-    <string name="sem4_mpc_p1r2"> </string>
-    <string name="sem4_mpc_p1r3"> </string>
-    <string name="sem4_mpc_p1r4"> </string>
+    <string name="sem4_mpc_p1">A capacidade da empresa reunir informação, inovar, criar conhecimento e atuar com base neste conhecimento:</string>
+    <string name="sem4_mpc_p1r1">Inteligência Organizacional (IO)</string>
+    <string name="sem4_mpc_p1r2">Inteligência Empresarial (IE)</string>
+    <string name="sem4_mpc_p1r3">Business Intelligence (BI)</string>
+    <string name="sem4_mpc_p1r4">A Inteligência Competitiva (IC)</string>
+
+    <string name="sem4_mpc_p2">Um profissional está aprendendo como fazer una análise de tráfego em um curso oferecido pela empresa de transporte onde está há dois meses. Este é um exemplo de conhecimento:</string>
+    <string name="sem4_mpc_p2r1">Explícito</string>
+    <string name="sem4_mpc_p2r2">Tácito</string>
+    <string name="sem4_mpc_p2r3">Empírico</string>
+    <string name="sem4_mpc_p2r4">Empresarial</string>
+
+    <string name="sem4_mpc_p3">Qual das afirmações é um exemplo de CONHECIMENTO?</string>
+    <string name="sem4_mpc_p3r1">Proposição de melhoria de um processo</string>
+    <string name="sem4_mpc_p3r2">Notícia de um jornal</string>
+    <string name="sem4_mpc_p3r3">Elaboração de um relatório de vendas</string>
+    <string name="sem4_mpc_p3r4">Gerar vantagem competitiva para o negócio</string>
     
 </resources>
