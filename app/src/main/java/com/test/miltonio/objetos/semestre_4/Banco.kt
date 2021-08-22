@@ -55,6 +55,30 @@ class Banco {
                     Resposta(R.string.sem4_bdd_p5r2, false, R.string.sem4_bdd_p5),
                     Resposta(R.string.sem4_bdd_p5r3, false, R.string.sem4_bdd_p5)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_bdd_p6, 1,33,
+                mutableListOf(
+                    Resposta(R.string.sem4_bdd_p6r1, true, R.string.sem4_bdd_p6),
+                    Resposta(R.string.sem4_bdd_p6r2, false, R.string.sem4_bdd_p6),
+                    Resposta(R.string.sem4_bdd_p6r3, false, R.string.sem4_bdd_p6)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_bdd_p7, 1,33,
+                mutableListOf(
+                    Resposta(R.string.sem4_bdd_p7r1, true, R.string.sem4_bdd_p7),
+                    Resposta(R.string.sem4_bdd_p7r2, false, R.string.sem4_bdd_p7),
+                    Resposta(R.string.sem4_bdd_p7r3, false, R.string.sem4_bdd_p7)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_bdd_p8, 1,33,
+                mutableListOf(
+                    Resposta(R.string.sem4_bdd_p8r1, true, R.string.sem4_bdd_p8),
+                    Resposta(R.string.sem4_bdd_p8r2, false, R.string.sem4_bdd_p8),
+                    Resposta(R.string.sem4_bdd_p8r3, false, R.string.sem4_bdd_p8)
+                )
             )
         )
     )

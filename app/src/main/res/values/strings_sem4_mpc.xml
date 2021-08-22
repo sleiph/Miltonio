@@ -20,5 +20,17 @@
     <string name="sem4_mpc_p3r2">Notícia de um jornal</string>
     <string name="sem4_mpc_p3r3">Elaboração de um relatório de vendas</string>
     <string name="sem4_mpc_p3r4">Gerar vantagem competitiva para o negócio</string>
+
+    <string name="sem4_mpc_p4">Com relação à aplicação da pesquisa científica, ela pode ser classificada em:</string>
+    <string name="sem4_mpc_p4r1">Incremental ou Inovadora</string>
+    <string name="sem4_mpc_p4r2">Básica ou Aplicada</string>
+    <string name="sem4_mpc_p4r3">Qualitativa ou Quantitativa</string>
+    <string name="sem4_mpc_p4r4">Exploratória, Descritiva ou Explicativa</string>
+
+    <string name="sem4_mpc_p5">Quanto à abordagem de uma pesquisa científica, ela pode ser classificada em:</string>
+    <string name="sem4_mpc_p5r1">Qualitativa ou Quantitativa</string>
+    <string name="sem4_mpc_p5r2">Básica ou Aplicada</string>
+    <string name="sem4_mpc_p5r3">Incremental ou Inovadora</string>
+    <string name="sem4_mpc_p5r4">Exploratória, Descritiva ou Explicativa</string>
     
 </resources>

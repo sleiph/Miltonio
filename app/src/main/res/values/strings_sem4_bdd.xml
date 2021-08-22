@@ -26,5 +26,20 @@
     <string name="sem4_bdd_p5r1">Modelo Conceitual de Dados (MCD)</string>
     <string name="sem4_bdd_p5r2">Modelo Lógico de Dados (MLD)</string>
     <string name="sem4_bdd_p5r3">Modelo Físico de Dados (MFD)</string>
+
+    <string name="sem4_bdd_p6">Em uma tabela EMPREGADO, cuja primeira linha é: \n\'João da Silva\', \'R$3200,00\', 54\n \'João da Silva\' é:</string>
+    <string name="sem4_bdd_p6r1">Atributo</string>
+    <string name="sem4_bdd_p6r2">Instância</string>
+    <string name="sem4_bdd_p6r3">Entidade</string>
+
+    <string name="sem4_bdd_p7">Em uma tabela EMPREGADO, cuja primeira linha é: \n\'João da Silva\', \'R$3200,00\', 54\n EMPREGADO é:</string>
+    <string name="sem4_bdd_p7r1">Entidade</string>
+    <string name="sem4_bdd_p7r2">Atributo</string>
+    <string name="sem4_bdd_p7r3">Instância</string>
+
+    <string name="sem4_bdd_p8">Em uma tabela EMPREGADO, cuja primeira linha é: \n\'João da Silva\', \'R$3200,00\', 54\n a linha 1 é:</string>
+    <string name="sem4_bdd_p8r1">Instância</string>
+    <string name="sem4_bdd_p8r2">Entidade</string>
+    <string name="sem4_bdd_p8r3">Atributo</string>
     
 </resources>
