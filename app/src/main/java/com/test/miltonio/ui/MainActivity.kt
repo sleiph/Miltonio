@@ -333,3 +333,4 @@ class MainActivity : AppCompatActivity() {
 
 //Todo: Performance
     //Todo: Diminuir repetição de código
+    //Todo: Criar os objetos por json

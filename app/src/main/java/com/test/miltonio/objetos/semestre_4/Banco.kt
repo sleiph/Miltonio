@@ -79,6 +79,14 @@ class Banco {
                     Resposta(R.string.sem4_bdd_p8r2, false, R.string.sem4_bdd_p8),
                     Resposta(R.string.sem4_bdd_p8r3, false, R.string.sem4_bdd_p8)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_bdd_p9, 1,33,
+                mutableListOf(
+                    Resposta(R.string.sem4_bdd_p9r1, true, R.string.sem4_bdd_p9),
+                    Resposta(R.string.sem4_bdd_p9r2, false, R.string.sem4_bdd_p9),
+                    Resposta(R.string.sem4_bdd_p9r3, false, R.string.sem4_bdd_p9)
+                )
             )
         )
     )

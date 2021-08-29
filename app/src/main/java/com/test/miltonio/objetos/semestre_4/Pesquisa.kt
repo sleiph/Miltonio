@@ -61,6 +61,24 @@ class Pesquisa {
                     Resposta(R.string.sem4_mpc_p5r3, false, R.string.sem4_mpc_p5),
                     Resposta(R.string.sem4_mpc_p5r4, false, R.string.sem4_mpc_p5)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p6, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p6r1, true, R.string.sem4_mpc_p6),
+                    Resposta(R.string.sem4_mpc_p6r2, false, R.string.sem4_mpc_p6),
+                    Resposta(R.string.sem4_mpc_p6r3, false, R.string.sem4_mpc_p6),
+                    Resposta(R.string.sem4_mpc_p6r4, false, R.string.sem4_mpc_p6)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p7, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p7r1, true, R.string.sem4_mpc_p7),
+                    Resposta(R.string.sem4_mpc_p7r2, false, R.string.sem4_mpc_p7),
+                    Resposta(R.string.sem4_mpc_p7r3, false, R.string.sem4_mpc_p7),
+                    Resposta(R.string.sem4_mpc_p7r4, false, R.string.sem4_mpc_p7)
+                )
             )
         )
     )

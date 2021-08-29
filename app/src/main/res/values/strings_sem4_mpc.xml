@@ -32,5 +32,17 @@
     <string name="sem4_mpc_p5r2">Básica ou Aplicada</string>
     <string name="sem4_mpc_p5r3">Incremental ou Inovadora</string>
     <string name="sem4_mpc_p5r4">Exploratória, Descritiva ou Explicativa</string>
+
+    <string name="sem4_mpc_p6">Segundo qual método de pesquisa científica o conhecimento de um tema pode ser encontrado unicamente através da experimentação?</string>
+    <string name="sem4_mpc_p6r1">Indutivo</string>
+    <string name="sem4_mpc_p6r2">Deditivo</string>
+    <string name="sem4_mpc_p6r3">Dialético</string>
+    <string name="sem4_mpc_p6r4">Fenomenológico</string>
+
+    <string name="sem4_mpc_p7">É um método de investigação científica destinado primordialmente á pesquisa de fenômenos humanos, tais como vividos e experimentados:</string>
+    <string name="sem4_mpc_p7r1">Fenomenológia</string>
+    <string name="sem4_mpc_p7r2">Materialismo</string>
+    <string name="sem4_mpc_p7r3">Empirismo</string>
+    <string name="sem4_mpc_p7r4">Racionalismo</string>
     
 </resources>

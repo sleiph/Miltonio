@@ -41,5 +41,10 @@
     <string name="sem4_bdd_p8r1">Instância</string>
     <string name="sem4_bdd_p8r2">Entidade</string>
     <string name="sem4_bdd_p8r3">Atributo</string>
+
+    <string name="sem4_bdd_p9">Uma relação de um Autor com um Livro pode ser classificada como:</string>
+    <string name="sem4_bdd_p9r1">Um pra muitos (1 .. *)</string>
+    <string name="sem4_bdd_p9r2">Um pra um (1)</string>
+    <string name="sem4_bdd_p9r3">Zero ou um (0 .. 1)</string>
     
 </resources>
