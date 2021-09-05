@@ -40,9 +40,19 @@
     <string name="sem4_mpc_p6r4">Fenomenológico</string>
 
     <string name="sem4_mpc_p7">É um método de investigação científica destinado primordialmente á pesquisa de fenômenos humanos, tais como vividos e experimentados:</string>
-    <string name="sem4_mpc_p7r1">Fenomenológia</string>
+    <string name="sem4_mpc_p7r1">Fenomenologia</string>
     <string name="sem4_mpc_p7r2">Materialismo</string>
     <string name="sem4_mpc_p7r3">Empirismo</string>
     <string name="sem4_mpc_p7r4">Racionalismo</string>
+
+    <string name="sem4_mpc_p8">É basicamente realizada por meio da observação direta das atividades do grupo estudado e de entrevistas com informantes:</string>
+    <string name="sem4_mpc_p8r1">Estudo de Campo</string>
+    <string name="sem4_mpc_p8r2">Pesquisa Experimental</string>
+    <string name="sem4_mpc_p8r3">Pesquisa Documental</string>
+    <string name="sem4_mpc_p8r4">Estudo Bibliométrico</string>
+
+    <string name="sem4_mpc_p9">Qual dos seguintes instrumentos é mais recomendado para uma pesquisa realizada com um grande numero de participantes?</string>
+    <string name="sem4_mpc_p9r1">Questionário</string>
+    <string name="sem4_mpc_p9r2">Entrevista</string>
     
 </resources>
