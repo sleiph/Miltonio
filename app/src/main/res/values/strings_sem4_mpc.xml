@@ -54,5 +54,10 @@
     <string name="sem4_mpc_p9">Qual dos seguintes instrumentos é mais recomendado para uma pesquisa realizada com um grande numero de participantes?</string>
     <string name="sem4_mpc_p9r1">Questionário</string>
     <string name="sem4_mpc_p9r2">Entrevista</string>
+
+    <string name="sem4_mpc_p10">A compreensão do texto de acordo com, por exemplo, a coerência interna da argumentação ou validade dos argumentos empregados é objetivo da:</string>
+    <string name="sem4_mpc_p10r1">Análise interpretativa do texto</string>
+    <string name="sem4_mpc_p10r2">Análise temática do texto</string>
+    <string name="sem4_mpc_p10r3">Análise textual do texto</string>
     
 </resources>
