@@ -103,6 +103,42 @@ class Pesquisa {
                     Resposta(R.string.sem4_mpc_p10r2, false, R.string.sem4_mpc_p10),
                     Resposta(R.string.sem4_mpc_p10r3, false, R.string.sem4_mpc_p10)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p11, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p11r1, true, R.string.sem4_mpc_p11),
+                    Resposta(R.string.sem4_mpc_p11r2, false, R.string.sem4_mpc_p11),
+                    Resposta(R.string.sem4_mpc_p11r3, false, R.string.sem4_mpc_p11),
+                    Resposta(R.string.sem4_mpc_p11r4, false, R.string.sem4_mpc_p11)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p12, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p12r1, true, R.string.sem4_mpc_p12),
+                    Resposta(R.string.sem4_mpc_p12r2, false, R.string.sem4_mpc_p12),
+                    Resposta(R.string.sem4_mpc_p12r3, false, R.string.sem4_mpc_p12),
+                    Resposta(R.string.sem4_mpc_p12r4, false, R.string.sem4_mpc_p12)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p13, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p13r1, true, R.string.sem4_mpc_p13),
+                    Resposta(R.string.sem4_mpc_p13r2, false, R.string.sem4_mpc_p13),
+                    Resposta(R.string.sem4_mpc_p13r3, false, R.string.sem4_mpc_p13),
+                    Resposta(R.string.sem4_mpc_p13r4, false, R.string.sem4_mpc_p13)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p14, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p14r1, true, R.string.sem4_mpc_p14),
+                    Resposta(R.string.sem4_mpc_p14r2, false, R.string.sem4_mpc_p14),
+                    Resposta(R.string.sem4_mpc_p14r3, false, R.string.sem4_mpc_p14),
+                    Resposta(R.string.sem4_mpc_p14r4, false, R.string.sem4_mpc_p14)
+                )
             )
         )
     )

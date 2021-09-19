@@ -59,5 +59,29 @@
     <string name="sem4_mpc_p10r1">Análise interpretativa do texto</string>
     <string name="sem4_mpc_p10r2">Análise temática do texto</string>
     <string name="sem4_mpc_p10r3">Análise textual do texto</string>
+
+    <string name="sem4_mpc_p11">Evidenciar a estrutura lógica do texto faz parte da leitura:</string>
+    <string name="sem4_mpc_p11r1">Análise temática</string>
+    <string name="sem4_mpc_p11r2">Problematização</string>
+    <string name="sem4_mpc_p11r3">Textual</string>
+    <string name="sem4_mpc_p11r4">Interpretativa</string>
+
+    <string name="sem4_mpc_p12">Qual alternativa tem um aspecto que refere-se à entrevista?</string>
+    <string name="sem4_mpc_p12r1">É realizada pelo autor da pesquisa</string>
+    <string name="sem4_mpc_p12r2">Pode ser  enviada por email</string>
+    <string name="sem4_mpc_p12r3">Pode utilizar questionário eletrônico</string>
+    <string name="sem4_mpc_p12r4">Pode ser aplicada por aplicada por terceiros por videoconferência</string>
+
+    <string name="sem4_mpc_p13">Qual das afirmações refere-se ao conhecimento científico?</string>
+    <string name="sem4_mpc_p13r1">É o conhecimento racional, sistemático, exato e verificável da realidade.</string>
+    <string name="sem4_mpc_p13r2">É caracterizado pelo esforço da razão pura para questionar os problemas humanos e poder discernir entre o certo e o errado.</string>
+    <string name="sem4_mpc_p13r3">Não pode, por sua origem, ser confirmado ou negado. Depende da formação moral e das crenças de cada indivíduo.</string>
+    <string name="sem4_mpc_p13r4">É o conhecimento obtido ao acaso, após inúmeras tentativas, ou seja, o conhecimento adquirido através de ações não planejadas.</string>
+
+    <string name="sem4_mpc_p14">É a transcrição literal de trechos do texto:</string>
+    <string name="sem4_mpc_p14r1">Fichamento de citação</string>
+    <string name="sem4_mpc_p14r2">Fichamento de conteúdo</string>
+    <string name="sem4_mpc_p14r3">Fichamento bibliográfico</string>
+    <string name="sem4_mpc_p14r4">Fichamento temático</string>
     
 </resources>
