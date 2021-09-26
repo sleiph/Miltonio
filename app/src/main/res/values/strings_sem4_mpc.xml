@@ -83,5 +83,9 @@
     <string name="sem4_mpc_p14r2">Fichamento de conteúdo</string>
     <string name="sem4_mpc_p14r3">Fichamento bibliográfico</string>
     <string name="sem4_mpc_p14r4">Fichamento temático</string>
+
+    <string name="sem4_mpc_p15">Segundo a ABNT NBR 6023 de 2018, a regulação mais recente sobre citações, as referências bibliográficas devem aparecer em ordem alfabética.</string>
+    <string name="sem4_mpc_p15r1">Verdadeiro</string>
+    <string name="sem4_mpc_p15r2">Falso</string>
     
 </resources>

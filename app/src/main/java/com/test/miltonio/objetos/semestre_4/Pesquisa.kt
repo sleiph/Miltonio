@@ -139,6 +139,13 @@ class Pesquisa {
                     Resposta(R.string.sem4_mpc_p14r3, false, R.string.sem4_mpc_p14),
                     Resposta(R.string.sem4_mpc_p14r4, false, R.string.sem4_mpc_p14)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p15, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p15r1, true, R.string.sem4_mpc_p15),
+                    Resposta(R.string.sem4_mpc_p15r2, false, R.string.sem4_mpc_p15)
+                )
             )
         )
     )
