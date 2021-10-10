@@ -87,5 +87,11 @@
     <string name="sem4_mpc_p15">Segundo a ABNT NBR 6023 de 2018, a regulação mais recente sobre citações, as referências bibliográficas devem aparecer em ordem alfabética.</string>
     <string name="sem4_mpc_p15r1">Verdadeiro</string>
     <string name="sem4_mpc_p15r2">Falso</string>
+
+    <string name="sem4_mpc_p16">Você vai realizar uma pesquisa documental em uma empresa de TI. Essa descrição informa a classificação da pesquisa quanto:</string>
+    <string name="sem4_mpc_p16r1">Ao procedimento</string>
+    <string name="sem4_mpc_p16r2">Ao objetivo</string>
+    <string name="sem4_mpc_p16r3">À função</string>
+    <string name="sem4_mpc_p16r4">À abordagem</string>
     
 </resources>

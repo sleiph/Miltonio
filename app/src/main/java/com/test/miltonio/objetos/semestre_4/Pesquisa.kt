@@ -146,6 +146,15 @@ class Pesquisa {
                     Resposta(R.string.sem4_mpc_p15r1, true, R.string.sem4_mpc_p15),
                     Resposta(R.string.sem4_mpc_p15r2, false, R.string.sem4_mpc_p15)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_mpc_p16, 1,35,
+                mutableListOf(
+                    Resposta(R.string.sem4_mpc_p16r1, true, R.string.sem4_mpc_p16),
+                    Resposta(R.string.sem4_mpc_p16r2, false, R.string.sem4_mpc_p16),
+                    Resposta(R.string.sem4_mpc_p16r3, false, R.string.sem4_mpc_p16),
+                    Resposta(R.string.sem4_mpc_p16r4, false, R.string.sem4_mpc_p16)
+                )
             )
         )
     )

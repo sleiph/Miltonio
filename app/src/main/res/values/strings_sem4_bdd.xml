@@ -46,5 +46,11 @@
     <string name="sem4_bdd_p9r1">Um pra muitos (1 .. *)</string>
     <string name="sem4_bdd_p9r2">Um pra um (1)</string>
     <string name="sem4_bdd_p9r3">Zero ou um (0 .. 1)</string>
+
+    <string name="sem4_bdd_p10">No Modelo Relacional, entidades são mapeadas para:</string>
+    <string name="sem4_bdd_p10r1">Tabelas</string>
+    <string name="sem4_bdd_p10r2">Atributos</string>
+    <string name="sem4_bdd_p10r3">Colunas</string>
+    <string name="sem4_bdd_p10r4">Linhas</string>
     
 </resources>
