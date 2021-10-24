@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_bdd">Banco de Dados</string>
     <string name="categ_sem4_bdd_prof">Daniel</string>
 
@@ -42,7 +42,7 @@
     <string name="sem4_bdd_p8r2">Entidade</string>
     <string name="sem4_bdd_p8r3">Atributo</string>
 
-    <string name="sem4_bdd_p9">Uma relação de um Autor com um Livro pode ser classificada como:</string>
+    <string name="sem4_bdd_p9" tools:ignore="Typos">Uma relação de um Autor com um Livro pode ser classificada como:</string>
     <string name="sem4_bdd_p9r1">Um pra muitos (1 .. *)</string>
     <string name="sem4_bdd_p9r2">Um pra um (1)</string>
     <string name="sem4_bdd_p9r3">Zero ou um (0 .. 1)</string>
@@ -52,5 +52,10 @@
     <string name="sem4_bdd_p10r2">Atributos</string>
     <string name="sem4_bdd_p10r3">Colunas</string>
     <string name="sem4_bdd_p10r4">Linhas</string>
+
+    <string name="sem4_bdd_p11">Se excluímos um Cliente da tabela clientes, os pedidos desse cliente também deveriam ser excluídos.\nÉ um exemplo de anomalia de:</string>
+    <string name="sem4_bdd_p11r1">Exclusão</string>
+    <string name="sem4_bdd_p11r2">Inclusão</string>
+    <string name="sem4_bdd_p11r3">Modificação</string>
     
 </resources>

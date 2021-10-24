@@ -21,9 +21,36 @@ class ProgObj {
                 R.string.sem4_poo_p1, 1,32,
                 mutableListOf(
                     Resposta(R.string.sem4_poo_p1r1, true, R.string.sem4_poo_p1),
-                    Resposta(R.string.sem4_poo_p1r2, false, R.string.sem4_poo_p1),
-                    Resposta(R.string.sem4_poo_p1r3, false, R.string.sem4_poo_p1),
-                    Resposta(R.string.sem4_poo_p1r4, false, R.string.sem4_poo_p1)
+                    Resposta(R.string.sem4_poo_p1r2, false, R.string.sem4_poo_p1)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_poo_p2, 1,32,
+                mutableListOf(
+                    Resposta(R.string.sem4_poo_p2r1, true, R.string.sem4_poo_p2),
+                    Resposta(R.string.sem4_poo_p2r2, false, R.string.sem4_poo_p2),
+                    Resposta(R.string.sem4_poo_p2r3, false, R.string.sem4_poo_p2),
+                    Resposta(R.string.sem4_poo_p2r4, false, R.string.sem4_poo_p2)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_poo_p3, 1,32,
+                mutableListOf(
+                    Resposta(R.string.sem4_poo_p3r1, true, R.string.sem4_poo_p3),
+                    Resposta(R.string.sem4_poo_p3r2, false, R.string.sem4_poo_p3),
+                    Resposta(R.string.sem4_poo_p3r3, false, R.string.sem4_poo_p3),
+                    Resposta(R.string.sem4_poo_p3r4, false, R.string.sem4_poo_p3),
+                    Resposta(R.string.sem4_poo_p3r5, false, R.string.sem4_poo_p3),
+                    Resposta(R.string.sem4_poo_p3r6, false, R.string.sem4_poo_p3)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_poo_p4, 1,32,
+                mutableListOf(
+                    Resposta(R.string.sem4_poo_p4r1, true, R.string.sem4_poo_p4),
+                    Resposta(R.string.sem4_poo_p4r2, false, R.string.sem4_poo_p4),
+                    Resposta(R.string.sem4_poo_p4r3, false, R.string.sem4_poo_p4),
+                    Resposta(R.string.sem4_poo_p4r4, false, R.string.sem4_poo_p4)
                 )
             )
         )

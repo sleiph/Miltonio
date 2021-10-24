@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_poo">Programação Orientada a Objetos</string>
     <string name="categ_sem4_poo_prof">Jadir</string>
 
-    <string name="sem4_poo_p1"> </string>
-    <string name="sem4_poo_p1r1"> </string>
-    <string name="sem4_poo_p1r2"> </string>
-    <string name="sem4_poo_p1r3"> </string>
-    <string name="sem4_poo_p1r4"> </string>
+    <string name="sem4_poo_p1">Reuso de código e divisão de tarefas em projetos de desenvolvimento, melhor organização geral da codificação, maior padronização:</string>
+    <string name="sem4_poo_p1r1">Programação Orientada a Objetos</string>
+    <string name="sem4_poo_p1r2">Programação Estruturada</string>
+
+    <string name="sem4_poo_p2">Executa o programa lendo os bytecodes e compilando-os  para uma linguagem que o computador possa entender:</string>
+    <string name="sem4_poo_p2r1">JVM</string>
+    <string name="sem4_poo_p2r2">Javac</string>
+    <string name="sem4_poo_p2r3">JDK</string>
+    <string name="sem4_poo_p2r4">SDK</string>
+
+    <string name="sem4_poo_p3" tools:ignore="Typos">Qual comando utilizado na linha de comando(CLI) para exibir a versão instalada do JDK?</string>
+    <string name="sem4_poo_p3r1">javac -version</string>
+    <string name="sem4_poo_p3r2">javac</string>
+    <string name="sem4_poo_p3r3">java -version</string>
+    <string name="sem4_poo_p3r4">java</string>
+    <string name="sem4_poo_p3r5">jdk -version</string>
+    <string name="sem4_poo_p3r6">jdk</string>
+
+    <string name="sem4_poo_p4">Como indicar no Java que uma <b>ClasseFilha</b> herdará de alguma outra <b>Classe</b>?</string>
+    <string name="sem4_poo_p4r1">public class ClasseFilha <b>extends</b> Classe {}</string>
+    <string name="sem4_poo_p4r2">public class ClasseFilha <b>from</b> Classe {}</string>
+    <string name="sem4_poo_p4r3">public class ClasseFilha <b>:</b> Classe {}</string>
+    <string name="sem4_poo_p4r4">public class ClasseFilha <b>=></b> Classe {}</string>
     
 </resources>
