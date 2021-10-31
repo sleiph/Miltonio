@@ -21,16 +21,18 @@ O App usa um banco de dados SQLite pra guardar seu progresso, assim como as mat�
 
 Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 
+#### Controle
+
 - Acessibilidade!!!
 - Deixar o app usável em versões mais antigas do Android
 - Otimizar o número de assets (tilesets, tints, ...)
-- Usar recycler views
 - Usar ActivityAddTaskBinding, igual gente grande
-- Limpar o meu código, principalmente a criação de objetos
+- Me livrar dos objetos
 
-#### Funções
+#### Modelo
 
 - Usuários com senha
+- Perguntas de completar a frase (ou escolher a palavra certa)
 - Perguntas de múltipla escolha
 - Adicionar imagens nas perguntas
 - High Scores

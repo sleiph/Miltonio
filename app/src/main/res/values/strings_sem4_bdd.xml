@@ -57,5 +57,11 @@
     <string name="sem4_bdd_p11r1">Exclusão</string>
     <string name="sem4_bdd_p11r2">Inclusão</string>
     <string name="sem4_bdd_p11r3">Modificação</string>
+
+    <string name="sem4_bdd_p12">Dentro da álgebra relacional, uma operação de interseção R ∩ S:</string>
+    <string name="sem4_bdd_p12r1">Retorna uma relação com as tuplas comuns a R e S</string>
+    <string name="sem4_bdd_p12r2">Retorna a  união das tuplas de duas relações R e S</string>
+    <string name="sem4_bdd_p12r3">Retorna as tuplas presentes em R e ausentes em S</string>
+    <string name="sem4_bdd_p12r4">Retorna todas as combinações de tuplas de duas relações R e S</string>
     
 </resources>

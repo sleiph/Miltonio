@@ -26,5 +26,11 @@
     <string name="sem4_poo_p4r2">public class ClasseFilha <b>from</b> Classe {}</string>
     <string name="sem4_poo_p4r3">public class ClasseFilha <b>:</b> Classe {}</string>
     <string name="sem4_poo_p4r4">public class ClasseFilha <b>=></b> Classe {}</string>
+
+    <string name="sem4_poo_p5">Qual a função de uma classe abstrata na programação orientada a objetos?</string>
+    <string name="sem4_poo_p5r1">Ser mãe de outras classes, que herdarão seus atributos</string>
+    <string name="sem4_poo_p5r2">Ser oculta do programa principal</string>
+    <string name="sem4_poo_p5r3">Instanciar objetos de outras classes</string>
+    <string name="sem4_poo_p5r4">Referênciar pacotes da biblioteca</string>
     
 </resources>
