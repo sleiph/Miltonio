@@ -32,5 +32,17 @@
     <string name="sem4_poo_p5r2">Ser oculta do programa principal</string>
     <string name="sem4_poo_p5r3">Instanciar objetos de outras classes</string>
     <string name="sem4_poo_p5r4">Referênciar pacotes da biblioteca</string>
+
+    <string name="sem4_poo_p6">Considerando a seguinte instanciação de um objeto:\nContaCorrente myCC = new ContaCorrente(int saldo, String conta);\nQuantos argumentos possui o contrutor da classe ContaCorrente?</string>
+    <string name="sem4_poo_p6r1">2</string>
+    <string name="sem4_poo_p6r2">0</string>
+    <string name="sem4_poo_p6r3">1</string>
+    <string name="sem4_poo_p6r4">3</string>
+
+    <string name="sem4_poo_p7">Considerando a seguinte linha de código no Java:\int n = Integer.parseInt("2");\nparseInt() é um(a):</string>
+    <string name="sem4_poo_p7r1">Método da classe Integer</string>
+    <string name="sem4_poo_p7r2">Objeto da classe Integer</string>
+    <string name="sem4_poo_p7r3">Método do objeto Integer</string>
+    <string name="sem4_poo_p7r4">Objeto do método Integer</string>
     
 </resources>
