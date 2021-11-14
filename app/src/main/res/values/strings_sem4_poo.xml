@@ -44,5 +44,17 @@
     <string name="sem4_poo_p7r2">Objeto da classe Integer</string>
     <string name="sem4_poo_p7r3">Método do objeto Integer</string>
     <string name="sem4_poo_p7r4">Objeto do método Integer</string>
+
+    <string name="sem4_poo_p8">Qual a função do prefixo <b>static</b> na criação de um método?</string>
+    <string name="sem4_poo_p8r1">Indicar que o método é referente à classe onde foi escrito e não a algum objeto.</string>
+    <string name="sem4_poo_p8r2">Indicar que o método não receberá argumentos.</string>
+    <string name="sem4_poo_p8r3">Indicar a visibilidade do método dentro da classe.</string>
+    <string name="sem4_poo_p8r4">Indicar que o método é referente a um objeto e não à classe onde foi escrito.</string>
+
+    <string name="sem4_poo_p9">Considerando o seguinte método:\npublic static int cadastraCarga() {}\nQual parte do método sugere o seu encapsulamento?</string>
+    <string name="sem4_poo_p9r1">public</string>
+    <string name="sem4_poo_p9r2">static</string>
+    <string name="sem4_poo_p9r3">int</string>
+    <string name="sem4_poo_p9r4">cadastraCarga()</string>
     
 </resources>

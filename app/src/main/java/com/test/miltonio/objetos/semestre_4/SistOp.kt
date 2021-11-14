@@ -25,6 +25,33 @@ class SistOp {
                     Resposta(R.string.sem4_so2_p1r3, false, R.string.sem4_so2_p1),
                     Resposta(R.string.sem4_so2_p1r4, false, R.string.sem4_so2_p1)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_so2_p2, 1,30,
+                mutableListOf(
+                    Resposta(R.string.sem4_so2_p2r1, true, R.string.sem4_so2_p2),
+                    Resposta(R.string.sem4_so2_p2r2, false, R.string.sem4_so2_p2),
+                    Resposta(R.string.sem4_so2_p2r3, false, R.string.sem4_so2_p2),
+                    Resposta(R.string.sem4_so2_p2r4, false, R.string.sem4_so2_p2)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_so2_p3, 1,30,
+                mutableListOf(
+                    Resposta(R.string.sem4_so2_p3r1, true, R.string.sem4_so2_p3),
+                    Resposta(R.string.sem4_so2_p3r2, false, R.string.sem4_so2_p3),
+                    Resposta(R.string.sem4_so2_p3r3, false, R.string.sem4_so2_p3),
+                    Resposta(R.string.sem4_so2_p3r4, false, R.string.sem4_so2_p3)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_so2_p4, 1,30,
+                mutableListOf(
+                    Resposta(R.string.sem4_so2_p4r1, true, R.string.sem4_so2_p4),
+                    Resposta(R.string.sem4_so2_p4r2, false, R.string.sem4_so2_p4),
+                    Resposta(R.string.sem4_so2_p4r3, false, R.string.sem4_so2_p4),
+                    Resposta(R.string.sem4_so2_p4r4, false, R.string.sem4_so2_p4)
+                )
             )
         )
     )

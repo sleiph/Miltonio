@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_so2">Sistemas Operacionais 2</string>
     <string name="categ_sem4_so2_prof">--</string>
 
     <string name="sem4_so2_p1">Dentro da estrutura Linux, o diretório /proc armazena quais informações?</string>
     <string name="sem4_so2_p1r1">Informações do kernel do sistema e dos processos</string>
     <string name="sem4_so2_p1r2">Informações dos arquivos de configuração do sistema</string>
-    <string name="sem4_so2_p1r3">Informações sobre os comandos disponíveis para os usuários comuns</string>
+    <string name="sem4_so2_p1r3" tools:ignore="Typos">Informações sobre os comandos disponíveis para os usuários comuns</string>
     <string name="sem4_so2_p1r4">Informações sobre os usuários do sistema</string>
+
+    <string name="sem4_so2_p2" tools:ignore="Typos">Qual comando pode ser usado pra mover um arquivo texto para o diretório bkp?</string>
+    <string name="sem4_so2_p2r1">mv texto bkp</string>
+    <string name="sem4_so2_p2r2">cat bkp</string>
+    <string name="sem4_so2_p2r3">cd bkp</string>
+    <string name="sem4_so2_p2r4">mkdir texto bkp</string>
+
+    <string name="sem4_so2_p3" tools:ignore="Typos">Qual a função do comando <b>chmod</b> no Ubuntu?</string>
+    <string name="sem4_so2_p3r1">Modificar as permissões de um arquivo ou diretório</string>
+    <string name="sem4_so2_p3r2">Mudar o moderador de uma pasta</string>
+    <string name="sem4_so2_p3r3">Concatenar os resultados de uma pesquisa</string>
+    <string name="sem4_so2_p3r4">Modificar o diretório de um arquivo</string>
+
+    <string name="sem4_so2_p4" tools:ignore="Typos">Qual a função do comando <b>sudo</b> na linha de comando Linux?</string>
+    <string name="sem4_so2_p4r1" tools:ignore="Typos">Adicionar permissões de super usuário ao comando inserido</string>
+    <string name="sem4_so2_p4r2">Listar todos os arquivos contidos na pasta</string>
+    <string name="sem4_so2_p4r3" tools:ignore="Typos">Criar apelidos para comandos complexos</string>
+    <string name="sem4_so2_p4r4">Adicionar um grupo de usuários ao sistema</string>
     
 </resources>

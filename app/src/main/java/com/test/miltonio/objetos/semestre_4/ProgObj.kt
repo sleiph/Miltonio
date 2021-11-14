@@ -79,6 +79,24 @@ class ProgObj {
                     Resposta(R.string.sem4_poo_p7r3, false, R.string.sem4_poo_p7),
                     Resposta(R.string.sem4_poo_p7r4, false, R.string.sem4_poo_p7)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_poo_p8, 1,32,
+                mutableListOf(
+                    Resposta(R.string.sem4_poo_p8r1, true, R.string.sem4_poo_p8),
+                    Resposta(R.string.sem4_poo_p8r2, false, R.string.sem4_poo_p8),
+                    Resposta(R.string.sem4_poo_p8r3, false, R.string.sem4_poo_p8),
+                    Resposta(R.string.sem4_poo_p8r4, false, R.string.sem4_poo_p8)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_poo_p9, 1,32,
+                mutableListOf(
+                    Resposta(R.string.sem4_poo_p9r1, true, R.string.sem4_poo_p9),
+                    Resposta(R.string.sem4_poo_p9r2, false, R.string.sem4_poo_p9),
+                    Resposta(R.string.sem4_poo_p9r3, false, R.string.sem4_poo_p9),
+                    Resposta(R.string.sem4_poo_p9r4, false, R.string.sem4_poo_p9)
+                )
             )
         )
     )
