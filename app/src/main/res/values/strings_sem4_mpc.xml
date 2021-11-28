@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_mpc">Metodologia da Pesquisa Científico-Tecnológica</string>
     <string name="categ_sem4_mpc_prof">Eliacy</string>
 
@@ -67,7 +67,7 @@
     <string name="sem4_mpc_p11r4">Interpretativa</string>
 
     <string name="sem4_mpc_p12">Qual alternativa tem um aspecto que refere-se à entrevista?</string>
-    <string name="sem4_mpc_p12r1">É realizada pelo autor da pesquisa</string>
+    <string name="sem4_mpc_p12r1" tools:ignore="Typos">É realizada pelo autor da pesquisa</string>
     <string name="sem4_mpc_p12r2">Pode ser  enviada por email</string>
     <string name="sem4_mpc_p12r3">Pode utilizar questionário eletrônico</string>
     <string name="sem4_mpc_p12r4">Pode ser aplicada por aplicada por terceiros por videoconferência</string>

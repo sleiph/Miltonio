@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    var semestre = 3 //Todo: acabar com as variáveis globais
+    var semestre = 3    //Todo: acabar com as variáveis globais
     private var isSonando = true
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -71,6 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Todo: remover essa função quando terminar o app
+    /*
     private fun debugSemestre(  ) {
         val semestre1 = Semestre1()
         for (materia in semestre1.getMaterias()) {
@@ -115,7 +116,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }
+    }*/
     
     private fun resetSemestre( semestre: Int ) {
         MyApplication.materiasdatabase?.MateriaDao()?.resetSemestre(semestre)

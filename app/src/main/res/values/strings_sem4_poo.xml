@@ -56,5 +56,15 @@
     <string name="sem4_poo_p9r2">static</string>
     <string name="sem4_poo_p9r3">int</string>
     <string name="sem4_poo_p9r4">cadastraCarga()</string>
+
+    <string name="sem4_poo_p10">Utilizar controles Swing no seu projeto Java permite:</string>
+    <string name="sem4_poo_p10r1">Criar elementos gráficos</string>
+    <string name="sem4_poo_p10r2">Ler entradas pelo console</string>
+    <string name="sem4_poo_p10r3">Instanciar objetos de uma classe</string>
+    <string name="sem4_poo_p10r4">Criar construtores de uma classe automaticamente</string>
+
+    <string name="sem4_poo_p11">Tem como objetivo obrigar que as classes que as implementarem, deverão escrever métodos que foram definidos nas interfaces.</string>
+    <string name="sem4_poo_p11r1">Interface</string>
+    <string name="sem4_poo_p11r2">GUI</string>
     
 </resources>

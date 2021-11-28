@@ -26,5 +26,19 @@
     <string name="sem4_so2_p4r2">Listar todos os arquivos contidos na pasta</string>
     <string name="sem4_so2_p4r3" tools:ignore="Typos">Criar apelidos para comandos complexos</string>
     <string name="sem4_so2_p4r4">Adicionar um grupo de usuários ao sistema</string>
+
+    <string name="sem4_so2_p5">Permite alterar a data e a hora do último acesso e/ou data de modificação de um arquivo:</string>
+    <string name="sem4_so2_p5r1">touch</string>
+    <string name="sem4_so2_p5r2">echo</string>
+    <string name="sem4_so2_p5r3">grep</string>
+    <string name="sem4_so2_p5r4">timerw</string>
+
+    <string name="sem4_so2_p6">Exibe informações sobre os processos que estão executando na máquina:</string>
+    <string name="sem4_so2_p6r1">ps</string>
+    <string name="sem4_so2_p6r2">tar</string>
+    <string name="sem4_so2_p6r3">diff</string>
+    <string name="sem4_so2_p6r4">jobs</string>
+    <string name="sem4_so2_p6r5">wget</string>
+    <string name="sem4_so2_p6r6">grep</string>
     
 </resources>
