@@ -72,6 +72,24 @@ class SistOp {
                     Resposta(R.string.sem4_so2_p6r5, false, R.string.sem4_so2_p6),
                     Resposta(R.string.sem4_so2_p6r6, false, R.string.sem4_so2_p6)
                 )
+            ),
+            Pergunta(
+                R.string.sem4_so2_p7, 1,30,
+                mutableListOf(
+                    Resposta(R.string.sem4_so2_p7r1, true, R.string.sem4_so2_p7),
+                    Resposta(R.string.sem4_so2_p7r2, false, R.string.sem4_so2_p7),
+                    Resposta(R.string.sem4_so2_p7r3, false, R.string.sem4_so2_p7),
+                    Resposta(R.string.sem4_so2_p7r4, false, R.string.sem4_so2_p7)
+                )
+            ),
+            Pergunta(
+                R.string.sem4_so2_p8, 1,30,
+                mutableListOf(
+                    Resposta(R.string.sem4_so2_p8r1, true, R.string.sem4_so2_p8),
+                    Resposta(R.string.sem4_so2_p8r2, false, R.string.sem4_so2_p8),
+                    Resposta(R.string.sem4_so2_p8r3, false, R.string.sem4_so2_p8),
+                    Resposta(R.string.sem4_so2_p8r4, false, R.string.sem4_so2_p8)
+                )
             )
         )
     )
