@@ -41,16 +41,22 @@
     <string name="sem4_so2_p6r5">wget</string>
     <string name="sem4_so2_p6r6">grep</string>
 
-    <string name="sem4_so2_p7">Qual comando pode ser usado para descompactar um <i>arquivo.zip</i>:</string>
+    <string name="sem4_so2_p7" tools:ignore="Typos">Qual comando pode ser usado para descompactar um <i>arquivo.zip</i>:</string>
     <string name="sem4_so2_p7r1">tar -xvf arquivo.zip</string>
     <string name="sem4_so2_p7r2">tar -c arquivo.zip</string>
     <string name="sem4_so2_p7r3">tar -x arquivo.zip</string>
     <string name="sem4_so2_p7r4">tar -cvf arquivo.zip</string>
 
-    <string name="sem4_so2_p8">Comando utilizado para exibir ou editar as rotas ativas de um host com a rede:</string>
+    <string name="sem4_so2_p8" tools:ignore="Typos">Comando utilizado para exibir ou editar as rotas ativas de um host com a rede:</string>
     <string name="sem4_so2_p8r1">route</string>
     <string name="sem4_so2_p8r2">ping</string>
     <string name="sem4_so2_p8r3">netstat</string>
     <string name="sem4_so2_p8r4">ifconfig</string>
+
+    <string name="sem4_so2_p9" tools:ignore="Typos">Qual comando deve ser usado para montar um pendrive somete para leitura no sistema de arquivos?</string>
+    <string name="sem4_so2_p9r1">mount -rt vfat /dev/sdb1</string>
+    <string name="sem4_so2_p9r2">umount -rt vfat /dev/sdb1</string>
+    <string name="sem4_so2_p9r3">mount -t  vfat /dev/sdb1</string>
+    <string name="sem4_so2_p9r4">umount -t vfat /dev/sdb1</string>
     
 </resources>
