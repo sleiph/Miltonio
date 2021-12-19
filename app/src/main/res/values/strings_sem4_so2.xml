@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_so2">Sistemas Operacionais 2</string>
-    <string name="categ_sem4_so2_prof">--</string>
+    <string name="categ_sem4_so2_prof">Renato</string>
 
     <string name="sem4_so2_p1">Dentro da estrutura Linux, o diretório /proc armazena quais informações?</string>
     <string name="sem4_so2_p1r1">Informações do kernel do sistema e dos processos</string>
@@ -58,5 +58,47 @@
     <string name="sem4_so2_p9r2">umount -rt vfat /dev/sdb1</string>
     <string name="sem4_so2_p9r3">mount -t  vfat /dev/sdb1</string>
     <string name="sem4_so2_p9r4">umount -t vfat /dev/sdb1</string>
+
+    <string name="sem4_so2_p10">Qual o comando que permite interromper o acesso e desconectar um pendrive com segurança do sistema?</string>
+    <string name="sem4_so2_p10r1">umount /home/usuário/pendrive</string>
+    <string name="sem4_so2_p10r2">umount -a /home/usuário/pendrive</string>
+    <string name="sem4_so2_p10r3">umount -c /dev/sdb1 /home/usuário/pendrive</string>
+    <string name="sem4_so2_p10r4">umount /dev/sdb1</string>
+
+    <string name="sem4_so2_p11">Qual o comando para verificar os usuários logados no sistema?</string>
+    <string name="sem4_so2_p11r1">users</string>
+    <string name="sem4_so2_p11r2">userlist</string>
+    <string name="sem4_so2_p11r3">mostrar o conteúdo do arquivo /etc/passwd</string>
+    <string name="sem4_so2_p11r4">mostrar o conteúdo do arquivo /usr/groups</string>
+
+    <string name="sem4_so2_p12">Como pode-se verificar os grupos existentes no sistemas?</string>
+    <string name="sem4_so2_p12r1">mostrar o conteúdo do arquivo /etc/group</string>
+    <string name="sem4_so2_p12r2">mostrar o conteúdo do arquivo /usr/list</string>
+    <string name="sem4_so2_p12r3">com o comando listgroups</string>
+    <string name="sem4_so2_p12r4">com o comando groups</string>
+
+    <string name="sem4_so2_p13">Qual o comando para mostrar todos processos em execução no terminal corrente?</string>
+    <string name="sem4_so2_p13r1">jobs -r </string>
+    <string name="sem4_so2_p13r2">jobs -a</string>
+    <string name="sem4_so2_p13r3">ps -a</string>
+    <string name="sem4_so2_p13r4">ps -r</string>
+
+    <string name="sem4_so2_p14">Qual o comando correto para definir um IP Alias em uma conexão de Rede?</string>
+    <string name="sem4_so2_p14r1">ifconfig enp0s3:2 200.253.120.10</string>
+    <string name="sem4_so2_p14r2">alias eth0 200.253.120.10/16</string>
+    <string name="sem4_so2_p14r3">alias eth0:1 200.253.120.10</string>
+    <string name="sem4_so2_p14r4">ifconfig enp0s2 200.253.120.10 netmask 255.255.255.0</string>
+
+    <string name="sem4_so2_p15">Qual o comando que permite pesquisar uma determinada palavra ou texto em um arquivo?</string>
+    <string name="sem4_so2_p15r1">grep -i "arquivo" texto</string>
+    <string name="sem4_so2_p15r2">grep i- "texto" arquivo</string>
+    <string name="sem4_so2_p15r3">find arquivo "palavra"</string>
+    <string name="sem4_so2_p15r4">find "texto" arquivo</string>
+
+    <string name="sem4_so2_p16">Qual o comando para criarmos um usuário com uma UID 1050?</string>
+    <string name="sem4_so2_p16r1">adduser usuario --uid 1050</string>
+    <string name="sem4_so2_p16r2">adduser usuario -UID 1050</string>
+    <string name="sem4_so2_p16r3">adduser usuario  1050</string>
+    <string name="sem4_so2_p16r4">adduser usuario uid 1050</string>
     
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem4_poo">Programação Orientada a Objetos</string>
-    <string name="categ_sem4_poo_prof">Jadir</string>
+    <string name="categ_sem4_poo_prof">Renato</string>
 
     <string name="sem4_poo_p1">Reuso de código e divisão de tarefas em projetos de desenvolvimento, melhor organização geral da codificação, maior padronização:</string>
     <string name="sem4_poo_p1r1">Programação Orientada a Objetos</string>

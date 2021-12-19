@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    var semestre = 3    //Todo: acabar com as variáveis globais
+    var semestre = 4    //Todo: acabar com as variáveis globais
     private var isSonando = true
 
     @RequiresApi(Build.VERSION_CODES.M)

@@ -5,17 +5,15 @@ import com.test.miltonio.modelo.Materia
 
 class Semestre4 {
 
-    val imagemHeader = R.drawable.appsomilton
+    val imagemHeader = R.drawable.appsorenato
 
     fun getMaterias() :Array<Materia> {
         return arrayOf(
             SistOp().materia,
-            ProgMov().materia,
             ProgObj().materia,
             Banco().materia,
             Ingles().materia,
-            Pesquisa().materia,
-            Engenharia().materia
+            Pesquisa().materia
         )
     }
 }
