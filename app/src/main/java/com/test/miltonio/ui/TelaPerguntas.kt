@@ -109,7 +109,7 @@ class TelaPerguntas : AppCompatActivity() {
             txtPergunta.text = resources.getString( pergunta.id )
 
             // remove os elementos passados do layout
-            matarChildren(gridPergunta)
+            MainActivity.matarChildren(gridPergunta)
             val cards = mutableListOf<CardResposta>()
 
             if (respostas != null) {

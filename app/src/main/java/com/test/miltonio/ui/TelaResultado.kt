@@ -69,6 +69,9 @@ class TelaResultado : AppCompatActivity() {
         }
 
         btnMain.setOnClickListener {
+            if (materia != null) {
+                MainActivity.semestre = materia.semestre
+            }
             loadMain()
         }
     }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.MainActivity">
 
@@ -28,9 +29,9 @@
             android:columnOrderPreserved="false"
             android:padding="@dimen/margem_qsereal_margin">
 
-            <RelativeLayout
+            <com.test.miltonio.ui.componentes.Logo
+                android:id="@+id/Logo"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/tamanho_logo_main"
                 android:layout_marginTop="@dimen/distancia_topo_main"
                 android:layout_marginBottom="@dimen/margem_meia_margin"
                 android:layout_marginStart="@dimen/margem_meia_margin"
@@ -39,38 +40,9 @@
                 android:layout_rowWeight="1"
                 android:layout_columnSpan="2"
                 android:gravity="center"
-                tools:ignore="UselessParent">
+                app:imgLogo="@drawable/appmilton">
 
-                <ImageView
-                    android:id="@+id/logo_main"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/tamanho_logo_main"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="@string/app_img_desc"
-                    android:src="@drawable/appsemmilton" />
-
-                <ImageView
-                    android:id="@+id/logo_anima"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleX=".65"
-                    android:scaleY=".65"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="@string/app_img_desc"
-                     />
-
-                <ImageView
-                    android:id="@+id/logo_animo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleX="-.65"
-                    android:scaleY=".65"
-                    android:layout_centerInParent="true"
-                    android:layout_alignParentEnd="true"
-                    android:contentDescription="@string/app_img_desc"
-                     />
-
-            </RelativeLayout>
+            </com.test.miltonio.ui.componentes.Logo>
 
         </GridLayout>
 

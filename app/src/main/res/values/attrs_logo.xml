@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="Logo">
+        <attr name="imgLogo" format="color|reference" />
+    </declare-styleable>
+</resources>

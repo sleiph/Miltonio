@@ -8,14 +8,12 @@ import com.test.miltonio.objetos.semestre_2.Semestre2
 import com.test.miltonio.objetos.semestre_3.Semestre3
 import com.test.miltonio.objetos.semestre_4.Semestre4
 import com.test.miltonio.ui.componentes.CardMateria
+import com.test.miltonio.ui.componentes.Logo
 
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.Matrix
 import android.media.AudioManager
 import android.os.Build
 import android.os.Bundle
@@ -28,26 +26,25 @@ import android.widget.AdapterView.OnItemSelectedListener
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.setMargins
-
-fun matarChildren(pai: GridLayout) {
-    if (pai.childCount > 1)
-        for (i in 1 until pai.childCount)
-            pai.removeViewAt(1)
-}
-
-
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun matarChildren(pai: GridLayout) {
+            if (pai.childCount > 1)
+                for (i in 1 until pai.childCount)
+                    pai.removeViewAt(1)
+        }
+
+        var semestre = 4
+        private var isSonando = true
+    }
     
     private fun loadTelaPerguntas(id: Int) {
         val intent = Intent(this, TelaPerguntas::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
     }
-
-    var semestre = 4    //Todo: acabar com as variáveis globais
-    private var isSonando = true
 
     @RequiresApi(Build.VERSION_CODES.M)
     private fun setSound(valor: Boolean) {      //Todo: mutar os sons só do aplicativo -_-
@@ -136,16 +133,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun montarCard( materia: Materia, pai: GridLayout ) {
-
         val cardLayout = CardMateria(this)
-        val param = GridLayout.LayoutParams(
-            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-        )
-        param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
-        param.width = 0
-        param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-        cardLayout.layoutParams = param
+
+        // passando as caracteristicas da materia pro card
         cardLayout.setCardBack( ContextCompat.getColor(this, materia.cor) )
         cardLayout.setMateriaDrawable(
             ContextCompat.getDrawable(this, materia.imgSimbolo)
@@ -182,43 +172,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setHeader() {
-        val logoAnimado = findViewById<ImageView>(R.id.logo_anima)
-        val logoAnamido = findViewById<ImageView>(R.id.logo_animo)
-
+    private fun montarLogo(  ) {
         val bitmap = when (semestre) {
+            1 -> Semestre1().imagemHeader
             2 -> Semestre2().imagemHeader
             3 -> Semestre3().imagemHeader
             4 -> Semestre4().imagemHeader
             else -> Semestre1().imagemHeader
         }
 
-        val angulo = 60
-        val matrixAnima = Matrix()
-        val matrixAnami = Matrix()
-
-        logoAnimado.setOnClickListener {
-            val logoAnimadoBmp = BitmapFactory.decodeResource(resources, bitmap)
-            matrixAnima.postRotate(angulo.toFloat())
-            val rodado = Bitmap.createBitmap(
-                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
-                matrixAnima, true
-            )
-            logoAnimado.setImageBitmap(rodado)
-        }
-
-        logoAnamido.setOnClickListener {
-            val logoAnimadoBmp = BitmapFactory.decodeResource(resources, bitmap)
-            matrixAnami.postRotate(-angulo.toFloat())
-            val rodado = Bitmap.createBitmap(
-                logoAnimadoBmp, 0, 0, logoAnimadoBmp.width, logoAnimadoBmp.height,
-                matrixAnami, true
-            )
-            logoAnamido.setImageBitmap(rodado)
-        }
-
-        logoAnimado.setImageDrawable(ContextCompat.getDrawable(this, bitmap))
-        logoAnamido.setImageDrawable(ContextCompat.getDrawable(this, bitmap))
+        val logoLayout: Logo = findViewById(R.id.Logo)
+        logoLayout.setImgLogo(bitmap)
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -236,7 +200,6 @@ class MainActivity : AppCompatActivity() {
 
         //debugSemestre()
 
-        setHeader()
         montarSemestre(  )
     }
 
@@ -264,7 +227,7 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 semestre = position+1
-                setHeader()
+                montarLogo()
                 montarSemestre(  )
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {

@@ -4,13 +4,15 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
+import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.view.setMargins
 import com.test.miltonio.R
 
 class CardMateria : LinearLayout {
 
-    private var _professorString: String? = null // TODO: use a default from R.string...
+    private var _professorString: String? = null
     private var _progressoString: String? = null
     private var _materiaString: String? = null
     private var _cardTextColor: Int? = null
@@ -80,6 +82,15 @@ class CardMateria : LinearLayout {
         setProfessorText(_professorString, _cardTextColor!!)
         setProgressoText(_progressoString, _cardTextColor!!)
         setMateriaText(_materiaString, _cardTextColor!!)
+
+        val param = GridLayout.LayoutParams(
+            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+        )
+        param.height = resources.getDimension(R.dimen.tamanho_cards).toInt()
+        param.width = 0
+        param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+        this.layoutParams = param
     }
 
     private fun initComponents() {

@@ -1,0 +1,34 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tamanho_logo_main">
+
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tamanho_logo_main"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_img_desc"
+        android:src="@drawable/appsemmilton" />
+
+    <ImageView
+        android:id="@+id/logo_anima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX=".65"
+        android:scaleY=".65"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_img_desc"
+        />
+
+    <ImageView
+        android:id="@+id/logo_animo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="-.65"
+        android:scaleY=".65"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_img_desc"
+        />
+
+</RelativeLayout>
