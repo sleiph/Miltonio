@@ -60,10 +60,9 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="3"
                 android:gravity="center_vertical"
-                android:text="@string/alerta_mensagem"
                 android:textSize="@dimen/texto_pergunta"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrt"/>
+                android:textColor="@color/colorPrt" />
 
         </GridLayout>
 

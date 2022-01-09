@@ -5,27 +5,27 @@ import com.test.miltonio.R
 import com.test.miltonio.ui.componentes.CardResposta
 import com.test.miltonio.modelo.Pergunta
 import com.test.miltonio.modelo.Resposta
+
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.*
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.setMargins
 
 class TelaPerguntas : AppCompatActivity() {
+    fun loadTelaResultado(id :Int) {
+        val intent = Intent(this, TelaResultado::class.java)
+        intent.putExtra("id", id)
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_perguntas)
-
-        fun loadTelaResultado(id :Int) {
-            val intent = Intent(this, TelaResultado::class.java)
-            intent.putExtra("id", id)
-            startActivity(intent)
-        }
 
         // pegando o id do intent da tela anterior
         val resulIntent = intent
@@ -71,23 +71,13 @@ class TelaPerguntas : AppCompatActivity() {
             perguntas.shuffle()
         }
 
-        fun montarResposta(indice: Int, resposta: Resposta, cards: MutableList<CardResposta>) {
+        fun montarResposta(resposta: Resposta, cards: MutableList<CardResposta>): CardResposta {
             val cardLayout = CardResposta(this)
-            val param = GridLayout.LayoutParams(
-                GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
-                GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
-            )
-            param.width = 0
-            param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
-            cardLayout.layoutParams = param
 
             // adicionando o texto da resposta
-            cardLayout.setRespostaText(
-                resources.getString(resposta.id)
-            )
+            cardLayout.setRespostaText( resources.getString(resposta.id) )
             cardLayout.setRespostaDrawable(fundoRespostaDrawable)
-            cards.add(cardLayout)
-            gridPergunta.addView(cardLayout)
+
             cardLayout.setOnClickListener {
                 isCerta = resposta.isCerta
                 if (!btnConferir.isEnabled)
@@ -96,20 +86,24 @@ class TelaPerguntas : AppCompatActivity() {
                 //Todo: Tentar usar Tints em vez de drawables diferentes
                 ///fundoRespostaDrawable?.setTint(getColor(R.color.colorBnc))
 
-                for (card in cards)
+                for (card in cards) {
                     card.setRespostaDrawable(fundoRespostaDrawable)
-                cards[indice].setRespostaDrawable(fundoSelecionadoDrawable)
+                }
+                cardLayout.setRespostaDrawable(fundoSelecionadoDrawable)
             }
+
+            return cardLayout
         }
 
         fun montarPergunta(pergunta: Pergunta) {
+            // remove os cards da pergunta anterior
+            MainActivity.matarChildren(gridPergunta)
+
             val respostas = MyApplication.materiasdatabase?.RespostaDao()
                 ?.getByPerguntaId( pergunta.id )
 
             txtPergunta.text = resources.getString( pergunta.id )
 
-            // remove os elementos passados do layout
-            MainActivity.matarChildren(gridPergunta)
             val cards = mutableListOf<CardResposta>()
 
             if (respostas != null) {
@@ -117,7 +111,9 @@ class TelaPerguntas : AppCompatActivity() {
 
                 // começa a desenhar os cards de resposta
                 for (i in 0 until respostas.size) {
-                    montarResposta(i, respostas[i], cards)
+                    val card = montarResposta(respostas[i], cards)
+                    cards.add(card)
+                    gridPergunta.addView(card)
                 }
             }
         }
@@ -138,27 +134,35 @@ class TelaPerguntas : AppCompatActivity() {
 
             // funcao click do botao de conferir resposta
             btnConferir.setOnClickListener {
+                // se a resposta ta certa
                 if (isCerta) {
                     acertos += 1
                     progressoBarra.progressTintList = ColorStateList.valueOf(
                         Color.rgb(50, 180, 75)
                     )
-                    somBom.start()
+                    if (MainActivity.isSonando) {
+                        somBom.start()
+                    }
+                // se a resposta ta errada
                 } else {
                     progressoBarra.progressTintList = ColorStateList.valueOf(
                         Color.rgb(235, 5, 0)
                     )
-                    somRuim.start()
+                    if (MainActivity.isSonando) {
+                        somRuim.start()
+                    }
                 }
                 progresso += 1
                 progressoBarra.progress =
                     ((progresso.toDouble() / nPerguntas.toDouble()) * 100).toInt()
 
+                // se ainda tem mais perguntas
                 if (progresso < nPerguntas) {
                     if (perguntas != null) {
                         montarPergunta(perguntas[progresso])
                     }
                 }
+                // se acabaram as perguntas
                 else {
                     val pontos = (acertos.toDouble() / nPerguntas.toDouble()) * 100
                     materia.pontos = pontos.toInt()

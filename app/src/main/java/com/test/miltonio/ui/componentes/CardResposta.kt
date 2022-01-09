@@ -1,12 +1,16 @@
 package com.test.miltonio.ui.componentes
 
+import com.test.miltonio.R
+
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
+import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.test.miltonio.R
+
+import androidx.core.view.setMargins
 
 class CardResposta : LinearLayout {
 
@@ -59,9 +63,13 @@ class CardResposta : LinearLayout {
 
         respostaTextView = findViewById<View>(R.id.txt_resposta) as TextView
 
-        setRespostaText(_respostaString)
-        setRespostaColor(_respostaTextColor!!)
-        setRespostaDrawable(respostaDrawable)
+        val param = GridLayout.LayoutParams(
+            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
+            GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f)
+        )
+        param.width = 0
+        param.setMargins(resources.getDimension(R.dimen.margem_meia_margin).toInt())
+        layoutParams = param
     }
 
     fun getRespostaText(): CharSequence? {

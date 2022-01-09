@@ -1,5 +1,7 @@
 package com.test.miltonio.ui.componentes
 
+import com.test.miltonio.R
+
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -7,8 +9,8 @@ import android.graphics.Matrix
 import android.util.AttributeSet
 import android.widget.ImageView
 import android.widget.RelativeLayout
+
 import androidx.core.content.ContextCompat
-import com.test.miltonio.R
 
 class Logo : RelativeLayout {
 

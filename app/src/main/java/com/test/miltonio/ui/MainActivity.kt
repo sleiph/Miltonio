@@ -11,10 +11,8 @@ import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.ui.componentes.Logo
 
 import android.app.AlertDialog
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
-import android.media.AudioManager
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
@@ -25,7 +23,6 @@ import android.widget.AdapterView.OnItemSelectedListener
 
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         var semestre = 4
-        private var isSonando = true
+        var isSonando = true
     }
     
     private fun loadTelaPerguntas(id: Int) {
@@ -46,29 +43,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
-    private fun setSound(valor: Boolean) {      //Todo: mutar os sons só do aplicativo -_-
-        val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-        if (valor) {
-            audiomanager.adjustStreamVolume(
-                AudioManager.STREAM_MUSIC,
-                AudioManager.ADJUST_MUTE,
-                0
-            )
-            isSonando = false
-        }
-        else {
-            audiomanager.adjustStreamVolume(
-                AudioManager.STREAM_MUSIC,
-                AudioManager.ADJUST_UNMUTE,
-                0
-            )
-            isSonando = true
-        }
-    }
-
-    // Todo: remover essa função quando terminar o app
-    /*
+    /* Todo: remover essa função quando terminar o app
     private fun debugSemestre(  ) {
         val semestre1 = Semestre1()
         for (materia in semestre1.getMaterias()) {
@@ -125,54 +100,28 @@ class MainActivity : AppCompatActivity() {
 
         val materias = MyApplication.materiasdatabase?.MateriaDao()?.getBySemestre(semestre)
         if (materias != null) {
+            val pai: GridLayout = findViewById(R.id.cardParent)
             for (materia in materias) {
-                montarCard( materia, findViewById(R.id.cardParent) )
+                val card: CardMateria = montarCard( materia )
+                pai.addView( card )
             }
         }
 
     }
 
-    private fun montarCard( materia: Materia, pai: GridLayout ) {
+    private fun montarCard( materia: Materia ): CardMateria {
         val cardLayout = CardMateria(this)
-
         // passando as caracteristicas da materia pro card
-        cardLayout.setCardBack( ContextCompat.getColor(this, materia.cor) )
-        cardLayout.setMateriaDrawable(
-            ContextCompat.getDrawable(this, materia.imgSimbolo)
-        )
-        cardLayout.setProfessorText(
-            getString(materia.professor),
-            if (materia.isPreto)
-                ContextCompat.getColor(this, R.color.colorPrt)
-            else
-                ContextCompat.getColor(this, R.color.colorBnc)
-        )
-        cardLayout.setProgressoText(
-            getString(
-                R.string.resultado_pontos,
-                materia.pontos.toString()
-            ),
-            if (materia.isPreto)
-                ContextCompat.getColor(this, R.color.colorPrt)
-            else
-                ContextCompat.getColor(this, R.color.colorBnc)
-        )
-        cardLayout.setMateriaText(
-            getString(materia.nome),
-            if (materia.isPreto)
-                ContextCompat.getColor(this, R.color.colorPrt)
-            else
-                ContextCompat.getColor(this, R.color.colorBnc)
-        )
-
-        pai.addView(cardLayout)
+        cardLayout.PopularCard(this, materia)
 
         cardLayout.setOnClickListener {
             loadTelaPerguntas(materia.id)
         }
+
+        return cardLayout
     }
 
-    private fun montarLogo(  ) {
+    private fun montarLogoTtl(  ) {
         val bitmap = when (semestre) {
             1 -> Semestre1().imagemHeader
             2 -> Semestre2().imagemHeader
@@ -189,36 +138,35 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbarra_main))
 
+        //menu
+        setSupportActionBar(findViewById(R.id.toolbarra_main))
         val actionBarra = supportActionBar
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
-        val audiomanager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-        isSonando = !audiomanager.isStreamMute(AudioManager.STREAM_MUSIC)
-
         //debugSemestre()
-
         montarSemestre(  )
     }
 
-    //Todo: Desenhar ícones do menu
+    // Menu         Todo: Fazer o spinner mais bonito, desenhar ícones do menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         val itemSemestre = menu?.findItem(R.id.menu_semestre)
-        val spinner : Spinner = itemSemestre?.actionView as Spinner
+
+        // cria o spinner dos semestres
+        val spinner = itemSemestre?.actionView as Spinner
         ArrayAdapter.createFromResource(
             this,
             R.array.menu_semestres,
             android.R.layout.simple_spinner_item
-            //Todo: Fazer o spinner mais bonito
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter = adapter
         }
         spinner.setSelection(semestre-1)
         spinner.onItemSelectedListener = object : OnItemSelectedListener {
+            // quando seleciona um semestre diferente
             @RequiresApi(Build.VERSION_CODES.M)
             override fun onItemSelected(
                 parent: AdapterView<*>,
@@ -227,7 +175,7 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
                 semestre = position+1
-                montarLogo()
+                montarLogoTtl()
                 montarSemestre(  )
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -236,26 +184,29 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+
     override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        //(re)cria o botão de ativar os sons
         val itemSom = menu.findItem(R.id.menu_sons)
         val itemNSom = menu.findItem(R.id.menu_Nsons)
         itemSom.isVisible = !isSonando
         itemNSom.isVisible = isSonando
+
         return true
     }
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.menu_semestre -> {
             true
         }
         R.id.menu_sons -> {
-            setSound(false)
-            invalidateOptionsMenu()
-            //Todo: achar um jeito melhor de atualizar o menu
+            isSonando = true
+            invalidateOptionsMenu()     //Todo: achar um jeito melhor de atualizar o menu
             true
         }
         R.id.menu_Nsons -> {
-            setSound(true)
+            isSonando = false
             invalidateOptionsMenu()
             true
         }
@@ -291,8 +242,6 @@ class MainActivity : AppCompatActivity() {
     //Todo: Animações
     //Todo: Layout responsivo
     //Todo: Sons quando clica na cabecinha do Milton
-    //Todo: Criar os fundos do 3 semestre
-    //Todo: Trocar esse verde escuro por um cinza escuro
     //Todo: https://stackoverflow.com/questions/1700099/android-how-to-create-a-background-from-pattern
 
 //Todo: Performance

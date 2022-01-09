@@ -2,25 +2,26 @@ package com.test.miltonio.ui
 
 import com.test.miltonio.MyApplication
 import com.test.miltonio.R
+
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 class TelaResultado : AppCompatActivity() {
+    fun loadMain() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_resultado)
-
-        fun loadMain() {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
 
         //pegando o intent da tela anterior
         val resulIntent = intent
@@ -30,6 +31,7 @@ class TelaResultado : AppCompatActivity() {
         //declarando os elementos do layout
         val somBom = MediaPlayer.create(this, R.raw.tudo)
         val somRuim = MediaPlayer.create(this, R.raw.nada)
+
         val corFnd = findViewById<RelativeLayout>(R.id.cor_fnd)
         val imgFnd = findViewById<RelativeLayout>(R.id.img_fnd)
         val txtComeco = findViewById<TextView>(R.id.comeco)
@@ -42,24 +44,30 @@ class TelaResultado : AppCompatActivity() {
             txtResultado.text =
                 getString(R.string.resultado_pontos, materia.pontos.toString())
 
+            // se foi bem
             if (materia.pontos >= 60) {
                 val drawable =
                     ContextCompat.getDrawable(this, R.drawable.mensagem_resultado_bom)
                 txtMensagem.text = getString(R.string.resultado_msg_boa)
                 txtMensagem.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null)
-                somBom.start()
+                if (MainActivity.isSonando) {
+                    somBom.start()
+                }
+            // se foi mal
             } else {
                 val drawable =
                     ContextCompat.getDrawable(this, R.drawable.mensagem_resultado_ruim)
                 txtMensagem.text = getString(R.string.resultado_msg_ruim)
                 txtMensagem.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null)
-                somRuim.start()
+                if (MainActivity.isSonando) {
+                    somRuim.start()
+                }
             }
 
             corFnd.setBackgroundColor(ContextCompat.getColor(this, materia.cor))
             imgFnd.setBackgroundResource(materia.imgFundo)
-            txtCategoria.text =
-                getString(R.string.resultado_categoria, getString(materia.nome))
+            txtCategoria.text = getString(R.string.resultado_categoria, getString(materia.nome))
+
             if (!materia.isPreto) {
                 txtComeco.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
                 txtResultado.setTextColor(ContextCompat.getColor(this, R.color.colorBnc))
@@ -69,9 +77,6 @@ class TelaResultado : AppCompatActivity() {
         }
 
         btnMain.setOnClickListener {
-            if (materia != null) {
-                MainActivity.semestre = materia.semestre
-            }
             loadMain()
         }
     }

@@ -1,5 +1,8 @@
 package com.test.miltonio.ui.componentes
 
+import com.test.miltonio.R
+import com.test.miltonio.modelo.Materia
+
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
@@ -7,8 +10,9 @@ import android.view.View
 import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.TextView
+
+import androidx.core.content.ContextCompat
 import androidx.core.view.setMargins
-import com.test.miltonio.R
 
 class CardMateria : LinearLayout {
 
@@ -77,11 +81,13 @@ class CardMateria : LinearLayout {
 
         initComponents()
 
-        setCardBack(_cardBackColor!!)
-        setMateriaDrawable(cardDrawable)
-        setProfessorText(_professorString, _cardTextColor!!)
-        setProgressoText(_progressoString, _cardTextColor!!)
-        setMateriaText(_materiaString, _cardTextColor!!)
+    }
+
+    private fun initComponents() {
+        layoutMae = findViewById<View>(R.id.layout_mae) as LinearLayout
+        professorTextView = findViewById<View>(R.id.txt_professor) as TextView
+        progressoTextView = findViewById<View>(R.id.txt_progresso) as TextView
+        materiaTextView = findViewById<View>(R.id.txt_materia) as TextView
 
         val param = GridLayout.LayoutParams(
             GridLayout.spec(GridLayout.UNDEFINED, GridLayout.FILL, 1f),
@@ -93,11 +99,35 @@ class CardMateria : LinearLayout {
         this.layoutParams = param
     }
 
-    private fun initComponents() {
-        layoutMae = findViewById<View>(R.id.layout_mae) as LinearLayout
-        professorTextView = findViewById<View>(R.id.txt_professor) as TextView
-        progressoTextView = findViewById<View>(R.id.txt_progresso) as TextView
-        materiaTextView = findViewById<View>(R.id.txt_materia) as TextView
+    fun PopularCard(context: Context, materia: Materia) {
+        setCardBack( ContextCompat.getColor(context, materia.cor) )
+        setMateriaDrawable(
+            ContextCompat.getDrawable(context, materia.imgSimbolo)
+        )
+        setProfessorText(
+            resources.getString(materia.professor),
+            if (materia.isPreto)
+                ContextCompat.getColor(context, R.color.colorPrt)
+            else
+                ContextCompat.getColor(context, R.color.colorBnc)
+        )
+        setProgressoText(
+            resources.getString(
+                R.string.resultado_pontos,
+                materia.pontos.toString()
+            ),
+            if (materia.isPreto)
+                ContextCompat.getColor(context, R.color.colorPrt)
+            else
+                ContextCompat.getColor(context, R.color.colorBnc)
+        )
+        setMateriaText(
+            resources.getString(materia.nome),
+            if (materia.isPreto)
+                ContextCompat.getColor(context, R.color.colorPrt)
+            else
+                ContextCompat.getColor(context, R.color.colorBnc)
+        )
     }
 
     fun getProfessorText(): CharSequence? {
