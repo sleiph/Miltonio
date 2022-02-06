@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    // Todo: remover essa função quando terminar o app
+    /* Todo: remover essa função quando terminar o app
     private fun debugSemestre(  ) {
         val semestre1 = Semestre1()
         for (materia in semestre1.getMaterias()) {
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }
+    }*/
     
     private fun resetSemestre( semestre: Int ) {
         MyApplication.materiasdatabase?.MateriaDao()?.resetSemestre(semestre)
@@ -140,7 +140,7 @@ class MainActivity : AppCompatActivity() {
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
-        debugSemestre()
+        //debugSemestre()
         montarSemestre(  )
     }
 
