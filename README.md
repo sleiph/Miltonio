@@ -23,11 +23,9 @@ Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 
 #### Controle
 
-- Acessibilidade!!!
-- Deixar o app usável em versões mais antigas do Android
 - Otimizar o número de assets (tilesets, tints, ...)
 - Usar ActivityAddTaskBinding, igual gente grande
-- Me livrar dos objetos
+- Me livrar dos objetos (base do banco em json, ou online)
 
 #### Modelo
 

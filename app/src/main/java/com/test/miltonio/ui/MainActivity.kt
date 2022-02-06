@@ -13,7 +13,6 @@ import com.test.miltonio.ui.componentes.Logo
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,7 +20,6 @@ import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
 
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    /* Todo: remover essa função quando terminar o app
+    // Todo: remover essa função quando terminar o app
     private fun debugSemestre(  ) {
         val semestre1 = Semestre1()
         for (materia in semestre1.getMaterias()) {
@@ -88,13 +86,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }*/
+    }
     
     private fun resetSemestre( semestre: Int ) {
         MyApplication.materiasdatabase?.MateriaDao()?.resetSemestre(semestre)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     private fun montarSemestre(  ) {
         matarChildren( findViewById(R.id.cardParent) )
 
@@ -106,7 +103,6 @@ class MainActivity : AppCompatActivity() {
                 pai.addView( card )
             }
         }
-
     }
 
     private fun montarCard( materia: Materia ): CardMateria {
@@ -134,7 +130,6 @@ class MainActivity : AppCompatActivity() {
         logoLayout.setImgLogo(bitmap)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -145,11 +140,12 @@ class MainActivity : AppCompatActivity() {
         actionBarra?.setDisplayShowTitleEnabled(false)
         actionBarra?.setDisplayShowHomeEnabled(false)
 
-        //debugSemestre()
+        debugSemestre()
         montarSemestre(  )
     }
 
-    // Menu         Todo: Fazer o spinner mais bonito, desenhar ícones do menu
+    // Menu
+    // Todo: Fazer o spinner mais bonito, desenhar ícones do menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         val itemSemestre = menu?.findItem(R.id.menu_semestre)
@@ -167,7 +163,6 @@ class MainActivity : AppCompatActivity() {
         spinner.setSelection(semestre-1)
         spinner.onItemSelectedListener = object : OnItemSelectedListener {
             // quando seleciona um semestre diferente
-            @RequiresApi(Build.VERSION_CODES.M)
             override fun onItemSelected(
                 parent: AdapterView<*>,
                 view: View?,
@@ -186,7 +181,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onPrepareOptionsMenu(menu: Menu): Boolean {
-        //(re)cria o botão de ativar os sons
+        // (re)cria o botão de ativar os sons
         val itemSom = menu.findItem(R.id.menu_sons)
         val itemNSom = menu.findItem(R.id.menu_Nsons)
         itemSom.isVisible = !isSonando
@@ -195,7 +190,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.menu_semestre -> {
             true
@@ -234,9 +228,6 @@ class MainActivity : AppCompatActivity() {
 //Todo: Funcionalidade
     //Todo: Usuários com senha
 
-//Todo: Acessibilidade
-    //Todo: Deixar o app usável em versões mais antigas do Android
-
 //Todo: Design
     //Todo: Darkmode
     //Todo: Animações
@@ -244,6 +235,3 @@ class MainActivity : AppCompatActivity() {
     //Todo: Sons quando clica na cabecinha do Milton
     //Todo: https://stackoverflow.com/questions/1700099/android-how-to-create-a-background-from-pattern
 
-//Todo: Performance
-    //Todo: Diminuir repetição de código
-    //Todo: Criar os objetos por json

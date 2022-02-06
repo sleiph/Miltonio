@@ -177,7 +177,8 @@ class TelaPerguntas : AppCompatActivity() {
 }
 
 //Todo: Adicionar imagens nas perguntas
-//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Perguntas de múltipla escolha
+//Todo: Perguntas de completar a frase (ou escolher a palavra certa)
+//Todo: Se você errar a pergunta, ela volta no final (igual o Duolingo)
 //Todo: Scroll mais bonito/intuitivo das respostas
-//Todo: formatar melhor strings de código
+
