@@ -5,6 +5,7 @@ import com.test.miltonio.objetos.semestre_1.Semestre1
 import com.test.miltonio.objetos.semestre_2.Semestre2
 import com.test.miltonio.objetos.semestre_3.Semestre3
 import com.test.miltonio.objetos.semestre_4.Semestre4
+import com.test.miltonio.objetos.semestre_5.Semestre5
 import android.app.Application
 import androidx.room.*
 
@@ -60,6 +61,17 @@ class MyApplication: Application() {
 
         val semestre4 = Semestre4()
         for (materia in semestre4.getMaterias()) {
+            materiasdatabase?.MateriaDao()?.insert(materia)
+            for (pergunta in materia.perguntas!!) {
+                materiasdatabase?.PerguntaDao()?.insert(pergunta)
+                for (resposta in pergunta.respostas) {
+                    materiasdatabase?.RespostaDao()?.insert(resposta)
+                }
+            }
+        }
+
+        val semestre5 = Semestre5()
+        for (materia in semestre5.getMaterias()) {
             materiasdatabase?.MateriaDao()?.insert(materia)
             for (pergunta in materia.perguntas!!) {
                 materiasdatabase?.PerguntaDao()?.insert(pergunta)

@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                     pai.removeViewAt(1)
         }
 
-        var semestre = 4
+        var semestre = 5
         var isSonando = true
     }
     

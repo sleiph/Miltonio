@@ -9,9 +9,11 @@ class Semestre5 {
 
     fun getMaterias() :Array<Materia> {
         return arrayOf(
-            ProgMov().materia,
-            Engenharia().materia,
-            Ingles().materia
+            Redes().materia,
+            LabRedes().materia,
+            LabEng().materia,
+            SisDist().materia,
+            SegInfo().materia
         )
     }
 }
