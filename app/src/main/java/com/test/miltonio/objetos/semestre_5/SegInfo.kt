@@ -23,7 +23,9 @@ class SegInfo {
                     Resposta(R.string.sem5_sgi_p1r1, true, R.string.sem5_sgi_p1),
                     Resposta(R.string.sem5_sgi_p1r2, false, R.string.sem5_sgi_p1),
                     Resposta(R.string.sem5_sgi_p1r3, false, R.string.sem5_sgi_p1),
-                    Resposta(R.string.sem5_sgi_p1r4, false, R.string.sem5_sgi_p1)
+                    Resposta(R.string.sem5_sgi_p1r4, false, R.string.sem5_sgi_p1),
+                    Resposta(R.string.sem5_sgi_p1r5, false, R.string.sem5_sgi_p1),
+                    Resposta(R.string.sem5_sgi_p1r6, false, R.string.sem5_sgi_p1)
                 )
             )
         )

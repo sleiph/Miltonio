@@ -25,6 +25,51 @@ class Redes {
                     Resposta(R.string.sem5_rds_p1r3, false, R.string.sem5_rds_p1),
                     Resposta(R.string.sem5_rds_p1r4, false, R.string.sem5_rds_p1)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p2, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p2r1, true, R.string.sem5_rds_p2),
+                    Resposta(R.string.sem5_rds_p2r2, false, R.string.sem5_rds_p2),
+                    Resposta(R.string.sem5_rds_p2r3, false, R.string.sem5_rds_p2),
+                    Resposta(R.string.sem5_rds_p2r4, false, R.string.sem5_rds_p2)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p3, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p3r1, true, R.string.sem5_rds_p3),
+                    Resposta(R.string.sem5_rds_p3r2, false, R.string.sem5_rds_p3),
+                    Resposta(R.string.sem5_rds_p3r3, false, R.string.sem5_rds_p3),
+                    Resposta(R.string.sem5_rds_p3r4, false, R.string.sem5_rds_p3)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p4, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p4r1, true, R.string.sem5_rds_p4),
+                    Resposta(R.string.sem5_rds_p4r2, false, R.string.sem5_rds_p4),
+                    Resposta(R.string.sem5_rds_p4r3, false, R.string.sem5_rds_p4),
+                    Resposta(R.string.sem5_rds_p4r4, false, R.string.sem5_rds_p4)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p5, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p5r1, true, R.string.sem5_rds_p5),
+                    Resposta(R.string.sem5_rds_p5r2, false, R.string.sem5_rds_p5),
+                    Resposta(R.string.sem5_rds_p5r3, false, R.string.sem5_rds_p5),
+                    Resposta(R.string.sem5_rds_p5r4, false, R.string.sem5_rds_p5)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p6, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p6r1, true, R.string.sem5_rds_p6),
+                    Resposta(R.string.sem5_rds_p6r2, false, R.string.sem5_rds_p6),
+                    Resposta(R.string.sem5_rds_p6r3, false, R.string.sem5_rds_p6),
+                    Resposta(R.string.sem5_rds_p6r4, false, R.string.sem5_rds_p6)
+                )
             )
         )
     )

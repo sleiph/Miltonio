@@ -3,10 +3,12 @@
     <string name="categ_sem5_sgi">Segurança da Informação</string>
     <string name="categ_sem5_sgi_prof">Edidio</string>
 
-    <string name="sem5_sgi_p1"> </string>
-    <string name="sem5_sgi_p1r1"> </string>
-    <string name="sem5_sgi_p1r2"> </string>
-    <string name="sem5_sgi_p1r3"> </string>
-    <string name="sem5_sgi_p1r4"> </string>
+    <string name="sem5_sgi_p1">Qual dos seguintes conceitos não é um dos 5 pilares da segurança da informação?</string>
+    <string name="sem5_sgi_p1r1">Otimização</string>
+    <string name="sem5_sgi_p1r2">Confidencialidade</string>
+    <string name="sem5_sgi_p1r3">Integridade</string>
+    <string name="sem5_sgi_p1r4">Disponibilidade</string>
+    <string name="sem5_sgi_p1r5">Autenticidade</string>
+    <string name="sem5_sgi_p1r6">Legalidade</string>
     
 </resources>

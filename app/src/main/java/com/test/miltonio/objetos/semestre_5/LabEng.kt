@@ -21,9 +21,7 @@ class LabEng {
                 R.string.sem5_les_p1, 1,45,
                 mutableListOf(
                     Resposta(R.string.sem5_les_p1r1, true, R.string.sem5_les_p1),
-                    Resposta(R.string.sem5_les_p1r2, false, R.string.sem5_les_p1),
-                    Resposta(R.string.sem5_les_p1r3, false, R.string.sem5_les_p1),
-                    Resposta(R.string.sem5_les_p1r4, false, R.string.sem5_les_p1)
+                    Resposta(R.string.sem5_les_p1r2, false, R.string.sem5_les_p1)
                 )
             )
         )

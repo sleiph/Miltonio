@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem5_rds">Redes de Computadores</string>
     <string name="categ_sem5_rds_prof">Renato</string>
 
-    <string name="sem5_rds_p1"> </string>
-    <string name="sem5_rds_p1r1"> </string>
-    <string name="sem5_rds_p1r2"> </string>
-    <string name="sem5_rds_p1r3"> </string>
-    <string name="sem5_rds_p1r4"> </string>
+    <string name="sem5_rds_p1">Qual é o acrônimo do tipo de rede que permite a um monitor de atividade física pessoal se conectar a um smartphone?</string>
+    <string name="sem5_rds_p1r1">PAN</string>
+    <string name="sem5_rds_p1r2">LAN (Rede local)</string>
+    <string name="sem5_rds_p1r3">WAN</string>
+    <string name="sem5_rds_p1r4">Internet</string>
+
+    <string name="sem5_rds_p2">O que é descrito como a rede das redes e é a maior rede do mundo?</string>
+    <string name="sem5_rds_p2r1">Internet</string>
+    <string name="sem5_rds_p2r2">PAN</string>
+    <string name="sem5_rds_p2r3">WAN</string>
+    <string name="sem5_rds_p2r4">LAN</string>
+
+    <string name="sem5_rds_p3">Qual a tecnologia sem fio permite conectar dispositivos a uma curta distância de até poucos metros?</string>
+    <string name="sem5_rds_p3r1">Computação em neblina</string>
+    <string name="sem5_rds_p3r2">Bluetooth</string>
+    <string name="sem5_rds_p3r3">Wi-Fi</string>
+    <string name="sem5_rds_p3r4">Celular</string>
+
+    <string name="sem5_rds_p4">Que tipo de redes usa ondas eletromagnéticas em vez de fios?</string>
+    <string name="sem5_rds_p4r1">Wireless</string>
+    <string name="sem5_rds_p4r2">Ethernet</string>
+    <string name="sem5_rds_p4r3">Nuvem</string>
+    <string name="sem5_rds_p4r4">Internet</string>
+
+    <string name="sem5_rds_p5" tools:ignore="Typos">Qual é o nome de uma coleção de servidores e data centers na internet usada para armazenar e acessar dados em qualquer lugar, a qualquer momento e em qualquer dispositivo?</string>
+    <string name="sem5_rds_p5r1">Nuvem</string>
+    <string name="sem5_rds_p5r2">PAN</string>
+    <string name="sem5_rds_p5r3">Internet</string>
+    <string name="sem5_rds_p5r4">WAN</string>
+
+    <string name="sem5_rds_p6">Qual é o acrônimo da rede de pequena empresa que pode conectar 3 PCs e 4 dispositivos sem fio?</string>
+    <string name="sem5_rds_p6r1">LAN</string>
+    <string name="sem5_rds_p6r2">WAN</string>
+    <string name="sem5_rds_p6r3">PAN</string>
+    <string name="sem5_rds_p6r4">Wireless</string>
     
 </resources>

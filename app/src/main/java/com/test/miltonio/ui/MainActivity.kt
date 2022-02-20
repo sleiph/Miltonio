@@ -7,6 +7,7 @@ import com.test.miltonio.objetos.semestre_1.Semestre1
 import com.test.miltonio.objetos.semestre_2.Semestre2
 import com.test.miltonio.objetos.semestre_3.Semestre3
 import com.test.miltonio.objetos.semestre_4.Semestre4
+import com.test.miltonio.objetos.semestre_5.Semestre5
 import com.test.miltonio.ui.componentes.CardMateria
 import com.test.miltonio.ui.componentes.Logo
 
@@ -86,6 +87,17 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+        val semestre5 = Semestre5()
+        for (materia in semestre5.getMaterias()) {
+            MyApplication.materiasdatabase?.MateriaDao()?.update(materia)
+            for (pergunta in materia.perguntas!!) {
+                MyApplication.materiasdatabase?.PerguntaDao()?.update(pergunta)
+                for (resposta in pergunta.respostas) {
+                    MyApplication.materiasdatabase?.RespostaDao()?.update(resposta)
+                }
+            }
+        }
     }*/
     
     private fun resetSemestre( semestre: Int ) {
@@ -123,6 +135,7 @@ class MainActivity : AppCompatActivity() {
             2 -> Semestre2().imagemHeader
             3 -> Semestre3().imagemHeader
             4 -> Semestre4().imagemHeader
+            5 -> Semestre5().imagemHeader
             else -> Semestre1().imagemHeader
         }
 

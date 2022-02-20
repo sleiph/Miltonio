@@ -3,10 +3,14 @@
     <string name="categ_sem5_prc">Projeto de Redes de Computadores</string>
     <string name="categ_sem5_prc_prof">Ewerson</string>
 
-    <string name="sem5_prc_p1"> </string>
-    <string name="sem5_prc_p1r1"> </string>
-    <string name="sem5_prc_p1r2"> </string>
-    <string name="sem5_prc_p1r3"> </string>
-    <string name="sem5_prc_p1r4"> </string>
+    <string name="sem5_prc_p1">Qual a função do modem em uma rede?</string>
+    <string name="sem5_prc_p1r1">Converter sinais A/D</string>
+    <string name="sem5_prc_p1r2">Criar novos endereços de IP para as máquinas da rede</string>
+    <string name="sem5_prc_p1r3">Rotear o sinal da rede para as diferentes máquinas</string>
+    <string name="sem5_prc_p1r4">Selecionar o melhor caminho entre as diferentes redes</string>
+
+    <string name="sem5_prc_p2">Qual a função do serviço de DNS?</string>
+    <string name="sem5_prc_p2r1">Converter endereços IP em nomes de domínio legíveis por humanos</string>
+    <string name="sem5_prc_p2r2">Fornecer automaticamente um host ip para computadores da rede</string>
     
 </resources>

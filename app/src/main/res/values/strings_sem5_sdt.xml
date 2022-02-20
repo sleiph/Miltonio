@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="categ_sem5_sdt">Sistemas Distribuídos</string>
-    <string name="categ_sem5_sdt_prof">Esqueci</string>
+    <string name="categ_sem5_sdt_prof">Themoteo</string>
 
-    <string name="sem5_sdt_p1"> </string>
-    <string name="sem5_sdt_p1r1"> </string>
-    <string name="sem5_sdt_p1r2"> </string>
-    <string name="sem5_sdt_p1r3"> </string>
-    <string name="sem5_sdt_p1r4"> </string>
+    <string name="sem5_sdt_p1">Em um sistema distribuído, um exemplo de transparência de desempenho seria:</string>
+    <string name="sem5_sdt_p1r1">Permitir que o sistema seja reconfigurado para melhorar o desempenho de acordo com a carga</string>
+    <string name="sem5_sdt_p1r2">Saber com exatidão a localização do servidor da aplicação</string>
+    <string name="sem5_sdt_p1r3">Criar convenções para nomes de arquivos e sua manipulação em diferentes sistemas</string>
+    <string name="sem5_sdt_p1r4">Ser capaz de ouvir sem interrupção uma rádio online pela rede WiFi no celular</string>
     
 </resources>

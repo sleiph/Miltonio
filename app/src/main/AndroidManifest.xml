@@ -20,7 +20,9 @@
         </activity>
         <activity
             android:name=".ui.MainActivity"
-            android:label="@string/app_name">
+            android:authorities="com.test.miltonio.fileprovider"
+            android:exported="true"
+            android:grantUriPermissions="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
