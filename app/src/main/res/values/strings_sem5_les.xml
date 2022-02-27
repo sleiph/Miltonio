@@ -6,5 +6,11 @@
     <string name="sem5_les_p1">Seguranção é um exemplo de requisito:</string>
     <string name="sem5_les_p1r1">Não-funcional</string>
     <string name="sem5_les_p1r2">Funcional</string>
+
+    <string name="sem5_les_p2">Segundo o modelo arquitetural MVC, as Views seriam qual parte da aplicação?</string>
+    <string name="sem5_les_p2r1">As páginas que serão vistas pelo usuário</string>
+    <string name="sem5_les_p2r2">As classes de modelo</string>
+    <string name="sem5_les_p2r3">As classes de conexão com o banco de dados</string>
+    <string name="sem5_les_p2r4">A classe que fará a ligação entre modelos e controle</string>
     
 </resources>

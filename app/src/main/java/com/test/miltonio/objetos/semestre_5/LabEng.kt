@@ -23,6 +23,15 @@ class LabEng {
                     Resposta(R.string.sem5_les_p1r1, true, R.string.sem5_les_p1),
                     Resposta(R.string.sem5_les_p1r2, false, R.string.sem5_les_p1)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_les_p2, 1,45,
+                mutableListOf(
+                    Resposta(R.string.sem5_les_p2r1, true, R.string.sem5_les_p2),
+                    Resposta(R.string.sem5_les_p2r2, false, R.string.sem5_les_p2),
+                    Resposta(R.string.sem5_les_p2r3, false, R.string.sem5_les_p2),
+                    Resposta(R.string.sem5_les_p2r4, false, R.string.sem5_les_p2)
+                )
             )
         )
     )

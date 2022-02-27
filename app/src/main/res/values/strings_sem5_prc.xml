@@ -12,5 +12,10 @@
     <string name="sem5_prc_p2">Qual a função do serviço de DNS?</string>
     <string name="sem5_prc_p2r1">Converter endereços IP em nomes de domínio legíveis por humanos</string>
     <string name="sem5_prc_p2r2">Fornecer automaticamente um host ip para computadores da rede</string>
+
+    <string name="sem5_prc_p3">Topologia de rede mais comum de todas, é organizada de modo que todos os nós sejam conectados a um hub central, que atua como servidor:</string>
+    <string name="sem5_prc_p3r1">Estrela/Árvore</string>
+    <string name="sem5_prc_p3r2">Barra/Barramento</string>
+    <string name="sem5_prc_p3r3">Anel</string>
     
 </resources>

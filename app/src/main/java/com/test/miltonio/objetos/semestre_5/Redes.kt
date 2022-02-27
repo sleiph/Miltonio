@@ -70,6 +70,15 @@ class Redes {
                     Resposta(R.string.sem5_rds_p6r3, false, R.string.sem5_rds_p6),
                     Resposta(R.string.sem5_rds_p6r4, false, R.string.sem5_rds_p6)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p7, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p7r1, true, R.string.sem5_rds_p7),
+                    Resposta(R.string.sem5_rds_p7r2, false, R.string.sem5_rds_p7),
+                    Resposta(R.string.sem5_rds_p7r3, false, R.string.sem5_rds_p7),
+                    Resposta(R.string.sem5_rds_p7r4, false, R.string.sem5_rds_p7)
+                )
             )
         )
     )

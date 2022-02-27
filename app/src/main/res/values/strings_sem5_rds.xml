@@ -16,8 +16,8 @@
     <string name="sem5_rds_p2r4">LAN</string>
 
     <string name="sem5_rds_p3">Qual a tecnologia sem fio permite conectar dispositivos a uma curta distância de até poucos metros?</string>
-    <string name="sem5_rds_p3r1">Computação em neblina</string>
-    <string name="sem5_rds_p3r2">Bluetooth</string>
+    <string name="sem5_rds_p3r1">Bluetooth</string>
+    <string name="sem5_rds_p3r2">Computação em neblina</string>
     <string name="sem5_rds_p3r3">Wi-Fi</string>
     <string name="sem5_rds_p3r4">Celular</string>
 
@@ -38,5 +38,11 @@
     <string name="sem5_rds_p6r2">WAN</string>
     <string name="sem5_rds_p6r3">PAN</string>
     <string name="sem5_rds_p6r4">Wireless</string>
+
+    <string name="sem5_rds_p7">Qual a principal diferença entre os Protocolos de Redes TCP e UDP?</string>
+    <string name="sem5_rds_p7r1">O UDP é mais rápido, porém menos confiável, ele não espera confirmação de recebimento dos pacotes entregues.</string>
+    <string name="sem5_rds_p7r2">O TCP é mais rápido, porém menos confiável, ele não espera confirmação de recebimento dos pacotes entregues. </string>
+    <string name="sem5_rds_p7r3">O UDP é mais antigo e portanto deve ser substituído pelo TCP quando possível.</string>
+    <string name="sem5_rds_p7r4">O TCP é mais antigo e portanto deve ser substituído pelo UDP quando possível.</string>
     
 </resources>

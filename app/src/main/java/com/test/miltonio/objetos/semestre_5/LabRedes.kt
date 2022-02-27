@@ -32,6 +32,14 @@ class LabRedes {
                     Resposta(R.string.sem5_prc_p2r1, true, R.string.sem5_prc_p2),
                     Resposta(R.string.sem5_prc_p2r2, false, R.string.sem5_prc_p2)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_prc_p3, 1,46,
+                mutableListOf(
+                    Resposta(R.string.sem5_prc_p3r1, true, R.string.sem5_prc_p3),
+                    Resposta(R.string.sem5_prc_p3r2, false, R.string.sem5_prc_p3),
+                    Resposta(R.string.sem5_prc_p3r3, false, R.string.sem5_prc_p3)
+                )
             )
         )
     )
