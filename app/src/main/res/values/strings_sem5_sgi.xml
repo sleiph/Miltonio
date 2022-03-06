@@ -10,5 +10,10 @@
     <string name="sem5_sgi_p1r4">Disponibilidade</string>
     <string name="sem5_sgi_p1r5">Autenticidade</string>
     <string name="sem5_sgi_p1r6">Legalidade</string>
+
+    <string name="sem5_sgi_p2">Qual aspecto da segunrança da informação se preocupa com quem pode ter acesso à informação?</string>
+    <string name="sem5_sgi_p2r1">Confidencialidade</string>
+    <string name="sem5_sgi_p2r2">Integridade</string>
+    <string name="sem5_sgi_p2r3">Disponibilidade</string>
     
 </resources>

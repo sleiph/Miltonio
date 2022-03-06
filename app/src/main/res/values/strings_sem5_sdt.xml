@@ -8,5 +8,11 @@
     <string name="sem5_sdt_p1r2">Saber com exatidão a localização do servidor da aplicação</string>
     <string name="sem5_sdt_p1r3">Criar convenções para nomes de arquivos e sua manipulação em diferentes sistemas</string>
     <string name="sem5_sdt_p1r4">Ser capaz de ouvir sem interrupção uma rádio online pela rede WiFi no celular</string>
+
+    <string name="sem5_sdt_p2">Conexão entre dois ou mais computadores com o propósito de melhorar o desempenho dos sistemas:</string>
+    <string name="sem5_sdt_p2r1">Cluster</string>
+    <string name="sem5_sdt_p2r2">Redundância</string>
+    <string name="sem5_sdt_p2r3">Servidor</string>
+    <string name="sem5_sdt_p2r4">IaaS</string>
     
 </resources>

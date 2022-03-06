@@ -17,5 +17,11 @@
     <string name="sem5_prc_p3r1">Estrela/Árvore</string>
     <string name="sem5_prc_p3r2">Barra/Barramento</string>
     <string name="sem5_prc_p3r3">Anel</string>
+
+    <string name="sem5_prc_p4">Criar um sistema espelhado entre pelo menos dois discos em um servidor, afim de ganhar segurança por meio da redundância de dados:</string>
+    <string name="sem5_prc_p4r1">RAID 1</string>
+    <string name="sem5_prc_p4r2">RAID 0</string>
+    <string name="sem5_prc_p4r3">Backup</string>
+    <string name="sem5_prc_p4r4">Cloud Computing</string>
     
 </resources>
