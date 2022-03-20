@@ -15,5 +15,15 @@
     <string name="sem5_sgi_p2r1">Confidencialidade</string>
     <string name="sem5_sgi_p2r2">Integridade</string>
     <string name="sem5_sgi_p2r3">Disponibilidade</string>
+
+    <string name="sem5_sgi_p3">Um método de ataque sobre mensagens encriptadas que testa todas as possibilidades até chegar no padrão procurado:</string>
+    <string name="sem5_sgi_p3r1">Ataque por força bruta</string>
+    <string name="sem5_sgi_p3r2">Criptoanálise</string>
+    <string name="sem5_sgi_p3r3">Cifra de Cesar</string>
+    <string name="sem5_sgi_p3r4">Criptografia simétrica </string>
+
+    <string name="sem5_sgi_p4">A cifra de Cesar é um exemplo de:</string>
+    <string name="sem5_sgi_p4r1">Cifra monoalfabética</string>
+    <string name="sem5_sgi_p4r2">Cifra polialfabética</string>
     
 </resources>

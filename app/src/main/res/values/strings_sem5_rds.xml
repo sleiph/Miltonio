@@ -41,8 +41,19 @@
 
     <string name="sem5_rds_p7">Qual a principal diferença entre os Protocolos de Redes TCP e UDP?</string>
     <string name="sem5_rds_p7r1">O UDP é mais rápido, porém menos confiável, ele não espera confirmação de recebimento dos pacotes entregues.</string>
-    <string name="sem5_rds_p7r2">O TCP é mais rápido, porém menos confiável, ele não espera confirmação de recebimento dos pacotes entregues. </string>
+    <string name="sem5_rds_p7r2">O TCP é mais rápido, porém menos confiável, ele não espera confirmação de recebimento dos pacotes entregues.</string>
     <string name="sem5_rds_p7r3">O UDP é mais antigo e portanto deve ser substituído pelo TCP quando possível.</string>
     <string name="sem5_rds_p7r4">O TCP é mais antigo e portanto deve ser substituído pelo UDP quando possível.</string>
+
+    <string name="sem5_rds_p8">Qual tipo de linha de comunicação utiliza o enlace em dois sentidos de transmissão, porém apenas um por vez?</string>
+    <string name="sem5_rds_p8r1">Half-duplex</string>
+    <string name="sem5_rds_p8r2">Simplex</string>
+    <string name="sem5_rds_p8r3">Full-duplex</string>
+
+    <string name="sem5_rds_p9">O endereçamento IPv6 é capaz de criar 1028 vezes mais endereços que o IPv4, sabendo que o IPv4 utiliza 32 bits, quantos bits são utilizados pelo IPv6?</string>
+    <string name="sem5_rds_p9r1">128 bits</string>
+    <string name="sem5_rds_p9r2">32 bits</string>
+    <string name="sem5_rds_p9r3">64 bits</string>
+    <string name="sem5_rds_p9r4">256 bits</string>
     
 </resources>

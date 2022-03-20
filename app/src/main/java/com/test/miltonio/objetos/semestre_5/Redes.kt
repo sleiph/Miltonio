@@ -79,6 +79,23 @@ class Redes {
                     Resposta(R.string.sem5_rds_p7r3, false, R.string.sem5_rds_p7),
                     Resposta(R.string.sem5_rds_p7r4, false, R.string.sem5_rds_p7)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p8, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p8r1, true, R.string.sem5_rds_p8),
+                    Resposta(R.string.sem5_rds_p8r2, false, R.string.sem5_rds_p8),
+                    Resposta(R.string.sem5_rds_p8r3, false, R.string.sem5_rds_p8)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_rds_p9, 1,43,
+                mutableListOf(
+                    Resposta(R.string.sem5_rds_p9r1, true, R.string.sem5_rds_p9),
+                    Resposta(R.string.sem5_rds_p9r2, false, R.string.sem5_rds_p9),
+                    Resposta(R.string.sem5_rds_p9r3, false, R.string.sem5_rds_p9),
+                    Resposta(R.string.sem5_rds_p9r4, false, R.string.sem5_rds_p9)
+                )
             )
         )
     )

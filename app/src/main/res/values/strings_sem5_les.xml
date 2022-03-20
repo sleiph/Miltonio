@@ -12,5 +12,11 @@
     <string name="sem5_les_p2r2">As classes de modelo</string>
     <string name="sem5_les_p2r3">As classes de conexão com o banco de dados</string>
     <string name="sem5_les_p2r4">A classe que fará a ligação entre modelos e controle</string>
+
+    <string name="sem5_les_p3">Qual o sistema gerenciador de banco de dados padrão em um projeto .NET Framework?</string>
+    <string name="sem5_les_p3r1">Microsoft SQL Server</string>
+    <string name="sem5_les_p3r2">Framework</string>
+    <string name="sem5_les_p3r3">MySQL</string>
+    <string name="sem5_les_p3r4">MariaDB</string>
     
 </resources>
