@@ -14,5 +14,34 @@
     <string name="sem5_sdt_p2r2">Redundância</string>
     <string name="sem5_sdt_p2r3">Servidor</string>
     <string name="sem5_sdt_p2r4">IaaS</string>
+
+    <string name="sem5_sdt_p3">As plataformas de middleware são construídas tipicamente em qual das camadas do Modelo de Referência OSI?</string>
+    <string name="sem5_sdt_p3r1">Transporte</string>
+    <string name="sem5_sdt_p3r2">Sessão</string>
+    <string name="sem5_sdt_p3r3">Rede</string>
+    <string name="sem5_sdt_p3r4">Apresentação</string>
+
+    <string name="sem5_sdt_p4">Quando falamos de Cloud Computing podemos dizer que existem 3 tipos de serviços. ( SaaS , PaaS, IaaS) quais itens abaixo pertence a PaaS.</string>
+    <string name="sem5_sdt_p4r1">Heroku</string>
+    <string name="sem5_sdt_p4r2">Gmail</string>
+    <string name="sem5_sdt_p4r3">Rackspace</string>
+    <string name="sem5_sdt_p4r4">Office 365</string>
+
+    <string name="sem5_sdt_p5">Quando falamos de Cloud Computing podemos dizer que existem 3 tipos de serviços, qual pertence ao Desenvolvedor de aplicações?</string>
+    <string name="sem5_sdt_p5r1">PaaS</string>
+    <string name="sem5_sdt_p5r2">SaaS</string>
+    <string name="sem5_sdt_p5r3">IaaS</string>
+
+    <string name="sem5_sdt_p6">Quando falamos de Cloud Computing podemos dizer que existem 3 tipos de serviços. ( SaaS , PaaS, IaaS) quais itens abaixo pertence a SaaS.</string>
+    <string name="sem5_sdt_p6r1">Gmail, Office 365</string>
+    <string name="sem5_sdt_p6r2">Microsoft Azure</string>
+    <string name="sem5_sdt_p6r3">Google App Engine</string>
+    <string name="sem5_sdt_p6r4">Amazon AWS</string>
+
+    <string name="sem5_sdt_p7">A heterogeneidade de hardware, S.Os, questões de rede e de plataformas de programação se torna transparente pro meio do uso de:</string>
+    <string name="sem5_sdt_p7r1">Middleware</string>
+    <string name="sem5_sdt_p7r2">Troca de mensagens entre hosts</string>
+    <string name="sem5_sdt_p7r3">Uso de protocolo UDP</string>
+    <string name="sem5_sdt_p7r4">Uso de protocolo TCP</string>
     
 </resources>

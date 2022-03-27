@@ -18,5 +18,11 @@
     <string name="sem5_les_p3r2">Framework</string>
     <string name="sem5_les_p3r3">MySQL</string>
     <string name="sem5_les_p3r4">MariaDB</string>
+
+    <string name="sem5_les_p4">CSS é um mecanismo responsável por:</string>
+    <string name="sem5_les_p4r1">Adicionar estilos em um arquivo de HTML</string>
+    <string name="sem5_les_p4r2">Adicionar interações em uma página web</string>
+    <string name="sem5_les_p4r3">Adicionar formulários em um projeto web</string>
+    <string name="sem5_les_p4r4">Adicionar arquivos externos a um projeto web</string>
     
 </resources>

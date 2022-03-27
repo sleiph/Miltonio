@@ -23,5 +23,9 @@
     <string name="sem5_prc_p4r2">RAID 0</string>
     <string name="sem5_prc_p4r3">Backup</string>
     <string name="sem5_prc_p4r4">Cloud Computing</string>
+
+    <string name="sem5_prc_p5">A metodologia de planejamento de redes <b>Top-down</b> se preocupa em:</string>
+    <string name="sem5_prc_p5r1">Pensar primeiro a parte lógica da rede e depois seus componentes físicos.</string>
+    <string name="sem5_prc_p5r2">Pensar primeiro os componentes físicos da rede e depois sua parte lógica.</string>
     
 </resources>
