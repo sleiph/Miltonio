@@ -51,6 +51,15 @@ class SegInfo {
                     Resposta(R.string.sem5_sgi_p4r1, true, R.string.sem5_sgi_p4),
                     Resposta(R.string.sem5_sgi_p4r2, false, R.string.sem5_sgi_p4)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_sgi_p5, 1,48,
+                mutableListOf(
+                    Resposta(R.string.sem5_sgi_p5r1, true, R.string.sem5_sgi_p5),
+                    Resposta(R.string.sem5_sgi_p5r2, false, R.string.sem5_sgi_p5),
+                    Resposta(R.string.sem5_sgi_p5r3, false, R.string.sem5_sgi_p5),
+                    Resposta(R.string.sem5_sgi_p5r4, false, R.string.sem5_sgi_p5)
+                )
             )
         )
     )

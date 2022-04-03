@@ -24,5 +24,11 @@
     <string name="sem5_les_p4r2">Adicionar interações em uma página web</string>
     <string name="sem5_les_p4r3">Adicionar formulários em um projeto web</string>
     <string name="sem5_les_p4r4">Adicionar arquivos externos a um projeto web</string>
+
+    <string name="sem5_les_p5">Quais os dois principais tipos de solicitação HTTP?</string>
+    <string name="sem5_les_p5r1">GET e POST</string>
+    <string name="sem5_les_p5r2">GET e SET</string>
+    <string name="sem5_les_p5r3">POST e DELETE</string>
+    <string name="sem5_les_p5r4">GET e REQUEST</string>
     
 </resources>

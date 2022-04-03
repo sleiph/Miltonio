@@ -55,5 +55,12 @@
     <string name="sem5_rds_p9r2">32 bits</string>
     <string name="sem5_rds_p9r3">64 bits</string>
     <string name="sem5_rds_p9r4">256 bits</string>
+
+    <string name="sem5_rds_p10">14.23.120.8\nQual a classes do IP acima?</string>
+    <string name="sem5_rds_p10r1">A</string>
+    <string name="sem5_rds_p10r2">B</string>
+    <string name="sem5_rds_p10r3">C</string>
+    <string name="sem5_rds_p10r4">D</string>
+    <string name="sem5_rds_p10r5">E</string>
     
 </resources>

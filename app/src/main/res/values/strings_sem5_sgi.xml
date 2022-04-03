@@ -25,5 +25,11 @@
     <string name="sem5_sgi_p4">A cifra de Cesar é um exemplo de:</string>
     <string name="sem5_sgi_p4r1">Cifra monoalfabética</string>
     <string name="sem5_sgi_p4r2">Cifra polialfabética</string>
+
+    <string name="sem5_sgi_p5">Qual seria o exemplo de uma medida de segurança física?</string>
+    <string name="sem5_sgi_p5r1">Desabilitar as entradas USB de um servidor</string>
+    <string name="sem5_sgi_p5r2">Atualizar os programas da empresa</string>
+    <string name="sem5_sgi_p5r3">Treinar os funcionários em medidas de segurança</string>
+    <string name="sem5_sgi_p5r4">Contratar um serviço confiável de IaaS</string>
     
 </resources>
