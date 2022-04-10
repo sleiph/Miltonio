@@ -43,5 +43,11 @@
     <string name="sem5_sdt_p7r2">Troca de mensagens entre hosts</string>
     <string name="sem5_sdt_p7r3">Uso de protocolo UDP</string>
     <string name="sem5_sdt_p7r4">Uso de protocolo TCP</string>
+
+    <string name="sem5_sdt_p8">É sabido que a arquitetura baseada em objetos se ajusta em arquiteturas do tipo cliente-servidor. Esses objetos podem ser componentes de programas locais ou remotos, entretanto, em um ambiente cliente / servidor, a invocação (conexão / ligação) de um objeto ocorre por meio de um processo denominado:</string>
+    <string name="sem5_sdt_p8r1">Chamada de Procedimento Remoto</string>
+    <string name="sem5_sdt_p8r2">Chamada de Componentes por Camada</string>
+    <string name="sem5_sdt_p8r3">Propagação de Eventos de Dados</string>
+    <string name="sem5_sdt_p8r4">Conexão com Repositórios de Dados</string>
     
 </resources>

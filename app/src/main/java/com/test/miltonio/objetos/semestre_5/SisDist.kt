@@ -78,6 +78,15 @@ class SisDist {
                     Resposta(R.string.sem5_sdt_p7r3, false, R.string.sem5_sdt_p7),
                     Resposta(R.string.sem5_sdt_p7r4, false, R.string.sem5_sdt_p7)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_sdt_p8, 1,47,
+                mutableListOf(
+                    Resposta(R.string.sem5_sdt_p8r1, true, R.string.sem5_sdt_p8),
+                    Resposta(R.string.sem5_sdt_p8r2, false, R.string.sem5_sdt_p8),
+                    Resposta(R.string.sem5_sdt_p8r3, false, R.string.sem5_sdt_p8),
+                    Resposta(R.string.sem5_sdt_p8r4, false, R.string.sem5_sdt_p8)
+                )
             )
         )
     )

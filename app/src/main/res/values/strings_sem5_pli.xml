@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categ_sem5_pli">Programação Linear</string>
+    <string name="categ_sem5_pli_prof">Marcelo</string>
+
+    <string name="sem5_pli_p1"></string>
+    <string name="sem5_pli_p1r1"></string>
+    <string name="sem5_pli_p1r2"></string>
+    <string name="sem5_pli_p1r3"></string>
+    <string name="sem5_pli_p1r4"></string>
+
+</resources>

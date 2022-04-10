@@ -31,5 +31,20 @@
     <string name="sem5_sgi_p5r2">Atualizar os programas da empresa</string>
     <string name="sem5_sgi_p5r3">Treinar os funcionários em medidas de segurança</string>
     <string name="sem5_sgi_p5r4">Contratar um serviço confiável de IaaS</string>
+
+    <string name="sem5_sgi_p6">Qual é um exemplo de ameaça humana?</string>
+    <string name="sem5_sgi_p6r1">Um pen-drive passa um vírus para a rede</string>
+    <string name="sem5_sgi_p6r2">Muita poeira na sala de servidores</string>
+    <string name="sem5_sgi_p6r3">Um vazamento provoca uma falha no fornecimento de eletricidade</string>
+
+    <string name="sem5_sgi_p7">O que é uma medida repressiva no caso de um incêndio?</string>
+    <string name="sem5_sgi_p7r1">Extinguir o incêndio após este ser detectado por um detector de incêndio</string>
+    <string name="sem5_sgi_p7r2">Fazer um seguro de incêndio</string>
+    <string name="sem5_sgi_p7r3">Reparar o dano causado pelo incêndio</string>
+
+    <string name="sem5_sgi_p8">Como se chama "estabelecer se a identidade de alguém é correta"?</string>
+    <string name="sem5_sgi_p8r1">Autenticação</string>
+    <string name="sem5_sgi_p8r2">Autorização</string>
+    <string name="sem5_sgi_p8r3">Identificação</string>
     
 </resources>

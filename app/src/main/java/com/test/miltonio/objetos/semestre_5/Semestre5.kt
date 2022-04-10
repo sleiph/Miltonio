@@ -12,8 +12,10 @@ class Semestre5 {
             Redes().materia,
             LabRedes().materia,
             LabEng().materia,
+            ProgLin().materia,
             SisDist().materia,
-            SegInfo().materia
+            SegInfo().materia,
+            Ingles().materia
         )
     }
 }
