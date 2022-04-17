@@ -27,5 +27,9 @@
     <string name="sem5_prc_p5">A metodologia de planejamento de redes <b>Top-down</b> se preocupa em:</string>
     <string name="sem5_prc_p5r1">Pensar primeiro a parte lógica da rede e depois seus componentes físicos.</string>
     <string name="sem5_prc_p5r2">Pensar primeiro os componentes físicos da rede e depois sua parte lógica.</string>
+
+    <string name="sem5_prc_p6">Qual a principal diferença entre computação em cluster e em grelha?</string>
+    <string name="sem5_prc_p6r1">Na computação em cluster os elementos da rede ficam no mesmo espaço, já na de grelha eles podem estar em lugares diferentes, conectados pela internet.</string>
+    <string name="sem5_prc_p6r2">Na computação em grelha os elementos da rede ficam no mesmo espaço, já na de cluster eles podem estar em lugares diferentes, conectados pela internet.</string>
     
 </resources>

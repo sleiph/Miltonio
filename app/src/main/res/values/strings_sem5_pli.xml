@@ -3,10 +3,14 @@
     <string name="categ_sem5_pli">Programação Linear</string>
     <string name="categ_sem5_pli_prof">Marcelo</string>
 
-    <string name="sem5_pli_p1"></string>
-    <string name="sem5_pli_p1r1"></string>
-    <string name="sem5_pli_p1r2"></string>
-    <string name="sem5_pli_p1r3"></string>
-    <string name="sem5_pli_p1r4"></string>
+    <string name="sem5_pli_p1">Verifique a afirmação seguinte:\nUma matriz 2x3 pode ser somada a uma matriz 3x2 contanto que uma das duas seja transposta.</string>
+    <string name="sem5_pli_p1r1">Verdadeiro</string>
+    <string name="sem5_pli_p1r2">Falso</string>
+
+    <string name="sem5_pli_p2">Como posso saber se duas matrizes podem ser multiplicadas?</string>
+    <string name="sem5_pli_p2r1">Se o número de colunas da primeira matriz for igual ao número de linhas da segunda.</string>
+    <string name="sem5_pli_p2r2">Se o número de linhas da primeira matriz for igual ao número de linhas da segunda.</string>
+    <string name="sem5_pli_p2r3">Se o número de linhas da primeira matriz for igual ao número de colunas da segunda.</string>
+    <string name="sem5_pli_p2r4">Somente se as duas matrizes tiverem dimensões idênticas.</string>
 
 </resources>
