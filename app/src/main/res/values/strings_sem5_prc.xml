@@ -31,5 +31,17 @@
     <string name="sem5_prc_p6">Qual a principal diferença entre computação em cluster e em grelha?</string>
     <string name="sem5_prc_p6r1">Na computação em cluster os elementos da rede ficam no mesmo espaço, já na de grelha eles podem estar em lugares diferentes, conectados pela internet.</string>
     <string name="sem5_prc_p6r2">Na computação em grelha os elementos da rede ficam no mesmo espaço, já na de cluster eles podem estar em lugares diferentes, conectados pela internet.</string>
-    
+
+    <string name="sem5_prc_p7">Fazem parte de um projeto lógico de rede:</string>
+    <string name="sem5_prc_p7r1">Análise de requisitos - projeto da topologia da rede - nomenclatura</string>
+    <string name="sem5_prc_p7r2">Projeto da topologia da rede - projeto de endereçamento - nomenclatura</string>
+    <string name="sem5_prc_p7r3">Projeto da topologia da rede - seleção de switches e reteamento - desenvolvimento da segurança da rede</string>
+    <string name="sem5_prc_p7r4">Análise de requisitos - projeto da topologia da rede - seleção de switches e reteamento</string>
+
+    <string name="sem5_prc_p8">São características de uma rede WMAN:</string>
+    <string name="sem5_prc_p8r1">Em uma WMAN a conexão pode ser ponto a ponto ou Multiponto, como cobertura média de até 50km</string>
+    <string name="sem5_prc_p8r2">É uma rede local que tende a dar cobertura a uma área privada podendo ser sem fio ou cabeada</string>
+    <string name="sem5_prc_p8r3">Uma WMAN pode utilizar uma tecnologia via cabo chamada WiMAX</string>
+    <string name="sem5_prc_p8r4">Uma WMAN utiliza tecnologia CHIP SIM para comunicação dos dispositivos</string>
+
 </resources>

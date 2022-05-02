@@ -30,5 +30,11 @@
     <string name="sem5_les_p5r2">GET e SET</string>
     <string name="sem5_les_p5r3">POST e DELETE</string>
     <string name="sem5_les_p5r4">GET e REQUEST</string>
+
+    <string name="sem5_les_p6">Qual o nome do servidor utilizado pela IDE Visual Studio para <i>deployar</i> projetos .Net?</string>
+    <string name="sem5_les_p6r1">IIS</string>
+    <string name="sem5_les_p6r2">XAMPP</string>
+    <string name="sem5_les_p6r3">Apache Tomcat</string>
+    <string name="sem5_les_p6r4">Apache</string>
     
 </resources>

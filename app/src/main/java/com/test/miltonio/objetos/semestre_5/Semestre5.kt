@@ -14,8 +14,7 @@ class Semestre5 {
             LabEng().materia,
             ProgLin().materia,
             SisDist().materia,
-            SegInfo().materia,
-            Ingles().materia
+            SegInfo().materia
         )
     }
 }
