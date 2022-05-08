@@ -36,5 +36,11 @@
     <string name="sem5_les_p6r2">XAMPP</string>
     <string name="sem5_les_p6r3">Apache Tomcat</string>
     <string name="sem5_les_p6r4">Apache</string>
+
+    <string name="sem5_les_p7">Expressões lambda podem ser usadas para que fim em um projeto de backend?</string>
+    <string name="sem5_les_p7r1">Fazer consultas ao banco de dados utilizando a linguagem C#.</string>
+    <string name="sem5_les_p7r2">Armazenar dados no banco de dados.</string>
+    <string name="sem5_les_p7r3">Integrar os modelos com os controladores da aplicação.</string>
+    <string name="sem5_les_p7r4">Integrar os controladores com as views da aplicação.</string>
     
 </resources>

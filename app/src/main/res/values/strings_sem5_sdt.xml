@@ -49,5 +49,15 @@
     <string name="sem5_sdt_p8r2">Chamada de Componentes por Camada</string>
     <string name="sem5_sdt_p8r3">Propagação de Eventos de Dados</string>
     <string name="sem5_sdt_p8r4">Conexão com Repositórios de Dados</string>
+
+    <string name="sem5_sdt_p9">É referente ao local, o Host que quer acessar determinado recurso:</string>
+    <string name="sem5_sdt_p9r1">URL</string>
+    <string name="sem5_sdt_p9r2">URI</string>
+    <string name="sem5_sdt_p9r3">URN</string>
+
+    <string name="sem5_sdt_p10">Espaço de nomes vasto se refere a qual tipo de organização de arquivos dentro de um servidor?</string>
+    <string name="sem5_sdt_p10r1">Os endereços são transformados em hashs de 128bits, não exigindo uma entidade central de registro.</string>
+    <string name="sem5_sdt_p10r2">Todos os endereços podem ser acessados a partir da raiz.</string>
+    <string name="sem5_sdt_p10r3">Os endereços são separados em pastas dentro da raiz e devem ser acessados a partir de seus contextos.</string>
     
 </resources>

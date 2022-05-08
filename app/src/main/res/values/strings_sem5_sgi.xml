@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="categ_sem5_sgi">Segurança da Informação</string>
     <string name="categ_sem5_sgi_prof">Edidio</string>
 
@@ -46,5 +46,17 @@
     <string name="sem5_sgi_p8r1">Autenticação</string>
     <string name="sem5_sgi_p8r2">Autorização</string>
     <string name="sem5_sgi_p8r3">Identificação</string>
+
+    <string name="sem5_sgi_p9">Quem está autorizado a mudar a classificação de um documento?</string>
+    <string name="sem5_sgi_p9r1">O dono do documento</string>
+    <string name="sem5_sgi_p9r2" tools:ignore="Typos">O autor do documento</string>
+    <string name="sem5_sgi_p9r3">O administrador do documento</string>
+    <string name="sem5_sgi_p9r4">O gerente do dono do documento</string>
+
+    <string name="sem5_sgi_p10">Um membro da equipe nega o envio de uma mensagem específica. Que aspecto da confiabilidade está em perigo aqui?</string>
+    <string name="sem5_sgi_p10r1">Integridade</string>
+    <string name="sem5_sgi_p10r2">Precisão</string>
+    <string name="sem5_sgi_p10r3">Disponibilidade</string>
+    <string name="sem5_sgi_p10r4">Confidencialidade</string>
     
 </resources>

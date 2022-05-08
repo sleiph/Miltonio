@@ -62,5 +62,35 @@
     <string name="sem5_rds_p10r3">C</string>
     <string name="sem5_rds_p10r4">D</string>
     <string name="sem5_rds_p10r5">E</string>
+
+    <string name="sem5_rds_p11">O Modem é um equipamento de transmissão de dados do tipo:</string>
+    <string name="sem5_rds_p11r1">DCE</string>
+    <string name="sem5_rds_p11r2">DTE</string>
+    <string name="sem5_rds_p11r3">EDT</string>
+    <string name="sem5_rds_p11r4">TDE</string>
+
+    <string name="sem5_rds_p12">Escolha qual protocolo abaixo é orientado a conexão.</string>
+    <string name="sem5_rds_p12r1">DHCP</string>
+    <string name="sem5_rds_p12r2">IP</string>
+    <string name="sem5_rds_p12r3">TCP</string>
+    <string name="sem5_rds_p12r4">UDP</string>
+
+    <string name="sem5_rds_p13">Quantas subredes e quantos IPs válidos em cada rede são possíveis com uma máscara /27?</string>
+    <string name="sem5_rds_p13r1">8 subredes com 30 IPs válidos</string>
+    <string name="sem5_rds_p13r2">8 subredes com 32 IPs válidos</string>
+    <string name="sem5_rds_p13r3">16 subredes e 14 IPs válidos</string>
+    <string name="sem5_rds_p13r4">4 subredes com 62 IPs válidos</string>
+
+    <string name="sem5_rds_p14">Escolha o conjunto que faz parte dos elementos essenciais na comunicação de dados.</string>
+    <string name="sem5_rds_p14r1">Protocolos, Transmissor e Mensagem</string>
+    <string name="sem5_rds_p14r2">Repetidor, Mensagem, S.O.</string>
+    <string name="sem5_rds_p14r3">Mensagem, Receptor e Repetidor</string>
+    <string name="sem5_rds_p14r4">Meios, Repetidor e Protocolos</string>
+
+    <string name="sem5_rds_p15">Escolha a alternativa que melhor define o que é topologia física de rede.</string>
+    <string name="sem5_rds_p15r1">Arranjo definido pelas conexões dos meios físicos</string>
+    <string name="sem5_rds_p15r2">Meios físicos que propagam os sinais eletromagnéticos</string>
+    <string name="sem5_rds_p15r3">Conjunto de regras que organizam a comunicação</string>
+    <string name="sem5_rds_p15r4">Conexões das Interfaces de redes por meio de cabos</string>
     
 </resources>
