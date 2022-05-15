@@ -13,4 +13,16 @@
     <string name="sem5_pli_p2r3">Se o número de linhas da primeira matriz for igual ao número de colunas da segunda.</string>
     <string name="sem5_pli_p2r4">Somente se as duas matrizes tiverem dimensões idênticas.</string>
 
+    <string name="sem5_pli_p3">Defina a determinante de uma matriz.</string>
+    <string name="sem5_pli_p3r1">São os elementos que constituem uma matriz quadrada</string>
+    <string name="sem5_pli_p3r2">São os elementos que constituem uma matriz linear</string>
+    <string name="sem5_pli_p3r3">São as variáveis obtidas pela inversa da matriz</string>
+    <string name="sem5_pli_p3r4">São as variáveis obtidas pela transposição da matriz</string>
+
+    <string name="sem5_pli_p4">Considerando uma matriz quadrada de elementos [[a b][c d]], esta pode ser invertida se a soma ad-bc de seus elementos for:</string>
+    <string name="sem5_pli_p4r1">diferente de 0</string>
+    <string name="sem5_pli_p4r2">igual a 0</string>
+    <string name="sem5_pli_p4r3">maior que 0</string>
+    <string name="sem5_pli_p4r4">menor que 0</string>
+
 </resources>

@@ -59,5 +59,11 @@
     <string name="sem5_sdt_p10r1">Os endereços são transformados em hashs de 128bits, não exigindo uma entidade central de registro.</string>
     <string name="sem5_sdt_p10r2">Todos os endereços podem ser acessados a partir da raiz.</string>
     <string name="sem5_sdt_p10r3">Os endereços são separados em pastas dentro da raiz e devem ser acessados a partir de seus contextos.</string>
+
+    <string name="sem5_sdt_p11">O padrão de projeto de software <b>Abstract Factory</b> tem qual função?</string>
+    <string name="sem5_sdt_p11r1">Permitir a criação de famílias de objetos relacionados por meio de uma única interface.</string>
+    <string name="sem5_sdt_p11r2">Definir um método separado para criação dos objetos, que será sobrescrito pelas subclasses.</string>
+    <string name="sem5_sdt_p11r3">Garantir a existência de apenas uma instância de uma classe.</string>
+    <string name="sem5_sdt_p11r4">Manter uma lista de objetos instanciados e prontos para uso, evitando a criação e destruição a cada uso.</string>
     
 </resources>
