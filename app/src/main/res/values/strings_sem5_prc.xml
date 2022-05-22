@@ -44,4 +44,14 @@
     <string name="sem5_prc_p8r3">Uma WMAN pode utilizar uma tecnologia via cabo chamada WiMAX</string>
     <string name="sem5_prc_p8r4">Uma WMAN utiliza tecnologia CHIP SIM para comunicação dos dispositivos</string>
 
+    <string name="sem5_prc_p9">Qual a metáfora mais acertada para explicar a função de uma VPN?</string>
+    <string name="sem5_prc_p9r1">Um túnel, que conecta pontos distantes na internet.</string>
+    <string name="sem5_prc_p9r2">Uma porta, que permite o acesso de usuários específicos à rede empresarial.</string>
+    <string name="sem5_prc_p9r3">Uma estrada, que aumenta a velocidade de conexão entre dois pontos.</string>
+    <string name="sem5_prc_p9r4">Um elevador, que conecta dois servidores dentro de uma rede.</string>
+
+    <string name="sem5_prc_p10">Um exemplo de servidor Windows para empresas seria:</string>
+    <string name="sem5_prc_p10r1">HPC Server</string>
+    <string name="sem5_prc_p10r2">Red Hat Enterprise Linux</string>
+
 </resources>

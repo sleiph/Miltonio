@@ -25,4 +25,10 @@
     <string name="sem5_pli_p4r3">maior que 0</string>
     <string name="sem5_pli_p4r4">menor que 0</string>
 
+    <string name="sem5_pli_p5">Uma das condições para queuma transformação T: Rn -> Rn seja chamada transformação linear é que:</string>
+    <string name="sem5_pli_p5r1">T(u+v) = T(u) + T(v) para todo u e v em Rn</string>
+    <string name="sem5_pli_p5r2">A matriz seja quadrática</string>
+    <string name="sem5_pli_p5r3">A soma das escalares da matriz seja igual a zero</string>
+    <string name="sem5_pli_p5r4">ad-bc=0</string>
+
 </resources>

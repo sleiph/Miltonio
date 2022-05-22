@@ -81,6 +81,22 @@ class LabRedes {
                     Resposta(R.string.sem5_prc_p8r3, false, R.string.sem5_prc_p8),
                     Resposta(R.string.sem5_prc_p8r4, false, R.string.sem5_prc_p8)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_prc_p9, 1,46,
+                mutableListOf(
+                    Resposta(R.string.sem5_prc_p9r1, true, R.string.sem5_prc_p9),
+                    Resposta(R.string.sem5_prc_p9r2, false, R.string.sem5_prc_p9),
+                    Resposta(R.string.sem5_prc_p9r3, false, R.string.sem5_prc_p9),
+                    Resposta(R.string.sem5_prc_p9r4, false, R.string.sem5_prc_p9)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_prc_p10, 1,46,
+                mutableListOf(
+                    Resposta(R.string.sem5_prc_p10r1, true, R.string.sem5_prc_p10),
+                    Resposta(R.string.sem5_prc_p10r2, false, R.string.sem5_prc_p10)
+                )
             )
         )
     )

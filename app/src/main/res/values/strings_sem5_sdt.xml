@@ -65,5 +65,11 @@
     <string name="sem5_sdt_p11r2">Definir um método separado para criação dos objetos, que será sobrescrito pelas subclasses.</string>
     <string name="sem5_sdt_p11r3">Garantir a existência de apenas uma instância de uma classe.</string>
     <string name="sem5_sdt_p11r4">Manter uma lista de objetos instanciados e prontos para uso, evitando a criação e destruição a cada uso.</string>
+
+    <string name="sem5_sdt_p12">Padrões de Projeto são úteis para:</string>
+    <string name="sem5_sdt_p12r1">Facilitar a criação de tipos comumente usados em softwares.</string>
+    <string name="sem5_sdt_p12r2">Tornar mais rápida a execução de um programa.</string>
+    <string name="sem5_sdt_p12r3">Padronizar a documentação de um projeto de software.</string>
+    <string name="sem5_sdt_p12r4">Eliminar bugs e falhas na instanciação de uma classe.</string>
     
 </resources>

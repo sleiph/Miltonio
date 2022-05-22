@@ -48,5 +48,11 @@
     <string name="sem5_les_p8r2">LINQ</string>
     <string name="sem5_les_p8r3">Lambda</string>
     <string name="sem5_les_p8r4">Bootstrap</string>
+
+    <string name="sem5_les_p9">Qual seria o tipo mais correto para expressar um data de nascimento no modelo de uma tabela, usando C#?</string>
+    <string name="sem5_les_p9r1">Date</string>
+    <string name="sem5_les_p9r2">DateTime</string>
+    <string name="sem5_les_p9r3">Time</string>
+    <string name="sem5_les_p9r4">LocalTime</string>
     
 </resources>
