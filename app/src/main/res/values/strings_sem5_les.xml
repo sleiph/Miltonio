@@ -54,5 +54,10 @@
     <string name="sem5_les_p9r2">DateTime</string>
     <string name="sem5_les_p9r3">Time</string>
     <string name="sem5_les_p9r4">LocalTime</string>
+
+    <string name="sem5_les_p10">Em um projeto MVC, C#, com Visual Studio e Entity Framework, onde ficam as classes de manipulação de dados com banco de dados?</string>
+    <string name="sem5_les_p10r1">Controller</string>
+    <string name="sem5_les_p10r2">View</string>
+    <string name="sem5_les_p10r3">Model</string>
     
 </resources>

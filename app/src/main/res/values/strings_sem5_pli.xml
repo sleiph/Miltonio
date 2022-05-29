@@ -31,4 +31,13 @@
     <string name="sem5_pli_p5r3">A soma das escalares da matriz seja igual a zero</string>
     <string name="sem5_pli_p5r4">ad-bc=0</string>
 
+    <string name="sem5_pli_p6">Qual das seguintes opções <b>NÃO</b> pode classificada como uma classificação de sistema linear?</string>
+    <string name="sem5_pli_p6r1">Possível</string>
+    <string name="sem5_pli_p6r2">Impossível</string>
+    <string name="sem5_pli_p6r3">Abstrata</string>
+
+    <string name="sem5_pli_p7">Uma classificação possível e determinada de um sistema linear:</string>
+    <string name="sem5_pli_p7r1">Admite uma única solução</string>
+    <string name="sem5_pli_p7r2">Admite infinitas soluções </string>
+
 </resources>
