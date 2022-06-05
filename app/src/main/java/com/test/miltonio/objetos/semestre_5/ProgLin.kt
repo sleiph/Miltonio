@@ -74,6 +74,28 @@ class ProgLin {
                     Resposta(R.string.sem5_pli_p7r1, true, R.string.sem5_pli_p7),
                     Resposta(R.string.sem5_pli_p7r2, false, R.string.sem5_pli_p7)
                 )
+            ),
+            Pergunta(
+                R.string.sem5_pli_p8, 1,49,
+                mutableListOf(
+                    Resposta(R.string.sem5_pli_p8r1, true, R.string.sem5_pli_p8),
+                    Resposta(R.string.sem5_pli_p8r2, false, R.string.sem5_pli_p8)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_pli_p9, 1,49,
+                mutableListOf(
+                    Resposta(R.string.sem5_pli_p9r1, true, R.string.sem5_pli_p9),
+                    Resposta(R.string.sem5_pli_p9r2, false, R.string.sem5_pli_p9),
+                    Resposta(R.string.sem5_pli_p9r3, false, R.string.sem5_pli_p9)
+                )
+            ),
+            Pergunta(
+                R.string.sem5_pli_p10, 1,49,
+                mutableListOf(
+                    Resposta(R.string.sem5_pli_p10r1, true, R.string.sem5_pli_p10),
+                    Resposta(R.string.sem5_pli_p10r2, false, R.string.sem5_pli_p10)
+                )
             )
         )
     )

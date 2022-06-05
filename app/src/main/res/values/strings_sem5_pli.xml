@@ -38,6 +38,19 @@
 
     <string name="sem5_pli_p7">Uma classificação possível e determinada de um sistema linear:</string>
     <string name="sem5_pli_p7r1">Admite uma única solução</string>
-    <string name="sem5_pli_p7r2">Admite infinitas soluções </string>
+    <string name="sem5_pli_p7r2">Admite infinitas soluções</string>
+
+    <string name="sem5_pli_p8">Considere o sistema de equações a seguir:\nx-4y+2z=5\ny-z=1</string>
+    <string name="sem5_pli_p8r1">Possui um número de equações menor que o número de incognitas</string>
+    <string name="sem5_pli_p8r2">Possui um número de equações maior que o número de incognitas</string>
+
+    <string name="sem5_pli_p9">Considere o sistema de equações a seguir:\nx-4y+2z=5\ny-z=1\n\nQual a variável livre do sistema?</string>
+    <string name="sem5_pli_p9r1">X</string>
+    <string name="sem5_pli_p9r2">Y</string>
+    <string name="sem5_pli_p9r3">Z</string>
+
+    <string name="sem5_pli_p10">Considere o sistema de equações a seguir:\nx-4y+2z=5\ny-z=1</string>
+    <string name="sem5_pli_p10r1">Ele está na forma escalonada</string>
+    <string name="sem5_pli_p10r2">Não está na forma escalonada</string>
 
 </resources>
