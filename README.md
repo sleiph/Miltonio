@@ -23,18 +23,18 @@ Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 
 #### Controle
 
-- Otimizar o número de assets (tilesets, tints, ...)
 - Usar ActivityAddTaskBinding, igual gente grande
-- Me livrar dos objetos (base do banco em json, ou online)
+- Se você errar a pergunta, ela volta no final (igual o Duolingo)
+- Perguntas de completar a frase (ou escolher a palavra certa)
+- Perguntas de múltipla escolha
 
 #### Modelo
 
+- Me livrar dos objetos (base do banco em json, ou online)
+- Usar migrations
 - Usuários com senha
-- Perguntas de completar a frase (ou escolher a palavra certa)
-- Perguntas de múltipla escolha
 - Adicionar imagens nas perguntas
 - High Scores
-- Se você errar a pergunta, ela volta no final (igual o Duolingo)
 
 #### Visual
 
@@ -42,6 +42,7 @@ Algumas melhorias que qualquer um é bem vindo a me ajudar a fazer são:
 - Animações
 - Layout responsivo
 - Scroll mais bonito/intuitivo das respostas
+- Otimizar o número de assets (tilesets, tints, ...)
 
 ---
 ![blocos](/img/blocos2.png)
