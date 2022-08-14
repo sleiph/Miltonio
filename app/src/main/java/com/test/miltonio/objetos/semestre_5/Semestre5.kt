@@ -10,7 +10,7 @@ class Semestre5 {
     fun getMaterias() :Array<Materia> {
         return arrayOf(
             Redes().materia,
-            LabRedes().materia,
+            ProjRedes().materia,
             LabEng().materia,
             ProgLin().materia,
             SisDist().materia,

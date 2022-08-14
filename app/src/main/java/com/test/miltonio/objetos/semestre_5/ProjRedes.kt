@@ -5,7 +5,7 @@ import com.test.miltonio.modelo.Materia
 import com.test.miltonio.modelo.Pergunta
 import com.test.miltonio.modelo.Resposta
 
-class LabRedes {
+class ProjRedes {
     val materia = Materia(
         46,
         R.string.categ_sem5_prc,

@@ -3,10 +3,10 @@
     <string name="categ_sem5_eng">Inglês</string>
     <string name="categ_sem5_eng_prof">Adriana</string>
 
-    <string name="sem5_eng_p1"></string>
-    <string name="sem5_eng_p1r1"></string>
-    <string name="sem5_eng_p1r2"></string>
-    <string name="sem5_eng_p1r3"></string>
-    <string name="sem5_eng_p1r4"></string>
+    <string name="sem5_eng_p1"> </string>
+    <string name="sem5_eng_p1r1"> </string>
+    <string name="sem5_eng_p1r2"> </string>
+    <string name="sem5_eng_p1r3"> </string>
+    <string name="sem5_eng_p1r4"> </string>
 
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="categ_sem6_emp">Empreendedorismo</string>
+    <string name="categ_sem6_emp_prof">Osmildo</string>
+
+    <string name="sem6_emp_p1"> </string>
+    <string name="sem6_emp_p1r1"> </string>
+    <string name="sem6_emp_p1r2"> </string>
+    <string name="sem6_emp_p1r3"> </string>
+    <string name="sem6_emp_p1r4"> </string>
+    
+</resources>
