@@ -29,7 +29,7 @@
             android:columnOrderPreserved="false"
             android:padding="@dimen/margem_qsereal_margin">
 
-            <com.test.miltonio.ui.componentes.Logo
+            <br.fatec.miltonio.ui.componentes.Logo
                 android:id="@+id/Logo"
                 android:layout_width="0dp"
                 android:layout_marginTop="@dimen/distancia_topo_main"
@@ -42,7 +42,7 @@
                 android:gravity="center"
                 app:imgLogo="@drawable/appmilton">
 
-            </com.test.miltonio.ui.componentes.Logo>
+            </br.fatec.miltonio.ui.componentes.Logo>
 
         </GridLayout>
 

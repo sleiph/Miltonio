@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.test.miltonio">
+    package="br.fatec.miltonio">
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".ui.MainActivity"
-            android:authorities="com.test.miltonio.fileprovider"
+            android:authorities="br.fatec.miltonio.fileprovider"
             android:exported="true"
             android:grantUriPermissions="true" >
             <intent-filter>
